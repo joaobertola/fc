@@ -10325,7 +10325,7 @@ body,
 }
 
 .layout-navbar-fixed.layout-fixed .wrapper .sidebar {
-  margin-top: calc(3.5rem + 1px);
+  margin-top:0;
 }
 
 .layout-navbar-fixed.layout-fixed .wrapper .brand-link.text-sm ~ .sidebar {
@@ -10499,7 +10499,7 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
 }
 
 .layout-navbar-fixed.layout-fixed .wrapper .sidebar {
-  margin-top: calc(3.5rem + 1px);
+  margin-top: 1rem;
 }
 
 .text-sm .layout-navbar-fixed.layout-fixed .wrapper .brand-link ~ .sidebar,
@@ -10542,7 +10542,7 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
 
 .layout-navbar-fixed .wrapper .brand-link {
   overflow: hidden;
-  position: fixed;
+  position: relative;
   top: 0;
   transition: width 0.3s ease-in-out;
   width: 250px;
@@ -31211,5 +31211,9 @@ a.text-muted:hover {
 
 [class*="accent-"] a.btn-dark {
   color: #ffffff;
+}
+
+img.brand-image {
+  width: 70%;
 }
 /*# sourceMappingURL=adminlte.css.map */

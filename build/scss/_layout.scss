@@ -20,7 +20,7 @@ body,
   }
 
   .layout-boxed & {
-    @include box-shadow(0 0 10 rgba($black, .3));
+    @include box-shadow(0 0 10 rgba($black, 0.3));
 
     &,
     &::before {
@@ -35,10 +35,18 @@ body,
 
   @supports not (-webkit-touch-callout: none) {
     .layout-fixed & .sidebar {
-      height: calc(100vh - (#{$main-header-height-inner} + #{$main-header-bottom-border-width}));
+      height: calc(
+        100vh -
+          (#{$main-header-height-inner} + #{$main-header-bottom-border-width})
+      );
     }
     .layout-fixed.text-sm & .sidebar {
-      height: calc(100vh - (#{$main-header-height-sm-inner} + #{$main-header-bottom-border-width}));
+      height: calc(
+        100vh -
+          (
+            #{$main-header-height-sm-inner} + #{$main-header-bottom-border-width}
+          )
+      );
     }
   }
 
@@ -117,7 +125,12 @@ body,
     a.anchor {
       display: block;
       position: relative;
-      top: calc((#{$main-header-height-inner} + #{$main-header-bottom-border-width} + (#{$main-header-link-padding-y} * 2)) / -1);
+      top: calc(
+        (
+            #{$main-header-height-inner} + #{$main-header-bottom-border-width} +
+              (#{$main-header-link-padding-y} * 2)
+          ) / -1
+      );
     }
 
     .main-sidebar:hover {
@@ -233,7 +246,12 @@ body,
         a.anchor {
           display: block;
           position: relative;
-          top: calc((#{$main-header-height-inner} + #{$main-header-bottom-border-width} + (#{$main-header-link-padding-y} * 2)) / -1);
+          top: calc(
+            (
+                #{$main-header-height-inner} + #{$main-header-bottom-border-width} +
+                  (#{$main-header-link-padding-y} * 2)
+              ) / -1
+          );
         }
 
         &.sidebar-collapse {
@@ -258,7 +276,7 @@ body,
 
         .brand-link {
           overflow: hidden;
-          position: fixed;
+          position: relative;
           top: 0;
           transition: width $transition-speed $transition-fn;
           width: $sidebar-width;
@@ -347,7 +365,9 @@ body,
     .control-sidebar {
       bottom: 0;
     }
+  }
 
+  .layout-footer-fixed & {
     .main-footer {
       bottom: 0;
       left: 0;
@@ -374,7 +394,9 @@ body,
         .control-sidebar {
           bottom: 0;
         }
+      }
 
+      .layout#{$infix}-footer-fixed & {
         .main-footer {
           bottom: 0;
           left: 0;
@@ -401,8 +423,8 @@ body,
 
     .main-header {
       .brand-image {
-        margin-top: -.5rem;
-        margin-right: .2rem;
+        margin-top: -0.5rem;
+        margin-right: 0.2rem;
         height: 33px;
       }
     }
@@ -419,7 +441,6 @@ body,
     }
   }
 }
-
 
 body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) {
   .content-wrapper,
@@ -479,7 +500,7 @@ body:not(.sidebar-mini-md) {
 }
 
 .content-wrapper {
-  background-color: $main-bg;
+  background: $main-bg;
 
   > .content {
     padding: $content-padding-y $content-padding-x;
@@ -489,7 +510,8 @@ body:not(.sidebar-mini-md) {
 .main-sidebar {
   &,
   &::before {
-    $local-sidebar-transition: margin-left $transition-speed $transition-fn, width $transition-speed $transition-fn;
+    $local-sidebar-transition: margin-left $transition-speed $transition-fn,
+      width $transition-speed $transition-fn;
     @include transition($local-sidebar-transition);
     width: $sidebar-width;
   }
@@ -573,7 +595,7 @@ body:not(.sidebar-mini-md) {
 }
 
 .main-footer {
-  background-color: $main-footer-bg;
+  background: $main-footer-bg;
   border-top: $main-footer-border-top;
   color: lighten($gray-700, 25%);
   padding: $main-footer-padding;
@@ -601,7 +623,7 @@ body:not(.sidebar-mini-md) {
   }
 
   .breadcrumb {
-    background-color: transparent;
+    background: transparent;
     line-height: 1.8rem;
     margin-bottom: 0;
     padding: 0;
@@ -611,7 +633,6 @@ body:not(.sidebar-mini-md) {
     }
   }
 }
-
 
 .hold-transition {
   .content-wrapper,
