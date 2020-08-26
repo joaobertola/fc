@@ -3,12 +3,16 @@
 
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Arquivo com Funcoes de Banco de Dados
 require "config/database.php";
 // Verifica se o usuário está logado
 require "includes/verifica.php";
 // Arquivo com funcoes gerais do sistema
-include "includes/functions.php";
+// include "includes/functions.php";
 
 ?>
 

@@ -9,3 +9,6 @@
 
 <!-- General -->
 <script src="dist/js/adminlte.js"></script>
+
+<!-- SweetAlert -->
+<script src="vendor/sweetalert/sweetalert.min.js"></script>

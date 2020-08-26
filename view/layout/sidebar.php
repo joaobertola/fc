@@ -20,7 +20,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">
+              <a href="<?=ENDERECO;?>/cliente/listar" class="nav-link">
                 <i class="fas fa-user-tag"></i>
                 <p>Clientes</p>
               </a>

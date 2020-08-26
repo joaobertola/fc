@@ -13,6 +13,17 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
+      <?php
+      $file = $action . $modulo . '.php';
+
+      $caminho = 'view/' . $modulo . '/' . $file;
+
+      $caminho = file_exists($caminho) ? $caminho : 'view/404/404.php';
+
+      include $caminho;
+
+      ?>
+
     </div>
     <!-- /.content-wrapper -->
 
@@ -28,7 +39,6 @@
   </div>
   <!-- ./wrapper -->
 
-  <!-- REQUIRED SCRIPTS -->
 
   <!-- General Scripts  -->
   <?php include "includes/scripts.php"; ?>
@@ -43,6 +53,9 @@
   <script src="plugins/chart.js/Chart.min.js"></script>
   <script src="dist/js/demo.js"></script>
   <script src="dist/js/pages/dashboard2.js"></script>
+
+  <!-- REQUIRED SCRIPTS -->
+  <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
 
 </body>
 

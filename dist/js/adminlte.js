@@ -2139,3 +2139,34 @@ function toggleFullScreen() {
     }
   }
 }
+
+/**
+*
+* @param {Inputs dos Formulários} params
+* @returns {true or false}
+*/
+
+function validaForm(params) {
+  var valida = true;
+  var notpermitidos = ['', '__/__/____', undefined, null];
+  var config = {
+      form: $("form"),
+      notValidate: false,
+  }
+  $.extend(config, params);
+
+  var $form = config.form;
+  $form.find('.form-required').each(function () {
+      var border = (!$(this).val()) ? '1px solid red' : '1px solid #cecece';
+
+      if ($.inArray($(this).val(), notpermitidos) == 0)
+          valida = false;
+
+      $(this).closest('input, textarea, select').css('border', border);
+  });
+
+  if (config.notValidate && !valida)
+      swal("Erro!", "Preencha todos os campos.", "error");
+
+  return valida;
+}
