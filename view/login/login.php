@@ -24,7 +24,7 @@ $op = md5('login');
 </head>
 
 <body class="hold-transition login-page" style="background: url(dist/img/background.jpg);background-size: cover;background-repeat: no-repeat;background-position:center">
-  <div class="login-box mr-5">
+  <div class="login-box">
     <!-- /.login-logo -->
     <div class="card float">
       <div class="card-body login-card-body">
@@ -76,8 +76,14 @@ $op = md5('login');
   </div>
   <!-- /.login-box -->
 
+  <div class="loading-bg">
+    <div class="loading">
+      <i class="fas fa-circle-notch fa-spin fa-5x"></i>
+    </div>
+  </div>
+
   <!-- Scripts  -->
-  <?php include ENDERECO . '/includes/scripts.php'; ?>
+  <?php include 'includes/scripts.php'; ?>
   <!-- Login -->
   <script src="<?= ENDERECO; ?>/dist/js/pages/login.js"></script>
 

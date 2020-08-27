@@ -17,7 +17,13 @@ class ApiConnect
       }
       //Se foi passado como parâmetro, adiciona o cabeçalho à requisição
       if (!empty($header)) {
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+
+        $h = [];
+        foreach ($header as $nome => $valor) {
+          $h[] = $nome . ': ' . $valor;
+        }
+
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $h);
       }
       //Marca que vai receber string
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -33,7 +39,6 @@ class ApiConnect
 
       //Fecha a conexão
       curl_close($ch);
-
     } catch (Exception $e) {
 
       return $e->getMessage();
@@ -41,5 +46,4 @@ class ApiConnect
 
     return $resposta;
   }
-
 }

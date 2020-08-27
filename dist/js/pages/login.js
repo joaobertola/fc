@@ -9,13 +9,14 @@ $(document).on("click", "#submitlogin", function (e) {
     validate: true,
   });
   if (valida) {
+    $('.loading-bg').css('display', 'flex');
     $.ajax({
       url: url,
       type: "post",
       dataType: "json",
       data: $("#login").serialize(),
     }).done(function (e) {
-      console.log(e);
+      $('.loading-bg').css('display', 'none');
       if (e.status) {
         swal({
           title: "Sucesso!",

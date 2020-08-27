@@ -31251,3 +31251,18 @@ img.brand-image {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
+
+.loading-bg {
+    position: fixed;
+    background-color: #ffffff8f;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+ color: #0073c4;
+}
