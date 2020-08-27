@@ -54,7 +54,7 @@ switch ($Op) {
       $msg = "Não foi possível conectar com o servidor.";
     } else if (isset($clientes['status']) && $clientes['status'] != 200) {
       // Em caso de erro, retorna ao usuário exemplo: Login Inválido
-      $msg = $clientes['msg'];
+      $msg = isset($clientes['msg']) ? $clientes['msg'] : $clientes['status'];
     } else {
       // Se tudo ocorrer bem, retorna os dados de clientes
       $conteudo = $clientes['conteudo'];

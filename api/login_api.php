@@ -52,6 +52,7 @@ switch ($Op) {
       $msg = $conteudo['error'];
     } else {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
+      session_cache_expire($conteudo['expires_in']);
       $_SESSION['user'] = $conteudo;
       $msg    = "Bem Vindo!";
       $status = true;

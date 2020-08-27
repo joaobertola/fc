@@ -76,8 +76,8 @@ $op = md5('login');
   </div>
   <!-- /.login-box -->
 
-  <div class="loading-bg">
-    <div class="loading">
+  <div class="loading-bg-login">
+    <div class="loading-login">
       <i class="fas fa-circle-notch fa-spin fa-5x"></i>
     </div>
   </div>
