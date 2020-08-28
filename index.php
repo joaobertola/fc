@@ -1,6 +1,6 @@
 <?php include "view/layout/head.php"; ?>
 
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed" data-action="<?= $action; ?>">
   <div class="wrapper">
 
     <!-- Navbar -->
@@ -18,7 +18,10 @@
 
       $caminho = 'view/' . $modulo . '/' . $file;
 
-      $caminho = file_exists($caminho) ? $caminho : 'view/404/404.php';
+      if (!file_exists($caminho)) {
+        $caminho = 'view/404/404.php';
+        $modulo  = '404';
+      }
 
       include $caminho;
 

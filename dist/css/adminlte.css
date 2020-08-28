@@ -5038,6 +5038,42 @@ input[type="button"].btn-block {
   color: #6c757d;
 }
 
+.actions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+
+}
+
+.actions-item + .actions-item {
+  padding-left: 0.5rem;
+}
+
+.actions-item + .actions-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: "|";
+}
+
+.actions-item + .actions-item:hover::before {
+  text-decoration: underline;
+}
+
+.actions-item + .actions-item:hover::before {
+  text-decoration: none;
+}
+
+.actions-item.active {
+  color: #6c757d;
+}
+
 .pagination {
   display: -ms-flexbox;
   display: flex;
@@ -31261,7 +31297,7 @@ img.brand-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0; 
+  bottom: 0;
 }
 
 .loading {
@@ -31277,7 +31313,7 @@ img.brand-image {
   display: none;
   justify-content: center;
   align-items: center;
-  bottom: 0; 
+  bottom: 0;
 }
 
 .loading-login {

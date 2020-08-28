@@ -12,3 +12,7 @@
 
 <!-- SweetAlert -->
 <script src="<?= ENDERECO; ?>/vendor/sweetalert/sweetalert.min.js"></script>
+
+<!-- InputMask -->
+<script src="<?= ENDERECO; ?>/plugins/moment/moment.min.js"></script>
+<script src="<?= ENDERECO; ?>/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>

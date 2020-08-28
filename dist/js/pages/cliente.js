@@ -1,52 +1,63 @@
 $(document).ready(function () {
-
+  // Verifico a ação do usuário pra definir o que será utilizado deste arquivo
+  var action = $(document)[0].body.getAttribute("data-action");
   // Chamo a Api pra inserir os dados
 
-  var url = $("#clientesDataTable").data("url");
+  if (action == "listar") {
 
-  fetch(url)
-  .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      $.each(data.conteudo, function (key, c) {
+    var url = $("#clientesDataTable").data("url");
 
-        let body = $("#bodyClientes");
-        let tr = document.createElement("tr");
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        $.each(data.conteudo, function (key, c) {
+          let body = $("#bodyClientes");
+          let tr = document.createElement("tr");
 
-        let codigoCliente  = document.createElement("td");
-        codigoCliente.append(c.id);
+          let codigoCliente = document.createElement("td");
+          codigoCliente.append(c.id);
 
-        let nome = document.createElement("td");
-        nome.append(c.nome);
+          let nome = document.createElement("td");
+          nome.append(c.nome);
 
-        let razaoSocial = document.createElement("td");
-        razaoSocial.append(c.razao_social);
+          let razaoSocial = document.createElement("td");
+          razaoSocial.append(c.razao_social);
 
-        let cpfCnpj = document.createElement("td");
-        cpfCnpj.append(c.cnpj_cpf);
+          let cpfCnpj = document.createElement("td");
+          cpfCnpj.append(c.cnpj_cpf);
 
-        let telefone = document.createElement("td");
-        telefone.append(c.telefone);
+          let telefone = document.createElement("td");
+          telefone.append(c.telefone);
 
-        let actions = document.createElement("td");
+          let actions = document.createElement("td");
 
-        body.append(tr);
+          body.append(tr);
 
-        tr.append(codigoCliente, nome, razaoSocial, cpfCnpj, telefone, actions);
-
-      });
-
-
-      $(function () {
-        $("#clientesDataTable").DataTable({
-          responsive: true,
-          autoWidth: false,
+          tr.append(
+            codigoCliente,
+            nome,
+            razaoSocial,
+            cpfCnpj,
+            telefone,
+            actions
+          );
         });
+
+        $(function () {
+          // Start DataTable
+          $("#clientesDataTable").DataTable({
+            responsive: true,
+            autoWidth: false,
+          });
+        });
+
+        $(".loading-bg").css("display", "none");
       });
+  } else if (action == "cadastrar") {
 
-      $(".loading-bg").css('display', 'none');
-    });
+    $(".loading-bg").css("display", "none");
 
-  // Start DataTable
+  }
 });
