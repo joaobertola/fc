@@ -34,16 +34,22 @@ class ApiConnect
       //Inicia a conexão
       $resposta = curl_exec($ch);
 
+      $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
       // Transforma em Array
       $resposta = json_decode($resposta, true);
 
+      $resposta['status_http'] = $http_status;
+
       //Fecha a conexão
       curl_close($ch);
+
+      return $resposta;
+
     } catch (Exception $e) {
 
       return $e->getMessage();
     }
 
-    return $resposta;
   }
 }

@@ -9,6 +9,7 @@ $(document).on("click", "#submitlogin", function (e) {
     validate: true,
   });
   if (valida) {
+    // Abro Div de carregamento
     $('.loading-bg-login').css('display', 'flex');
     $.ajax({
       url: url,
@@ -16,6 +17,7 @@ $(document).on("click", "#submitlogin", function (e) {
       dataType: "json",
       data: $("#login").serialize(),
     }).done(function (e) {
+      // Fecho a div de carregamento e dou o retorno ao usuário
       $('.loading-bg-login').css('display', 'none');
       if (e.status) {
         swal({

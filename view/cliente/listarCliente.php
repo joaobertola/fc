@@ -29,7 +29,18 @@
           <div class="card-header">
             <h3 class="card-title">Gerenciamento de Clientes</h3>
             <div class="float-right">
-              <a>Cadastro</a>
+              <a class="">Cadastro</a>
+            </div>
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Clientes</h1>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="<?= ENDERECO; ?>">Home</a></li>
+                  <li class="breadcrumb-item active">Clientes</li>
+                </ol>
+              </div>
             </div>
           </div>
           <!-- /.card-header -->
