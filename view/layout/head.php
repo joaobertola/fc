@@ -12,7 +12,7 @@ require "config/database.php";
 // Verifica se o usuário está logado
 require "includes/verifica.php";
 // Arquivo com funcoes gerais do sistema
-// include "includes/functions.php";
+include "includes/functions.php";
 
 ?>
 

@@ -46,16 +46,6 @@
   <!-- General Scripts  -->
   <?php include "includes/scripts.php"; ?>
 
-  <!-- PAGE SPECIFY PLUGINS -->
-  <!-- jQuery Mapael -->
-  <script src="<?= ENDERECO; ?>/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-  <script src="<?= ENDERECO; ?>/plugins/raphael/raphael.min.js"></script>
-  <script src="<?= ENDERECO; ?>/plugins/jquery-mapael/jquery.mapael.min.js"></script>
-  <script src="<?= ENDERECO; ?>/plugins/jquery-mapael/maps/usa_states.min.js"></script>
-  <!-- ChartJS -->
-  <script src="<?= ENDERECO; ?>/plugins/chart.js/Chart.min.js"></script>
-  <script src="<?= ENDERECO; ?>/dist/js/demo.js"></script>
-  <script src="<?= ENDERECO; ?>/dist/js/pages/dashboard2.js"></script>
   <!-- REQUIRED SCRIPTS -->
   <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
 
@@ -65,6 +55,9 @@
   <script src="<?= ENDERECO; ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
   <script src="<?= ENDERECO; ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
+  <!-- ChartJS -->
+  <script src="<?= ENDERECO; ?>/plugins/chart.js/Chart.min.js"></script>
+  <script src="<?= ENDERECO; ?>/dist/js/demo.js"></script>
 
 </body>
 

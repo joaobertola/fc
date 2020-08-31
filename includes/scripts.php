@@ -1,6 +1,9 @@
 <!-- jQuery -->
 <script src="<?= ENDERECO; ?>/plugins/jquery/jquery.min.js"></script>
 
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
 <!-- Bootstrap -->
 <script src="<?= ENDERECO; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
