@@ -46,9 +46,6 @@
   <!-- General Scripts  -->
   <?php include "includes/scripts.php"; ?>
 
-  <!-- REQUIRED SCRIPTS -->
-  <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
-
   <!-- DataTables -->
   <script src="<?= ENDERECO; ?>/plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="<?= ENDERECO; ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -58,6 +55,9 @@
   <!-- ChartJS -->
   <script src="<?= ENDERECO; ?>/plugins/chart.js/Chart.min.js"></script>
   <script src="<?= ENDERECO; ?>/dist/js/demo.js"></script>
+
+  <!-- REQUIRED SCRIPTS -->
+  <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
 
 </body>
 

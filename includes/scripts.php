@@ -19,3 +19,9 @@
 <!-- InputMask -->
 <script src="<?= ENDERECO; ?>/plugins/moment/moment.min.js"></script>
 <script src="<?= ENDERECO; ?>/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+
+<!-- Select2 -->
+<script src="<?= ENDERECO; ?>/plugins/select2/js/select2.full.min.js"></script>
+
+<!-- bs-custom-file-input -->
+<script src="<?= ENDERECO; ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>

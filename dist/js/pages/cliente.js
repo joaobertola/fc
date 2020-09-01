@@ -4,7 +4,6 @@ $(document).ready(function () {
   // Chamo a Api pra inserir os dados
 
   if (action == "listar") {
-
     var url = $("#clientesDataTable").data("url");
 
     fetch(url)
@@ -56,8 +55,18 @@ $(document).ready(function () {
         $(".loading-bg").css("display", "none");
       });
   } else if (action == "cadastrar") {
+    console.log(action);
+    //Initialize Select2 Elements
+    $(".select2").select2();
+
+    //Initialize Select2 Elements
+    $(".select2bs4").select2({
+      theme: "bootstrap4",
+    });
+
+    // Files Inputs
+    bsCustomFileInput.init();
 
     $(".loading-bg").css("display", "none");
-
   }
 });

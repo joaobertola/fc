@@ -59,6 +59,9 @@ switch ($Op) {
     } else if ($conteudo['status_http'] == 200) {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
       $_SESSION['user'] = $conteudo;
+      $_SESSION['user']['start'] = time(); // Taking now logged in time.
+      // Finalizando a Sessão de acordo com a expiração do token.
+      $_SESSION['user']['expires_in'] = $_SESSION['user']['start'] + ($_SESSION['user']['expires_in'] * 60);
       $msg    = "Bem Vindo!";
       $status = true;
       $enderecoRetorno = $enderecoRetorno . '/home';
@@ -78,10 +81,10 @@ switch ($Op) {
     break;
 
   default:
-    // $retorno             = [];
-    // $retorno['endereco'] = ENDERECO_ADMIN;
-    // $retorno['status']   = false;
-    // $retorno['msg']      = "Nenhuma ação definida.";
+    $retorno             = [];
+    $retorno['endereco'] = ENDERECO;
+    $retorno['status']   = false;
+    $retorno['msg']      = "Nenhuma ação definida.";
 
     echo json_encode($retorno);
 }
