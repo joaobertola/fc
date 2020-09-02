@@ -55,7 +55,6 @@ $(document).ready(function () {
         $(".loading-bg").css("display", "none");
       });
   } else if (action == "cadastrar") {
-    console.log(action);
     //Initialize Select2 Elements
     $(".select2").select2();
 
@@ -68,5 +67,40 @@ $(document).ready(function () {
     bsCustomFileInput.init();
 
     $(".loading-bg").css("display", "none");
+
   }
+});
+
+// Adiciona uma nova div para vincular o cliente a alguma coisa 
+$(document).on('click', '#adicionaVincular', function(){
+  var url = $(this).data('url');
+  $.ajax({
+    type: "POST",
+    url: url,
+    dataType: "html",
+    success: function (html) {
+      $('#vincularCliente').append(html);
+    }
+  });
+});
+// Deleta a Div de vinculo com alguma coisa 
+$(document).on('click', '.deletaVincular', function(){
+  $(this).parent().parent().remove();
+});
+
+// Adiciona uma nova div para vincular o cliente a um novo veiculo 
+$(document).on('click', '#adicionaVeiculo', function(){
+  var url = $(this).data('url');
+  $.ajax({
+    type: "POST",
+    url: url,
+    dataType: "html",
+    success: function (html) {
+      $('#vincularVeiculos').append(html);
+    }
+  });
+});
+// Deleta a div que vincula o cliente ao veiculo 
+$(document).on('click', '.deletaVeiculo', function(){
+  $(this).parent().parent().remove();
 });

@@ -31319,3 +31319,12 @@ img.brand-image {
 .loading-login {
  color: #0073c4;
 }
+
+.line {
+    width: 100%;
+    display: flex;
+}
+
+.w-5 {
+  width: 5% !important;
+}
