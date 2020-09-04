@@ -10,7 +10,7 @@ $(document).on("click", "#submitlogin", function (e) {
   });
   if (valida) {
     // Abro Div de carregamento
-    $('.loading-bg-login').css('display', 'flex');
+    $(".loading-bg-login").css("display", "flex");
     $.ajax({
       url: url,
       type: "post",
@@ -18,13 +18,14 @@ $(document).on("click", "#submitlogin", function (e) {
       data: $("#login").serialize(),
     }).done(function (e) {
       // Fecho a div de carregamento e dou o retorno ao usuário
-      $('.loading-bg-login').css('display', 'none');
+      $(".loading-bg-login").css("display", "none");
       if (e.status) {
         swal({
           title: "Sucesso!",
           text: e.msg,
           icon: "success",
-          button: true,
+          timer: 1000,
+          buttons: false,
         }).then(function () {
           window.location.replace(e.endereco);
         });
