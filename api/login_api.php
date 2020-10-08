@@ -44,6 +44,10 @@ switch ($Op) {
 
     $conteudo = $api->envia($header, $dados, $urlApi, $tpRequisicao);
 
+    // echo '<pre>';
+    // var_dump($conteudo);
+    // exit;
+
     // Conexão de login é baseada no status http da requisição, então faço a tratativa de retorno
     // de acordo com isso
 

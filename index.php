@@ -13,25 +13,13 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
-      <?php
-      $file = $action . $modulo . '.php';
-
-      $caminho = 'view/' . $modulo . '/' . $file;
-
-      if (!file_exists($caminho)) {
-        $caminho = 'view/404/404.php';
-        $modulo  = '404';
-      }
-
-      include $caminho;
-
-      ?>
+      <?php include $caminho; ?>
 
     </div>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
+    <aside class="control-sidebar control-sidebar-light">
       <!-- Control sidebar content goes here -->
     </aside>
     <!-- /.control-sidebar -->

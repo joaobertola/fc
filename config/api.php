@@ -39,17 +39,19 @@ class ApiConnect
       // Transforma em Array
       $resposta = json_decode($resposta, true);
 
+      if (isset($resposta['code']) && ($resposta['code'] != 200 && $resposta['code'] != 201)) {
+        $http_status = $resposta['code'];
+      }
+
       $resposta['status_http'] = $http_status;
 
       //Fecha a conexão
       curl_close($ch);
 
       return $resposta;
-
     } catch (Exception $e) {
 
       return $e->getMessage();
     }
-
   }
 }

@@ -70,8 +70,7 @@
     <!-- Main row -->
     <div class="row">
 
-      <div class="col-md-12">
-        <h5 class="mb-4">Resultados <?= mesNumerico(date('m')); ?></h5>
+      <div class="col-md-8">
         <div class="card">
           <div class="card-header">
             <h3 class="card-title">Itens Mais Vendidos no Mês</h3>
@@ -86,14 +85,14 @@
           <!-- /.card-header -->
           <div class="card-body">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <div class="chart-responsive">
                   <canvas id="pieChart" data-url="<?= ENDERECO . '/api/home_api.php?op=' . md5('produtosMaisVendidosMes'); ?>" height="150"></canvas>
                 </div>
                 <!-- ./chart-responsive -->
               </div>
               <!-- /.col -->
-              <div class="col-md-4">
+              <div class="col-md-5 d-flex align-items-center">
                 <ul class="chart-legend clearfix">
                   <li style="display: none;"><i class="far fa-circle text-danger"></i> <a id="item1"></a></li>
                   <li style="display: none;"><i class="far fa-circle text-success"></i> <a id="item2"></a></li>

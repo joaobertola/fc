@@ -46,7 +46,6 @@ $(document).ready(function () {
 
       $("#produtosCard").html(produtosVendidos);
 
-      $(".loading-bg").css("display", "none");
     });
 
   // Produtos Mais Vendidos no Mes

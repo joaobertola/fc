@@ -19,7 +19,7 @@
   <div class="col-md-1">
     <div class="form-group">
       <div class="input-group">
-        <input type="text" class="form-control form-required" placeholder="Ano">
+        <input type="number" class="form-control form-required" placeholder="Ano">
       </div>
     </div>
   </div>

@@ -2127,6 +2127,8 @@ function toggleFullScreen() {
         Element.ALLOW_KEYBOARD_INPUT
       );
     }
+    // change icon
+    $("#fullScreen").attr("class", "fas fa-compress-arrows-alt");
   } else {
     if (document.exitFullscreen) {
       document.exitFullscreen();
@@ -2137,36 +2139,97 @@ function toggleFullScreen() {
     } else if (document.webkitExitFullscreen) {
       document.webkitExitFullscreen();
     }
+    $("#fullScreen").attr("class", "fas fa-expand-arrows-alt");
   }
 }
 
 /**
-*
-* @param {Inputs dos Formulários} params
-* @returns {true or false}
-*/
+ *
+ * @param {Inputs dos Formulários} params
+ * @returns {true or false}
+ */
 
 function validaForm(params) {
   var valida = true;
-  var notpermitidos = ['', '__/__/____', undefined, null];
+  var notpermitidos = ["", "__/__/____", undefined, null];
   var config = {
-      form: $("form"),
-      notValidate: false,
-  }
+    form: $("form"),
+    notValidate: false,
+  };
   $.extend(config, params);
 
   var $form = config.form;
-  $form.find('.form-required').each(function () {
-      var border = (!$(this).val()) ? '1px solid red' : '1px solid #cecece';
+  $form.find(".form-required").each(function () {
+    var border = !$(this).val() ? "1px solid red" : "1px solid #cecece";
 
-      if ($.inArray($(this).val(), notpermitidos) == 0)
-          valida = false;
+    if ($.inArray($(this).val(), notpermitidos) == 0) valida = false;
 
-      $(this).closest('input, textarea, select').css('border', border);
+    $(this).closest("input, textarea, select").css("border", border);
   });
 
   if (config.notValidate && !valida)
-      swal("Erro!", "Preencha todos os campos.", "error");
+    swal("Erro!", "Preencha todos os campos.", "error");
 
   return valida;
 }
+
+function requestFullScreen() {
+  var el = document.body;
+
+  // Supports most browsers and their versions.
+  var requestMethod =
+    el.requestFullScreen ||
+    el.webkitRequestFullScreen ||
+    el.mozRequestFullScreen ||
+    el.msRequestFullScreen;
+
+  if (requestMethod) {
+    // Native full screen.
+    requestMethod.call(el);
+  } else if (typeof window.ActiveXObject !== "undefined") {
+    // Older IE.
+    var wscript = new ActiveXObject("WScript.Shell");
+
+    if (wscript !== null) {
+      wscript.SendKeys("{F11}");
+    }
+  }
+}
+
+// Fields Masks
+
+$(document).on("focus", ".cpf", function () {
+  $(this).mask("000.000.000-00");
+});
+
+$(document).on("focus", ".rg", function () {
+  $(this).mask("99.999.999-9");
+});
+
+$(document).on("focus", ".telefone", function () {
+  $(this).mask("(99) 99999-9999");
+});
+
+$(document).on("focus", ".telefone", function () {
+  $(this).mask("(99) 99999-9999");
+});
+
+$(document).on("focus", ".celular", function () {
+  $(this).mask("(99) 99999-9999");
+});
+
+$(document).on("focus", ".fax", function () {
+  $(this).mask("(99) 99999-9999");
+});
+
+$(document).on("focus", ".cep", function () {
+  $(this).mask("99999-999");
+});
+
+$(document).on("focus", ".money", function () {
+  $(this).mask("000.000.000.000.000,00", { reverse: true });
+});
+
+$(document).on("blur", ".mask", function () {
+  $(this).unmask();
+});

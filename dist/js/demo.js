@@ -42,7 +42,7 @@
     "navbar-orange",
   ];
 
-  $container.append('<h5>Customize AdminLTE</h5><hr class="mb-2"/>');
+  $container.append('<h5>Customize seu Sistema</h5><hr class="mb-2"/>');
 
   var $no_border_checkbox = $("<input />", {
     type: "checkbox",
@@ -56,10 +56,11 @@
       $(".main-header").removeClass("border-bottom-0");
     }
   });
-  var $no_border_container = $("<div />", { class: "mb-1" })
-    .append($no_border_checkbox)
-    .append("<span>No Navbar border</span>");
-  $container.append($no_border_container);
+
+  // var $no_border_container = $("<div />", { class: "mb-1" })
+  //   .append($no_border_checkbox)
+  //   .append("<span></span>");
+  // $container.append($no_border_container);
 
   var $text_sm_body_checkbox = $("<input />", {
     type: "checkbox",
@@ -75,7 +76,7 @@
   });
   var $text_sm_body_container = $("<div />", { class: "mb-1" })
     .append($text_sm_body_checkbox)
-    .append("<span>Body small text</span>");
+    .append("<span>Texto pequeno</span>");
   $container.append($text_sm_body_container);
 
   var $text_sm_header_checkbox = $("<input />", {

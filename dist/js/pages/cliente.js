@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  // Verifico a ação do usuário pra definir o que será utilizado deste arquivo
   var action = $(document)[0].body.getAttribute("data-action");
-  // Chamo a Api pra inserir os dados
 
   if (action == "listar") {
     var url = $("#clientesDataTable").data("url");
@@ -67,40 +65,144 @@ $(document).ready(function () {
     bsCustomFileInput.init();
 
     $(".loading-bg").css("display", "none");
-
   }
 });
 
-// Adiciona uma nova div para vincular o cliente a alguma coisa 
-$(document).on('click', '#adicionaVincular', function(){
-  var url = $(this).data('url');
+// Adiciona uma nova div para vincular o cliente a alguma coisa
+$(document).on("click", "#adicionaVincular", function () {
+  var url = $(this).data("url");
   $.ajax({
     type: "POST",
     url: url,
     dataType: "html",
     success: function (html) {
-      $('#vincularCliente').append(html);
-    }
+      $("#vincularCliente").append(html);
+    },
   });
 });
-// Deleta a Div de vinculo com alguma coisa 
-$(document).on('click', '.deletaVincular', function(){
+// Deleta a Div de vinculo com alguma coisa
+$(document).on("click", ".deletaVincular", function () {
   $(this).parent().parent().remove();
 });
 
-// Adiciona uma nova div para vincular o cliente a um novo veiculo 
-$(document).on('click', '#adicionaVeiculo', function(){
-  var url = $(this).data('url');
+// Adiciona uma nova div para vincular o cliente a um novo veiculo
+$(document).on("click", "#adicionaVeiculo", function () {
+  var url = $(this).data("url");
   $.ajax({
     type: "POST",
     url: url,
     dataType: "html",
     success: function (html) {
-      $('#vincularVeiculos').append(html);
-    }
+      $("#vincularVeiculos").append(html);
+    },
   });
 });
-// Deleta a div que vincula o cliente ao veiculo 
-$(document).on('click', '.deletaVeiculo', function(){
+
+// Deleta a div que vincula o cliente ao veiculo
+$(document).on("click", ".deletaVeiculo", function () {
   $(this).parent().parent().remove();
+});
+
+$(document).on("change", ".tipoPessoa", function () {
+  var page = $(this).attr("id");
+});
+
+$("#btnImportReceita").click(function () {
+  var cnpj = $("#cnpj").val();
+  var cep = 0;
+
+  cnpj = cnpj.replace(/[^\d]+/g, "");
+
+  $.ajax({
+    type: "GET",
+    url: "https://www.receitaws.com.br/v1/cnpj/" + cnpj,
+    dataType: "json",
+    success: function (data) {
+      if (data != null) {
+        cep = data.cep.replace(".", "");
+
+        $("#razaoSocial").val(data.nome);
+        $("#iptSocioUm").val(data.nome);
+        $("#iptNomeReferenciaComercialPJ").val(data.nome);
+        $("#iptFoneSocioUm").val(data.telefone);
+        $("#iptTelefone").val(data.telefone);
+        $("#iptNomePJ").val(data.fantasia);
+        $("#dt_fundacao").val(data.abertura);
+        if (data.qsa.length > 0) {
+          $("#iptSocioUm").val(data.qsa[0].nome);
+        }
+        $("#iptCep").val(cep);
+        $("#iptEndereco").val(data.logradouro);
+        $("#iptNumero").val(data.numero);
+        $("#iptComplemento").val(data.complemento);
+        $("#iptBairro").val(data.bairro);
+        $("#iptCidade").val(data.municipio);
+        $("#iptIdEstado").val(data.uf);
+      }
+    },
+  });
+});
+
+$(document).on("change", ".clienteIsento", function (e) {
+  e.preventDefault();
+  var isento = $(this).val();
+  if (isento == 0) {
+    $("#inscricaoEstadual").removeAttr("disabled");
+    $("#inscricaoEstadual").val("");
+  } else {
+    $("#inscricaoEstadual").attr("disabled", "disabled");
+    $("#inscricaoEstadual").val("ISENTO");
+  }
+});
+
+$(document).on("click", ".cadastraCliente", function () {
+  var formPessoa = $(this).data("tipo");
+  var nameForm = "cadastroCliente" + formPessoa;
+  var dados = new FormData($("form[name='" + nameForm + "']")[0]);
+  var url = $("#cardUrl").data("url");
+  var valida = validaForm({
+    form: $("form[name='" + nameForm + "']"),
+    notValidate: true,
+    validate: true,
+  });
+
+  if (valida) {
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: dados,
+      dataType: "json",
+      processData: false,
+      contentType: false,
+      success: function (response) {
+        if (response.status) {
+          swal({
+            title: "Sucesso!",
+            text: response.msg,
+            icon: "success",
+            timer: 1000,
+            buttons: false,
+          }).then(function () {
+            window.location.reload();
+          });
+        } else {
+          swal("Erro!", response.msg, "error");
+        }
+      },
+    });
+  }
+});
+
+// Change Form
+$(document).on("change", ".tipoPessoa", function (e) {
+  e.preventDefault();
+  var url = $(this).data("url");
+
+  fetch(url)
+    .then(function (response) {
+      return response.text();
+    })
+    .then(function (formCadastro) {
+      $("#formulario-cadastro").html(formCadastro);
+    });
 });
