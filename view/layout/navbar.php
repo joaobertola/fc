@@ -33,5 +33,10 @@
         <i class="fas fa-th-large"></i>
       </a>
     </li>
+    <li class="nav-item border-left">
+      <a class="nav-link text-dark" id="logout" href="<?= ENDERECO; ?>/api/login_api.php?op=<?= md5('logout'); ?>" role="button">
+        Sair do Sistema
+      </a>
+    </li>
   </ul>
 </nav>

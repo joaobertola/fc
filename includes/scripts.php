@@ -11,7 +11,7 @@
 <script src="<?= ENDERECO; ?>/dist/js/adminlte.js"></script>
 
 <!-- SweetAlert -->
-<script src="<?= ENDERECO; ?>/vendor/sweetalert/sweetalert.min.js"></script>
+<script src="<?= ENDERECO; ?>/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 <!-- Jquery Mask -->
 <script src="<?= ENDERECO; ?>/vendor/mask/jquery.mask.min.js"></script>

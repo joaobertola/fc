@@ -2159,7 +2159,9 @@ function validaForm(params) {
   $.extend(config, params);
 
   var $form = config.form;
+
   $form.find(".form-required").each(function () {
+
     var border = !$(this).val() ? "1px solid red" : "1px solid #cecece";
 
     if ($.inArray($(this).val(), notpermitidos) == 0) valida = false;
@@ -2168,7 +2170,7 @@ function validaForm(params) {
   });
 
   if (config.notValidate && !valida)
-    swal("Erro!", "Preencha todos os campos.", "error");
+    Swal.fire("Erro!", "Preencha todos os campos.", "error");
 
   return valida;
 }

@@ -20,7 +20,7 @@ $(document).on("click", "#submitlogin", function (e) {
       // Fecho a div de carregamento e dou o retorno ao usuário
       $(".loading-bg-login").css("display", "none");
       if (e.status) {
-        swal({
+        Swal.fire({
           title: "Sucesso!",
           text: e.msg,
           icon: "success",
@@ -30,7 +30,7 @@ $(document).on("click", "#submitlogin", function (e) {
           window.location.replace(e.endereco);
         });
       } else {
-        swal("Erro!", e.msg, "error");
+        Swal.fire("Erro!", e.msg, "error");
       }
     });
   }

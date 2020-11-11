@@ -1,5 +1,6 @@
+<?php include_once "../../../config/database.php"; ?>
 <!-- Pessoa Jurídica  -->
-<form id="cadastraClientePJ" name="cadastraClientePJ">
+<form id="cadastroClientePJ" name="cadastroClientePJ">
   <div class="form-row align-items-center">
     <div class="col-md-12">
       <!-- Razão Social -->
@@ -9,7 +10,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user"></i></span>
           </div>
-          <input type="text" id="razaoSocial" class="form-control " placeholder="Razão Social">
+          <input type="text" id="razaoSocial" class="form-control form-required" placeholder="Razão Social">
         </div>
       </div>
     </div>
@@ -22,7 +23,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Nome Fantasia">
+          <input name="nome_fantasia" type="text" class="form-control" placeholder="Nome Fantasia">
         </div>
       </div>
     </div>
@@ -35,7 +36,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-id-card"></i></span>
           </div>
-          <input type="text" id="cnpj" class="form-control form-required" placeholder="CNPJ">
+          <input type="text" id="cnpj" class="form-control" placeholder="CNPJ">
         </div>
       </div>
     </div>
@@ -80,7 +81,7 @@
     <div class="col-md-8">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" name="inscricaoEstadual" id="inscricaoEstadual" class="form-control form-required" placeholder="Inscrição Estadual" disabled value="ISENTO">
+          <input type="text" name="inscricaoEstadual" id="inscricaoEstadual" class="form-control" placeholder="Inscrição Estadual" disabled value="ISENTO">
         </div>
       </div>
     </div>
@@ -117,141 +118,68 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
           </div>
-          <input type="text" class="form-control" placeholder="Data de Fundação" data-inputmask="99/99/99" data-mask>
+          <input type="text" class="form-control" placeholder="Data de Fundação">
         </div>
       </div>
     </div>
   </div>
   <div class="form-row align-items-center">
     <div class="col-md-12">
-      <!-- Nome do Conjugue -->
+      <!-- Proprietário 1 -->
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Nome do Cônjugue">
+          <input type="text" class="form-control" placeholder="Proprietário 1">
         </div>
       </div>
     </div>
-  </div>
-  <div class="form-row align-items-center">
     <div class="col-md-6">
-      <!-- Inscrição Rural -->
+      <!-- Telefone Sócio 1 -->
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-tractor"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Inscrição Rural">
-        </div>
-      </div>
-    </div>
-    <!-- Tipo de Residência  -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <select class="form-control select2" style="width: 100%;">
-          <option disabled selected>Tipo de Residência</option>
-          <option value="1">Alugada</option>
-          <option value="2">Cedida</option>
-          <option value="3">Financiada</option>
-          <option value="4">Própria</option>
-        </select>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <div class="col-md-6">
-      <!-- Nome do Pai -->
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Nome do Pai">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <!-- Telefone do Pai -->
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Telefone do Pai">
+          <input type="text" class="form-control telefone" placeholder="Telefone Sócio 1">
         </div>
       </div>
     </div>
   </div>
   <div class="form-row align-items-center">
-    <div class="col-md-6">
-      <!-- Nome da Mãe -->
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Nome da Mãe">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <!-- Telefone da Mãe -->
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-phone-alt"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Telefone da Mãe">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <!-- Título de Eleitor -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="far fa-id-card"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Título de Eleitor">
-        </div>
-      </div>
-    </div>
-    <!-- Zona -->
-    <div class="col-md-3">
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-university"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Zona">
-        </div>
-      </div>
-    </div>
-    <!-- Seção -->
-    <div class="col-md-3">
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-map-pin"></i></span>
-          </div>
-          <input type="text" class="form-control form-required" placeholder="Seção">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <!-- Data Cadastro -->
     <div class="col-md-12">
+      <!-- Proprietário 2 -->
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+            <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Data Cadastro">
+          <input type="text" class="form-control" placeholder="Proprietário 2">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!-- Telefone Sócio 2 -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-tractor"></i></span>
+          </div>
+          <input type="text" class="form-control telefone" placeholder="Telefone Sócio 2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row align-items-center">
+    <!-- Data de Cadastro  -->
+    <div class="col-md-6">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+          </div>
+          <input type="date" class="form-control date" placeholder="Data de Cadastro">
         </div>
       </div>
     </div>
@@ -265,7 +193,7 @@
         <label for="foto"><i class="fas fa-image"></i> Foto</label>
         <div class="input-group">
           <div class="custom-file">
-            <input type="file" class="custom-file-input" id="foto">
+            <input name="foto" type="file" class="custom-file-input" id="foto">
             <label class="custom-file-label" for="foto">Escolher Arquivo</label>
           </div>
         </div>
@@ -284,6 +212,17 @@
   <!-- Dados de Contato  -->
   <label>Contato</label>
   <div class="form-row align-items-center">
+    <div class="col-md-12">
+      <!-- Nome Contato -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Nome">
+        </div>
+      </div>
+    </div>
     <!-- Telefone -->
     <div class="col-md-6">
       <div class="form-group">
@@ -291,7 +230,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-phone"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Telefone *">
+          <input name="telefone" type="text" class="form-control telefone mask" placeholder="Telefone *">
         </div>
       </div>
     </div>
@@ -302,7 +241,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Celular">
+          <input name="celular" type="text" class="form-control celular mask" placeholder="Celular">
         </div>
       </div>
     </div>
@@ -315,7 +254,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-fax"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Fax">
+          <input name="fax" type="text" class="form-control fax mask" placeholder="Fax">
         </div>
       </div>
     </div>
@@ -326,7 +265,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="E-mail">
+          <input name="email" type="mail" class="form-control " placeholder="E-mail">
         </div>
       </div>
     </div>
@@ -340,14 +279,14 @@
     <div class="col-md-6">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Cep">
+          <input name="cep" type="text" class="form-control cep mask" placeholder="Cep">
         </div>
       </div>
     </div>
     <!-- Tipo de Endereço -->
     <div class="col-md-6">
       <div class="form-group">
-        <select class="form-control select2" style="width: 100%;">
+        <select name="id_tipo_log" class="form-control select2" style="width: 100%;">
           <option disabled selected>Tipo de Endereço</option>
           <option value="1">RUA</option>
           <option value="2">AEROPORTO</option>
@@ -425,7 +364,7 @@
     <div class="col-md-8">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Endereço">
+          <input name="endereco" type="text" class="form-control " placeholder="Endereço">
         </div>
       </div>
     </div>
@@ -433,7 +372,7 @@
     <div class="col-md-2">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Número">
+          <input name="numero" type="text" class="form-control " placeholder="Número">
         </div>
       </div>
     </div>
@@ -441,7 +380,7 @@
     <div class="col-md-2">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Complemento">
+          <input name="complemento" type="text" class="form-control " placeholder="Complemento">
         </div>
       </div>
     </div>
@@ -451,7 +390,7 @@
     <div class="col-md-5">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Bairro">
+          <input name="bairro" type="text" class="form-control " placeholder="Bairro">
         </div>
       </div>
     </div>
@@ -459,14 +398,14 @@
     <div class="col-md-5">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Cidade">
+          <input name="cidade" type="text" class="form-control " placeholder="Cidade">
         </div>
       </div>
     </div>
     <!-- Estado -->
     <div class="col-md-2">
       <div class="form-group">
-        <select class="form-control select2" style="width: 100%;">
+        <select name="uf" class="form-control select2" style="width: 100%;">
           <option disabled selected>Estado</option>
           <option value=""> Selecione </option>
           <option value="AC">AC</option>
@@ -506,97 +445,7 @@
     <div class="col-md-12">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="País">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Divisor  -->
-  <hr>
-  <!-- Referência  -->
-  <label><i class="fas fa-chart-pie"></i> Referência</label>
-  <div class="form-row align-items-center">
-    <!-- Referência Comercial -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Referência Comercial">
-        </div>
-      </div>
-    </div>
-    <!-- Telefone Referência Comercial -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Telefone Ref. Comercial">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <!-- Referência Pessoal -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Referência Pessoal">
-        </div>
-      </div>
-    </div>
-    <!-- Telefone Referência Pessoal -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Telefone Ref. Pessoal">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Divisor  -->
-  <hr>
-  <!-- Trabalho  -->
-  <label><i class="fas fa-briefcase"></i> Trabalho</label>
-  <div class="form-row align-items-center">
-    <!-- Empresa Onde Trabalha -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Empresa Onde Trabalha">
-        </div>
-      </div>
-    </div>
-    <!-- Cargo -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Cargo">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <!-- Renda Média -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Renda Média">
-        </div>
-      </div>
-    </div>
-    <!-- Telefone Empresa -->
-    <div class="col-md-6">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Telefone Empresa">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row align-items-center">
-    <!-- Endereço Empresa -->
-    <div class="col-md-12">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control form-required" placeholder="Endereço Empresa">
+          <input name="pais" type="text" class="form-control " placeholder="País">
         </div>
       </div>
     </div>
@@ -614,12 +463,12 @@
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-plus"></i></span>
             </div>
-            <input type="text" class="form-control form-required" placeholder="Vincular à">
+            <input type="text" class="form-control " placeholder="Vincular à">
           </div>
         </div>
       </div>
       <div class="col-md-1">
-        <a id="adicionaVincular" data-url="<?= ENDERECO; ?>/view/cliente/divVincular.php" class="btn btn-block btn-success mb-3 text-white"><i class="fas fa-plus"></i></a>
+        <a id="adicionaVincular" data-url="<?= ENDERECO; ?>/view/cliente/includes/divVincular.php" class="btn btn-block btn-success mb-3 text-white"><i class="fas fa-plus"></i></a>
       </div>
     </div>
   </div>
@@ -628,7 +477,7 @@
   <!-- Vincular à Veículos  -->
   <div class="title-line d-flex align-items-center mb-3">
     <label class="mb-0"><i class="fas fa-car"></i> Vincular à Veículo</label>
-    <a id="adicionaVeiculo" data-url="<?= ENDERECO; ?>/view/cliente/divVincularVeiculo.php" class="btn-sm btn-block btn-success ml-3 text-white text-center w-5"><i class="fas fa-plus"></i></a>
+    <a id="adicionaVeiculo" data-url="<?= ENDERECO; ?>/view/cliente/includes/divVincularVeiculo.php" class="btn-sm btn-block btn-success ml-3 text-white text-center w-5"><i class="fas fa-plus"></i></a>
   </div>
   <div id="vincularVeiculos">
     <!-- Divs Veículos        -->
@@ -659,7 +508,7 @@
     <!-- Informações Adicionais -->
     <div class="col-md-12">
       <div class="form-group">
-        <textarea class="form-control" placeholder="Observações"></textarea>
+        <textarea name="informacoes_adicionais" class="form-control" placeholder="Observações"></textarea>
       </div>
     </div>
   </div>
@@ -671,7 +520,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-money-bill-wave"></i></span>
           </div>
-          <input type="text" class="form-control form-required" placeholder="Limite de Crédito">
+          <input name="limite_credito" type="text" class="form-control money mask" placeholder="Limite de Crédito">
         </div>
       </div>
     </div>
@@ -686,7 +535,7 @@
     <!-- Tipo de Compras -->
     <div class="col-md-6">
       <div class="form-group">
-        <select class="form-control select2" style="width: 100%;">
+        <select name="tipo_compra" class="form-control select2" style="width: 100%;">
           <option disabled selected>Tipo de Compra: </option>
           <option value="V">Varejo</option>
           <option value="A">Atacado</option>
@@ -697,14 +546,11 @@
   <div class="form-row align-items-center flex-row-reverse">
     <!-- Salvar  -->
     <div class="col-md-2 mb-2">
-      <button type="button" class="btn btn-block btn-success text-bold">Salvar &nbsp; <i class="fas fa-save"></i></button>
+      <button type="button" data-tipo="PJ" class="btn btn-block btn-success text-bold cadastraCliente">Salvar &nbsp; <i class="fas fa-save"></i></button>
     </div>
     <!-- Cancelar -->
     <div class="col-md-2 mb-2">
-      <button type="button" class="btn btn-block btn-danger text-bold">Cancelar</button>
-    </div>
+      <button type="button" class="btn btn-block btn-danger text-bold">Cancelar</button> </div>
   </div>
-
-
 </form>
 <!-- Fim Pessoa Jurídica  -->

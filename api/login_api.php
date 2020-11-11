@@ -16,6 +16,8 @@ $Op = $_REQUEST["op"];
 defined("LOGIN")  || define("LOGIN",  md5("login"));
 defined("LOGOUT") || define("LOGOUT", md5("logout"));
 
+$dados = [];
+
 // Modulo da API
 $modulo = 'login';
 
@@ -44,10 +46,6 @@ switch ($Op) {
 
     $conteudo = $api->envia($header, $dados, $urlApi, $tpRequisicao);
 
-    // echo '<pre>';
-    // var_dump($conteudo);
-    // exit;
-
     // Conexão de login é baseada no status http da requisição, então faço a tratativa de retorno
     // de acordo com isso
 
@@ -55,11 +53,9 @@ switch ($Op) {
       // Servidor Desligado, Indisponível no momento ou, cliente sem internet
       // Será desenvolvida uma tratativa melhor pra isso na API futuramente
       $msg = "Não foi possível estabelecer conexão com o servidor.";
-
     } else if ($conteudo['status_http'] == 401) {
       // Erro na trativa dos dados enviados, seja por login inválido ou senha
       $msg = $conteudo['error'];
-
     } else if ($conteudo['status_http'] == 200) {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
       $_SESSION['user'] = $conteudo;
@@ -81,6 +77,29 @@ switch ($Op) {
     break;
 
   case LOGOUT:
+    $status = false;
+
+    $urlApi = API . 'logout';
+
+    $UserToken = $_SESSION['user']['access_token'];
+
+    $header['Authorization'] =  "Bearer " . $UserToken;
+
+    $api = new apiConnect;
+
+    $conteudo = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+
+    // Conexão de login é baseada no status http da requisição, então faço a tratativa de retorno
+    // de acordo com isso
+
+    if ($conteudo['status_http'] == 200) {
+      // Destruindo a Sessao do usuário pra ele ralar peito
+      $status = true;
+
+      session_destroy();
+    }
+
+    header('Location:' . ENDERECO);
 
     break;
 

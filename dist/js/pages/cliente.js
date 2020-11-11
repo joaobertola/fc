@@ -107,40 +107,41 @@ $(document).on("change", ".tipoPessoa", function () {
   var page = $(this).attr("id");
 });
 
-$("#btnImportReceita").click(function () {
+$(document).on("click", "#btnImportReceita", function (e) {
+  e.preventDefault();
+
   var cnpj = $("#cnpj").val();
   var cep = 0;
 
-  cnpj = cnpj.replace(/[^\d]+/g, "");
-
-  $.ajax({
-    type: "GET",
-    url: "https://www.receitaws.com.br/v1/cnpj/" + cnpj,
-    dataType: "json",
-    success: function (data) {
-      if (data != null) {
-        cep = data.cep.replace(".", "");
-
-        $("#razaoSocial").val(data.nome);
-        $("#iptSocioUm").val(data.nome);
-        $("#iptNomeReferenciaComercialPJ").val(data.nome);
-        $("#iptFoneSocioUm").val(data.telefone);
-        $("#iptTelefone").val(data.telefone);
-        $("#iptNomePJ").val(data.fantasia);
-        $("#dt_fundacao").val(data.abertura);
-        if (data.qsa.length > 0) {
-          $("#iptSocioUm").val(data.qsa[0].nome);
+  if (cnpj != "") {
+    $.ajax({
+      type: "GET",
+      url: "https://www.receitaws.com.br/v1/cnpj/" + cnpj,
+      dataType: "json",
+      success: function (data) {
+        if (data != null) {
+          cep = data.cep.replace(".", "");
+          $("#razaoSocial").val(data.nome);
+          $("#iptSocioUm").val(data.nome);
+          $("#iptNomeReferenciaComercialPJ").val(data.nome);
+          $("#iptFoneSocioUm").val(data.telefone);
+          $("#iptTelefone").val(data.telefone);
+          $("#iptNomePJ").val(data.fantasia);
+          $("#dt_fundacao").val(data.abertura);
+          if (data.qsa.length > 0) {
+            $("#iptSocioUm").val(data.qsa[0].nome);
+          }
+          $("#iptCep").val(cep);
+          $("#iptEndereco").val(data.logradouro);
+          $("#iptNumero").val(data.numero);
+          $("#iptComplemento").val(data.complemento);
+          $("#iptBairro").val(data.bairro);
+          $("#iptCidade").val(data.municipio);
+          $("#iptIdEstado").val(data.uf);
         }
-        $("#iptCep").val(cep);
-        $("#iptEndereco").val(data.logradouro);
-        $("#iptNumero").val(data.numero);
-        $("#iptComplemento").val(data.complemento);
-        $("#iptBairro").val(data.bairro);
-        $("#iptCidade").val(data.municipio);
-        $("#iptIdEstado").val(data.uf);
-      }
-    },
-  });
+      },
+    });
+  }
 });
 
 $(document).on("change", ".clienteIsento", function (e) {
@@ -176,7 +177,7 @@ $(document).on("click", ".cadastraCliente", function () {
       contentType: false,
       success: function (response) {
         if (response.status) {
-          swal({
+          Swal.fire({
             title: "Sucesso!",
             text: response.msg,
             icon: "success",
@@ -186,7 +187,7 @@ $(document).on("click", ".cadastraCliente", function () {
             window.location.reload();
           });
         } else {
-          swal("Erro!", response.msg, "error");
+          Swal.fire("Erro!", response.msg, "error");
         }
       },
     });
@@ -204,5 +205,13 @@ $(document).on("change", ".tipoPessoa", function (e) {
     })
     .then(function (formCadastro) {
       $("#formulario-cadastro").html(formCadastro);
+      //Initialize Select2 Elements
+      $(".select2").select2();
+      //Initialize Select2 Elements
+      $(".select2bs4").select2({
+        theme: "bootstrap4",
+      });
+      // Files Inputs
+      bsCustomFileInput.init();
     });
 });

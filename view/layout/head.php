@@ -31,6 +31,8 @@ include "includes/functions.php";
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= ENDERECO; ?>/dist/css/adminlte.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="<?= ENDERECO; ?>/vendor/sweetalert2/dist/sweetalert2.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
