@@ -25,3 +25,5 @@
 
 <!-- bs-custom-file-input -->
 <script src="<?= ENDERECO; ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->

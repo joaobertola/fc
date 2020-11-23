@@ -2235,3 +2235,12 @@ $(document).on("focus", ".money", function () {
 $(document).on("blur", ".mask", function () {
   $(this).unmask();
 });
+
+
+$(".box_forms label").click(function(){
+  var focus = $(this).hasClass("focus");
+  $(".box_forms label").removeClass("focus");
+  if(!focus){
+    $(this).toggleClass("focus");
+  }
+});

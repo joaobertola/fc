@@ -12,7 +12,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
           <a href="#" class="nav-link active">
-            <i class="fas fa-cogs"></i>
+            <i class="fas fa-money-bill-alt"></i>
             <p>
               Gestão Empresarial
               <i class="right fas fa-angle-left"></i>
@@ -23,6 +23,23 @@
               <a href="<?= ENDERECO; ?>/cliente/listar" class="nav-link">
                 <i class="fas fa-user-tag"></i>
                 <p>Clientes</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <i class="fas fa-cogs"></i>
+            <p>
+              Inclusão de Clientes
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= ENDERECO; ?>/franquias/cadastrar" class="nav-link">
+                <i class="fas fa-user-tag"></i>
+                <p>Cadastrar clientes</p>
               </a>
             </li>
           </ul>

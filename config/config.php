@@ -16,7 +16,7 @@ define('ENDERECO', 'http://' . $_SERVER["HTTP_HOST"] . '/dashwc');
 
 // Endereço da API
 // ========================================================
-define('API', 'http://api.webcontrol.com.br:8001/api/v1/');
+define('API', 'https://api2.webcontrolempresas.com.br/api/v1/');
 // ========================================================
 
 

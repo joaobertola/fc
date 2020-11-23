@@ -24,7 +24,7 @@ include "includes/functions.php";
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=fallback">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/fontawesome-free/css/all.css">
   <!-- overlayScrollbars -->
