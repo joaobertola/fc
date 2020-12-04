@@ -16,6 +16,7 @@
 <!-- Jquery Mask -->
 <script src="<?= ENDERECO; ?>/vendor/mask/jquery.mask.min.js"></script>
 
+
 <!-- InputMask -->
 <!-- <script src="<?= ENDERECO; ?>/plugins/moment/moment.min.js"></script>
 <script src="<?= ENDERECO; ?>/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script> -->

@@ -2208,8 +2208,8 @@ $(document).on("focus", ".rg", function () {
   $(this).mask("99.999.999-9");
 });
 
-$(document).on("focus", ".telefone", function () {
-  $(this).mask("(99) 99999-9999");
+$(document).on("focus", ".date", function () {
+  $(this).mask("99/99/9999");
 });
 
 $(document).on("focus", ".telefone", function () {
