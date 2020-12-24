@@ -1197,11 +1197,13 @@
           .find("input:checkbox:checked")
           .parents("li")
           .toggleClass(ClassName.TODO_LIST_DONE);
-        $(Selector.DATA_TOGGLE).on("change", "input:checkbox", function (
-          event
-        ) {
-          that.toggle($(event.target));
-        });
+        $(Selector.DATA_TOGGLE).on(
+          "change",
+          "input:checkbox",
+          function (event) {
+            that.toggle($(event.target));
+          }
+        );
       }; // Static
 
       TodoList._jQueryInterface = function _jQueryInterface(config) {
@@ -1846,14 +1848,15 @@
         Dropdown._jQueryInterface.call($(this), "toggleSubmenu");
       }
     );
-    $(Selector.NAVBAR + " " + Selector.DROPDOWN_TOGGLE).on("click", function (
-      event
-    ) {
-      event.preventDefault();
-      setTimeout(function () {
-        Dropdown._jQueryInterface.call($(this), "fixPosition");
-      }, 1);
-    });
+    $(Selector.NAVBAR + " " + Selector.DROPDOWN_TOGGLE).on(
+      "click",
+      function (event) {
+        event.preventDefault();
+        setTimeout(function () {
+          Dropdown._jQueryInterface.call($(this), "fixPosition");
+        }, 1);
+      }
+    );
     /**
      * jQuery API
      * ====================================================
@@ -2161,7 +2164,6 @@ function validaForm(params) {
   var $form = config.form;
 
   $form.find(".form-required").each(function () {
-
     var border = !$(this).val() ? "1px solid red" : "1px solid #cecece";
 
     if ($.inArray($(this).val(), notpermitidos) == 0) valida = false;
@@ -2236,11 +2238,10 @@ $(document).on("blur", ".mask", function () {
   $(this).unmask();
 });
 
-
-$(".box_forms label").click(function(){
+$(".box_forms label").click(function () {
   var focus = $(this).hasClass("focus");
   $(".box_forms label").removeClass("focus");
-  if(!focus){
+  if (!focus) {
     $(this).toggleClass("focus");
   }
 });

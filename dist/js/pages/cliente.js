@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   var action = $(document)[0].body.getAttribute("data-action");
 
   if (action == "listar") {
@@ -42,12 +42,10 @@ $(document).ready(function () {
           );
         });
 
-        $(function () {
-          // Start DataTable
-          $("#clientesDataTable").DataTable({
-            responsive: true,
-            autoWidth: false,
-          });
+        // Start DataTable
+        $("#clientesDataTable").DataTable({
+          responsive: true,
+          autoWidth: false,
         });
 
         $(".loading-bg").css("display", "none");

@@ -9,8 +9,6 @@ require "../config/database.php";
 require "../config/api.php";
 // Arquivo Verifica Sessao
 include "../includes/verifica.php";
-// Arquivo com funcoes gerais do sistema
-// include "../includes/functions.php";
 
 if (!isset($_REQUEST["op"]) || empty($_REQUEST["op"])) exit;
 
@@ -46,7 +44,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $clientes = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $clientes = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 
@@ -78,18 +76,13 @@ switch ($Op) {
 
     $dados = json_encode($dados);
 
-
     $api = new apiConnect;
 
     $urlApi = $urlApi . '/cadastrar';
 
     $tpRequisicao = 'POST';
 
-    $clientes = $api->envia($header, $dados, $urlApi, $tpRequisicao);
-
-    // echo '<pre>';
-    // var_dump($clientes);
-    // exit;
+    $clientes = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 

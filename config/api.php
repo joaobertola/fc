@@ -3,13 +3,13 @@
 class ApiConnect
 {
 
-  public function envia($header = array(), $conteudo, $url, $tpRequisicao = 'POST')
+  public function envia($header = array(), $url, $tpRequisicao = 'POST', $conteudo = array())
   {
 
     try {
       //Inicializa cURL
       $ch = curl_init($url);
-      //Marca que vai enviar por POST(1=SIM), caso tpRequisicao seja igual a "POST"
+
       if ($tpRequisicao == 'POST') {
         curl_setopt($ch, CURLOPT_POST, TRUE);
         //Passa o conteúdo para o campo de envio por POST
@@ -25,6 +25,7 @@ class ApiConnect
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, $h);
       }
+
       //Marca que vai receber string
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 

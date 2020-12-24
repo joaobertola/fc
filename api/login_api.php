@@ -44,24 +44,31 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $conteudo = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $conteudo = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     // Conexão de login é baseada no status http da requisição, então faço a tratativa de retorno
     // de acordo com isso
 
     if ($conteudo['status_http']  == 0) {
       // Servidor Desligado, Indisponível no momento ou, cliente sem internet
-      // Será desenvolvida uma tratativa melhor pra isso na API futuramente
       $msg = "Não foi possível estabelecer conexão com o servidor.";
+      // Será desenvolvida uma tratativa melhor pra isso na API futuramente
     } else if ($conteudo['status_http'] == 401) {
       // Erro na trativa dos dados enviados, seja por login inválido ou senha
       $msg = $conteudo['error'];
     } else if ($conteudo['status_http'] == 200) {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
       $_SESSION['user'] = $conteudo;
-      $_SESSION['user']['start'] = time(); // Taking now logged in time.
-      // Finalizando a Sessão de acordo com a expiração do token.
-      $_SESSION['user']['expires_in'] = $_SESSION['user']['start'] + ($_SESSION['user']['expires_in'] * 60);
+      $_SESSION['user']['start'] = time();
+      // Soma o tempo de expiração do token com a hora de inicio da sessao
+      $_SESSION['user']['expires_in'] += $_SESSION['user']['start'];
+      // Faço uma nova chamada na API para recuperar os dados do usuário
+      $urlApi = API . 'me';
+      $header['Authorization'] =  "Bearer " . $_SESSION['user']['access_token'];
+      $usuario = $api->envia($header, $urlApi, 'GET');
+      if ($usuario['status_http'] == 200) {
+        $_SESSION['user'] = array_merge($_SESSION['user'], $usuario['conteudo']);
+      }
       $msg    = "Bem Vindo!";
       $status = true;
       $enderecoRetorno = $enderecoRetorno . '/home';
@@ -87,7 +94,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $conteudo = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $conteudo = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     // Conexão de login é baseada no status http da requisição, então faço a tratativa de retorno
     // de acordo com isso

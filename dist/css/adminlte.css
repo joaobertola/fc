@@ -36712,7 +36712,8 @@ a#adicionaVeiculo {
 h2.card-title {
   color: #101012;
   font-size: 25px;
-  font-weight: 900;
+  font-weight: 700;   
+  margin-bottom: 0.5rem;
 }
 .title{
   font-size: 25px;
@@ -36720,9 +36721,9 @@ h2.card-title {
   color: #0073c7;
   width: 100%;
   display: block;
-  line-height: 1;
+  line-height: 1;    
+  margin-bottom: 1.5rem;
 }
-
 .text {
   font-size: 16px;
   line-height: 1.5;
@@ -36761,6 +36762,17 @@ form.form_0,.form_0 .box_forms {
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.MyTable span.valor {
+  color: #04b304;
+  font-weight: 700;
+}
+.MyTable.lucro {
+  background: #f4f6f9;
+}
+
+.MyTable {
+  margin-bottom: 23px;
 }
 .lista_inputs .box_inputs{
   width: 100%;
@@ -37286,6 +37298,10 @@ span.opc.acao {
   -ms-flex-direction: row;
   -o-flex-direction: row;
   flex-direction: row;
+
+}
+.gap-1{
+  gap: 1px;
 }
 .gap-5{
   gap: 5px;
@@ -37298,6 +37314,10 @@ span.opc.acao {
 }
 .gap-50{
   gap: 50px;
+}
+.self-end {
+  -webkit-align-items: self-end;
+  align-items: self-end;
 }
 .grid {
   -webkit-box-pack: center;
@@ -37317,6 +37337,77 @@ span.opc.acao {
 .grid-4{
   grid-template-columns: repeat(4,25%);
 }
+.grid-5{
+  grid-template-columns: repeat(5,20%);
+}
+.grid-2.gap-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.grid-3.gap-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.w-5{
+  width: 5%;
+}
+.w-10{
+  width: 10%;
+}
+.w-15{
+  width: 15%;
+}
+.w-20{
+  width: 20%;
+}
+.w-25{
+  width: 25%;
+}
+.w-30{
+  width: 30%;
+}
+.w-35{
+  width: 35%;
+}
+.w-40{
+  width: 40%;
+}
+.w-45{
+  width: 45%;
+}
+.w-50{
+  width: 50%;
+}
+.w-55{
+  width: 55%;
+}
+.w-60{
+  width: 60%;
+}
+.w-65{
+  width: 65%;
+}
+.w-70{
+  width: 70%;
+}
+.w-75{
+  width: 75%;
+}
+.w-80{
+  width: 80%;
+}
+.w-85{
+  width: 85%;
+}
+.w-90{
+  width: 90%;
+}
+.w-95{
+  width: 95%;
+}
+.w-100{
+  width: 100%;
+}
 .padding-10{
   padding: 10px;
 }
@@ -37332,6 +37423,12 @@ span.opc.acao {
   display: flex;
   flex-wrap: wrap;
 }
+.m-left {
+  margin-left: auto;
+}
+.m-right {
+  margin-right: auto;
+}
 .header-frente-de-caixa p {
   margin: 0;
   font-style: normal;
@@ -37340,15 +37437,27 @@ span.opc.acao {
   line-height: 19px;
   color: #000;
 }
+.Comandos_teclado span {
+  padding: 1px 8px;
+  border-radius: 1px;
+  margin: 0;
+  width: auto !important;
+  min-width: auto !important;
+  color: #484848;
+  background: #fff;
+  margin-right: 6px;
+  font-size: 11px !important;
+}
 .header-frente-de-caixa .bx p strong {
   color: #177DCC;
   margin-right: 5px;
   font-size: 17px;
+  font-weight: 700;
 }
 .header-frente-de-caixa {
   width: 100%;
   background: #fff;
-  padding: 20px;
+  padding: 10px 20px;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
   box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.16);
@@ -37357,7 +37466,7 @@ span.opc.acao {
   padding: 20px;
   background: #fff;
   border: 2px solid #D8D8D8;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.16);
 }
 .bx.tabela-itens {
@@ -37388,29 +37497,28 @@ span.btn-info-action {
   margin-right: 8px;
 }
 .body-frente-de-caixa {
-  padding: 15px;
+  padding: 1px;
   width: 100%;
 }
 .body-frente-de-caixa .bx.controles {
-  margin-right: 1%;
-  width: 29%;
+  margin-right: 0.04%;
+  width: 20.9%;
   position: relative;
 }
 .body-frente-de-caixa .bx.tabela-itens {
-  width: 70%;
+  width: 79%;
 }
 .Comandos_teclado {
-  width: calc(100% - 40px);
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+  width: 100%;
+  position: relative;
+  padding-top: 18px;
 }
 .bx.controles input {
   background: #EBEBE2;
   border: 1px solid #696969;
   box-sizing: border-box;
   height: 38px;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 7px;
   font-weight: 400;
   text-align: right;
@@ -37433,25 +37541,31 @@ span.btn-info-action {
 }
 .bx.controles .item-info label span {
   display: inline-block;
-  font-weight: 900;
+  font-weight: 600;
   color: #000;
   margin-right: auto;
 }
 .bx.controles .item-info label input{
   margin-left: auto;
   margin-right: 0;
-  width: 58%;
+  width: 45%;
   height: 48px;
+}
+.bx.Comandos_teclado.wrap {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 .pesquisa-cod-barras p {
   color: #000;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 19px;
+  margin-bottom: 4px;
 }
 .body-frente-de-caixa h2.nome-produto {
   color: #0075C5;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 32px;
+  margin-bottom: 0 !important;
 }
 .tabela-itens .table {
   margin-top: 20px;
@@ -37466,7 +37580,7 @@ span.btn-info-action {
   padding: 20px;
   background: #fff;
   border: 2px solid #D8D8D8;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.16);
 }
 .tabela-itens .table span{
@@ -37493,7 +37607,7 @@ span.btn-info-action {
   width: 10%;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
   color: #323232;
 }
 .tabela-itens .table span.descricao {
@@ -37502,7 +37616,7 @@ span.btn-info-action {
 .body-lista-itens {
   width: 100%;
   overflow: auto;
-  height: 46vh;
+  height: 44vh;
 }
 /* scroll off */
 .body-lista-itens::-webkit-scrollbar-track {
@@ -37548,7 +37662,7 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
   color: #12A343;
   text-align: right;
   display: block;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1;
 }
@@ -37562,7 +37676,6 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
 .body-frente-de-caixa .opcVenda {
   width: 100%;
   align-items: center;
-  margin-top: 10px;
 }
 .body-frente-de-caixa .opcVenda .total {
   margin-left: auto;
@@ -37574,9 +37687,9 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
   margin-top: auto;
 }
 .body-frente-de-caixa .acao-caixa div p {
-  color: #2C2A2A;
-  font-weight: 700;
-  font-size: 16px;
+  color: #fff;
+  font-size: 13px;
+  margin: 0;
 }
 .body-frente-de-caixa .acao-caixa div {
   margin-right: 20px;
@@ -37586,12 +37699,6 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
 }
 .lista-itens-tabela span.item, .body-lista-itens span.itm {
   width: 5%;
-}
-.body-frente-de-caixa .btn-finalizar p {
-  color: #078030 !important;
-}
-.body-frente-de-caixa .btn-finalizar span {
-  background: #078030 !important;
 }
 .body-frente-de-caixa .opcVenda .desconto {
   margin-top: auto;
@@ -37608,11 +37715,12 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
 }
 .body-frente-de-caixa .opcVenda .desconto p strong {
   margin-left: 9px;
+  font-weight: 700 !important;
 }
 .body-frente-de-caixa .opcVenda .desconto p {
   align-items: center;
   color: #078030;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .body-frente-de-caixa .btn-acao.wrap {
@@ -37629,10 +37737,6 @@ span.valor_total,span.valor_desc,span.desc,span.valor_unidade {
 .body-frente-de-caixa .btn-acao .right-btn-caixas .btn-sair p span {
   background: #EB0B0B;
 }
-.body-frente-de-caixa .btn-actions p {
-  color: #2c2a2a;
-  font-weight: 900;
-}
 .btn-sair.btn-actions {
   margin-left: 25px;
 }
@@ -37641,66 +37745,74 @@ div#btn-cliente:hover, div#btn-vendedor:hover, label#btn-buscar-produto:hover {
   text-decoration: underline;
 }
 /* estilo modais */
-div#body-modal .form-modal h3 {
+.form-modal h3 {
   color: #0075c5;
   font-size: 26px;
-  font-weight: 900;
+  font-weight: 700;
 }
-div#body-modal .form-modal .lista_users {
+ .form-modal .lista_users {
   width: 100%;
   border: 2px solid #696969;
   border-radius: 4px;
   margin-top: 20px;
 }
-div#body-modal .form-modal .lista_users .header-lista {
+ .form-modal .lista_users .header-lista {
   width: 100%;
   background: #d6d6c9;
   padding: 10px;
 }
-div#body-modal .form-modal .lista_users .header-lista span.nome {
+ .form-modal .lista_users .header-lista span.nome {
   width: 60%;
 }
-div#body-modal .form-modal .lista_users .header-lista span {
+.form-modal .lista_users .header-lista span {
   width: 20%;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 1px;
 }
-div#body-modal .form-modal .lista_users .header-lista {
+.form-modal .lista_users .header-lista {
   width: 100%;
   background: #d6d6c9;
   padding: 10px;
   border-bottom: 1px solid #a5a5a5;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item:nth-child(2n-1) {
+.form-modal .lista_users .scroll-lista .item:nth-child(2n-1) {
   background: #f2f2f0;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item {
+ .form-modal .lista_users .scroll-lista .item {
   width: 100%;
   padding: 6px;
   border-bottom: 1px solid #c7c7c7;
   background: #fff;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span.nome {
+ .form-modal .lista_users .scroll-lista .item span.nome {
   width: 60%;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span {
+.form-modal .lista_users .scroll-lista .item span {
   width: 20%;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item:hover {
-  background: #c1c1c1;
-}
-div#body-modal .form-modal label p {
+.form-modal label p {
   margin-bottom: 4px;
 }
-div#body-modal .form-modal label {
+.form-modal label {
   margin: 0;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span.acao:before {
+.itens-edit .item input {
+  width: 68px !important;
+  height: 27px !important;
+  margin: auto;
+}
+
+.form-modal .lista_users .scroll-lista .item span.flex {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.form-modal .lista_users .scroll-lista .item span.acao:before {
   content: "\f00c";
   display: block;
   -moz-osx-font-smoothing: grayscale;
@@ -37714,14 +37826,14 @@ div#body-modal .form-modal .lista_users .scroll-lista .item span.acao:before {
   font-weight: 900;
   margin-right: 7px;
 }
-div#body-modal .form-modal .scroll-lista {
+.form-modal .scroll-lista {
   min-height: 240px;
 }
-div#body-modal .form-modal .tabs {
+.form-modal .tabs {
   margin-top: 27px;
   margin-bottom: 30px;
 }
-div#body-modal .form-modal .tabs button {
+.form-modal .tabs button {
   border: none;
   padding: 7px 15px;
   outline: lightblue;
@@ -37735,25 +37847,25 @@ div#body-modal .form-modal .tabs button {
   position: relative;
   border: 2px solid #696969;
 }
-div#body-modal .form-modal .tabs button.active {
+.form-modal .tabs button.active {
   background: #0075c5;
   border-color: #696969 !important;
   color: #fff;
   border-color: transparent !important;
 }
-div#body-modal .form-modal .tabs-info {
+.form-modal .tabs-info {
   position: relative;
   border-radius: 5px;
   margin-top: 30px;
 }
-div#body-modal .form-modal input.input-search {
+.form-modal input.input-search {
   position: relative;
   width: calc(100% - 56px);
   padding: 10px;
   font-size: 15px;
   font-weight: 500;
 }
-div#body-modal .form-modal input {
+.form-modal input {
   width: 100%;
   border: 1px solid dimgrey;
   border-radius: 3px;
@@ -37762,10 +37874,10 @@ div#body-modal .form-modal input {
   font-weight: 500;
   height: 44px;
 }
-div#body-modal .form-modal button.btn-search:hover {
+.form-modal button.btn-search:hover {
   background: #075183;
 }
-div#body-modal .form-modal button.btn-search {
+.form-modal button.btn-search {
   width: 50px;
   height: 44px;
   border: 0;
@@ -37775,7 +37887,7 @@ div#body-modal .form-modal button.btn-search {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-div#body-modal .form-modal .tabs button i.fas {
+.form-modal .tabs button i.fas {
   margin-right: 6px;
   font-size: 16px;
 }
@@ -37786,17 +37898,20 @@ div#body-modal .form-modal .tabs button i.fas {
 .opc_tabs.active {
   display: block;
 }
-div#body-modal .form-modal form p {
+.content-wrapper {
+  padding: inherit !important;
+}
+.form-modal form p {
   color: #000000;
   font-size: 15px;
   margin-bottom: 5px;
-  font-weight: 900;
+  font-weight: 600;
 }
-div#body-modal .form-modal form label {
+.form-modal form label {
   margin: 0;
   margin-bottom: 5px;
 }
-div#body-modal .form-modal form label input {
+.form-modal form label input {
   width: 100%;
 }
 form button.submit:hover {
@@ -37822,7 +37937,8 @@ form button.submit {
   padding: 8px;
   border-top: 1px solid dimgrey;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span i {
+.form-modal .lista_users .scroll-lista .item span,
+.form-modal .lista_users .scroll-lista .item span i {
   position: relative;
 }
 span.toltip-ms::after {
@@ -37862,7 +37978,7 @@ i#editarCleinte:hover span.toltip-ms{
   transform: scale(1);
   opacity: 1;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span i {
+.form-modal .lista_users .scroll-lista .item span i {
   width: 50%;
   text-align: center;
   font-size: 19px;
@@ -37891,6 +38007,42 @@ i#editarCleinte.fa-times {
 .class_busca_produto .select {
   border: none;
 }
+.Tabelas * {
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 7px !important;
+}
+.Prev-relatorio strong {
+  color: #000 !important;
+  font-size: 16px;
+  line-height: 2;
+}
+.Prev-relatorio p {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #147dc7;
+}
+.Prev-relatorio.wrap {
+  padding: 17px;
+  margin-bottom: 20px;
+}
+.Tabelas p.troco {
+  display: block;
+  font-size: 10px;
+  background: #e7e7e7;
+  padding: 2px !important;
+  font-weight: 600;
+  margin-top: 5px;
+  color: red;
+}
+.Tabelas p {
+  margin: 0;
+  line-height: 1.5;
+  padding: 0 !important;
+}
 .class_busca_produto .select::after {
   font-weight: 900;
   color: #000;
@@ -37898,14 +38050,14 @@ i#editarCleinte.fa-times {
   font-size: 18px;
   right: 12px;
 }
-div#body-modal .form-modal .lista_users .header-lista span.descricao-prod,
+.form-modal .lista_users .header-lista span.descricao-prod,
 .scroll-lista .item span.descricao-prod {
   width: 45% !important;
 }
-div#body-modal .form-modal .lista_users .scroll-lista .item span {
+.form-modal .lista_users .scroll-lista .item span {
   width: 20%;
 }
-div#body-modal .form-modal .select select {
+.form-modal .select select {
   font-weight: 400;
   font-size: 15px;
   border: 1px solid dimgrey;
@@ -37915,16 +38067,16 @@ div#body-modal .form-modal .select select {
   color: #000;
   padding-right: 30px;
 }
-div#body-modal .form-modal .select {
+.form-modal .select {
   border: none;
   height: auto;
 }
-div#body-modal .form-modal .select::after {
+.form-modal .select::after {
   top: 15px;
   font-size: 18px;
   color: #696969;
 }
-div#body-modal form .grid {
+form .grid {
   margin-bottom: 20px;
 }
 .modal-dialog.modal-lg form .class-m-lucro input[type="radio"] {
@@ -37949,14 +38101,14 @@ div#body-modal form .grid {
 .block-inputs {
   padding: 35px 20px;
 }
-div#body-modal form .radio input {
+.modal-dialog form .radio input {
   width: auto !important;
   height: auto !important;
 }
-div#body-modal form .radio label{
+.modal-dialog form .radio label{
   cursor: pointer;
 }
-div#body-modal form .radio label input {
+.modal-dialog form .radio label input {
   vertical-align: middle;
   margin-top: 6px;
   margin-right: 13px;
@@ -37971,7 +38123,7 @@ label.ender_class label:nth-child(1) {
 label.ender_class {
   width: 100%;
 }
-div#body-modal form span.add_input p {
+.modal-dialog form span.add_input p {
   color: #fff;
   font-size: 28px;
   margin: 0 !important;
@@ -37980,7 +38132,7 @@ div#body-modal form span.add_input p {
   line-height: 1;
   text-align: center;
 }
-div#body-modal form span.add_input {
+.modal-dialog form span.add_input {
   top: -49px;
 }
 form#novoServico .block-inputs {
@@ -37994,11 +38146,584 @@ span.alert {
   font-weight: 400;
   font-size: 15px;
 }
-.Comandos_teclado div {
+.Comandos_teclado div,.acao-caixa div {
   cursor: pointer;
-  font-weight: 700;
-  color: #2c2a2a;
+  font-weight: 400;
+  background: #484848;
+  color: #fff;
+  padding: 5px;
+  margin: 1px;
+  border-radius: 2px;
+  margin-left: 0;
 }
-.Comandos_teclado div:hover {
+.Comandos_teclado div:hover,.btn-actions:hover {
   text-decoration: underline;
+}
+.form-modal .info-modal p {
+  color: #0670b9 !important;
+  font-weight: 600;
+  font-size: 20px !important;
+}
+.form-modal .info-modal p strong {
+  color: #000 !important;
+  margin-right: 7px !important;
+}
+.form-modal .info-modal {
+  text-align: right;
+}
+.modal-dialog form textarea {
+  width: 100%;
+  resize: none;
+  min-height: 110px;
+  margin-bottom: 14px;
+  border-radius: 3px;
+  border: 1px solid dimgrey;
+  padding: 15px;
+}
+.Comandos_teclado p {
+  font-size: 13px;
+}
+.form-modal .Comanda span.item-c {
+  width: 60% !important;
+}
+.box-Recibo .bx img {
+  display: block;
+  max-width: 227px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.box-Recibo {
+  border: 1px solid #484848;
+}
+.box-Recibo .bx p {
+  font-size: 13px;
+  line-height: 1;
+  display: block;
+  margin: 12px 0;
+}
+.box-Recibo h3 {
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-top: 1px solid #484848;
+  border-bottom: 1px solid #484848;
+  padding: 12px 0;
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.box-Recibo .info-recibo p {
+  padding-left: 40px;
+  margin: 5px 0;
+  font-size: 13px;
+}
+.body-frente-de-caixa .bx.controles .item-info {
+  position: relative;
+  z-index: 10;
+  background: #ffff;
+}
+/* tela de login - frente de caixa */
+.login-frente-de-caixa {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+button.btn {
+  background-color: #0670b9;
+  color: #fff;
+}
+.login-frente-de-caixa .box-login {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0 6px 0px rgb(0 0 0 / 31%);
+  width: 95%;
+  max-width: 425px;
+  margin: auto;
+}
+.login-frente-de-caixa .box-login h3 {
+  background: #147dc7;
+  line-height: 1;
+  padding: 21px 5px;
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.login-frente-de-caixa .box-login form {
+  width: 100%;
+  padding: 35px;
+  position: relative;
+}
+.login-frente-de-caixa .box-login form select {
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid dimgrey;
+  padding: 10px;
+  border-radius: 3px;
+  height: 44px;
+  color: #000;
+  padding-right: 30px;
+  width: 100%;
+}
+.login-frente-de-caixa .box-login form button {
+  margin: auto;
+  display: block;
+  margin-top: 22px;
+  border-radius: 2px;
+}
+.login-frente-de-caixa .box-login form .select {
+  border: none;
+}
+.login-frente-de-caixa .box-login form .select::after {
+  color: #484848;
+  font-size: 16px;
+  top: 15px;
+}
+.login-frente-de-caixa .box-login form label,
+.login-frente-de-caixa .box-login form label input {
+  width: 100%;
+}
+.login-frente-de-caixa .box-login form .addcaixa button {
+  font-size: 14px;
+  border: none;
+  width: 190px;
+  margin-left: 10px;
+  margin-top: 42px;
+  margin-bottom: auto;
+  padding: 9px;
+  border-radius: 3px;
+  background: #147dc7;
+  color: #fff;
+}
+div#btn-sair {
+  position: absolute;
+  right: 19px;
+  top: 17px;
+  cursor: pointer;
+}
+.scroll-lista span.devolver {
+  background: #0075c5;
+  display: block;
+  max-width: 107px;
+  margin: auto;
+  text-align: center;
+  padding: 3px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.scroll-lista span.devolver:hover {
+  background: #055186;
+}
+button.btn-devolver {
+  border: 0;
+  background: #d60505;
+  color: #fff;
+  font-size: 14px;
+  width: 24px;    
+  height: 24px;
+  line-height: 0;
+  display: inline-block;
+  margin-left: 7px;
+  border-radius: 2px;
+}
+button.btn-devolver p {
+  margin: 0;
+}
+span.flex.text-center {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.login-frente-de-caixa button.btn {
+  height: 44px;
+  border: 0;
+  background: #0670b9;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  width: 180px;
+  margin-top: 13px;
+}
+form#login-frente-de-caixa span.add_caixa {
+  position: relative;
+  top: 43px;
+  margin-left: 20px;
+  color: #147dc7;
+  font-size: 20px;
+  cursor: pointer;
+}
+input.qtde-devolucao {
+  max-width: 60px;
+  max-height: 30px;
+}
+.tabs-info .devolucao {
+  padding-top: 35px;
+}
+input.item_devolvido {
+  margin: 0 !important;
+}
+.tablea-finalizar {
+  width: 100%;
+  max-width: 701px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #c7c8ca;
+  padding: 23px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.16);
+  margin-bottom: 40px;
+}
+.tablea-finalizar h2.titulo-tabela {
+  font-size: 18px;
+  background: #0670b9;
+  width: 100%;
+  padding: 7px;
+  line-height: 1;
+  color: #ffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.tablea-finalizar .info-venda {
+  margin-bottom: 25px;
+}
+.tablea-finalizar .info-venda .select select {
+  border: 1px solid #767676;
+  border-radius: 2px;
+  font-size: 14px;
+  color: black;
+  padding: 3px 7px;
+}
+.tablea-finalizar .info-venda .select::after {
+  color: black;
+  top: 8px;
+  font-size: 15px;
+  right: 13px;
+}
+.header-parcelas {
+  background: #868686;
+  padding: 6px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.tablea-finalizar .observacoes {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.tablea-finalizar label strong {
+  color: #0670b9;
+}
+.tablea-finalizar button.btn-.vincualr:hover {
+  background: #0a294a;
+}
+.tablea-finalizar button.btn-.vincualr {
+  background: #023061;
+  border: 0;
+  width: 150px;
+  height: 35px;
+  margin: auto;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+}
+.lista-parcelas {
+  border-bottom: 1px solid #868686;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.tablea-finalizar .info-venda .select {
+  border: none;
+}
+.tablea-finalizar .info-venda p {
+  margin-bottom: 3px;
+}
+.info-venda .bx span, .info-venda .bx strong {
+  display: block;
+}
+#parcela_credito,#credito,#cheque,.box-hide{
+  display: none;
+}
+button.btn:hover {
+  color: #fff;
+  background: #1d608e;
+}
+.tablea-finalizar button.btn.enviar {
+  margin-left: auto;
+  display: block;
+}
+.lista-items .item-header {
+  background: #656565;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px;
+}
+.lista-produto .b-bottom {
+  border-bottom: 1px solid #c1c0c0;
+}
+.lista-produto .select {
+  border: none;
+  padding: 0;
+  position: relative;
+}
+.lista-produto .select select {
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #656565;
+  margin-top: 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.lista-produto .select::after {
+  display: none;
+}
+.lista-produto.item {
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 45px;
+}
+.sub-total {
+  margin: 10px 0;
+}
+.sub-total p {
+  margin: 0;
+}
+.lista-produto.item {
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  font-size: 14px;
+}
+.addcaixa span.add_input span {
+  color: #fff;
+  min-width: 162px !important;
+  background: #147dc7;
+}
+.addcaixa span.add_input {
+  position: relative;
+  top: 16px;
+  right: 0;
+  margin-left: 7px;
+  font-size: 17px;
+  background: transparent;
+  color: #147dc7;
+}
+.addcaixa span.btn-toltip::after {
+  border-color: #147dc7 transparent transparent transparent;
+}
+/* impressoes */
+.box-impressao p,.box-impressao span {
+  color: #000;
+  font-size: 10px !important;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+}
+.center.item-recibo p {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.align-center{
+  -webkit-align-items: center;
+  align-items: center;
+}
+.center{
+  -webkit-justify-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.Recibo{
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  margin: 30px;
+  padding: 15px;
+}
+.Recibo p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+  color: #202020;
+}
+hr {
+  margin: 10px 0;
+}
+.box-impresao span {
+  padding: 8px;
+}
+.Recibo strong{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.box-impressao {
+  width: 250px;
+  background: #fff;
+  margin: auto;
+}
+.item-recibo {
+  padding: 7px 0;
+  border-bottom: 1px dashed #060606;
+}
+.item-recibo:nth-last-child(-n+1){
+  border-bottom: none; 
+}
+.box-impressao img {
+  display: block;
+  max-width: 70%;
+  margin: 10px auto;
+}
+.full-impressao {
+  color: #000;
+  font-size: 12px !important;
+  line-height: 1.2;
+  width: 100%;
+  font-weight: 600;
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+  padding: 26px;
+  background: #fff;
+}
+.btns-impressoes.wrap {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.btns-impressoes .btn {
+  width: calc(100% / 3);
+  margin: 2px;
+}
+.full-impressao p,.full-impressao span{
+  font-size: 14px;
+}
+.full-impressao .flex.items-impressao {
+  padding: 10px 0;
+  border-bottom: 1px dashed #000;
+}
+.full-impressao .flex.info-venda {
+  padding: 5px 0;
+  border-bottom: 1px dashed #000;
+}
+#print_impressao{
+  display: none;
+}
+.btn-actions.logout span {
+  background-color: #9c1414;
+}
+.btn-actions.logout {
+  background-color: #d92b2b;
+}
+.btn-finalizar span {
+  background: #04ac04;
+}
+.btn-finalizar {
+  background-color: green !important;
+}
+.Recibo.box-impresao img {
+  max-width: 50%;
+  margin: auto;
+  display: block;
+}
+.Recibo.box-impresao {
+  background: #fff;
+  padding: 16px;
+}
+.box-impresao .item-img img {
+  width: 50%;
+  height: auto;
+}
+.box-impresao .item-img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+form.form-modal.Filtro-data input {
+  font-size: 14px;
+  padding: 7px !important;
+  height: 35px;
+  padding-right: 0 !important;
+}
+form.form-modal.Filtro-data {
+  margin-left: auto;
+}
+form.form-modal.Filtro-data button {
+  margin-top: 28px;
+  height: 35px;
+}
+.box-impresao span {
+  border: 1px solid #c8c8c8;
+}
+form.form-modal.Filtros {
+  width: 100%;        
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+form.form-modal.Filtros label p, 
+form.form-modal.Filtros label input {
+  font-size: 14px;
+}
+form.form-modal.Filtros button {
+  display: block;
+  width: auto;
+}
+.Prev-relatorio {
+  margin-bottom: 33px;
+}
+.MyTable span {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #bdbdbd;
+  margin-right: -1px;
+  color: #484848;
+}
+@media screen and (max-width: 1600px){
+  .header-frente-de-caixa p{
+    font-size: 14px;
+  }
+  .pesquisa-cod-barras p{
+    font-size: 15px;
+  }
+  .Comandos_teclado p {
+    margin-bottom: 5px;
+  }
+  .body-frente-de-caixa h2.nome-produto{
+    font-size: 28px;
+    line-height: 1;
+  }
+  .tabela-itens .table span{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .bx.controles input{
+    height: 30px;
+    font-size: 20px;
+  }
+  .bx.controles .item-info label input{
+    height: 30px;
+  }
+  .bx.controles .item-info label {
+    margin-bottom: 3px;
+  }
+  .bx.controles .item-info label span {
+    font-size: 15px;
+  }
+  span.btn-info-action {
+    width: 37px;
+    font-size: 13px;
+    padding: 2px;
+    margin-right: 5px;
+  }
+  .body-frente-de-caixa span.btn-info-action.big {
+    width: 64px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 980px){
+  .grid{
+    grid-template-columns: repeat(1,100%);
+  }
 }

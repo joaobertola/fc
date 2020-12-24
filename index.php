@@ -46,6 +46,9 @@
 
   <!-- REQUIRED SCRIPTS -->
   <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
+  <?php if (file_exists(ENDERECO . '/dist/js/pages/' . $action . ucfirst($modulo) . '.js')) : ?>
+    <script src="<?= ENDERECO; ?>/dist/js/pages/<?= $modulo; ?>.js"></script>
+  <?php endif; ?>
 
 </body>
 
