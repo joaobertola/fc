@@ -63,6 +63,23 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
+            <i class="fas fa-box-open"></i>
+            <p>
+              Produto
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= ENDERECO; ?>/produto/cadastrar" class="nav-link <?= $_SESSION['modulo'] == 'produto' ? 'active' : ''; ?>">
+                <i class="fas fa-cash-register"></i>
+                <p>Cadastrar Produto</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
             <i class="fas fa-list-ul"></i>
             <p>
               Relatórios
