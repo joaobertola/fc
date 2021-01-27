@@ -14,14 +14,14 @@
       <label class="text-dark font-weight-normal" for="PF">Pessoa Física</label>
       <input class="tipoPessoa" checked type="radio" name="tipo_pessoa" value="PF" id="PF" data-url="<?= ENDERECO; ?>/view/cliente/forms/formPF.php">
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
       <label class="text-dark font-weight-normal" for="PJ">Pessoa Jurídica</label>
       <input class="tipoPessoa" type="radio" name="tipo_pessoa" value="PJ" id="PJ" data-url="<?= ENDERECO; ?>/view/cliente/forms/formPJ.php">
     </div>
     <div class="col-3">
       <label class="text-dark font-weight-normal" for="STR">Estrangeiro</label>
       <input class="tipoPessoa" type="radio" name="tipo_pessoa" value="STR" id="STR" data-url="<?= ENDERECO; ?>/view/cliente/forms/formSTR.php">
-    </div>
+    </div> -->
   </div>
 
   <!-- Divisor  -->

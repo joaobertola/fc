@@ -14,7 +14,7 @@ if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
   }
   // Defino os dados do usuário pra serem usados ao longo do acesso
   $UserToken = $_SESSION['user']['access_token'];
-  // Token de Autenticação enviado no header das api's
+  // Token de Autenticação enviado no header das requisicoes para a api
   $Authorization = "Bearer " . $UserToken;
   // Arquivo que definirá o destino do usuário com base na Url
   require "rotas.php";

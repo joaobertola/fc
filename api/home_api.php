@@ -52,7 +52,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $vendasRealizadas = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $vendasRealizadas = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 
@@ -60,7 +60,7 @@ switch ($Op) {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
       $status   = true;
       $conteudo = $vendasRealizadas['conteudo'];
-      $conteudo = sprintf('%04d',$conteudo);
+      $conteudo = sprintf('%04d', $conteudo);
     }
 
     $retorno['conteudo'] = $conteudo;
@@ -81,7 +81,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $clientesNovos = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $clientesNovos = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 
@@ -90,7 +90,7 @@ switch ($Op) {
       $status   = true;
       $conteudo = $clientesNovos['conteudo'];
       $conteudo = $conteudo[0]['total'];
-      $conteudo = sprintf('%04d',$conteudo);
+      $conteudo = sprintf('%04d', $conteudo);
     }
 
     $retorno['conteudo'] = $conteudo;
@@ -111,7 +111,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $produtosVendidos = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $produtosVendidos = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 
@@ -119,7 +119,7 @@ switch ($Op) {
       // Se tudo ocorrer bem, da a mensagem de boas vindas e grava a sessão do usuário
       $status   = true;
       $conteudo = $produtosVendidos['conteudo'];
-      $conteudo = sprintf('%04d',$conteudo);
+      $conteudo = sprintf('%04d', $conteudo);
     }
 
     $retorno['conteudo'] = $conteudo;
@@ -140,7 +140,7 @@ switch ($Op) {
 
     $api = new apiConnect;
 
-    $maisVendidos = $api->envia($header, $dados, $urlApi, $tpRequisicao);
+    $maisVendidos = $api->envia($header, $urlApi, $tpRequisicao, $dados);
 
     $conteudo = [];
 
