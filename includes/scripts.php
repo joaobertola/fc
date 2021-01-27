@@ -7,15 +7,12 @@
 <!-- overlayScrollbars -->
 <script src="<?= ENDERECO; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 
-<!-- General -->
-<script src="<?= ENDERECO; ?>/dist/js/adminlte.js"></script>
 
 <!-- SweetAlert -->
 <script src="<?= ENDERECO; ?>/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 <!-- Jquery Mask -->
 <script src="<?= ENDERECO; ?>/vendor/mask/jquery.mask.min.js"></script>
-
 
 <!-- InputMask -->
 <!-- <script src="<?= ENDERECO; ?>/plugins/moment/moment.min.js"></script>
@@ -26,5 +23,9 @@
 
 <!-- bs-custom-file-input -->
 <script src="<?= ENDERECO; ?>/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+<!-- General -->
+<script src="<?= ENDERECO; ?>/dist/js/adminlte.js"></script>
+<script src="<?= ENDERECO; ?>/dist/js/swiper-bundle.min.js"></script>
 
 <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->

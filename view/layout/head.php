@@ -19,7 +19,7 @@ include "includes/functions.php";
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WebControl Empresas | Tela Inicial</title>
+  <title>QuickIT | Tela Inicial</title>
   <!-- Select2 -->
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?= ENDERECO; ?>/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">

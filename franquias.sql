@@ -1,7 +1,4 @@
-﻿# Host: 10.2.2.3  (Version 5.7.20-log)
-# Date: 2020-12-24 10:53:31
-# Generator: MySQL-Front 6.0  (Build 2.20)
-
+﻿
 
 CREATE DATABASE IF NOT EXISTS `franquias`;
 
@@ -24,7 +21,7 @@ CREATE TABLE `franquias`.`atn_atendimento` (
   `observacao` text,
   `motivo_reagendamento` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5251 DEFAULT CHARSET=latin1 COMMENT='Tabela  com registro de contato dos clientes que não obtiveram atendimento';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabela  com registro de contato dos clientes que não obtiveram atendimento';
 
 #
 # Structure for table "com_cartao_agendamento_checklist"
@@ -34,7 +31,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_checklist` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(55) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_conferencia"
@@ -45,7 +42,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_conferencia` (
   `descricao` varchar(100) NOT NULL,
   `ordem` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_justificativa"
@@ -56,7 +53,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_justificativa` (
   `descricao` varchar(55) DEFAULT NULL,
   `ordem` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_posicionamento"
@@ -66,7 +63,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_posicionamento` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(55) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_reagendar"
@@ -77,7 +74,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_reagendar` (
   `descricao` varchar(55) DEFAULT NULL,
   `ordem` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 COMMENT='gerenciamento de informações reagendar cartão';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='gerenciamento de informações reagendar cartão';
 
 #
 # Structure for table "com_cartao_agendamento_status"
@@ -99,7 +96,7 @@ CREATE TABLE `franquias`.`dev_banco` (
   `codigo_banco` varchar(10) NOT NULL,
   `nome` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=274 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "dev_tipo_contato"
@@ -110,7 +107,7 @@ CREATE TABLE `franquias`.`dev_tipo_contato` (
   `nome` varchar(70) NOT NULL,
   `mascara` varchar(70) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "outros_sistemas"
@@ -135,7 +132,7 @@ CREATE TABLE `franquias`.`outros_sistemas_checklist` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='tabela de opções que alimentão o CONTROLE COMERCIAL';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='tabela de opções que alimentão o CONTROLE COMERCIAL';
 
 #
 # Structure for table "outros_sistemas_checklist_resp"
@@ -164,7 +161,7 @@ CREATE TABLE `franquias`.`sys_funcao` (
   KEY `FK_sys_funcao_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_sys_funcao_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_funcao_sys_setor1` FOREIGN KEY (`id_setor`) REFERENCES `franquias`.`sys_setor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_usuario"
@@ -202,7 +199,7 @@ CREATE TABLE `franquias`.`sys_usuario` (
   CONSTRAINT `fk_usuario_sistema` FOREIGN KEY (`id_sistema`) REFERENCES `franquias`.`sys_sistema` (`id`),
   CONSTRAINT `fk_usuario_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_usuario_perfil` FOREIGN KEY (`id_perfil`) REFERENCES `franquias`.`sys_perfil` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=280 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_setor"
@@ -218,7 +215,7 @@ CREATE TABLE `franquias`.`sys_setor` (
   PRIMARY KEY (`id`),
   KEY `FK_sys_setor_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_sys_setor_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_sistema"
@@ -234,7 +231,7 @@ CREATE TABLE `franquias`.`sys_sistema` (
   PRIMARY KEY (`id`),
   KEY `FK_sys_sistema_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_sys_sistema_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_perfil"
@@ -257,7 +254,7 @@ CREATE TABLE `franquias`.`sys_perfil` (
   CONSTRAINT `fk_perfil_sistema` FOREIGN KEY (`id_sistema`) REFERENCES `franquias`.`sys_sistema` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_usuario2` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_perfil_has_usuario"
@@ -281,7 +278,7 @@ CREATE TABLE `franquias`.`sys_perfil_has_usuario` (
   CONSTRAINT `fk_perfil_has_usuario_usuario1` FOREIGN KEY (`id_usuario`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_has_usuario_usuario2` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_has_usuario_usuario3` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_perfil_has_tela"
@@ -305,7 +302,7 @@ CREATE TABLE `franquias`.`sys_perfil_has_tela` (
   CONSTRAINT `fk_perfil_has_tela_tela1` FOREIGN KEY (`id_tela`) REFERENCES `franquias`.`sys_tela` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_has_tela_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_perfil_has_tela_usuario2` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3313 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_modulos"
@@ -328,7 +325,7 @@ CREATE TABLE `franquias`.`sys_modulos` (
   CONSTRAINT `fk_modulos_sistema` FOREIGN KEY (`id_sistema`) REFERENCES `franquias`.`sys_sistema` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_modulos_usuario1` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_modulos_usuario2` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_menu"
@@ -356,7 +353,7 @@ CREATE TABLE `franquias`.`sys_menu` (
   CONSTRAINT `fk_menu_sistema1` FOREIGN KEY (`id_sistema`) REFERENCES `franquias`.`sys_sistema` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_menu_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_menu_usuario2` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_submenu"
@@ -380,7 +377,7 @@ CREATE TABLE `franquias`.`sys_submenu` (
   CONSTRAINT `fk_submenu_menu1` FOREIGN KEY (`id_menu`) REFERENCES `franquias`.`sys_menu` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_submenu_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_submenu_usuario2` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_tela"
@@ -407,7 +404,7 @@ CREATE TABLE `franquias`.`sys_tela` (
   CONSTRAINT `fk_tela_submenu1` FOREIGN KEY (`id_submenu`) REFERENCES `franquias`.`sys_submenu` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_tela_usuario1` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_tela_usuario2` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=121 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_desafio"
@@ -429,7 +426,7 @@ CREATE TABLE `franquias`.`com_desafio` (
   KEY `FK_com_desafio_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_com_desafio_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_desafio_franquia` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_reagendar_resp"
@@ -449,7 +446,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_reagendar_resp` (
   CONSTRAINT `fk_agendamento_res_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_agendamento_resp_cartao` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_agendamento_resp_reagendar` FOREIGN KEY (`id_reagendar`) REFERENCES `franquias`.`com_cartao_agendamento_reagendar` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=380 DEFAULT CHARSET=latin1 COMMENT='Cartão Agendamento Reagendar Resposta.';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Cartão Agendamento Reagendar Resposta.';
 
 #
 # Structure for table "com_cartao"
@@ -485,7 +482,7 @@ CREATE TABLE `franquias`.`com_cartao` (
   CONSTRAINT `FK_com_cartao_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartao` FOREIGN KEY (`id_agendador`) REFERENCES `franquias`.`sys_usuario` (`id`),
   CONSTRAINT `fk_cartao_franquia` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1570 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_posicionamento_resp"
@@ -502,7 +499,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_posicionamento_resp` (
   KEY `fk_posicionamento_resp_cartao` (`id_cartao`),
   CONSTRAINT `fk_posicionamento_resp_cartao` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_posicionamento_resp_posicionamento` FOREIGN KEY (`id_posicionamento`) REFERENCES `franquias`.`com_cartao_agendamento_posicionamento` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=915 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_ocorrencia"
@@ -519,7 +516,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_ocorrencia` (
   KEY `fk_com_cartao_usuario_idx` (`id_usuario`),
   CONSTRAINT `fk_com_cartao_agendament` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_justificativa_resp"
@@ -534,7 +531,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_justificativa_resp` (
   KEY `fk_justificativa_resp_cartao` (`id_cartao`),
   CONSTRAINT `fk_justificativa_resp_cartao` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`),
   CONSTRAINT `fk_justificativa_resp_justificativa` FOREIGN KEY (`id_justificativa`) REFERENCES `franquias`.`com_cartao_agendamento_justificativa` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_conferencia_resp"
@@ -550,7 +547,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_conferencia_resp` (
   KEY `fk_com_cartao_agendamento_conferencia_resp_com_cartao1_idx` (`id_cartao`),
   CONSTRAINT `fk_com_cartao_agendamento_conferencia_resp_com_cartao1` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_agendamento_conferencia_resp_com_cartao_agendam1` FOREIGN KEY (`id_justificativa`) REFERENCES `franquias`.`com_cartao_agendamento_conferencia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=656 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_checklist_resp"
@@ -566,7 +563,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_checklist_resp` (
   KEY `fk_com_cartao_agendamento_checklist_resp_com_cartao1_idx` (`id_cartao`),
   CONSTRAINT `fk_com_cartao_agendamento_checklist_resp_com_cartao1` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_agendamento_checklist_resp_com_cartao_agendamen1` FOREIGN KEY (`id_checklist`) REFERENCES `franquias`.`com_cartao_agendamento_checklist` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=913 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento"
@@ -583,7 +580,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento` (
   KEY `fk_com_cartao_agendamento_sys_usuario1_idx` (`id_consultor`),
   CONSTRAINT `FK_com_cartao_agendamento_sys_usuario` FOREIGN KEY (`id_consultor`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_agendamento_com_cartao1` FOREIGN KEY (`id_cartao`) REFERENCES `franquias`.`com_cartao` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=1141 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_cartao_agendamento_hist"
@@ -611,7 +608,7 @@ CREATE TABLE `franquias`.`com_cartao_agendamento_hist` (
   CONSTRAINT `fk_com_cartao_agendamento_hist_com_cartao_agendamento_justifi1` FOREIGN KEY (`id_justificativa`) REFERENCES `franquias`.`com_cartao_agendamento_justificativa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_agendamento_hist_com_cartao_agendamento_status1` FOREIGN KEY (`id_status`) REFERENCES `franquias`.`com_cartao_agendamento_status` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_com_cartao_agendamento_hist_sys_usuario1` FOREIGN KEY (`id_consultor`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=212 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cad_franquia_gestor"
@@ -646,7 +643,7 @@ CREATE TABLE `franquias`.`aux_tipo_franquia` (
   PRIMARY KEY (`id`),
   KEY `FK_aux_tipo_franquia_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_aux_tipo_franquia_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "aux_franquia_taxa"
@@ -663,7 +660,7 @@ CREATE TABLE `franquias`.`aux_franquia_taxa` (
   PRIMARY KEY (`id`),
   KEY `FK_aux_franquia_taxa_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_aux_franquia_taxa_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cad_franquia"
@@ -696,7 +693,7 @@ CREATE TABLE `franquias`.`cad_franquia` (
   CONSTRAINT `FK_cad_franquia_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_cad_franquia_aux_franquia_taxa1` FOREIGN KEY (`id_franquia_taxa`) REFERENCES `franquias`.`aux_franquia_taxa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_cad_franquia_aux_tipo_franquia1` FOREIGN KEY (`id_tipo_franquia`) REFERENCES `franquias`.`aux_tipo_franquia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "aux_franquia_banco"
@@ -721,7 +718,7 @@ CREATE TABLE `franquias`.`aux_franquia_banco` (
   CONSTRAINT `FK_aux_franquia_banco_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_aux_franquia_banco_banco` FOREIGN KEY (`id_banco`) REFERENCES `franquias`.`dev_banco` (`id`),
   CONSTRAINT `fk_aux_franquia_banco_cad_franquia1` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "com_campeao"
@@ -740,7 +737,7 @@ CREATE TABLE `franquias`.`com_campeao` (
   KEY `FK_com_campeao_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_com_campeao_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_campeao_franquia` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "aux_contato_franquia"
@@ -761,7 +758,7 @@ CREATE TABLE `franquias`.`aux_contato_franquia` (
   CONSTRAINT `fk_aux_contato_franquia_cad_franquia1` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_aux_contato_franquia_dev_tipo_contato` FOREIGN KEY (`id_tipo_contato`) REFERENCES `franquias`.`dev_tipo_contato` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_sys_usuario_id` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "aux_socio_franquia"
@@ -782,7 +779,7 @@ CREATE TABLE `franquias`.`aux_socio_franquia` (
   KEY `FK_aux_socio_franquia_sys_usuario` (`id_usuario_alt`),
   CONSTRAINT `FK_aux_socio_franquia_sys_usuario` FOREIGN KEY (`id_usuario_alt`) REFERENCES `franquias`.`sys_usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_aux_socio_franquia_cad_franquia1` FOREIGN KEY (`id_franquia`) REFERENCES `franquias`.`cad_franquia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sys_versao"
@@ -802,7 +799,7 @@ CREATE TABLE `franquias`.`sys_versao` (
   KEY `fk_usuario` (`id_usuario_cad`),
   CONSTRAINT `fk_usuario` FOREIGN KEY (`id_usuario_cad`) REFERENCES `franquias`.`sys_usuario` (`id`),
   CONSTRAINT `fk_versao_sistema1` FOREIGN KEY (`id_sistema`) REFERENCES `franquias`.`sys_sistema` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Procedure "sp_dashboard_atendimento_retorno"
@@ -818,9 +815,9 @@ begin
 	declare v_meus_retornos_pendentes int;
 	declare v_meus_retornos int;
 	declare v_porcentagem_meus_retornos decimal(5,2);
-	declare v_porcentagem_meus_retornos_realizados decimal(5,2);	
-	declare v_porcentagem_meus_retornos_pendentes decimal(5,2);	
-	
+	declare v_porcentagem_meus_retornos_realizados decimal(5,2);
+	declare v_porcentagem_meus_retornos_pendentes decimal(5,2);
+
 
 
 
@@ -830,7 +827,7 @@ SELECT	COUNT(id) INTO	v_meus_retornos_realizados		FROM 	`franquias`.atn_atendime
 
 SELECT	COUNT(id) INTO	v_meus_retornos_pendentes		FROM 	`franquias`.atn_atendimento WHERE 	id_usuario_atendimento = p_id_atendente	AND 	(status = 'R' OR status = 'I');
 
-SET v_meus_retornos = v_meus_retornos_pendentes + v_meus_retornos_realizados; 
+SET v_meus_retornos = v_meus_retornos_pendentes + v_meus_retornos_realizados;
 
 
 
@@ -843,7 +840,7 @@ SET v_porcentagem_meus_retornos_pendentes = (v_meus_retornos_pendentes / v_meus_
 SET v_porcentagem_meus_retornos = (v_meus_retornos / v_total_retorno) * 100;
 
 
-	SELECT  
+	SELECT
 		ifnull(v_total_retorno,0) AS v_total_retorno,
 		IFNULL(v_meus_retornos_realizados,0) AS v_meus_retornos_realizados,
 		IFNULL(v_meus_retornos_pendentes,0) AS v_meus_retornos_pendentes,
@@ -858,7 +855,7 @@ end;
 #
 
 CREATE PROCEDURE `franquias`.`sp_dashboard_franquias`(
-	p_id_franquia INT, 
+	p_id_franquia INT,
 	p_id_agendador INT)
 begin
 	declare v_visitas_realizadas int;
@@ -872,7 +869,7 @@ begin
 	declare v_percentual_visitas decimal(5,2);
 	DECLARE v_percentual_nao_visitas DECIMAL(5,2);
 	declare v_percentual_dia decimal(5,2);
-	
+
 
 SELECT
 	COUNT(*)
@@ -930,7 +927,7 @@ AS aux;
 SET v_visitas_nao_realizadas = v_meus_agendamentos - v_visitas_realizadas;
 
 set v_porcentagem_meus_agendamentos = (v_meus_agendamentos / v_total_agendamento) * 100;
-select 
+select
 	count(*)
 INTO v_total_agendamento_dia
 from(
@@ -947,7 +944,7 @@ AND (`franquias`.ca.id_consultor = p_id_agendador OR 0 = p_id_agendador)
 GROUP BY `franquias`.c.id)
 as aux;
 
-select 
+select
 	count(*)
 INTO v_agendamento_manha
 from(
@@ -963,7 +960,7 @@ AND (date(`franquias`.ca.data_agendamento) = DATE(NOW()) and `franquias`.ca.data
 AND (`franquias`.ca.id_consultor = p_id_agendador OR 0 = p_id_agendador)
 GROUP BY `franquias`.c.id) as aux;
 
-select 
+select
 	count(*)
 INTO v_agendamento_tarde
 from(
@@ -982,7 +979,7 @@ GROUP BY `franquias`.c.id
 set v_percentual_visitas = (v_visitas_realizadas / v_total_agendamento) * 100;
 set v_percentual_dia = (v_total_agendamento_dia / v_meus_agendamentos) * 100;
 SET v_percentual_nao_visitas = (v_visitas_nao_realizadas / v_total_agendamento) * 100;
-	SELECT  
+	SELECT
 		ifnull(v_visitas_realizadas,0) AS visitas_realizadas,
 	IFNULL(v_visitas_nao_realizadas,0) AS visitas_nao_realizadas,
 	IFNULL(v_total_agendamento,0) AS total_agendamento,
@@ -994,6 +991,6 @@ SET v_percentual_nao_visitas = (v_visitas_nao_realizadas / v_total_agendamento) 
 	IFNULL(v_percentual_visitas,0) as percentual_visitas,
 	IFNULL(v_percentual_nao_visitas,0) AS percentual_nao_visitas,
 	IFNULL(v_percentual_dia,0) as percentual_dia;
-	
-	
+
+
 end;

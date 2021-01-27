@@ -2164,15 +2164,19 @@ function validaForm(params) {
   var $form = config.form;
 
   $form.find(".form-required").each(function () {
-    var border = !$(this).val() ? "1px solid red" : "1px solid #cecece";
+    var border = !$(this).val() ? "1px solid red" : "1px solid #767676";
 
-    if ($.inArray($(this).val(), notpermitidos) == 0) valida = false;
+    if ($.inArray($(this).val(), notpermitidos) == 0) {
+      valida = false;
+      console.log($(this), $(this).val());
+    }
 
     $(this).closest("input, textarea, select").css("border", border);
   });
 
-  if (config.notValidate && !valida)
+  if (config.notValidate && !valida) {
     Swal.fire("Erro!", "Preencha todos os campos.", "error");
+  }
 
   return valida;
 }

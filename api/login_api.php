@@ -23,7 +23,7 @@ $modulo = 'login';
 
 $urlApi = API . $modulo;
 
-$header = '';
+$header = array() ;
 
 $enderecoRetorno = ENDERECO;
 

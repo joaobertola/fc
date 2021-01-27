@@ -11,12 +11,45 @@ define('DB_CHARSET', 'utf8');
 
 // Endereço do Site
 // ========================================================
-define('ENDERECO', 'http://' . $_SERVER["HTTP_HOST"] . '/dashwc');
+define('ENDERECO', 'http://' . $_SERVER["HTTP_HOST"] . '/fc');
 // ========================================================
 
 // Endereço da API
 // ========================================================
 define('API', 'https://api2.webcontrolempresas.com.br/api/v1/');
 // ========================================================
+
+
+// Informações do Banco de Dados
+// ========================================================
+//define('DB_HOSTNAME', '10.2.2.3');
+//define('DB_USERNAME', 'csinform');
+//define('DB_PASSWORD', 'inform4416#scf');
+//define('DB_DATABASE', 'base_web_control');
+//define('DB_CHARSET', 'utf8');
+// ========================================================
+
+
+
+/// LOCAL CONFIG
+// ========================================================
+//define('DB_HOSTNAME', '10.2.2.3');
+//define('DB_USERNAME', 'csinform');
+//define('DB_PASSWORD', 'inform4416#scf');
+//define('DB_DATABASE', 'base_web_control');
+//define('DB_CHARSET', 'utf8');
+// ========================================================
+
+// Endereço do Site
+// ========================================================
+//define('ENDERECO', 'http://' . $_SERVER["HTTP_HOST"] . '/fc');
+// ========================================================
+
+// Endereço da API
+// ========================================================
+//define('API', 'https://' . $_SERVER["HTTP_HOST"]  .'/apicashier/api/v1/');
+// ========================================================
+
+
 
 

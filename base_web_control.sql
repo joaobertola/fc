@@ -21,7 +21,7 @@ CREATE TABLE `base_web_control`.`acesso_filiacao` (
   `usuario_alteracao` int(10) unsigned NOT NULL,
   `ativo` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '0 - inativo, 1 - ativo',
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1325719 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "agenda"
@@ -42,7 +42,7 @@ CREATE TABLE `base_web_control`.`agenda` (
   `ativo` tinyint(4) DEFAULT '1',
   PRIMARY KEY (`evento_id`),
   KEY `fk_agenda` (`codloja`)
-) ENGINE=InnoDB AUTO_INCREMENT=53606717 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "agenda_usuario_parceiro"
@@ -54,7 +54,7 @@ CREATE TABLE `base_web_control`.`agenda_usuario_parceiro` (
   `Nome` varchar(50) DEFAULT NULL,
   `Telefone` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=351 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "agendamento_tarefa"
@@ -75,7 +75,7 @@ CREATE TABLE `base_web_control`.`agendamento_tarefa` (
   KEY `idx_data_agendamento_status` (`data_agendamento`,`status`),
   KEY `idx_status` (`status`),
   KEY `idx_data_agendamento` (`data_agendamento`)
-) ENGINE=InnoDB AUTO_INCREMENT=2378 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "agendamento_tarefa_log"
@@ -88,7 +88,7 @@ CREATE TABLE `base_web_control`.`agendamento_tarefa_log` (
   `status` varchar(1) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24405 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica"
@@ -116,7 +116,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60892 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica_conclusao"
@@ -134,7 +134,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_conclusao` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35808 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica_garantia"
@@ -144,7 +144,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_garantia` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(125) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COMMENT='	';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='	';
 
 #
 # Structure for table "assistencia_tecnica_marcas"
@@ -157,7 +157,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_marcas` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4414 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica_observacoes"
@@ -171,7 +171,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_observacoes` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=508 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica_produtos"
@@ -186,7 +186,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_produtos` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6592 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "assistencia_tecnica_voltagem"
@@ -196,7 +196,7 @@ CREATE TABLE `base_web_control`.`assistencia_tecnica_voltagem` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "atendimento"
@@ -219,7 +219,7 @@ CREATE TABLE `base_web_control`.`atendimento` (
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_cliente` (`id_cliente`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=684472 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "atendimento_fornecedor"
@@ -239,7 +239,7 @@ CREATE TABLE `base_web_control`.`atendimento_fornecedor` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=193 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "atendimento_funcionario"
@@ -259,7 +259,7 @@ CREATE TABLE `base_web_control`.`atendimento_funcionario` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=312 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "atendimento_tipo"
@@ -269,7 +269,7 @@ CREATE TABLE `base_web_control`.`atendimento_tipo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "atendimento_transportadora"
@@ -289,7 +289,7 @@ CREATE TABLE `base_web_control`.`atendimento_transportadora` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "autor"
@@ -333,7 +333,7 @@ CREATE TABLE `base_web_control`.`autorizacao_cielo` (
   KEY `fk_venda_id` (`venda_id`),
   KEY `fk_funcionario_id_correio` (`funcionario_id_correio`),
   KEY `fk_funcionario_id_estorno` (`funcionario_id_estorno`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "aux_venda_faturado_impressao"
@@ -345,7 +345,7 @@ CREATE TABLE `base_web_control`.`aux_venda_faturado_impressao` (
   `id_cadastro` int(11) DEFAULT NULL,
   `impresso` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2909 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "auxiliar_envio_sms"
@@ -401,7 +401,7 @@ CREATE TABLE `base_web_control`.`boleto_doc` (
   `log_ref` int(11) DEFAULT NULL COMMENT '1 - log boleto gerado  (inform/boleto/boleto-log.php)',
   `count` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12268 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cadastro"
@@ -571,7 +571,7 @@ CREATE TABLE `base_web_control`.`cadastro` (
   KEY `fk_contador` (`contador_cpfcnpj`),
   KEY `idx_insc` (`insc`),
   KEY `fk003` (`id_consultor`)
-) ENGINE=MyISAM AUTO_INCREMENT=78243 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
 #
 # Structure for table "cadastro_aut_notas"
@@ -586,7 +586,7 @@ CREATE TABLE `base_web_control`.`cadastro_aut_notas` (
   PRIMARY KEY (`Id`),
   UNIQUE KEY `fk_002` (`id_cadastro`,`cpfcnpj`),
   KEY `fk_001` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cadastro_controles"
@@ -599,7 +599,7 @@ CREATE TABLE `base_web_control`.`cadastro_controles` (
   `numero` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `FK001` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=23939 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cadastro_convenio_bancario"
@@ -623,7 +623,7 @@ CREATE TABLE `base_web_control`.`cadastro_convenio_bancario` (
   `id_usuario_cadastro` int(11) DEFAULT NULL,
   `id_usuario_atualizacao` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`,`id_banco`,`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=latin1 COMMENT='Tabela responsável por cadastrar os convenios das empresas, menu Dados Empresáriais.';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabela responsável por cadastrar os convenios das empresas, menu Dados Empresáriais.';
 
 #
 # Structure for table "cadastro_imposto_padrao"
@@ -748,7 +748,7 @@ CREATE TABLE `base_web_control`.`cadastro_imposto_padrao` (
   KEY `fk_cadimp01` (`id_cadastro`),
   KEY `fk_cadimp02` (`id_usuario`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=8213 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cadastro_imposto_padrao_hist"
@@ -936,7 +936,7 @@ CREATE TABLE `base_web_control`.`cadastro_imposto_padrao_hist` (
   `solicitar_cod_cartao` int(11) DEFAULT NULL,
   `solicitar_cod_cartao_old` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=262932 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "campanhas_log"
@@ -949,7 +949,7 @@ CREATE TABLE `base_web_control`.`campanhas_log` (
   `data_hora` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `tipo_campanha` enum('E','T','W') NOT NULL COMMENT 'e = email, t = torpedo, w = whatsapp',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=latin1 COMMENT='Registro de campanhas: emails mkt, whatsapp mkt e torpedo mkt';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Registro de campanhas: emails mkt, whatsapp mkt e torpedo mkt';
 
 #
 # Structure for table "cargo"
@@ -963,7 +963,7 @@ CREATE TABLE `base_web_control`.`cargo` (
   `id_setor` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=703 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "carne"
@@ -996,7 +996,7 @@ CREATE TABLE `base_web_control`.`carne` (
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_cliente` (`id_cliente`),
   KEY `idx_idvenda` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=74029 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "carrinho"
@@ -1029,7 +1029,7 @@ CREATE TABLE `base_web_control`.`cartaofid_cartao` (
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=94499 DEFAULT CHARSET=latin1 COMMENT='Cartoes cadastrados pelos clienteswc';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Cartoes cadastrados pelos clienteswc';
 
 #
 # Structure for table "cartaofid_config"
@@ -1057,7 +1057,7 @@ CREATE TABLE `base_web_control`.`cartaofid_config` (
   KEY `idx_cadastro` (`id_cadastro`),
   KEY `idx_cartao` (`tipo_cartao`),
   KEY `fk_001` (`id_cadastro`,`tipo_cartao`)
-) ENGINE=InnoDB AUTO_INCREMENT=678 DEFAULT CHARSET=latin1 COMMENT='Dados de configiração do cartao do cliente.';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Dados de configiração do cartao do cliente.';
 
 #
 # Structure for table "cartaofid_historico"
@@ -1080,7 +1080,7 @@ CREATE TABLE `base_web_control`.`cartaofid_historico` (
   KEY `fk001` (`id_cadastro`),
   KEY `fk002` (`num_cartao`),
   KEY `fk003` (`id_cadastro`,`status_pontos_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=7678 DEFAULT CHARSET=latin1 COMMENT='Historico de uso dos cartoes pelo cliente do cliente wc';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Historico de uso dos cartoes pelo cliente do cliente wc';
 
 #
 # Structure for table "cartaofid_modelo"
@@ -1096,7 +1096,7 @@ CREATE TABLE `base_web_control`.`cartaofid_modelo` (
   `dt_creation` timestamp NULL DEFAULT NULL,
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1 COMMENT='Modelos de cartoes';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Modelos de cartoes';
 
 #
 # Structure for table "cartaofid_pedido_grafica"
@@ -1113,7 +1113,7 @@ CREATE TABLE `base_web_control`.`cartaofid_pedido_grafica` (
   `resultado_cron` char(5) DEFAULT NULL,
   `dt_update_cron` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=166 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "catalogo"
@@ -1135,7 +1135,7 @@ CREATE TABLE `base_web_control`.`catalogo` (
   `codigo_barras` int(11) DEFAULT NULL,
   `obs` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=501 DEFAULT CHARSET=latin1 COMMENT='catalogo de produtos para acesso externo';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='catalogo de produtos para acesso externo';
 
 #
 # Structure for table "cest"
@@ -1158,7 +1158,7 @@ CREATE TABLE `base_web_control`.`CEST` (
   `CEST_NCM` varchar(15) DEFAULT NULL,
   `CEST_DESCRICAO` longtext,
   PRIMARY KEY (`CEST_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1261 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cest2"
@@ -1193,7 +1193,7 @@ CREATE TABLE `base_web_control`.`cidade` (
   `estado` int(5) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_Cidade_estado` (`estado`)
-) ENGINE=InnoDB AUTO_INCREMENT=5565 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacao"
@@ -1224,7 +1224,7 @@ CREATE TABLE `base_web_control`.`classificacao` (
   KEY `lixo` (`descricao`),
   KEY `idx_id_off` (`id_off`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5914706 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacao_alteracao_valores"
@@ -1245,7 +1245,7 @@ CREATE TABLE `base_web_control`.`classificacao_alteracao_valores` (
   `id_fornecedor` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=5825 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacao_bancodeimagens"
@@ -1256,7 +1256,7 @@ CREATE TABLE `base_web_control`.`classificacao_bancodeimagens` (
   `url_imagem` varchar(255) DEFAULT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacao_contas"
@@ -1276,7 +1276,7 @@ CREATE TABLE `base_web_control`.`classificacao_contas` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=13019 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacao_sub"
@@ -1287,7 +1287,7 @@ CREATE TABLE `base_web_control`.`classificacao_sub` (
   `id_classificacao` bigint(20) NOT NULL,
   `descricao` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "classificacoes_removidas"
@@ -1413,7 +1413,7 @@ CREATE TABLE `base_web_control`.`cliente` (
   KEY `fk_cliente03` (`id_cadastro`,`nome`),
   KEY `fk_datanascimento` (`id_cadastro`,`data_nascimento`),
   FULLTEXT KEY `fk_bairro` (`bairro`)
-) ENGINE=InnoDB AUTO_INCREMENT=8137324 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "cliente_agendamentos"
@@ -1426,7 +1426,7 @@ CREATE TABLE `base_web_control`.`cliente_agendamentos` (
   `fone` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `Coluna 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_documento"
@@ -1439,7 +1439,7 @@ CREATE TABLE `base_web_control`.`cliente_documento` (
   `documento` varchar(255) DEFAULT NULL,
   `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1045 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_documentos"
@@ -1478,7 +1478,7 @@ CREATE TABLE `base_web_control`.`cliente_forma_pagamento` (
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_cadastro_baixa_automatica` (`id_cadastro`,`baixa_automatica`)
-) ENGINE=InnoDB AUTO_INCREMENT=3221130 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_optica"
@@ -1512,7 +1512,7 @@ CREATE TABLE `base_web_control`.`cliente_optica` (
   `perto_oe_dnp` varchar(45) DEFAULT NULL,
   `perto_oe_altura` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29736 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_optica_historico"
@@ -1546,7 +1546,7 @@ CREATE TABLE `base_web_control`.`cliente_optica_historico` (
   `perto_oe_dnp` varchar(45) DEFAULT NULL,
   `perto_oe_altura` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4152 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_veiculo"
@@ -1562,7 +1562,7 @@ CREATE TABLE `base_web_control`.`cliente_veiculo` (
   `modelo` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_praka` (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=667188 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cliente_veiculos"
@@ -1583,7 +1583,7 @@ CREATE TABLE `base_web_control`.`cliente_veiculos` (
   KEY `FK_cliente_veiculos_cliente` (`id_cliente`),
   KEY `id_cadastro` (`id_cadastro`),
   CONSTRAINT `FK_cliente_veiculos_cliente` FOREIGN KEY (`id_cliente`) REFERENCES `base_web_control`.`cliente` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=570719 DEFAULT CHARSET=latin1 COMMENT='cadastro de veiculos do cliente';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='cadastro de veiculos do cliente';
 
 #
 # Structure for table "clientes_removidos"
@@ -1684,7 +1684,7 @@ CREATE TABLE `base_web_control`.`cm_comanda` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_cadastro_num_comanda` (`id_cadastro`,`num_comanda`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=260375 DEFAULT CHARSET=latin1 COMMENT='Cadastro de Comandas Abertas Somente, as comandas fechadas s';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Cadastro de Comandas Abertas Somente, as comandas fechadas s';
 
 #
 # Structure for table "cm_historico"
@@ -1709,7 +1709,7 @@ CREATE TABLE `base_web_control`.`cm_historico` (
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_venda` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=382401 DEFAULT CHARSET=latin1 COMMENT='Historico de Comandas e Mesas Utilizados';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Historico de Comandas e Mesas Utilizados';
 
 #
 # Structure for table "cm_mesa"
@@ -1726,7 +1726,7 @@ CREATE TABLE `base_web_control`.`cm_mesa` (
   `data_sincronismo` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=20225 DEFAULT CHARSET=latin1 COMMENT='Cadastro de Mesas';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Cadastro de Mesas';
 
 #
 # Structure for table "cm_producao"
@@ -1743,7 +1743,7 @@ CREATE TABLE `base_web_control`.`cm_producao` (
   PRIMARY KEY (`id`),
   KEY `id` (`id`),
   KEY `FK001` (`idvenda_item`)
-) ENGINE=InnoDB AUTO_INCREMENT=288316 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cm_reserva"
@@ -1763,7 +1763,7 @@ CREATE TABLE `base_web_control`.`cm_reserva` (
   `data_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `data_sincromismo` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=latin1 COMMENT='tabela de reservas de mesas';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='tabela de reservas de mesas';
 
 #
 # Structure for table "cm_reserva_mesa"
@@ -1795,7 +1795,7 @@ CREATE TABLE `base_web_control`.`cnae_issqn` (
   `codigo` char(7) DEFAULT NULL,
   `descricao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1470 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "compartilhamento"
@@ -1806,7 +1806,7 @@ CREATE TABLE `base_web_control`.`compartilhamento` (
   `id_cadastro` int(11) DEFAULT NULL,
   `id_compartilhamento` int(11) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=504 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "compromisso"
@@ -1832,7 +1832,7 @@ CREATE TABLE `base_web_control`.`compromisso` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=21633 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "conferencia_estoque"
@@ -1844,7 +1844,7 @@ CREATE TABLE `base_web_control`.`conferencia_estoque` (
   `data_inicio` datetime DEFAULT NULL,
   `data_fim` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4980 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "conferencia_estoque_itens"
@@ -1860,7 +1860,7 @@ CREATE TABLE `base_web_control`.`conferencia_estoque_itens` (
   `qtd_conferencia` int(11) DEFAULT NULL,
   `qtd_diferenca` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=48390 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "conferencia_estoque_itens_tmp"
@@ -1873,7 +1873,7 @@ CREATE TABLE `base_web_control`.`conferencia_estoque_itens_tmp` (
   `id_grade` int(11) DEFAULT NULL,
   `codigo_barra` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=125634 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "conta_corrente"
@@ -1894,7 +1894,7 @@ CREATE TABLE `base_web_control`.`conta_corrente` (
   `id_usuario_alteracao` int(11) DEFAULT NULL,
   `id_usuario_fechamento` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6498 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "conta_corrente_movimentacao"
@@ -1916,7 +1916,7 @@ CREATE TABLE `base_web_control`.`conta_corrente_movimentacao` (
   PRIMARY KEY (`id`),
   KEY `fk_conta_corrente_movimentacao_conta_corrente_idx` (`id_conta_corrente`),
   CONSTRAINT `fk_conta_corrente_movimentacao_conta_corrente` FOREIGN KEY (`id_conta_corrente`) REFERENCES `base_web_control`.`conta_corrente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=101452 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contador_cliente"
@@ -1927,7 +1927,7 @@ CREATE TABLE `base_web_control`.`contador_cliente` (
   `id_contador` int(11) DEFAULT NULL,
   `id_cliente` int(11) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contas_comprovante"
@@ -1940,7 +1940,7 @@ CREATE TABLE `base_web_control`.`contas_comprovante` (
   `comprovante_hash` text COMMENT 'nome do arquivo enviado com hash',
   `nome_arquivo` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6702 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contas_empresa"
@@ -1961,7 +1961,7 @@ CREATE TABLE `base_web_control`.`contas_empresa` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2910 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contas_pagar"
@@ -2014,7 +2014,7 @@ CREATE TABLE `base_web_control`.`contas_pagar` (
   KEY `fk_conta03` (`id_cadastro`,`id_venda`),
   KEY `chave` (`chave`),
   KEY `id_cliente` (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=13274494 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contas_pagar_bkp"
@@ -2067,7 +2067,7 @@ CREATE TABLE `base_web_control`.`contas_pagar_bkp` (
   KEY `fk_conta03` (`id_cadastro`,`id_venda`),
   KEY `chave` (`chave`),
   KEY `id_cliente` (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=6870163 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "contas_pagar_tpdoc"
@@ -2084,7 +2084,7 @@ CREATE TABLE `base_web_control`.`contas_pagar_tpdoc` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=73396 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "controle_anuncios"
@@ -2098,7 +2098,7 @@ CREATE TABLE `base_web_control`.`controle_anuncios` (
   PRIMARY KEY (`id`),
   KEY `id_anunciantes` (`id_anunciantes`),
   KEY `id_cadastro_cliente` (`id_cadastro_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=32392 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "controle_notafiscal"
@@ -2110,7 +2110,7 @@ CREATE TABLE `base_web_control`.`controle_notafiscal` (
   `sequencia` int(10) unsigned DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `fk_ctlnfe_01` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "credenciadora_cartao"
@@ -2126,7 +2126,7 @@ CREATE TABLE `base_web_control`.`credenciadora_cartao` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2636 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "credenciadoras_fixas"
@@ -2137,7 +2137,7 @@ CREATE TABLE `base_web_control`.`credenciadoras_fixas` (
   `cnpj` varchar(15) DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_credenciadora`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "credenciadoras_fixas_ignorar"
@@ -2151,7 +2151,7 @@ CREATE TABLE `base_web_control`.`credenciadoras_fixas_ignorar` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2456 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "cst"
@@ -2164,7 +2164,7 @@ CREATE TABLE `base_web_control`.`cst` (
   `descricao` varchar(150) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fkindex01` (`codigo`,`referencia`)
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "dados_avaliacao"
@@ -2183,7 +2183,7 @@ CREATE TABLE `base_web_control`.`dados_avaliacao` (
   `data_avaliacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `obs_avaliacao` varchar(2048) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2598 DEFAULT CHARSET=latin1 COMMENT='aramazena os dados de avaliacao da empresa';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='aramazena os dados de avaliacao da empresa';
 
 #
 # Structure for table "descricao_contas_pagar"
@@ -2201,7 +2201,7 @@ CREATE TABLE `base_web_control`.`descricao_contas_pagar` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=562967 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "descricao_contas_pagar_padrao"
@@ -2211,7 +2211,7 @@ CREATE TABLE `base_web_control`.`descricao_contas_pagar_padrao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "documentos_arquivado"
@@ -2233,7 +2233,7 @@ CREATE TABLE `base_web_control`.`documentos_arquivado` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=19408 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "documentos_pasta"
@@ -2250,7 +2250,7 @@ CREATE TABLE `base_web_control`.`documentos_pasta` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=42363 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "editora"
@@ -2277,7 +2277,7 @@ CREATE TABLE `base_web_control`.`encaminhamento` (
   `id_funcionario` int(10) unsigned DEFAULT '0',
   `data_cadastro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8256 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "encaminhamento_endereco"
@@ -2299,7 +2299,7 @@ CREATE TABLE `base_web_control`.`encaminhamento_endereco` (
   `pais` varchar(50) DEFAULT NULL,
   `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=581 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "encaminhamento_produtos"
@@ -2315,7 +2315,7 @@ CREATE TABLE `base_web_control`.`encaminhamento_produtos` (
   `tipo_encaminhamento` int(11) DEFAULT NULL,
   `prazo_entrega` datetime DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25597 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "encaminhamento_tipo"
@@ -2328,7 +2328,7 @@ CREATE TABLE `base_web_control`.`encaminhamento_tipo` (
   `ordenacao` int(10) unsigned NOT NULL COMMENT 'Ordenacao de apresentacao',
   `ativo` char(1) DEFAULT 'A' COMMENT 'A - Ativo, I - Inativo',
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "envio_sms_boleto"
@@ -2341,7 +2341,7 @@ CREATE TABLE `base_web_control`.`envio_sms_boleto` (
   `data_envio` date DEFAULT NULL,
   `celular` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1769 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "estado"
@@ -2352,7 +2352,7 @@ CREATE TABLE `base_web_control`.`estado` (
   `descricao` varchar(50) DEFAULT NULL,
   `sigla` char(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "estado_civil"
@@ -2362,7 +2362,7 @@ CREATE TABLE `base_web_control`.`estado_civil` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "estados"
@@ -2373,7 +2373,7 @@ CREATE TABLE `base_web_control`.`estados` (
   `descricao` varchar(50) DEFAULT NULL,
   `sigla` char(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "estoque"
@@ -2468,7 +2468,7 @@ CREATE TABLE `base_web_control`.`exclusao_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `info` varchar(55) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "exclusao_info_relacionados"
@@ -2479,7 +2479,7 @@ CREATE TABLE `base_web_control`.`exclusao_info_relacionados` (
   `id_info` int(11) DEFAULT NULL,
   `desc` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "fila_tarefas"
@@ -2498,7 +2498,7 @@ CREATE TABLE `base_web_control`.`fila_tarefas` (
   `requisicoes` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2212 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "financeiro_apoio"
@@ -2513,7 +2513,7 @@ CREATE TABLE `base_web_control`.`financeiro_apoio` (
   `cpfcnpj` varchar(14) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_index01` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "financeiro_funcionario_banco"
@@ -2533,7 +2533,7 @@ CREATE TABLE `base_web_control`.`financeiro_funcionario_banco` (
   `cpf_titular` varchar(11) DEFAULT NULL,
   `id_financeiro_funcionario_valor` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "financeiro_funcionario_valor"
@@ -2548,7 +2548,7 @@ CREATE TABLE `base_web_control`.`financeiro_funcionario_valor` (
   `comissao` decimal(10,2) DEFAULT NULL,
   `id_usuario_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=647 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fluxo_caixa"
@@ -2566,7 +2566,7 @@ CREATE TABLE `base_web_control`.`fluxo_caixa` (
   `conta` char(20) DEFAULT '',
   `data_criacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4148 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "forma_pagamento"
@@ -2589,7 +2589,7 @@ CREATE TABLE `base_web_control`.`forma_pagamento` (
   `parcelas` int(11) DEFAULT '12',
   `fluxo_contabil` enum('S','N') DEFAULT 'S',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=145 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "forma_pagamento_bandeira"
@@ -2600,7 +2600,7 @@ CREATE TABLE `base_web_control`.`forma_pagamento_bandeira` (
   `nome` varchar(50) DEFAULT NULL,
   `ativo` enum('S','N') DEFAULT 'S',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "forma_pagamento_cliente"
@@ -2631,7 +2631,7 @@ CREATE TABLE `base_web_control`.`forma_pagamento_ecommerce` (
   `chave_e_commerce` varchar(70) DEFAULT NULL,
   `cnpj_adm` char(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=109329 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor"
@@ -2685,7 +2685,7 @@ CREATE TABLE `base_web_control`.`fornecedor` (
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk2` (`id_forn_master`),
   KEY `idx_id_fornecedor` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=667605 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_banco"
@@ -2705,7 +2705,7 @@ CREATE TABLE `base_web_control`.`fornecedor_banco` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_forn01` (`id_fornecedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=2944 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_pedido"
@@ -2721,7 +2721,7 @@ CREATE TABLE `base_web_control`.`fornecedor_pedido` (
   `data_entrega` datetime DEFAULT NULL COMMENT 'Data em que o pedido foi entregue',
   `data_previsao_entrega` datetime DEFAULT NULL COMMENT 'Data passada pelo fornecedor como previsao de entrega',
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_pedido_item"
@@ -2739,7 +2739,7 @@ CREATE TABLE `base_web_control`.`fornecedor_pedido_item` (
   `tipo_registro` enum('A','L') NOT NULL DEFAULT 'A' COMMENT 'A - Ativo, L - Log',
   `statos_item` enum('A','C') NOT NULL DEFAULT 'A' COMMENT 'A - Ativo, C- Cancelado',
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_produto"
@@ -2755,7 +2755,7 @@ CREATE TABLE `base_web_control`.`fornecedor_produto` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_fornecedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=17655 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_servico"
@@ -2771,7 +2771,7 @@ CREATE TABLE `base_web_control`.`fornecedor_servico` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3321 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "fornecedor_transportadora"
@@ -2787,7 +2787,7 @@ CREATE TABLE `base_web_control`.`fornecedor_transportadora` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_transportadora`),
   KEY `fk_001` (`id_fornecedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=1901 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "funcionario"
@@ -2858,7 +2858,7 @@ CREATE TABLE `base_web_control`.`funcionario` (
   `id_cargo` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_ID_CADASTRO` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=311777 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "funcionario_agendamento"
@@ -2876,7 +2876,7 @@ CREATE TABLE `base_web_control`.`funcionario_agendamento` (
   `observacao` text,
   PRIMARY KEY (`id`,`id_funcionario`),
   KEY `fk_agendamentos_funcionario_agendamento1_idx` (`id_funcionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "funcionario_comissao"
@@ -2891,7 +2891,7 @@ CREATE TABLE `base_web_control`.`funcionario_comissao` (
   PRIMARY KEY (`id`),
   KEY `id_produto` (`id_produto`),
   KEY `id_funcionario` (`id_funcionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=172093 DEFAULT CHARSET=latin1 COMMENT='Registro de comissoes individuais para produtos/serviços';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Registro de comissoes individuais para produtos/serviços';
 
 #
 # Structure for table "funcionario_funcao"
@@ -2927,7 +2927,7 @@ CREATE TABLE `base_web_control`.`funcionario_horario_trabalho` (
   `choque_qtde` int(2) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `id_funcionario` (`id_funcionario`,`id_semana`)
-) ENGINE=InnoDB AUTO_INCREMENT=454012 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "funcionario2"
@@ -3032,7 +3032,7 @@ CREATE TABLE `base_web_control`.`grade` (
   KEY `id_cadastro` (`id_cadastro`),
   KEY `codigo_barra_pai` (`codigo_barra_pai`),
   KEY `ativo` (`ativo`)
-) ENGINE=InnoDB AUTO_INCREMENT=1012001245 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_arrumar_estoque"
@@ -3047,7 +3047,7 @@ CREATE TABLE `base_web_control`.`grade_arrumar_estoque` (
   `id_usuario` int(11) NOT NULL,
   `finalizado` enum('N','S') NOT NULL DEFAULT 'N',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=252189 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_atributo"
@@ -3062,7 +3062,7 @@ CREATE TABLE `base_web_control`.`grade_atributo` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_grade_atributo`)
-) ENGINE=InnoDB AUTO_INCREMENT=12087 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_atributo_valor"
@@ -3079,7 +3079,7 @@ CREATE TABLE `base_web_control`.`grade_atributo_valor` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_grade_atributo_valor`),
   KEY `atributo` (`id_atributo`)
-) ENGINE=InnoDB AUTO_INCREMENT=34965 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_foto"
@@ -3090,7 +3090,7 @@ CREATE TABLE `base_web_control`.`grade_foto` (
   `id_grade` bigint(20) NOT NULL COMMENT 'id_grade',
   `caminho_imagem` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`id`,`id_grade`)
-) ENGINE=InnoDB AUTO_INCREMENT=1566 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 #
 # Structure for table "grade_historico"
@@ -3120,7 +3120,7 @@ CREATE TABLE `base_web_control`.`grade_historico` (
   KEY `codigo_barra_antigo` (`id_cadastro`,`codigo_barra_antigo`),
   KEY `codigo_barra` (`codigo_barra`,`id_cadastro`),
   KEY `fk_index01` (`id_grade`)
-) ENGINE=InnoDB AUTO_INCREMENT=152311752 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_promocao"
@@ -3154,7 +3154,7 @@ CREATE TABLE `base_web_control`.`grade_promocao` (
   KEY `id_grade_ativo` (`id_grade`,`ativo`),
   KEY `id_grade` (`id_grade`),
   KEY `filtro_inicial` (`id_grade`,`disponivel_inicio`,`disponivel_final`,`ativo`)
-) ENGINE=InnoDB AUTO_INCREMENT=7389 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grade_saida_estoque"
@@ -3172,7 +3172,7 @@ CREATE TABLE `base_web_control`.`grade_saida_estoque` (
   `data_hora_alteracao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `unidade_destino` text,
   PRIMARY KEY (`id_grade_saida_estoque`)
-) ENGINE=InnoDB AUTO_INCREMENT=115191 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "grau_instrucao"
@@ -3182,7 +3182,7 @@ CREATE TABLE `base_web_control`.`grau_instrucao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "hash"
@@ -3214,7 +3214,7 @@ CREATE TABLE `base_web_control`.`horario_trabalho` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `horario` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "ibptax"
@@ -3239,7 +3239,7 @@ CREATE TABLE `base_web_control`.`ibptax` (
   PRIMARY KEY (`id_ibptax`),
   KEY `fkindex` (`codigo`),
   KEY `fkindex01` (`uf`,`codigo`)
-) ENGINE=InnoDB AUTO_INCREMENT=319465 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "importacao"
@@ -3254,7 +3254,7 @@ CREATE TABLE `base_web_control`.`importacao` (
   `data_aprovacao` datetime DEFAULT NULL,
   `nome_tabela` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_importacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=9098 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "indica_amigo"
@@ -3283,7 +3283,7 @@ CREATE TABLE `base_web_control`.`indica_amigo` (
   `cnpj_cpf` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=29666 DEFAULT CHARSET=latin1 COMMENT='cliente indica um amigo';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='cliente indica um amigo';
 
 #
 # Structure for table "indica_amigo_log"
@@ -3301,7 +3301,7 @@ CREATE TABLE `base_web_control`.`indica_amigo_log` (
   `id_funcionario` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk002` (`id_indicacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=29514 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "lancamentos_empresas"
@@ -3322,7 +3322,7 @@ CREATE TABLE `base_web_control`.`lancamentos_empresas` (
   `id_off` int(11) DEFAULT NULL,
   `id_venda` int(11) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=118278 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "limite_funcionario"
@@ -3342,7 +3342,7 @@ CREATE TABLE `base_web_control`.`limite_funcionario` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=50429607 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "link"
@@ -3362,7 +3362,7 @@ CREATE TABLE `base_web_control`.`link` (
   `visivel` enum('S','N') DEFAULT 'S',
   PRIMARY KEY (`id`),
   KEY `fk_id_modulo` (`id_modulo`)
-) ENGINE=InnoDB AUTO_INCREMENT=264 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "livro"
@@ -3394,7 +3394,7 @@ CREATE TABLE `base_web_control`.`log_acesso_offline` (
   `tipo_acesso` varchar(1) DEFAULT NULL COMMENT '0 - Login | 1 - Sincronismo Geral | 2 - Sincronismo Parcial',
   `terminal` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=170410 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_acoes_notasfiscais"
@@ -3415,7 +3415,7 @@ CREATE TABLE `base_web_control`.`log_acoes_notasfiscais` (
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_venda` (`id_venda`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=561911 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_anuncios"
@@ -3427,7 +3427,7 @@ CREATE TABLE `base_web_control`.`log_anuncios` (
   `anuncios` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=891775 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_anuncios_relatorio"
@@ -3444,7 +3444,7 @@ CREATE TABLE `base_web_control`.`log_anuncios_relatorio` (
   PRIMARY KEY (`id`),
   KEY `id_anuncio` (`id_anuncio`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=2325 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_dados_cadastro"
@@ -3458,7 +3458,7 @@ CREATE TABLE `base_web_control`.`log_dados_cadastro` (
   `data_alteracao` datetime DEFAULT NULL,
   `origem` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4794 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_envio_email"
@@ -3476,7 +3476,7 @@ CREATE TABLE `base_web_control`.`log_envio_email` (
   KEY `id_venda` (`id_venda`),
   KEY `id_usuario` (`id_usuario_envio`),
   KEY `id_cliente` (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=32835 DEFAULT CHARSET=latin1 COMMENT='Tabela com log de e-mails de orçamentos enviados pelo sistema';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabela com log de e-mails de orçamentos enviados pelo sistema';
 
 #
 # Structure for table "log_erro_sessao"
@@ -3488,7 +3488,7 @@ CREATE TABLE `base_web_control`.`log_erro_sessao` (
   `data_criacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `pagina_anterior` char(254) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=885619 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_estoque"
@@ -3505,7 +3505,7 @@ CREATE TABLE `base_web_control`.`log_estoque` (
   `data_log` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=42969109 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_mensage_atencao"
@@ -3518,7 +3518,7 @@ CREATE TABLE `base_web_control`.`log_mensage_atencao` (
   `id_alert` int(11) DEFAULT NULL,
   `save_data` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=83921 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_monitoramento"
@@ -3531,7 +3531,7 @@ CREATE TABLE `base_web_control`.`log_monitoramento` (
   `data_hora` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `idx_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=17371211 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_sync_loja"
@@ -3545,7 +3545,7 @@ CREATE TABLE `base_web_control`.`log_sync_loja` (
   `status` enum('O','E') NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=4903 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_sync_loja_itens"
@@ -3563,7 +3563,7 @@ CREATE TABLE `base_web_control`.`log_sync_loja_itens` (
   `prod_ecommerce` enum('S','N') DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_id_sync` (`id_sync`)
-) ENGINE=InnoDB AUTO_INCREMENT=4569971 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "log_web_control"
@@ -3582,7 +3582,7 @@ CREATE TABLE `base_web_control`.`log_web_control` (
   `informacao` text NOT NULL,
   `tipo_log` varchar(5) DEFAULT NULL COMMENT 'DelCV - Exclusão de informações, ReJProd - Reajuste de preços de produto, ZCEST - Zerar Cest Produtos',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16937 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_campanha"
@@ -3603,7 +3603,7 @@ CREATE TABLE `base_web_control`.`mailmkt_campanha` (
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `fk_idcadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=2943 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_campanha_agendamento"
@@ -3617,7 +3617,7 @@ CREATE TABLE `base_web_control`.`mailmkt_campanha_agendamento` (
   `hora_agendamento` time DEFAULT NULL,
   `status_agendamento` enum('A','E') DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=996 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_campanha_fixa"
@@ -3628,7 +3628,7 @@ CREATE TABLE `base_web_control`.`mailmkt_campanha_fixa` (
   `nome_campanha` varchar(150) DEFAULT NULL,
   `texto` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_campanha_fixa_ignorar"
@@ -3640,7 +3640,7 @@ CREATE TABLE `base_web_control`.`mailmkt_campanha_fixa_ignorar` (
   `id_torpedo_campanha_fixa` int(11) DEFAULT NULL,
   `data_exclusao` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_config"
@@ -3658,7 +3658,7 @@ CREATE TABLE `base_web_control`.`mailmkt_config` (
   `dt_creation` timestamp NULL DEFAULT NULL,
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=585 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_config_master"
@@ -3686,7 +3686,7 @@ CREATE TABLE `base_web_control`.`mailmkt_lista` (
   `fixa` enum('S','N') DEFAULT 'N',
   `status` enum('A','I') DEFAULT 'A',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=55937 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_lista_emails"
@@ -3699,7 +3699,7 @@ CREATE TABLE `base_web_control`.`mailmkt_lista_emails` (
   `email` varchar(150) DEFAULT NULL,
   `nome` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=121937 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "mailmkt_log"
@@ -3720,7 +3720,7 @@ CREATE TABLE `base_web_control`.`mailmkt_log` (
   `email` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_idcampanha` (`id_campanha`)
-) ENGINE=InnoDB AUTO_INCREMENT=2355 DEFAULT CHARSET=latin1 COMMENT='tabela que guarda o historico dos envios etc';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='tabela que guarda o historico dos envios etc';
 
 #
 # Structure for table "manifest"
@@ -3754,7 +3754,7 @@ CREATE TABLE `base_web_control`.`manifest_condutor` (
   `nome` varchar(100) DEFAULT NULL,
   `cpf` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifest_reboque"
@@ -3777,7 +3777,7 @@ CREATE TABLE `base_web_control`.`manifest_reboque` (
   `tpcar` int(11) DEFAULT NULL COMMENT '00 - não aplicável | 01 - Aberta | 02 - Fechada/Baú | 03 - Granelera | 04 - Porta Container | 05 - Sider',
   `tprodado` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifest_veictracao"
@@ -3800,7 +3800,7 @@ CREATE TABLE `base_web_control`.`manifest_veictracao` (
   `rntrc` varchar(145) DEFAULT NULL,
   `ciot` varchar(145) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='	';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='	';
 
 #
 # Structure for table "manifesto_informacoes"
@@ -3821,7 +3821,7 @@ CREATE TABLE `base_web_control`.`manifesto_informacoes` (
   `data_emissao` datetime DEFAULT NULL,
   `descricao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifest_uf_percurso"
@@ -3834,7 +3834,7 @@ CREATE TABLE `base_web_control`.`manifest_uf_percurso` (
   PRIMARY KEY (`id`),
   KEY `manifest_info_idx` (`manifest_id`),
   CONSTRAINT `manifest_info` FOREIGN KEY (`manifest_id`) REFERENCES `base_web_control`.`manifesto_informacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifest_documentos"
@@ -3866,7 +3866,7 @@ CREATE TABLE `base_web_control`.`manifesto_modal` (
   `rntrc` varchar(105) DEFAULT NULL,
   `veic_tracao` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifesto_modal_condutor"
@@ -3879,7 +3879,7 @@ CREATE TABLE `base_web_control`.`manifesto_modal_condutor` (
   PRIMARY KEY (`id`),
   KEY `manifesto_idx` (`manifesto_id`),
   CONSTRAINT `manifesto_idxoe` FOREIGN KEY (`manifesto_id`) REFERENCES `base_web_control`.`manifesto_informacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "manifesto_modal_reboque"
@@ -3892,7 +3892,7 @@ CREATE TABLE `base_web_control`.`manifesto_modal_reboque` (
   PRIMARY KEY (`id`),
   KEY `manifesto_idx` (`manifesto_id`),
   CONSTRAINT `manifesto_idxu` FOREIGN KEY (`manifesto_id`) REFERENCES `base_web_control`.`manifesto_informacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "marcas"
@@ -3905,7 +3905,7 @@ CREATE TABLE `base_web_control`.`marcas` (
   `imagem` varchar(255) DEFAULT NULL,
   `loja_virtual` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7090 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "matriz_filial"
@@ -3921,7 +3921,7 @@ CREATE TABLE `base_web_control`.`matriz_filial` (
   `data_criacao` datetime NOT NULL,
   `data_alteracao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "matriz_filial_historico"
@@ -3934,7 +3934,7 @@ CREATE TABLE `base_web_control`.`matriz_filial_historico` (
   `data_acao` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `tipo_acao` char(1) NOT NULL COMMENT 'C - Create, U - Update , D - Delete',
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46875 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "matriz_permissao_modulo"
@@ -3974,7 +3974,7 @@ CREATE TABLE `base_web_control`.`mercado_livre_produto` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22936 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "modalidade_calculo"
@@ -3985,7 +3985,7 @@ CREATE TABLE `base_web_control`.`modalidade_calculo` (
   `descricao` varchar(25) DEFAULT NULL,
   `situacao` enum('A','I') DEFAULT 'A',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "modalidade_calculo_st"
@@ -3996,7 +3996,7 @@ CREATE TABLE `base_web_control`.`modalidade_calculo_st` (
   `descricao` varchar(50) DEFAULT NULL,
   `situacao` enum('A','I') DEFAULT 'A',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "modelo_contrato"
@@ -4014,7 +4014,7 @@ CREATE TABLE `base_web_control`.`modelo_contrato` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=471 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "modulo"
@@ -4028,7 +4028,7 @@ CREATE TABLE `base_web_control`.`modulo` (
   `ordem_modulo` int(2) DEFAULT NULL,
   `yotube` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "modulos"
@@ -4040,7 +4040,7 @@ CREATE TABLE `base_web_control`.`modulos` (
   `nome_modulo` char(50) NOT NULL,
   `descricao_modulo` char(254) NOT NULL,
   KEY `Index 1` (`id_modulo`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COMMENT='Tabela com a ligacao entre os modulos e o webcontrol';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabela com a ligacao entre os modulos e o webcontrol';
 
 #
 # Structure for table "movimento_titulo_recebafacil"
@@ -4054,7 +4054,7 @@ CREATE TABLE `base_web_control`.`movimento_titulo_recebafacil` (
   `vencimento` date DEFAULT NULL,
   `valor` decimal(12,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=480 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "municipio_rf"
@@ -4066,7 +4066,7 @@ CREATE TABLE `base_web_control`.`municipio_rf` (
   `cidade` varchar(57) NOT NULL,
   `uf` char(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5567 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "ncm"
@@ -4128,7 +4128,7 @@ CREATE TABLE `base_web_control`.`nf_devolucao` (
   `localdesembarco` varchar(255) DEFAULT NULL,
   `transporte` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=109558 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 1 CHARSET=latin1;
 
 #
 # Structure for table "nf_devolucao_cobranca"
@@ -4141,7 +4141,7 @@ CREATE TABLE `base_web_control`.`nf_devolucao_cobranca` (
   `dup_venc` date DEFAULT NULL,
   `dup_valor` decimal(12,2) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1377 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_devolucao_itens"
@@ -4178,7 +4178,7 @@ CREATE TABLE `base_web_control`.`nf_devolucao_itens` (
   `produto_descricao` varchar(255) DEFAULT NULL,
   `nitemped` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=298603 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_devolucao_itens_COFINS"
@@ -4376,7 +4376,7 @@ CREATE TABLE `base_web_control`.`nf_entrada` (
   KEY `fk_nfe_02` (`numero_nota`),
   KEY `fk_nfe_03` (`id_cliente`),
   KEY `id_fornecedor` (`id_fornecedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=17743 DEFAULT CHARSET=latin1 COMMENT='transporte [ 1 - Marintima, 2 - Fluvial, 3 - Lacustre, 4 - Aérea, 5 - Postal, 6 - Ferroviária, 7 - Rodoviária, 8 - Conduto/Rede Transmissão, 9 - Meios Próprios, 10 - Entrada / Saída , icta, 11 - Courier, 12 - Handcarry ]';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='transporte [ 1 - Marintima, 2 - Fluvial, 3 - Lacustre, 4 - Aérea, 5 - Postal, 6 - Ferroviária, 7 - Rodoviária, 8 - Conduto/Rede Transmissão, 9 - Meios Próprios, 10 - Entrada / Saída , icta, 11 - Courier, 12 - Handcarry ]';
 
 #
 # Structure for table "nf_entrada_estoque"
@@ -4493,7 +4493,7 @@ CREATE TABLE `base_web_control`.`nf_entrada_itens` (
   `vr_outras_despesas` decimal(12,4) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk001` (`id_nota_entrada`)
-) ENGINE=InnoDB AUTO_INCREMENT=53443 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_entrada_xml"
@@ -4509,7 +4509,7 @@ CREATE TABLE `base_web_control`.`nf_entrada_xml` (
   PRIMARY KEY (`id`),
   KEY `fk_numero_nota` (`id_cadastro`,`numero_nota`),
   KEY `fk_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=314654 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_inutilizadas"
@@ -4524,7 +4524,7 @@ CREATE TABLE `base_web_control`.`nf_inutilizadas` (
   `protocolo` varchar(255) DEFAULT NULL,
   `motivo_inutilizacao` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=196534 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_municipio_RF"
@@ -4536,7 +4536,7 @@ CREATE TABLE `base_web_control`.`nf_municipio_RF` (
   `cidade` varchar(57) NOT NULL,
   `uf` char(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5567 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_natureza"
@@ -4548,7 +4548,7 @@ CREATE TABLE `base_web_control`.`nf_natureza` (
   `tipo` enum('DF') DEFAULT NULL,
   `Valor` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_paises"
@@ -4578,7 +4578,7 @@ CREATE TABLE `base_web_control`.`nf_servico_assinadas` (
   PRIMARY KEY (`ID`),
   KEY `UK_TBL_RPS_ASSINADAS` (`LOTE`),
   KEY `FK_RPS_ASSINADAS_01` (`NUMERO_PEDIDO`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_tributos_itens_COFINS"
@@ -4604,7 +4604,7 @@ CREATE TABLE `base_web_control`.`nf_tributos_itens_COFINS` (
   KEY `fk_id_nf_devolucao_itens` (`id_nf_devolucao_itens`),
   KEY `fk_id_nf_venda_itens` (`id_nf_venda_itens`),
   KEY `fk_id_nf_entrada_itens` (`id_nf_entrada_itens`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_tributos_itens_COFINSST"
@@ -4669,7 +4669,7 @@ CREATE TABLE `base_web_control`.`nf_tributos_itens_ICMS` (
   KEY `fk_id_nf_devolucao_itens` (`id_nf_devolucao_itens`),
   KEY `fk_id_nf_entrada_itens` (`id_nf_entrada_itens`),
   KEY `fk_id_nf_venda_itens` (`id_nf_venda_itens`)
-) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_tributos_itens_II"
@@ -4719,7 +4719,7 @@ CREATE TABLE `base_web_control`.`nf_tributos_itens_IPI` (
   KEY `fk_id_nf_entrada_itens` (`id_nf_entrada_itens`),
   KEY `fk_id_nf_venda_itens` (`id_nf_venda_itens`),
   KEY `fk_id_nf_devolucao_itens` (`id_nf_devolucao_itens`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_tributos_itens_PIS"
@@ -4743,7 +4743,7 @@ CREATE TABLE `base_web_control`.`nf_tributos_itens_PIS` (
   KEY `fk_id_nf_venda_itens` (`id_nf_venda_itens`),
   KEY `fk_id_nf_entrada_itens` (`id_nf_entrada_itens`),
   KEY `fk_id_nf_devolucao_itens` (`id_nf_devolucao_itens`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nf_tributos_itens_PISST"
@@ -4813,7 +4813,7 @@ CREATE TABLE `base_web_control`.`nf_tributos_venda` (
   `id_placa` int(11) DEFAULT NULL,
   `numeracao` varchar(70) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20990 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_cupom_fiscal"
@@ -4844,7 +4844,7 @@ CREATE TABLE `base_web_control`.`nfe_cupom_fiscal` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_cupom_fiscal`),
   KEY `fk_id_produto` (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=99913 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_exigibilidade"
@@ -4914,7 +4914,7 @@ CREATE TABLE `base_web_control`.`nfe_icms_situacao_tributaria` (
   `regime` enum('S','T') DEFAULT NULL COMMENT 'T - Tributacao Normal   S - Simples Nacional',
   `valor` int(3) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_lista_servico"
@@ -4925,7 +4925,7 @@ CREATE TABLE `base_web_control`.`nfe_lista_servico` (
   `descricao` text,
   `codigo` int(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_modalidade"
@@ -4937,7 +4937,7 @@ CREATE TABLE `base_web_control`.`nfe_modalidade` (
   `tipo` enum('1','2','3') DEFAULT NULL,
   `valor` int(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_motivo_desoneracao_icms"
@@ -4948,7 +4948,7 @@ CREATE TABLE `base_web_control`.`nfe_motivo_desoneracao_icms` (
   `descricao` varchar(60) DEFAULT NULL,
   `dt_cadastro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_motivo_desoneracao`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_municipio"
@@ -4973,7 +4973,7 @@ CREATE TABLE `base_web_control`.`nfe_municipio` (
   `entidade_equiplano` int(3) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_01` (`descricao`)
-) ENGINE=InnoDB AUTO_INCREMENT=5594 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_mvat"
@@ -4987,7 +4987,7 @@ CREATE TABLE `base_web_control`.`nfe_mvat` (
   `mvat_lr` decimal(12,3) NOT NULL,
   `pICMS_Interno` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_origem"
@@ -4998,7 +4998,7 @@ CREATE TABLE `base_web_control`.`nfe_origem` (
   `codigo` int(2) DEFAULT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_paises"
@@ -5048,7 +5048,7 @@ CREATE TABLE `base_web_control`.`nfe_Produto_COFINSST` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk001` (`produto_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=324115 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_Produto_ICMS"
@@ -5150,7 +5150,7 @@ CREATE TABLE `base_web_control`.`nfe_Produto_ISSQN` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`ISSQN_id`),
   KEY `idx_id_produto` (`produto_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3950 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_Produto_Opcoes"
@@ -5208,7 +5208,7 @@ CREATE TABLE `base_web_control`.`nfe_situacao_tributaria` (
   `descricao` varchar(150) DEFAULT NULL,
   `tipo` varchar(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfe_tipo_especifico"
@@ -5250,7 +5250,7 @@ CREATE TABLE `base_web_control`.`nfe_uf` (
   `FCP_percentual` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `FK_01` (`sigla`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfs_server"
@@ -5267,7 +5267,7 @@ CREATE TABLE `base_web_control`.`nfs_server` (
   `xml_padrao` varchar(15) DEFAULT NULL,
   `informacao` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfs_situacao_tributaria"
@@ -5279,7 +5279,7 @@ CREATE TABLE `base_web_control`.`nfs_situacao_tributaria` (
   `codigo_st` int(2) DEFAULT NULL,
   `descricao` longtext,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nfse_erros"
@@ -5292,7 +5292,7 @@ CREATE TABLE `base_web_control`.`nfse_erros` (
   `mensagem` longtext,
   `correcao` longtext,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=194 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nota_credito"
@@ -5323,7 +5323,7 @@ CREATE TABLE `base_web_control`.`nota_credito` (
   KEY `fk_nt02` (`id_cadastro`),
   KEY `fk_nt03` (`id_cliente`),
   KEY `fk_nt04` (`id_venda_resgate`)
-) ENGINE=InnoDB AUTO_INCREMENT=73007 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nota_credito_historico"
@@ -5340,7 +5340,7 @@ CREATE TABLE `base_web_control`.`nota_credito_historico` (
   PRIMARY KEY (`id`),
   KEY `id_nota` (`idnota_credito`),
   CONSTRAINT `id_nota` FOREIGN KEY (`idnota_credito`) REFERENCES `base_web_control`.`nota_credito` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=24443 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nota_fiscal"
@@ -5382,7 +5382,7 @@ CREATE TABLE `base_web_control`.`nota_fiscal` (
   KEY `fk_id_produto` (`id_produto`),
   KEY `fk_nota02` (`numero_nota`),
   KEY `fk_nota03` (`id_cadastro`,`codigo_barra`)
-) ENGINE=InnoDB AUTO_INCREMENT=6323519 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "nota_fiscal_tmp"
@@ -5435,7 +5435,7 @@ CREATE TABLE `base_web_control`.`nota_fiscal_tmp` (
   KEY `id_usuario` (`id_usuario`,`id_fornecedor`),
   KEY `fk_nota01` (`id_cadastro`),
   KEY `fk_id_produto` (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=5631397 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "notas_promissorias"
@@ -5514,7 +5514,7 @@ CREATE TABLE `base_web_control`.`orcamento` (
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_cliente` (`id_cliente`),
   KEY `fk_id_forma_pagamento` (`id_forma_pagamento`)
-) ENGINE=InnoDB AUTO_INCREMENT=78014 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "orcamento_cliente"
@@ -5539,7 +5539,7 @@ CREATE TABLE `base_web_control`.`orcamento_cliente` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=27422 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "orcamento_itens"
@@ -5555,7 +5555,7 @@ CREATE TABLE `base_web_control`.`orcamento_itens` (
   PRIMARY KEY (`id`),
   KEY `fk_id_orcamento` (`id_orcamento`),
   KEY `fk_id_unidade` (`id_unidade`)
-) ENGINE=InnoDB AUTO_INCREMENT=181072 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "ordem_servico"
@@ -5567,7 +5567,7 @@ CREATE TABLE `base_web_control`.`ordem_servico` (
   `ativo` tinyint(4) DEFAULT '0',
   `enviar_torpedo` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=102739 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "ordem_servico_itens"
@@ -5579,7 +5579,7 @@ CREATE TABLE `base_web_control`.`ordem_servico_itens` (
   `descricao` varchar(255) DEFAULT NULL,
   `ativo` tinyint(4) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=164765 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "ordem_servico_tipo"
@@ -5596,7 +5596,7 @@ CREATE TABLE `base_web_control`.`ordem_servico_tipo` (
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `fk_id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=59544 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "origem"
@@ -5622,7 +5622,7 @@ CREATE TABLE `base_web_control`.`Pagamento_notas` (
   `valor_pagamento` decimal(10,2) DEFAULT NULL,
   `forma_pagamento` int(11) DEFAULT NULL COMMENT '0 = A vista, 1 = A prazo',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4774 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "pais"
@@ -5633,7 +5633,7 @@ CREATE TABLE `base_web_control`.`pais` (
   `nome` varchar(60) DEFAULT NULL,
   `sigla` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "parcela"
@@ -5657,7 +5657,7 @@ CREATE TABLE `base_web_control`.`permissao_usuario` (
   PRIMARY KEY (`id`),
   KEY `fk_permissao02` (`id_usuario`),
   KEY `fk_permissao01` (`id_modulo`,`id_cod_permissao`)
-) ENGINE=InnoDB AUTO_INCREMENT=2079798 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "posto_registros"
@@ -5691,7 +5691,7 @@ CREATE TABLE `base_web_control`.`pro_parametro` (
   `id_cadastro` int(11) DEFAULT NULL,
   `parametro` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_pro_parametro`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "pro_parametro_valor"
@@ -5715,7 +5715,7 @@ CREATE TABLE `base_web_control`.`pro_valor` (
   `id_parametro` int(11) DEFAULT NULL,
   `valor_parametro` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_pro_valor`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto"
@@ -5836,7 +5836,7 @@ CREATE TABLE `base_web_control`.`produto` (
   KEY `fk_produto01` (`id_cadastro`,`codigo_barra`,`id_classificacao`,`id_fornecedor`),
   KEY `fk_produto02` (`id_cadastro`,`descricao`),
   FULLTEXT KEY `fk_produto05` (`descricao`)
-) ENGINE=InnoDB AUTO_INCREMENT=1003028624 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_apoio"
@@ -5916,7 +5916,7 @@ CREATE TABLE `base_web_control`.`produto_arrumar_estoque` (
   KEY `fk_id_produto` (`id_produto`),
   KEY `fk_id_001` (`id_cadastro`,`id_produto`),
   KEY `fk_id_002` (`id_cadastro`,`id_produto`,`inserir_retirar`)
-) ENGINE=InnoDB AUTO_INCREMENT=6816588 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_arrumar_estoque_tmp"
@@ -5945,7 +5945,7 @@ CREATE TABLE `base_web_control`.`produto_arrumar_estoque_tmp` (
   KEY `fk_id_produto` (`id_produto`),
   KEY `fk_id_001` (`id_cadastro`,`id_produto`),
   KEY `fk_id_002` (`id_cadastro`,`id_produto`,`inserir_retirar`)
-) ENGINE=InnoDB AUTO_INCREMENT=195403 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_beneficio_fiscal"
@@ -5958,7 +5958,7 @@ CREATE TABLE `base_web_control`.`produto_beneficio_fiscal` (
   `cBeneFiscal` varchar(8) DEFAULT '',
   PRIMARY KEY (`Id`),
   KEY `fk001` (`id_produto`,`cst`)
-) ENGINE=InnoDB AUTO_INCREMENT=13356 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_busca_prevenda"
@@ -5969,7 +5969,7 @@ CREATE TABLE `base_web_control`.`produto_busca_prevenda` (
   `nome` varchar(105) DEFAULT NULL,
   `chave` varchar(105) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COMMENT='selectFiltroBuscaPreVenda';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='selectFiltroBuscaPreVenda';
 
 #
 # Structure for table "produto_busca_prevenda_ordem"
@@ -5982,7 +5982,7 @@ CREATE TABLE `base_web_control`.`produto_busca_prevenda_ordem` (
   `id_busca_prevenda` int(11) DEFAULT NULL,
   `ordem` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2496 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_combNF"
@@ -5997,7 +5997,7 @@ CREATE TABLE `base_web_control`.`produto_combNF` (
   `qTemp` decimal(12,4) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_produto` (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=15476 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_configuracoes_comercial"
@@ -6008,7 +6008,7 @@ CREATE TABLE `base_web_control`.`produto_configuracoes_comercial` (
   `id_produto` int(11) DEFAULT NULL,
   `controle_qtd` enum('S','N') DEFAULT 'N',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=534 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_contabil"
@@ -6020,7 +6020,7 @@ CREATE TABLE `base_web_control`.`produto_contabil` (
   `codBenef` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `fk001` (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_fornecedor"
@@ -6037,7 +6037,7 @@ CREATE TABLE `base_web_control`.`produto_fornecedor` (
   KEY `idx_busca` (`id_produto`,`id_fornecedor`),
   CONSTRAINT `fk_fornecedor_fornecedor_produto` FOREIGN KEY (`id_fornecedor`) REFERENCES `base_web_control`.`fornecedor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_produto_fornecedor_produto` FOREIGN KEY (`id_produto`) REFERENCES `base_web_control`.`produto` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2023 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_foto"
@@ -6050,7 +6050,7 @@ CREATE TABLE `base_web_control`.`produto_foto` (
   `id_grade` bigint(20) DEFAULT NULL COMMENT 'id_grade ou id_produto ',
   PRIMARY KEY (`id`),
   KEY `fk_id_produto` (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=504956 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_icms"
@@ -6075,7 +6075,7 @@ CREATE TABLE `base_web_control`.`produto_icms` (
   `data_hora_excluido` datetime DEFAULT NULL,
   `id_usuario_deleto` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto_info_nutricionais"
@@ -6121,7 +6121,7 @@ CREATE TABLE `base_web_control`.`produto_pedido_equipamento` (
   `id_cadastro` int(11) NOT NULL,
   `id_produto` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=596 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produto2"
@@ -6482,7 +6482,7 @@ CREATE TABLE `base_web_control`.`produtos_composicao` (
   `qtd` decimal(15,3) DEFAULT NULL,
   `tipo_baixa_composicao` enum('F','V') DEFAULT 'F',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produtos_deletados"
@@ -6612,7 +6612,7 @@ CREATE TABLE `base_web_control`.`produtos_detalhes` (
   `nome_lowe_sem_acento` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_produto`),
   UNIQUE KEY `fk002` (`codigo_barra_ean`)
-) ENGINE=InnoDB AUTO_INCREMENT=13126 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1     DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "produtos_detalhes_agrupagem"
@@ -7030,7 +7030,7 @@ CREATE TABLE `base_web_control`.`promocao_kit` (
   PRIMARY KEY (`id`),
   KEY `idx_id_cadastro` (`id_cadastro`),
   KEY `idx_codigo_barra` (`codigo_barra`)
-) ENGINE=InnoDB AUTO_INCREMENT=4641 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "promocao_kit_grade"
@@ -7053,7 +7053,7 @@ CREATE TABLE `base_web_control`.`promocao_kit_grade` (
   KEY `idx_id_cadastro` (`id_cadastro`),
   KEY `idx_id_grade` (`id_grade`),
   KEY `idx_id_promocao_kit` (`id_promocao_kit`)
-) ENGINE=InnoDB AUTO_INCREMENT=48550 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "promocao_mix"
@@ -7072,7 +7072,7 @@ CREATE TABLE `base_web_control`.`promocao_mix` (
   `total_desconto` float(10,2) DEFAULT '0.00',
   PRIMARY KEY (`id`),
   KEY `idx_idcadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=369 DEFAULT CHARSET=latin1 COMMENT='tabela para promocao com multiplos produtos (mix gula)';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='tabela para promocao com multiplos produtos (mix gula)';
 
 #
 # Structure for table "promocao_mix_desconto"
@@ -7085,7 +7085,7 @@ CREATE TABLE `base_web_control`.`promocao_mix_desconto` (
   `id_produto` int(11) NOT NULL,
   `valor_desconto` float(10,3) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1065 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "promocao_mix_tempo"
@@ -7102,7 +7102,7 @@ CREATE TABLE `base_web_control`.`promocao_mix_tempo` (
   `qtd` float(10,3) DEFAULT NULL,
   `codigo_barra` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=769 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "promocao_quantidade"
@@ -7128,7 +7128,7 @@ CREATE TABLE `base_web_control`.`promocao_quantidade` (
   KEY `idx_usuario` (`id_usuario`),
   KEY `idx_usuario2` (`id_usuario_alterou`),
   KEY `idx_ativo` (`ativo`)
-) ENGINE=InnoDB AUTO_INCREMENT=11110 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "relatorio_estoque_mensal"
@@ -7140,7 +7140,7 @@ CREATE TABLE `base_web_control`.`relatorio_estoque_mensal` (
   `dia` date DEFAULT NULL,
   `hora` time DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "relatorio_estoque_mensal_produtos"
@@ -7155,7 +7155,7 @@ CREATE TABLE `base_web_control`.`relatorio_estoque_mensal_produtos` (
   `unid` decimal(9,3) DEFAULT NULL,
   `custo` decimal(9,3) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10406 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "relatorios_campos"
@@ -7173,7 +7173,7 @@ CREATE TABLE `base_web_control`.`relatorios_campos` (
   `mascara` varchar(50) DEFAULT NULL,
   `ordemApresentacao` int(11) DEFAULT NULL,
   KEY `Index 1` (`id_campo`)
-) ENGINE=InnoDB AUTO_INCREMENT=155 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "relatorios_tabelas"
@@ -7184,7 +7184,7 @@ CREATE TABLE `base_web_control`.`relatorios_tabelas` (
   `nome_tabela` varchar(100) NOT NULL,
   `nome_banco` varchar(100) NOT NULL,
   KEY `Index 1` (`id_tabela`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "remetente"
@@ -7220,7 +7220,7 @@ CREATE TABLE `base_web_control`.`sequencia_assistencia` (
   `id_venda` int(11) DEFAULT NULL,
   `sequencia` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=51589 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 #
 # Structure for table "sequencia_orcamento"
@@ -7232,7 +7232,7 @@ CREATE TABLE `base_web_control`.`sequencia_orcamento` (
   `id_venda` int(11) DEFAULT NULL,
   `sequencia` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=184313 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sequencia_ordem_servico"
@@ -7244,7 +7244,7 @@ CREATE TABLE `base_web_control`.`sequencia_ordem_servico` (
   `id_venda` int(11) DEFAULT NULL,
   `sequencia` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=202153 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "sequencia_pedido"
@@ -7258,7 +7258,7 @@ CREATE TABLE `base_web_control`.`sequencia_pedido` (
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_cadastro`),
   KEY `fk_002` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=806964 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "setor"
@@ -7271,7 +7271,7 @@ CREATE TABLE `base_web_control`.`setor` (
   `ativo` enum('S','N') DEFAULT 'S',
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=688 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "solicitacao_reativacao"
@@ -7291,7 +7291,7 @@ CREATE TABLE `base_web_control`.`solicitacao_reativacao` (
   `dt_creation` timestamp NULL DEFAULT NULL,
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2258 DEFAULT CHARSET=latin1 COMMENT='quando cliente desativado solicita reativacao';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='quando cliente desativado solicita reativacao';
 
 #
 # Structure for table "sugestao"
@@ -7309,7 +7309,7 @@ CREATE TABLE `base_web_control`.`sugestao` (
   `descricao_lida` text,
   PRIMARY KEY (`id`),
   KEY `fk_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=2652 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tabela_codigo_anp"
@@ -7414,7 +7414,7 @@ CREATE TABLE `base_web_control`.`tipo_entrada` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tipo_log"
@@ -7426,7 +7426,7 @@ CREATE TABLE `base_web_control`.`tipo_log` (
   `descricao` varchar(30) NOT NULL DEFAULT '',
   `visivel` enum('S','N') DEFAULT 'N',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tipo_residencia"
@@ -7436,7 +7436,7 @@ CREATE TABLE `base_web_control`.`tipo_residencia` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` char(30) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tipo_unidade_tmp"
@@ -7447,7 +7447,7 @@ CREATE TABLE `base_web_control`.`tipo_unidade_tmp` (
   `descricao` varchar(50) DEFAULT NULL,
   `qtd` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tipos_lancamentos"
@@ -7461,7 +7461,7 @@ CREATE TABLE `base_web_control`.`tipos_lancamentos` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=44931 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "titulos"
@@ -7624,7 +7624,7 @@ CREATE TABLE `base_web_control`.`titulos_retorno` (
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_cadastro`),
   KEY `fk_002` (`id_cadastro`,`tp_arq`,`lote`)
-) ENGINE=InnoDB AUTO_INCREMENT=302 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tmp_datas"
@@ -7634,7 +7634,7 @@ CREATE TABLE `base_web_control`.`tmp_datas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `data_fatura` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1477790 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tmp_datas_afiliacoes"
@@ -8000,7 +8000,7 @@ CREATE TABLE `base_web_control`.`tmp_sped_150` (
   `COMPL` varchar(40) DEFAULT NULL COMMENT 'Complemento do endereco do destinatario',
   `BAIRRO` varchar(60) DEFAULT NULL COMMENT 'Bairro do endereco do destinatario',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tmp_sped_190"
@@ -8011,7 +8011,7 @@ CREATE TABLE `base_web_control`.`tmp_sped_190` (
   `id_cadastro` int(11) DEFAULT NULL,
   `unidade` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tmp_sped_unidade"
@@ -8022,7 +8022,7 @@ CREATE TABLE `base_web_control`.`tmp_sped_unidade` (
   `id_cadastro` int(11) DEFAULT NULL,
   `unidade` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha"
@@ -8043,7 +8043,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha` (
   `id_campanha_allcance` varchar(255) DEFAULT NULL,
   `msg_erro` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13108 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha_agendamento"
@@ -8058,7 +8058,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha_agendamento` (
   `status_agendamento` enum('A','E') DEFAULT NULL COMMENT 'Não utilizado, criado só Deus sabe o porque...',
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_torpedo_campanha`)
-) ENGINE=InnoDB AUTO_INCREMENT=3068 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha_bkp_excluidos"
@@ -8078,7 +8078,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha_bkp_excluidos` (
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_campanha_allcance` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10755 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha_fixa"
@@ -8089,7 +8089,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha_fixa` (
   `nome_campanha` varchar(200) NOT NULL,
   `texto` varchar(160) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha_fixa_ignorar"
@@ -8102,7 +8102,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha_fixa_ignorar` (
   `data_exclusao` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_torpedo_campanha_fixa`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_campanha_lista"
@@ -8120,7 +8120,7 @@ CREATE TABLE `base_web_control`.`torpedo_campanha_lista` (
   `operadora` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_celular` (`celular`)
-) ENGINE=InnoDB AUTO_INCREMENT=45179 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_lista"
@@ -8137,7 +8137,7 @@ CREATE TABLE `base_web_control`.`torpedo_lista` (
   `fixa` enum('S','N') DEFAULT 'N',
   `status` enum('A','I') DEFAULT 'A' COMMENT 'A - Ativo I - Inativo',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=61273 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_lista_telefones"
@@ -8152,7 +8152,7 @@ CREATE TABLE `base_web_control`.`torpedo_lista_telefones` (
   PRIMARY KEY (`id`),
   KEY `fk001` (`id_cadastro`,`telefone`),
   KEY `fk002` (`id_lista`)
-) ENGINE=InnoDB AUTO_INCREMENT=13604445 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_log"
@@ -8173,7 +8173,7 @@ CREATE TABLE `base_web_control`.`torpedo_log` (
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_cadastro`),
   KEY `fk_002` (`id_campanha`)
-) ENGINE=InnoDB AUTO_INCREMENT=1882 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "torpedo_master"
@@ -8184,7 +8184,7 @@ CREATE TABLE `base_web_control`.`torpedo_master` (
   `allcance_lgn` varchar(50) NOT NULL DEFAULT '0',
   `allcance_pwd` varchar(50) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COMMENT='configuracoes do usuario master SMS Allcance.';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='configuracoes do usuario master SMS Allcance.';
 
 #
 # Structure for table "torpedo_user"
@@ -8200,7 +8200,7 @@ CREATE TABLE `base_web_control`.`torpedo_user` (
   `dt_creation` timestamp NULL DEFAULT NULL,
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1 COMMENT='usuarios do sistema torpedo cadastrados na alcance em revend';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='usuarios do sistema torpedo cadastrados na alcance em revend';
 
 #
 # Structure for table "totemfrequency_parameters"
@@ -8214,7 +8214,7 @@ CREATE TABLE `base_web_control`.`totemfrequency_parameters` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 #
 # Structure for table "totemtasks"
@@ -8245,7 +8245,7 @@ CREATE TABLE `base_web_control`.`totemtasks` (
   KEY `tasks_run_on_one_server_idx` (`run_on_one_server`),
   KEY `tasks_auto_cleanup_num_idx` (`auto_cleanup_num`),
   KEY `tasks_auto_cleanup_type_idx` (`auto_cleanup_type`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "totemtask_results"
@@ -8263,7 +8263,7 @@ CREATE TABLE `base_web_control`.`totemtask_results` (
   KEY `task_results_task_id_idx` (`task_id`),
   KEY `task_results_ran_at_idx` (`ran_at`),
   CONSTRAINT `task_id_fk` FOREIGN KEY (`task_id`) REFERENCES `base_web_control`.`totemtasks` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2736 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "totemtask_frequencies"
@@ -8279,7 +8279,7 @@ CREATE TABLE `base_web_control`.`totemtask_frequencies` (
   PRIMARY KEY (`id`),
   KEY `task_frequencies_task_id_idx` (`task_id`),
   CONSTRAINT `task_frequencies_task_id_fk` FOREIGN KEY (`task_id`) REFERENCES `base_web_control`.`totemtasks` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "transportadora"
@@ -8316,7 +8316,7 @@ CREATE TABLE `base_web_control`.`transportadora` (
   `data_sincronismo` timestamp NULL DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8435 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "transportadora_placa"
@@ -8338,7 +8338,7 @@ CREATE TABLE `base_web_control`.`transportadora_placa` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_id_tranportadora` (`id_transportadora`)
-) ENGINE=InnoDB AUTO_INCREMENT=3005 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "tributacao"
@@ -8350,7 +8350,7 @@ CREATE TABLE `base_web_control`.`tributacao` (
   `descricao` varchar(100) DEFAULT NULL,
   `situacao` enum('A','I') DEFAULT 'A',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "unidade"
@@ -8378,7 +8378,7 @@ CREATE TABLE `base_web_control`.`unidades_fracionamento` (
   `id_unidade_pai` int(11) NOT NULL,
   `id_unidade_filho` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "users"
@@ -8416,7 +8416,7 @@ CREATE TABLE `base_web_control`.`usuario` (
   PRIMARY KEY (`id`),
   KEY `id_funcionario` (`id_funcionario`),
   KEY `fk_id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=72260 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "vale_presente"
@@ -8434,7 +8434,7 @@ CREATE TABLE `base_web_control`.`vale_presente` (
   `chave_acesso` varchar(64) DEFAULT NULL,
   `ativo` tinyint(4) DEFAULT '1' COMMENT '0 - Inativo 1 - Ativo',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1376 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "vale_presente_historico"
@@ -8447,7 +8447,7 @@ CREATE TABLE `base_web_control`.`vale_presente_historico` (
   `id_venda` int(11) DEFAULT NULL,
   `valor_atual` float(10,2) DEFAULT NULL COMMENT 'Valor Atual = Valor anterior do vale presente - valor utilizado na venda',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "vale_presente_new"
@@ -8464,7 +8464,7 @@ CREATE TABLE `base_web_control`.`vale_presente_new` (
   `qtde` int(11) DEFAULT NULL,
   `valor` float(10,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "valor"
@@ -8499,7 +8499,7 @@ CREATE TABLE `base_web_control`.`valor_extra_caixa` (
   `data_sincronismo` datetime DEFAULT NULL,
   `id_off` int(11) DEFAULT NULL,
   KEY `Index 1` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1000343647 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "valor_inicial_caixa"
@@ -8522,7 +8522,7 @@ CREATE TABLE `base_web_control`.`valor_inicial_caixa` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_usuario` (`id_cadastro`,`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=1455411 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "valor_sangria"
@@ -8545,7 +8545,7 @@ CREATE TABLE `base_web_control`.`valor_sangria` (
   KEY `fk_id_usuario_retiro` (`id_usuario_retiro`),
   KEY `fk_id_valor_inicial_caixa` (`id_valor_inicial_caixa`),
   KEY `fk_id_user_logado` (`id_user_logado`)
-) ENGINE=InnoDB AUTO_INCREMENT=774265 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda"
@@ -8620,7 +8620,7 @@ CREATE TABLE `base_web_control`.`venda` (
   KEY `fk_venda04` (`id_cadastro`,`data_venda`),
   KEY `fk_venda05` (`data_venda`),
   KEY `fk_venda_destino` (`id_venda_destino`)
-) ENGINE=InnoDB AUTO_INCREMENT=68267593 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_adiantamento"
@@ -8639,7 +8639,7 @@ CREATE TABLE `base_web_control`.`venda_adiantamento` (
   `id_off` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_001` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=7357 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_alerta"
@@ -8653,7 +8653,7 @@ CREATE TABLE `base_web_control`.`venda_alerta` (
   PRIMARY KEY (`Id`),
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_venda` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_consignacao_devolucao"
@@ -8673,7 +8673,7 @@ CREATE TABLE `base_web_control`.`venda_consignacao_devolucao` (
   KEY `idx_venda` (`id_venda`),
   KEY `idx_venda_item` (`id_venda_item`),
   KEY `idx_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=14251 DEFAULT CHARSET=latin1 COMMENT='Tabela Responsável por Armazenar o Histórico de Devolução da Consignação	';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='Tabela Responsável por Armazenar o Histórico de Devolução da Consignação	';
 
 #
 # Structure for table "venda_devolucao"
@@ -8695,7 +8695,7 @@ CREATE TABLE `base_web_control`.`venda_devolucao` (
   PRIMARY KEY (`id`),
   KEY `fk_devol_01` (`id_venda`),
   KEY `fk_devol_03` (`id_nota_credito`)
-) ENGINE=InnoDB AUTO_INCREMENT=75931 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_informacoes"
@@ -8731,7 +8731,7 @@ CREATE TABLE `base_web_control`.`venda_informacoes` (
   `id_id_itens` text,
   PRIMARY KEY (`id`),
   KEY `fk_adic_01` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=8482999 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_itens"
@@ -8775,7 +8775,7 @@ CREATE TABLE `base_web_control`.`venda_itens` (
   KEY `id_produto` (`id_produto`),
   KEY `id_grade` (`id_grade`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=115118913 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_itens_automoveis"
@@ -8812,7 +8812,7 @@ CREATE TABLE `base_web_control`.`venda_itens_automoveis` (
   `tpRest` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk001` (`id_venda_item`)
-) ENGINE=InnoDB AUTO_INCREMENT=328 DEFAULT CHARSET=latin1 COMMENT='INFORMAÇÕES DOS VEICULOS.';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='INFORMAÇÕES DOS VEICULOS.';
 
 #
 # Structure for table "venda_itens_devolucao"
@@ -8837,7 +8837,7 @@ CREATE TABLE `base_web_control`.`venda_itens_devolucao` (
   PRIMARY KEY (`id`),
   KEY `fk_devol_01` (`id_venda`),
   KEY `fk_devol_02` (`id_venda_itens`)
-) ENGINE=InnoDB AUTO_INCREMENT=96638 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_juros_parcelamento"
@@ -8848,7 +8848,7 @@ CREATE TABLE `base_web_control`.`venda_juros_parcelamento` (
   `valor` decimal(10,1) DEFAULT NULL,
   `descricao` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_locacao"
@@ -8877,7 +8877,7 @@ CREATE TABLE `base_web_control`.`venda_locacao` (
   `data_devolucao` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_venda` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=24017 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_nfse_informacoes"
@@ -8928,7 +8928,7 @@ CREATE TABLE `base_web_control`.`venda_notas_eletronicas` (
   KEY `fk_004` (`tipo_nota`,`protocolo`),
   KEY `fk_venda_nf01` (`data_hora`,`tipo_nota`,`status`),
   KEY `fk_005` (`id_venda`,`data_hora`,`tipo_nota`)
-) ENGINE=InnoDB AUTO_INCREMENT=61185998 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 #
 # Structure for table "venda_notas_eletronicas_lixo"
@@ -8957,7 +8957,7 @@ CREATE TABLE `base_web_control`.`venda_notas_eletronicas_lixo` (
   UNIQUE KEY `fk_003` (`id_venda`,`tipo_nota`,`numero_nota`),
   KEY `fk_001` (`id_venda`),
   KEY `fk_002` (`LOTE`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_optica"
@@ -9001,7 +9001,7 @@ CREATE TABLE `base_web_control`.`venda_optica` (
   `perto_oe_dnp` varchar(45) DEFAULT NULL,
   `perto_oe_altura` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5183 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_pagamento"
@@ -9028,7 +9028,7 @@ CREATE TABLE `base_web_control`.`venda_pagamento` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_vpgto_01` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=25036296024736 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_pagamento_cheque"
@@ -9042,7 +9042,7 @@ CREATE TABLE `base_web_control`.`venda_pagamento_cheque` (
   `id_Venda` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_id_venda` (`id_Venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=3851 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_pagamento_ecommerce"
@@ -9071,7 +9071,7 @@ CREATE TABLE `base_web_control`.`venda_pagamento_ecommerce` (
   `status` int(11) DEFAULT NULL COMMENT '0 - Criada | 1 - Pendente | 2 - Pago | 3 - Negado | 4 - Expirado | 5 - Cancelado | 6 - Não finalizado | 7 - Autorizado | 8 - ChargeBack',
   `tid` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=481 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_parcelas"
@@ -9081,7 +9081,7 @@ CREATE TABLE `base_web_control`.`venda_parcelas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "venda_pgto_temp"
@@ -9103,7 +9103,7 @@ CREATE TABLE `base_web_control`.`venda_pgto_temp` (
   `data_cadastro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `fk_vpgto_01` (`id_venda`)
-) ENGINE=InnoDB AUTO_INCREMENT=22103972 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "vendas_funcionario"
@@ -9123,7 +9123,7 @@ CREATE TABLE `base_web_control`.`vendas_funcionario` (
   `id_cadastro` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_id_off` (`id_off`)
-) ENGINE=InnoDB AUTO_INCREMENT=2170 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "view_venda_parcelas"
@@ -9133,7 +9133,7 @@ CREATE TABLE `base_web_control`.`view_venda_parcelas` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "vp_historico"
@@ -9156,7 +9156,7 @@ CREATE TABLE `base_web_control`.`wc_menu` (
   `id` bigint(21) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "wc_permissao_menu"
@@ -9193,7 +9193,7 @@ CREATE TABLE `base_web_control`.`webc_configuracoes_sistema` (
   `cor_sistema` varchar(10) DEFAULT '0',
   `email_fc` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_config`)
-) ENGINE=InnoDB AUTO_INCREMENT=78239 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_configuracoes_sistema_tmp"
@@ -9224,7 +9224,7 @@ CREATE TABLE `base_web_control`.`webc_grupo_usuarios` (
   KEY `id_situacao` (`id_situacao`),
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_tipo_permissao_usuario` (`id_tipo_permissao_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_grupo_usuarios_cadastro"
@@ -9241,7 +9241,7 @@ CREATE TABLE `base_web_control`.`webc_grupo_usuarios_cadastro` (
   KEY `id_grupo_usuarios` (`id_grupo_usuarios`),
   KEY `id_usuario` (`id_usuario`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_modulo"
@@ -9254,7 +9254,7 @@ CREATE TABLE `base_web_control`.`webc_modulo` (
   `dt_cadastro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_modulo`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_permissao"
@@ -9269,7 +9269,7 @@ CREATE TABLE `base_web_control`.`webc_permissao` (
   PRIMARY KEY (`id_permissao`),
   KEY `id_situacao` (`id_situacao`),
   KEY `id_usuario_cadastro` (`id_usuario_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_permissao_grupo_usuarios"
@@ -9285,7 +9285,7 @@ CREATE TABLE `base_web_control`.`webc_permissao_grupo_usuarios` (
   PRIMARY KEY (`permissao_grupo_usuarios`),
   KEY `id_grupo_usuarios` (`id_permissao`),
   KEY `id_usuario_cadastro` (`id_usuario_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_permissao_modulo"
@@ -9307,7 +9307,7 @@ CREATE TABLE `base_web_control`.`webc_permissao_modulo` (
   KEY `id_sub_menu` (`id_sub_modulo`),
   KEY `id_permissao` (`id_permissao`),
   KEY `id_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_permissao_usuario"
@@ -9338,7 +9338,7 @@ CREATE TABLE `base_web_control`.`webc_posto_bomba` (
   `id_cadastro` int(11) NOT NULL,
   PRIMARY KEY (`id_bomba`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_posto_bomba_bico"
@@ -9355,7 +9355,7 @@ CREATE TABLE `base_web_control`.`webc_posto_bomba_bico` (
   PRIMARY KEY (`id_bomba_bico`),
   KEY `id_bomba` (`id_bomba`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_posto_tanque"
@@ -9372,7 +9372,7 @@ CREATE TABLE `base_web_control`.`webc_posto_tanque` (
   PRIMARY KEY (`id_tanque`),
   KEY `id_cadastro` (`id_cadastro`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_situacao"
@@ -9383,7 +9383,7 @@ CREATE TABLE `base_web_control`.`webc_situacao` (
   `nome` varchar(20) DEFAULT NULL,
   `dt_cadastro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_sub_modulo"
@@ -9398,7 +9398,7 @@ CREATE TABLE `base_web_control`.`webc_sub_modulo` (
   PRIMARY KEY (`id_sub_modulo`),
   KEY `id_menu` (`id_modulo`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_tipo_permissao_usuario"
@@ -9411,7 +9411,7 @@ CREATE TABLE `base_web_control`.`webc_tipo_permissao_usuario` (
   `dt_cadastro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_tipo_permissao_usuario`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_tipo_venda"
@@ -9424,7 +9424,7 @@ CREATE TABLE `base_web_control`.`webc_tipo_venda` (
   `dt_cadastro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_tipo_venda`),
   KEY `id_situacao` (`id_situacao`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_usuario"
@@ -9460,7 +9460,7 @@ CREATE TABLE `base_web_control`.`webc_usuario` (
   KEY `id_funcionario` (`id_funcionario`),
   KEY `fk_id_cadastro` (`id_cadastro`),
   KEY `login` (`login`)
-) ENGINE=InnoDB AUTO_INCREMENT=118259 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_vfx_syncloja"
@@ -9473,7 +9473,7 @@ CREATE TABLE `base_web_control`.`webc_vfx_syncloja` (
   `data_final` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `situacao` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=991 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_visualizacao_imediata"
@@ -9487,7 +9487,7 @@ CREATE TABLE `base_web_control`.`webc_visualizacao_imediata` (
   `mascara` varchar(50) DEFAULT NULL,
   `ordem` tinyint(3) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "webc_visualizacao_imediata_dados"
@@ -9499,7 +9499,7 @@ CREATE TABLE `base_web_control`.`webc_visualizacao_imediata_dados` (
   `campos` text,
   PRIMARY KEY (`id`),
   KEY `id_cadastro` (`id_cadastro`)
-) ENGINE=InnoDB AUTO_INCREMENT=5894 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_campanha"
@@ -9520,7 +9520,7 @@ CREATE TABLE `base_web_control`.`whatsapp_campanha` (
   `imagem` varchar(100) DEFAULT NULL,
   `titulo` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2019 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_campanha_agendamento"
@@ -9534,7 +9534,7 @@ CREATE TABLE `base_web_control`.`whatsapp_campanha_agendamento` (
   `hora_agendamento` time DEFAULT NULL,
   `status_agendamento` char(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1004 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_campanha_fixa"
@@ -9574,7 +9574,7 @@ CREATE TABLE `base_web_control`.`whatsapp_lista` (
   `fixa` enum('S','N') DEFAULT 'N',
   `status` enum('A','I') DEFAULT 'A',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25008 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_lista_telefones"
@@ -9587,7 +9587,7 @@ CREATE TABLE `base_web_control`.`whatsapp_lista_telefones` (
   `telefone` varchar(15) DEFAULT NULL,
   `nome` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=440495 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_log"
@@ -9606,7 +9606,7 @@ CREATE TABLE `base_web_control`.`whatsapp_log` (
   `dt_creation` timestamp NULL DEFAULT NULL,
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1714 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_master"
@@ -9637,7 +9637,7 @@ CREATE TABLE `base_web_control`.`whatsapp_transacao` (
   `dt_last_update` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `id_mensagem` (`id_mensagem`)
-) ENGINE=InnoDB AUTO_INCREMENT=39174 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 #
 # Structure for table "whatsapp_user"
@@ -9660,35 +9660,35 @@ CREATE TABLE `base_web_control`.`whatsapp_user` (
 #
 
 CREATE FUNCTION `base_web_control`.`fn_check_grade`(
-	id_produto_grade INT, 
-	codigo_barra_pai CHAR(22), 
+	id_produto_grade INT,
+	codigo_barra_pai CHAR(22),
 	codigo_barra_filho CHAR(22)) RETURNS int(11)
     NO SQL
 BEGIN
 	DECLARE have_grade INT DEFAULT 0;
 	DECLARE retorno INT DEFAULT 1;
-	
-	SET have_grade = (SELECT 
+
+	SET have_grade = (SELECT
 				IF(COUNT(*) > 1,1,0)
-			FROM base_web_control.grade 
-			WHERE id_produto = id_produto_grade 
+			FROM base_web_control.grade
+			WHERE id_produto = id_produto_grade
 			AND ativo = '1');
-	
+
 	IF have_grade = 1 THEN
-	
+
 		IF codigo_barra_pai = codigo_barra_filho THEN
-			
+
 			SET retorno = 0;
-		
+
 		END IF;
-		
+
 	END IF;
-	
-	
+
+
 	RETURN retorno;
-	
-	
-	
+
+
+
 END;
 
 #
@@ -9698,17 +9698,17 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_codbarra_in_venda`(`id_venda` INT, `cod_barra` VARCHAR(20)) RETURNS int(11)
     NO SQL
 BEGIN
-	DECLARE retorno INT;	
+	DECLARE retorno INT;
 	SET retorno = (
-			SELECT COUNT(`base_web_control`.a.id_venda)          
-         FROM base_web_control.venda_itens a       		
+			SELECT COUNT(`base_web_control`.a.id_venda)
+         FROM base_web_control.venda_itens a
        	WHERE `base_web_control`.a.id_venda = id_venda AND `base_web_control`.a.codigo_barra = cod_barra
 		);
-		
+
 	IF retorno > 0 THEN
-		SET retorno = 1;	
+		SET retorno = 1;
 	END IF;
-	
+
 	RETURN retorno;
 END;
 
@@ -9719,25 +9719,25 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_get_cobranca_titulo`( v_dia  VARCHAR(25), v_hora varchar(10) ) RETURNS varchar(25) CHARSET latin1
     NO SQL
 BEGIN
-	
+
 	DECLARE v_data VARCHAR(25);
 	DECLARE nome_dia VARCHAR(25) DEFAULT '';
-	
+
 	SET @@lc_time_names = 'pt_BR';
 	SET v_data = NOW() - INTERVAL 1 DAY;
 	SET nome_dia = DAYNAME(NOW() - INTERVAL 1 DAY);
 	WHILE nome_dia != v_dia DO
-	
-	
+
+
 		SET v_data = v_data - INTERVAL 1 DAY;
-		SET nome_dia = DAYNAME(v_data);	
-	
+		SET nome_dia = DAYNAME(v_data);
+
 	END WHILE;
-	
-	
+
+
 	RETURN CONCAT(DATE(v_data), ' ',v_hora);
-	
-	
+
+
 END;
 
 #
@@ -9747,11 +9747,11 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_get_descricao_grade`(v_id_grade_atributo_valor VARCHAR(200)) RETURNS varchar(255) CHARSET latin1
     NO SQL
 BEGIN
-	
+
 	  IF v_id_grade_atributo_valor IS NULL THEN
-	  
+
 		RETURN ' ';
-	  
+
 	  ELSE
 		RETURN IFNULL(CONCAT(' ',(
 		   SELECT
@@ -9763,7 +9763,7 @@ BEGIN
 		   ORDER BY `base_web_control`.p.atributo ASC
 		  )),'');
 	END IF;
-                           
+
 END;
 
 #
@@ -9857,7 +9857,7 @@ BEGIN
 	DECLARE cont INT DEFAULT 0;
 	DECLARE contFinal INT DEFAULT 9;
 	DECLARE multiplo INT;
-	
+
 	SET dig1 = SUBSTR(codigo_barra,1,1);
 	SET dig2 = SUBSTR(codigo_barra,2,1);
 	SET dig3 = SUBSTR(codigo_barra,3,1);
@@ -9869,65 +9869,65 @@ BEGIN
 	SET dig9 = SUBSTR(codigo_barra,9,1);
 	SET dig10 = SUBSTR(codigo_barra,10,1);
 	SET dig11 = SUBSTR(codigo_barra,11,1);
-	
-	
+
+
 	IF LENGTH(codigo_barra) = 11 THEN
-	
+
 		SET soma1 = (dig1 + dig3 + dig5 + dig7 + dig9 + dig11) * 3;
-		
+
 		SET soma2 = dig2 + dig4 + dig6 + dig8 + dig10;
-		
+
 		SET somaTotal = soma1 + soma2;
-		
+
 		WHILE cont <= contFinal DO
-		
+
 			SET multiplo = somaTotal + cont;
-		
+
 			IF MOD(multiplo,10) = 0 THEN
-			
+
 				SET dv = cont;
 				SET cont = 10;
 			END IF;
-			
+
 			SET cont = cont +1;
-		
+
 		END WHILE;
-		
+
 	ELSEIF LENGTH(codigo_barra) = 7 THEN
-	
+
 		SET soma1 = (dig1 + dig3 + dig5 + dig7) * 3;
-		
+
 		SET soma2 = dig2 + dig4 + dig6;
-		
+
 		SET somaTotal = soma1 + soma2;
-				
+
 		IF (10 - MOD(somaTotal,10)) = 10 THEN
-		
+
 			SET dv = 0;
-			
+
 		ELSE
-		
+
 			SET dv = (10 - MOD(somaTotal,10));
-			
+
 		END IF;
-	
+
 	ELSE
-		
-			
+
+
 		SET dig12 = SUBSTR(codigo_barra,12,1);
-				
+
 		SET soma1 = (dig1 + dig3 + dig5 + dig7 + dig9 + dig11);
-		
+
 		SET soma2 = (dig2 + dig4 + dig6 + dig8 + dig10 + dig12)*3;
-		
+
 		SET somaTotal = soma1 + soma2;
-		
+
 		SET multiplo = (CEIL((somaTotal/10)))*10;
-		
+
 		SET dv = multiplo - somaTotal;
-	
-	END IF;	
-	
+
+	END IF;
+
 	RETURN dv;
 END;
 
@@ -9939,13 +9939,13 @@ CREATE FUNCTION `base_web_control`.`fn_get_fator`(id_venda_fator INT) RETURNS va
     NO SQL
 BEGIN
 	DECLARE fator VARCHAR(20);
-	
-	SET fator = (SELECT 
-                   FORMAT( 
+
+	SET fator = (SELECT
+                   FORMAT(
                            (IF(`base_web_control`.b.valor_final_desconto IS NULL, 0, `base_web_control`.b.valor_final_desconto)
-                             + 
-                             TRUNCATE( SUM( (preco_tabela * qtd) - (preco_venda * qtd) ), 2 )) 
-                            / 
+                             +
+                             TRUNCATE( SUM( (preco_tabela * qtd) - (preco_venda * qtd) ), 2 ))
+                            /
                             SUM( preco_tabela * qtd )
                    ,15 ) AS fator
                      FROM base_web_control.venda_itens a
@@ -9964,21 +9964,21 @@ BEGIN
 	DECLARE data_retorno VARCHAR(25);
 	declare v_ano int;
 	declare v_mes int;
-	
+
 	set v_mes = month(now());
 	set v_ano = year(now());
 	if v_mes = 1 then
 		set v_ano = year(now()) - 1;
 	end if;
-	
-	
+
+
 	iF DAY(NOW()) >= 26 THEN
-	
+
 		RETURN CONCAT(year(now()), '-',LPAD(MONTH(NOW()) ,2,0),'-25', ' 23:00:00');
 	END IF;
-	
+
 	IF DAY(NOW()) < 26 THEN
-	
+
 		RETURN concat(v_ano, '-',LPAD(MONTH(NOW() - INTERVAL 1 MONTH),2,0),'-26', ' 00:00:00');
 	END IF;
 END;
@@ -9993,21 +9993,21 @@ BEGIN
 	DECLARE data_retorno VARCHAR(25);
 	declare v_ano int;
 	declare v_mes int;
-	
+
 	set v_mes = month(now());
 	set v_ano = year(now());
 	if v_mes = 1 then
 		set v_ano = year(now()) - 1;
 	end if;
-	
-	
+
+
 	iF DAY(NOW()) >= 26 THEN
-	
+
 		RETURN CONCAT(year(now()), '-',LPAD(MONTH(NOW()) ,2,0),'-26', ' 00:00:01');
 	END IF;
-	
+
 	IF DAY(NOW()) < 26 THEN
-	
+
 		RETURN concat(v_ano, '-',LPAD(MONTH(NOW() - INTERVAL 1 MONTH),2,0),'-25', ' 23:59:59');
 	END IF;
 END;
@@ -10032,15 +10032,15 @@ CREATE FUNCTION `base_web_control`.`fn_get_num_caixa`(data_venda VARCHAR(30),
     NO SQL
 BEGIN
 	DECLARE var_retorno INT;
-	
-	SET var_retorno = (SELECT 
-								`base_web_control`.vic.num_caixa 
-							FROM base_web_control.valor_inicial_caixa vic 
+
+	SET var_retorno = (SELECT
+								`base_web_control`.vic.num_caixa
+							FROM base_web_control.valor_inicial_caixa vic
 							WHERE data_venda
-							BETWEEN `base_web_control`.vic.data_hora_inicial AND IFNULL(`base_web_control`.vic.data_hora_final,NOW()) 
-							AND `base_web_control`.vic.id_usuario = id_usuario 
+							BETWEEN `base_web_control`.vic.data_hora_inicial AND IFNULL(`base_web_control`.vic.data_hora_final,NOW())
+							AND `base_web_control`.vic.id_usuario = id_usuario
 							AND `base_web_control`.vic.id_cadastro = id_cadastro LIMIT 1 );
-	
+
 	RETURN var_retorno;
 END;
 
@@ -10053,10 +10053,10 @@ CREATE FUNCTION `base_web_control`.`fn_get_qtd_produtos`(v_id_venda INT) RETURNS
 BEGIN
 	DECLARE qtd_produto DECIMAL(10,3);
 	DECLARE qtd_produto_excluido DECIMAL(10,3);
-	
-	
+
+
 	SET qtd_produto = (
-	
+
 	SELECT
 		`base_web_control`.v.qtd
 	FROM `base_web_control`.venda_itens v
@@ -10064,10 +10064,10 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'A'
 	WHERE `base_web_control`.p.prod_serv = 'P'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
+
+
 	SET qtd_produto_excluido = (
-	
+
 	SELECT
 		`base_web_control`.v.qtd
 	FROM `base_web_control`.venda_itens v
@@ -10075,18 +10075,18 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'E'
 	WHERE `base_web_control`.p.prod_serv = 'P'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
+
+
 	IF qtd_produto IS NULL THEN
-	
+
 		RETURN qtd_produto_excluido;
-	
-	ELSE 
-	
+
+	ELSE
+
 		RETURN qtd_produto;
 	END IF;
-	
-	
+
+
 END;
 
 #
@@ -10098,10 +10098,10 @@ CREATE FUNCTION `base_web_control`.`fn_get_qtd_servicos`(v_id_venda INT) RETURNS
 BEGIN
 	DECLARE qtd_servicos DECIMAL(10,3);
 	DECLARE qtd_servicos_excluidos DECIMAL(10,3);
-	
-	SET qtd_servicos = 
+
+	SET qtd_servicos =
 	(
-	
+
 	SELECT
 		`base_web_control`.v.qtd
 	FROM `base_web_control`.venda_itens v
@@ -10109,11 +10109,11 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'A'
 	WHERE `base_web_control`.p.prod_serv = 'S'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
-	SET qtd_servicos_excluidos = 
+
+
+	SET qtd_servicos_excluidos =
 	(
-	
+
 	SELECT
 		`base_web_control`.v.qtd
 	FROM `base_web_control`.venda_itens v
@@ -10121,16 +10121,16 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'E'
 	WHERE `base_web_control`.p.prod_serv = 'S'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
+
+
 	IF qtd_servicos IS NULL THEN
-	
+
 		RETURN qtd_servicos_excluidos;
-	
+
 	ELSE
-		
+
 		RETURN qtd_servicos;
-	
+
 	END IF;
 END;
 
@@ -10141,31 +10141,31 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_get_ultima_data_dia_semana`(v_dia VARCHAR(25)) RETURNS varchar(25) CHARSET latin1
     NO SQL
 BEGIN
-	
+
 	DECLARE v_data VARCHAR(25);
 	DECLARE nome_dia VARCHAR(25) DEFAULT '';
-	
+
 	IF DAYNAME(NOW()) = 'sexta' AND TIME(NOW()) > '18:01:00' THEN
-		
+
 		RETURN CONCAT(DATE(NOW()), ' 18:01:00');
-	
+
 	END IF;
-	
+
 	SET @@lc_time_names = 'pt_BR';
 	SET v_data = NOW() - INTERVAL 1 DAY;
 	SET nome_dia = DAYNAME(NOW() - INTERVAL 1 DAY);
 	WHILE nome_dia != v_dia DO
-	
-	
+
+
 		SET v_data = v_data - INTERVAL 1 DAY;
-		SET nome_dia = DAYNAME(v_data);	
-	
+		SET nome_dia = DAYNAME(v_data);
+
 	END WHILE;
-	
-	
+
+
 	RETURN CONCAT(DATE(v_data), ' 18:01:00');
-	
-	
+
+
 END;
 
 #
@@ -10192,21 +10192,21 @@ CREATE FUNCTION `base_web_control`.`fn_get_ultima_sexta_feira`() RETURNS varchar
 begin
 	declare v_data varchar(25);
 	declare nome_dia varchar(25) default '';
-	
+
 	set v_data = now() - interval 1 day;
 	set nome_dia = dayname(NOW() - INTERVAL 1 DAY);
 	while nome_dia != 'Friday' do
-	
-	
+
+
 		set v_data = v_data - interval 1 day;
-		SET nome_dia = DAYNAME(v_data);	
-	
+		SET nome_dia = DAYNAME(v_data);
+
 	end while;
-	
-	
+
+
 	return v_data;
-	
-	
+
+
 end;
 
 #
@@ -10223,32 +10223,32 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_comissao_prod`(
 	 ) RETURNS decimal(10,3)
     NO SQL
 BEGIN
-	
+
 	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN
-	
-		
+
+
 		IF tipo_comissao_p = 'R' THEN
-		
+
 			RETURN comissao_p * qtd_produtos;
-		
-		ELSE 
-		
+
+		ELSE
+
 			RETURN (comissao_p / 100) * (valor_produtos);
-		
+
 		END IF;
-	
-	ELSE 
-	
-		
+
+	ELSE
+
+
 		IF tipo_comissao_p = 'R' THEN
-		
+
 			RETURN comissao_p * qtd_produtos;
-		
-		ELSE 
+
+		ELSE
 			RETURN (valor_produtos - (valor_produtos * base_web_control.fn_get_fator(id_venda))) * (comissao_p / 100);
-		
+
 		END IF;
-	
+
 	END IF;
 END;
 
@@ -10266,32 +10266,32 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_comissao_serv`(
 	 ) RETURNS decimal(10,3)
     NO SQL
 BEGIN
-	
+
 	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN
-	
-		
+
+
 		IF tipo_comissao_s = 'R' THEN
-		
+
 			RETURN comissao_s * qtd_servicos;
-		
-		ELSE 
-		
+
+		ELSE
+
 			RETURN (comissao_s / 100) * (valor_servicos);
-		
+
 		END IF;
-	
-	ELSE 
-	
-		
+
+	ELSE
+
+
 		IF tipo_comissao_s = 'R' THEN
-		
+
 			RETURN comissao_s * qtd_servicos;
-		
-		ELSE 
+
+		ELSE
 			RETURN (valor_servicos - (valor_servicos * base_web_control.fn_get_fator(id_venda))) * (comissao_s / 100);
-		
+
 		END IF;
-	
+
 	END IF;
 END;
 
@@ -10308,13 +10308,13 @@ begin
 	declare fator decimal(30,15);
 	declare valor_mora decimal(30,15);
 	declare valor_multa decimal(30,15);
-	
-	
-	
+
+
+
 	set valor_multa = (p_valor_parcela * p_valor_atraso) / 100;
 	set fator = (p_valor_atraso / 30) * p_date_diff;
 	set valor_mora = (p_valor_parcela * fator) / 100;
-	
+
 	return replace(format(p_valor_parcela + valor_multa + valor_mora,2),',','');
 end;
 
@@ -10327,10 +10327,10 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_produtos`(v_id_venda INT) RETUR
 BEGIN
 	DECLARE valor_produto DECIMAL(13,3);
 	DECLARE valor_produto_excluido DECIMAL(13,3);
-	
+
 	SET valor_produto =
 	(
-	
+
 	SELECT
 		`base_web_control`.v.qtd * `base_web_control`.v.preco_venda AS preco_venda
 	FROM `base_web_control`.venda_itens v
@@ -10338,11 +10338,11 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'A'
 	WHERE `base_web_control`.p.prod_serv = 'P'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
-	SET valor_produto_excluido = 
+
+
+	SET valor_produto_excluido =
 	(
-	
+
 	SELECT
 		`base_web_control`.v.qtd * `base_web_control`.v.preco_venda AS preco_venda
 	FROM `base_web_control`.venda_itens v
@@ -10350,16 +10350,16 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'E'
 	WHERE `base_web_control`.p.prod_serv = 'P'
 	AND `base_web_control`.v.id = v_id_venda);
-	
-	
+
+
 	IF valor_produto IS NULL THEN
-	
+
 		RETURN valor_produto_excluido;
-	
+
 	ELSE
-	
-		RETURN valor_produto;	
-	
+
+		RETURN valor_produto;
+
 	END IF;
 END;
 
@@ -10370,12 +10370,12 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_get_valor_servicos`(v_id_venda INT) RETURNS decimal(10,3)
     NO SQL
 BEGIN
-	
+
 	DECLARE v_valor_prod DECIMAL(13,3);
 	DECLARE v_valor_prod_excluido DECIMAL(13,3);
-	
+
 	SET v_valor_prod = (
-	
+
 				SELECT
 					`base_web_control`.v.qtd * `base_web_control`.v.preco_venda AS preco_venda
 				FROM `base_web_control`.venda_itens v
@@ -10384,24 +10384,25 @@ BEGIN
 				WHERE `base_web_control`.p.prod_serv = 'S'
 				AND `base_web_control`.v.id = v_id_venda
 				);
-				
-				
+
+
 	SET v_valor_prod_excluido =  (
 					SELECT
 					`base_web_control`.v.qtd * `base_web_control`.v.preco_venda AS preco_venda
 				FROM `base_web_control`.venda_itens v
-				INNER JOIN `base_web_control`.produtop
+				INNER JOIN `base_web_control`.produto
+p
 				ON `base_web_control`.p.id = `base_web_control`.v.id_produto AND `base_web_control`.p.ativo = 'E'
 				WHERE `base_web_control`.p.prod_serv = 'S'
 				AND `base_web_control`.v.id= v_id_venda
 				);
-	
+
 	IF v_valor_prod IS NULL THEN
 		RETURN v_valor_prod_excluido;
-	
-	ELSE 
+
+	ELSE
 		RETURN v_valor_prod;
-	
+
 	END IF;
 END;
 
@@ -10417,17 +10418,17 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_total_desconto_prod`(
 	preco_tabela DECIMAL(15,3)) RETURNS decimal(12,3)
     NO SQL
 BEGIN
-	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN 
-                        
-                        
+	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN
+
+
                 RETURN (preco_tabela * qtd_produtos) - valor_produtos;
-                        
-	ELSE  
-	
+
+	ELSE
+
 		RETURN (preco_tabela * qtd_produtos) - (valor_produtos - (valor_produtos * base_web_control.fn_get_fator(id_venda)));
-	
+
 	END IF;
-                        
+
 END;
 
 #
@@ -10442,17 +10443,17 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_total_desconto_serv`(
 	preco_tabela DECIMAL(15,3)) RETURNS decimal(12,3)
     NO SQL
 BEGIN
-	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN 
-                        
-                        
+	IF valor_final_desconto IS NULL OR valor_final_desconto = '' THEN
+
+
                 RETURN (preco_tabela * qtd_servicos) - (valor_servicos);
-                        
-	ELSE  
-	
+
+	ELSE
+
 		RETURN (preco_tabela * qtd_servicos) - (valor_servicos - (valor_servicos * base_web_control.fn_get_fator(id_venda)));
-	
+
 	END IF;
-                        
+
 END;
 
 #
@@ -10464,7 +10465,7 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_venda_em_aberto`(
 ) RETURNS decimal(20,3)
     NO SQL
 BEGIN
-	RETURN (SELECT 
+	RETURN (SELECT
 		SUM(`base_web_control`.vp.valor_pgto - `base_web_control`.vp.vlr_troco)
 	FROM base_web_control.venda_pagamento vp
 	WHERE `base_web_control`.vp.id_venda = p_id_venda
@@ -10480,7 +10481,7 @@ CREATE FUNCTION `base_web_control`.`fn_get_valor_venda_quitada`(
 ) RETURNS decimal(20,3)
     NO SQL
 begin
-	return (select 
+	return (select
 		sum(`base_web_control`.vp.valor_pgto - `base_web_control`.vp.vlr_troco)
 	from base_web_control.venda_pagamento vp
 	where `base_web_control`.vp.id_venda = p_id_venda
@@ -10494,17 +10495,17 @@ end;
 CREATE FUNCTION `base_web_control`.`fn_produto_in_venda`(`id_venda` INT, `nomeprod` VARCHAR(100)) RETURNS int(11)
     NO SQL
 BEGIN
-	DECLARE retorno INT;	
+	DECLARE retorno INT;
 	SET retorno = (
-			SELECT COUNT(`base_web_control`.a.id_venda)          
-         FROM base_web_control.venda_itens a       		
+			SELECT COUNT(`base_web_control`.a.id_venda)
+         FROM base_web_control.venda_itens a
        	WHERE `base_web_control`.a.id_venda = id_venda AND `base_web_control`.a.nome_produto LIKE nomeprod
 		);
-		
+
 	IF retorno > 0 THEN
-		SET retorno = 1;	
+		SET retorno = 1;
 	END IF;
-	
+
 	RETURN retorno;
 END;
 
@@ -10515,60 +10516,60 @@ END;
 CREATE FUNCTION `base_web_control`.`fn_remover_acentos`(palavra TEXT) RETURNS text CHARSET latin1
     NO SQL
 BEGIN
-	
+
 	DECLARE out_palavra TEXT;
-	
+
 	SET out_palavra = REPLACE(palavra ,'Á','A');
-	SET out_palavra = REPLACE(out_palavra ,'À','A'); 
-	SET out_palavra = REPLACE(out_palavra ,'Ã','A');  
-	SET out_palavra = REPLACE(out_palavra ,'Â','A'); 
-	SET out_palavra = REPLACE(out_palavra ,'É','E');  
-	SET out_palavra = REPLACE(out_palavra ,'È','E');  
-	SET out_palavra = REPLACE(out_palavra ,'Ê','E'); 
-	SET out_palavra = REPLACE(out_palavra ,'Í','I');  
-	SET out_palavra = REPLACE(out_palavra ,'Ì','I');  
+	SET out_palavra = REPLACE(out_palavra ,'À','A');
+	SET out_palavra = REPLACE(out_palavra ,'Ã','A');
+	SET out_palavra = REPLACE(out_palavra ,'Â','A');
+	SET out_palavra = REPLACE(out_palavra ,'É','E');
+	SET out_palavra = REPLACE(out_palavra ,'È','E');
+	SET out_palavra = REPLACE(out_palavra ,'Ê','E');
+	SET out_palavra = REPLACE(out_palavra ,'Í','I');
+	SET out_palavra = REPLACE(out_palavra ,'Ì','I');
 	SET out_palavra = REPLACE(out_palavra ,'Î','I');
-	SET out_palavra = REPLACE(out_palavra ,'Ó','O');  
-	SET out_palavra = REPLACE(out_palavra ,'Ò','O'); 
-	SET out_palavra = REPLACE(out_palavra ,'Ô','O'); 
+	SET out_palavra = REPLACE(out_palavra ,'Ó','O');
+	SET out_palavra = REPLACE(out_palavra ,'Ò','O');
+	SET out_palavra = REPLACE(out_palavra ,'Ô','O');
 	SET out_palavra = REPLACE(out_palavra ,'Õ','O');
 	SET out_palavra = REPLACE(out_palavra ,'Ú','U');
 	SET out_palavra = REPLACE(out_palavra ,'Ù','U');
-	SET out_palavra = REPLACE(out_palavra ,'Û','U'); 
-	SET out_palavra = REPLACE(out_palavra ,'Ü','U');  
+	SET out_palavra = REPLACE(out_palavra ,'Û','U');
+	SET out_palavra = REPLACE(out_palavra ,'Ü','U');
 --	SET out_palavra = REPLACE(out_palavra ,'Ç','C');
-	
-	
+
+
 	SET out_palavra = REPLACE(out_palavra ,'á','a');
-	SET out_palavra = REPLACE(out_palavra ,'à','a'); 
-	SET out_palavra = REPLACE(out_palavra ,'ã','a');  
-	SET out_palavra = REPLACE(out_palavra ,'â','a'); 
-	SET out_palavra = REPLACE(out_palavra ,'é','e');  
-	SET out_palavra = REPLACE(out_palavra ,'è','e');  
-	SET out_palavra = REPLACE(out_palavra ,'ê','e'); 
-	SET out_palavra = REPLACE(out_palavra ,'í','i');  
-	SET out_palavra = REPLACE(out_palavra ,'ì','i');  
+	SET out_palavra = REPLACE(out_palavra ,'à','a');
+	SET out_palavra = REPLACE(out_palavra ,'ã','a');
+	SET out_palavra = REPLACE(out_palavra ,'â','a');
+	SET out_palavra = REPLACE(out_palavra ,'é','e');
+	SET out_palavra = REPLACE(out_palavra ,'è','e');
+	SET out_palavra = REPLACE(out_palavra ,'ê','e');
+	SET out_palavra = REPLACE(out_palavra ,'í','i');
+	SET out_palavra = REPLACE(out_palavra ,'ì','i');
 	SET out_palavra = REPLACE(out_palavra ,'î','i');
-	SET out_palavra = REPLACE(out_palavra ,'ó','o');  
-	SET out_palavra = REPLACE(out_palavra ,'ò','o'); 
-	SET out_palavra = REPLACE(out_palavra ,'ô','o'); 
+	SET out_palavra = REPLACE(out_palavra ,'ó','o');
+	SET out_palavra = REPLACE(out_palavra ,'ò','o');
+	SET out_palavra = REPLACE(out_palavra ,'ô','o');
 	SET out_palavra = REPLACE(out_palavra ,'õ','o');
 	SET out_palavra = REPLACE(out_palavra ,'ú','u');
 	SET out_palavra = REPLACE(out_palavra ,'ù','u');
-	SET out_palavra = REPLACE(out_palavra ,'û','u'); 
-	SET out_palavra = REPLACE(out_palavra ,'ü','u');  
+	SET out_palavra = REPLACE(out_palavra ,'û','u');
+	SET out_palavra = REPLACE(out_palavra ,'ü','u');
 --	SET out_palavra = REPLACE(out_palavra ,'ç','c');
-	
+
 	SET out_palavra = REPLACE(out_palavra ,'"','');
 	SET out_palavra = REPLACE(out_palavra ,"'",'');
 	SET out_palavra = REPLACE(out_palavra ,'“','');
 	SET out_palavra = REPLACE(out_palavra ,'”','');
-	SET out_palavra = REPLACE(out_palavra ,'*','');	
-	SET out_palavra = REPLACE(out_palavra ,'&','');	
+	SET out_palavra = REPLACE(out_palavra ,'*','');
+	SET out_palavra = REPLACE(out_palavra ,'&','');
 	SET out_palavra = REPLACE(out_palavra ,';','');
 	SET out_palavra = REPLACE(out_palavra ,'`','');
 	SET out_palavra = REPLACE(out_palavra ,'´','');
-	SET out_palavra = REPLACE(out_palavra ,'§','');	
+	SET out_palavra = REPLACE(out_palavra ,'§','');
 	SET out_palavra = REPLACE(out_palavra ,'/','|');
 	SET out_palavra = REPLACE(out_palavra ,'%',' ');
 	SET out_palavra = REPLACE(out_palavra ,'ª','a');
@@ -10578,8 +10579,8 @@ BEGIN
 
 
 
-	
-	
+
+
 	RETURN out_palavra;
 END;
 
@@ -10618,9 +10619,9 @@ BEGIN
     SET tamanho_str  = (SELECT LENGTH(valor));
     SET i   = 1;
     SET saida = "";
-    WHILE i <= tamanho_str DO            
+    WHILE i <= tamanho_str DO
         IF ((SUBSTRING(valor, i,1) REGEXP '[0-9]') <> 0) THEN
-            SET saida = CONCAT(saida, CONVERT(SUBSTRING(valor, i,1) USING UTF8));           
+            SET saida = CONCAT(saida, CONVERT(SUBSTRING(valor, i,1) USING UTF8));
         END IF;
         SET i = i  + 1;
     END WHILE;
@@ -10770,12 +10771,12 @@ WHERE
 #
 
 CREATE PROCEDURE `base_web_control`.`explode`( pDelim VARCHAR(32), pStr TEXT)
-BEGIN                                
-  DROP TABLE IF EXISTS `base_web_control`.temp_explode;                                
-  CREATE TEMPORARY TABLE `base_web_control`.temp_explode (id INT AUTO_INCREMENT PRIMARY KEY NOT NULL, word VARCHAR(40));                                
-  SET @sql := CONCAT('INSERT INTO temp_explode (word) VALUES (', REPLACE(QUOTE(pStr), pDelim, '\'), (\''), ')');                                
-  PREPARE myStmt FROM @sql;                                
-  EXECUTE myStmt;                                
+BEGIN
+  DROP TABLE IF EXISTS `base_web_control`.temp_explode;
+  CREATE TEMPORARY TABLE `base_web_control`.temp_explode (id INT AUTO_INCREMENT PRIMARY KEY NOT NULL, word VARCHAR(40));
+  SET @sql := CONCAT('INSERT INTO temp_explode (word) VALUES (', REPLACE(QUOTE(pStr), pDelim, '\'), (\''), ')');
+  PREPARE myStmt FROM @sql;
+  EXECUTE myStmt;
 END;
 
 #
@@ -10787,7 +10788,7 @@ BEGIN
 SET @PROC=0;
 SELECT @PROC:=ID,HOST,COMMAND,TIME,STATE,INFO FROM INFORMATION_SCHEMA.PROCESSLIST WHERE USER='csinform' ORDER BY TIME DESC LIMIT 1;
 KILL @PROC;
-SELECT ID,HOST,COMMAND,TIME,STATE,INFO FROM INFORMATION_SCHEMA.PROCESSLIST WHERE USER='csinform' ORDER BY TIME DESC LIMIT 1;   
+SELECT ID,HOST,COMMAND,TIME,STATE,INFO FROM INFORMATION_SCHEMA.PROCESSLIST WHERE USER='csinform' ORDER BY TIME DESC LIMIT 1;
 END;
 
 #
@@ -10809,12 +10810,12 @@ DECLARE v_qtd_antigo INT;
 DECLARE v_qtd_atual INT;
 DECLARE cont INT DEFAULT 1;
 
-DECLARE a_venda_item CURSOR FOR 
+DECLARE a_venda_item CURSOR FOR
 SELECT `base_web_control`.i.qtd, `base_web_control`.i.codigo_barra, `base_web_control`.i.id_venda, `base_web_control`.g.id, `base_web_control`.g.qtd_antigo, `base_web_control`.g.qtd_atual
 FROM `base_web_control`.venda_itens i
 INNER JOIN `base_web_control`.venda ON `base_web_control`.venda.id = `base_web_control`.i.id_venda
 INNER JOIN `base_web_control`.grade_historico g ON `base_web_control`.g.codigo_barra = `base_web_control`.i.codigo_barra AND `base_web_control`.i.id_venda = SUBSTRING_INDEX(`base_web_control`.g.origem_alteracao,":",-1)
-WHERE `base_web_control`.venda.id_cadastro = p_cadastro 
+WHERE `base_web_control`.venda.id_cadastro = p_cadastro
 AND date(`base_web_control`.venda.data_venda) = p_data
 AND `base_web_control`.venda.situacao = 'C'
 AND `base_web_control`.venda.id_tipo_venda <> 4
@@ -10829,7 +10830,7 @@ SET cont_total = (
 	FROM `base_web_control`.venda_itens i
 	INNER JOIN `base_web_control`.venda ON `base_web_control`.venda.id = `base_web_control`.i.id_venda
 	INNER JOIN `base_web_control`.grade_historico g ON `base_web_control`.g.codigo_barra = `base_web_control`.i.codigo_barra AND `base_web_control`.i.id_venda = SUBSTRING_INDEX(`base_web_control`.g.origem_alteracao,":",-1)
-	WHERE `base_web_control`.venda.id_cadastro = p_cadastro 
+	WHERE `base_web_control`.venda.id_cadastro = p_cadastro
 	AND date(`base_web_control`.venda.data_venda) = p_data
 	AND `base_web_control`.venda.situacao = 'C'
 	AND `base_web_control`.venda.id_tipo_venda <> 4
@@ -10839,31 +10840,31 @@ SET cont_total = (
 
 OPEN a_venda_item;
 	REPEAT
-		IF NOT pronto THEN			
+		IF NOT pronto THEN
 		FETCH a_venda_item INTO v_qtd, v_codigo_barra, v_id_venda, v_id, v_qtd_antigo, v_qtd_atual;
-		            
+
             if p_codigo_barra <> v_codigo_barra then
 				if cont > 1 then
 					set qtd_anterior = v_qtd_antigo;
                     set p_codigo_barra = v_codigo_barra;
                 end if;
             end if;
-            
+
             if cont = 1 then
 				set qtd_anterior = v_qtd_antigo;
                 set p_codigo_barra = v_codigo_barra;
             end if;
-            
+
             -- select v_qtd as vendeu_estornou,v_qtd_antigo as qtd_antigo, v_qtd_atual as qtd_atual,qtd_anterior as qtdAntigo, (qtd_anterior - v_qtd) as qtdAtual, p_codigo_barra as cAntigo, v_codigo_barra as cAtual;
             update `base_web_control`.grade_historico set qtd_antigo = qtd_anterior, qtd_atual = (qtd_anterior - v_qtd) where id = v_id;
-            
+
             set qtd_anterior = (qtd_anterior - v_qtd);
             set p_codigo_barra = v_codigo_barra;
-            
+
 			IF cont = cont_total THEN
 				SET pronto = 1;
 			END IF;
-			
+
 			SET cont = cont + 1;
         END IF;
 	UNTIL pronto END REPEAT;
@@ -10889,29 +10890,29 @@ BEGIN
 						id_grade
 					   FROM `base_web_control`.venda_itens
 					   WHERE id_venda = v_id_venda;
-					   
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	SET cont_total = (SELECT
 				COUNT(id)
 			 FROM `base_web_control`.venda_itens
 			 WHERE id_venda = v_id_venda);
-	
+
 	OPEN cur_venda_itens;
 		REPEAT
-		
+
 			IF NOT pronto THEN
 			FETCH cur_venda_itens INTO v_id_venda_item, v_id_grade;
-				
-				
-				
+
+
+
 				UPDATE `base_web_control`.grade g
 				INNER JOIN `base_web_control`.venda_itens vi
 					ON `base_web_control`.g.id_grade = `base_web_control`.vi.id_grade
 				SET `base_web_control`.g.qtd_atual = qtd_atual + `base_web_control`.vi.qtd
 				WHERE `base_web_control`.vi.id = v_id_venda_item ;
-			
-			
+
+
 				IF cont = cont_total THEN
 					SET pronto = 1;
 				END IF;
@@ -10974,9 +10975,9 @@ END;
 #
 
 CREATE PROCEDURE `base_web_control`.`sp_cliente_list_filter`(IN `id_cadastro_` INT, IN `limit_` INT, IN `offset_` INT, IN `filter_type_` INT, IN `filter_value_` VARCHAR(255))
-BEGIN 
-	 
-		SELECT 
+BEGIN
+
+		SELECT
 			`base_web_control`.`cliente`.`id` AS `id`,
 			`base_web_control`.`cliente`.`id_cadastro` AS `id_cadastro`,
 			`base_web_control`.`cliente`.`tipo_pessoa` AS `tipo_pessoa`,
@@ -11048,79 +11049,79 @@ BEGIN
 			`base_web_control`.`cliente`.`data_sincronismo` AS `data_sincronismo`,
 			`base_web_control`.`cliente`.`id_off` AS `id_off`,
 			`base_web_control`.`cliente`.`substituto_tributario` AS `substituto_tributario`
-		FROM 
-			`base_web_control`.`cliente` AS `cliente` 
-		LEFT JOIN `base_web_control`.`cliente_veiculo` AS `cliente_veiculo` 
+		FROM
+			`base_web_control`.`cliente` AS `cliente`
+		LEFT JOIN `base_web_control`.`cliente_veiculo` AS `cliente_veiculo`
 			ON `base_web_control`.`cliente`.`id` = `base_web_control`.`cliente_veiculo`.`id_cliente`
-		WHERE 
-			`base_web_control`.`cliente`.`id_cadastro` = id_cadastro_ 
-		AND 
-			`base_web_control`.`cliente`.`ativo` = 'A'  
-		AND 
-			
+		WHERE
+			`base_web_control`.`cliente`.`id_cadastro` = id_cadastro_
+		AND
+			`base_web_control`.`cliente`.`ativo` = 'A'
+		AND
+
 			# 1 = todososcampos
 			# 2 = cod_cliente
 			# 3 = nome`
-			# 4 = razao_social 
+			# 4 = razao_social
 			# 5 = End
 			# 6 = Cidade
 			# 7 = CPF/CNPJ
-			# 8 = Telefone  
-			
-			CASE 
-				WHEN filter_type_ = 1 THEN  
-					( 
+			# 8 = Telefone
+
+			CASE
+				WHEN filter_type_ = 1 THEN
+					(
 						   `base_web_control`.`cliente`.`nome` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`razao_social` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`cnpj_cpf` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`rg` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`inscricao_estadual` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`telefone` LIKE filter_value_
-						OR `base_web_control`.`cliente`.`celular` LIKE filter_value_ 
+						OR `base_web_control`.`cliente`.`celular` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`email` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`cidade` LIKE filter_value_
 						OR `base_web_control`.`cliente`.`uf` LIKE filter_value_
 						OR CONCAT(`base_web_control`.`cliente`.`endereco`, ' ',  `base_web_control`.`cliente`.`numero`) LIKE filter_value_
 						OR `base_web_control`.`cliente_veiculo`.`placa` LIKE filter_value_
-					) 
-				WHEN filter_type_ = 2 THEN  
-					( 
+					)
+				WHEN filter_type_ = 2 THEN
+					(
 						`base_web_control`.`cliente`.`id` = filter_value_
 					)
-				WHEN filter_type_ = 3 THEN  
+				WHEN filter_type_ = 3 THEN
 					(
 						`base_web_control`.`cliente`.`nome` = filter_value_
 					)
-				WHEN filter_type_ = 4 THEN   
+				WHEN filter_type_ = 4 THEN
 					(
 						`base_web_control`.`cliente`.`razao_social` = filter_value_
 					)
-				WHEN filter_type_ = 5 THEN  
+				WHEN filter_type_ = 5 THEN
 					(
 						`base_web_control`.`cliente`.`endereco` = filter_value_
 					)
-				WHEN filter_type_ = 6 THEN  
+				WHEN filter_type_ = 6 THEN
 					(
 						`base_web_control`.`cliente`.`cidade` = filter_value_
 					)
-				WHEN filter_type_ = 7 THEN  
+				WHEN filter_type_ = 7 THEN
 					(
 						`base_web_control`.`cliente`.`cnpj_cpf` = filter_value_
 					)
-				WHEN filter_type_ = 8 THEN  
+				WHEN filter_type_ = 8 THEN
 					(
 						`base_web_control`.`cliente`.`telefone` = filter_value_
-					) 
-				ELSE 
-					1  
+					)
+				ELSE
+					1
 			END
-		AND 
+		AND
         ( `base_web_control`.`cliente`.`nome` <> ''  OR `base_web_control`.`cliente`.`razao_social` <> '')
-		
+
         ORDER BY `base_web_control`.`cliente`.`nome`
-        
-        LIMIT offset_,limit_ 
-		
+
+        LIMIT offset_,limit_
+
 	 ;
 
 END;
@@ -11140,15 +11141,15 @@ begin
 					ON `base_web_control`.cli.id_cadastro = `base_web_control`.c.codLoja
 					AND `base_web_control`.cli.tipo_pessoa = 'B'
 					WHERE (`base_web_control`.cli.id IS NULL OR `base_web_control`.cli.ativo = 'E') ;
-	
+
 	declare continue handler for not found set v_pronto = 1;
-	
+
 	open v_cur_clientes;
 		repeat
-			
+
 			if not v_pronto then
 			fetch v_cur_clientes into v_id_cadastro;
-			
+
 				INSERT INTO `base_web_control`.cliente(
 					id_cadastro,
 					tipo_pessoa,
@@ -11177,8 +11178,8 @@ begin
 					'S',
 					'1',
 					'V');
-			
-			
+
+
 			end if;
 		until v_pronto end repeat;
 	close v_cur_clientes;
@@ -11202,13 +11203,13 @@ BEGIN
 	DECLARE v_cont_tabelas INT DEFAULT 0;
 	DECLARE v_cont_tabelas_aux INT DEFAULT 0;
 	DECLARE cur_tabelas CURSOR FOR SELECT
-						TABLE_NAME						
+						TABLE_NAME
 					FROM information_schema.TABLES
 					WHERE TABLE_SCHEMA = 'base_web_control'
-					ORDER BY TABLE_NAME ASC;					
-	
+					ORDER BY TABLE_NAME ASC;
+
 	DECLARE cur_colunas CURSOR FOR SELECT
-						COLUMN_NAME, 
+						COLUMN_NAME,
 						COLUMN_TYPE
 					FROM information_schema.COLUMNS
 					WHERE TABLE_SCHEMA = 'base_web_control'
@@ -11219,7 +11220,7 @@ BEGIN
 				FROM information_schema.TABLES
 				WHERE TABLE_SCHEMA = 'base_web_control'
 				ORDER BY TABLE_NAME ASC);
-			
+
 	OPEN cur_tabelas;
 	REPEAT
 		FETCH cur_tabelas INTO v_nome_tabela;
@@ -11227,53 +11228,53 @@ BEGIN
 		SET v_create_campos = '';
 		SET v_cont_tabelas_aux = v_cont_tabelas_aux + 1;
 		SET v_cont_cur = (SELECT
-				
+
 				COUNT(COLUMN_TYPE)
 			FROM information_schema.COLUMNS
 			WHERE TABLE_SCHEMA = 'base_web_control'
 			AND TABLE_NAME = v_nome_tabela
 			ORDER BY TABLE_NAME ASC, ORDINAL_POSITION ASC);
-			
+
 			OPEN cur_colunas;
 			REPEAT
 				FETCH cur_colunas INTO v_campo, v_tipo;
 				IF NOT v_pronto_aux THEN
-				
+
 				SET v_cont_aux = v_cont_aux + 1;
 				SELECT v_cont_aux, v_cont_cur;
 				IF v_cont_cur = v_cont_aux THEN
-				
+
 					SET v_create_campos = CONCAT(v_create_campos,' `',v_campo,'` ', v_tipo);
 					SET v_pronto_aux = 1;
 				ELSE
 					SET v_create_campos = CONCAT(v_create_campos,' `',v_campo,'` ', v_tipo, ', ');
 				END IF;
-				
-				
+
+
 				END IF;
 			UNTIL v_pronto_aux END REPEAT;
 			CLOSE cur_colunas;
-				
-		
+
+
 		SET v_pronto_aux = 0;
 		SET v_cont_aux = 0;
-		SET @sql = CONCAT('CREATE TABLE IF NOT EXISTS base_web_control_inativos.', v_nome_tabela, ' (', v_create_campos, ')'); 
+		SET @sql = CONCAT('CREATE TABLE IF NOT EXISTS base_web_control_inativos.', v_nome_tabela, ' (', v_create_campos, ')');
 		SELECT @sql;
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-		
+
 		IF v_cont_tabelas = v_cont_tabelas_aux THEN
-		
+
 			SET v_pronto_aux = 0;
 			SET v_pronto = 0;
-		
+
 		END IF;
-		
+
 		END IF;
 	UNTIL v_pronto END REPEAT;
 	CLOSE cur_tabelas;
-	
+
 END;
 
 #
@@ -11285,8 +11286,8 @@ CREATE PROCEDURE `base_web_control`.`sp_criar_campos_sync_tabela`(
 )
 begin
 	DECLARE nome_coluna VARCHAR(255);
-	
-	
+
+
 	SET nome_coluna = (SELECT
 				column_name
 			FROM information_schema.COLUMNS
@@ -11294,27 +11295,27 @@ begin
 			AND TABLE_NAME = p_nome_tabela
 			ORDER BY ordinal_position DESC
 			LIMIT 1);
-	
+
 	SET @sql = CONCAT(' ALTER TABLE base_web_control.', p_nome_tabela, ' ADD COLUMN data_alteracao DATETIME AFTER `', nome_coluna, '`');
 	PREPARE stmt_sql FROM @sql;
 	EXECUTE stmt_sql;
 	DEALLOCATE PREPARE stmt_sql;
-	
+
 	SET @sql2 = CONCAT(' ALTER TABLE base_web_control.', p_nome_tabela, ' ADD COLUMN data_sincronismo DATETIME AFTER data_alteracao');
 	PREPARE stmt_sql2 FROM @sql2;
 	EXECUTE stmt_sql2;
 	DEALLOCATE PREPARE stmt_sql2;
-	
+
 	SET @sql2 = CONCAT(' ALTER TABLE base_web_control.', p_nome_tabela, ' ADD COLUMN id_off INT AFTER data_sincronismo');
 	PREPARE stmt_sql2 FROM @sql2;
 	EXECUTE stmt_sql2;
 	DEALLOCATE PREPARE stmt_sql2;
-	
-	
-	SET @sql3 = CONCAT('ALTER TABLE base_web_control.', p_nome_tabela, ' 
+
+
+	SET @sql3 = CONCAT('ALTER TABLE base_web_control.', p_nome_tabela, '
 		CHANGE data_alteracao
 			data_alteracao TIMESTAMP NOT NULL
-				       DEFAULT CURRENT_TIMESTAMP 
+				       DEFAULT CURRENT_TIMESTAMP
 				       ON UPDATE CURRENT_TIMESTAMP');
 	PREPARE stmt_sql3 FROM @sql3;
 	EXECUTE stmt_sql3;
@@ -11338,31 +11339,31 @@ BEGIN
 					FROM information_schema.COLUMNS
 					WHERE TABLE_SCHEMA = 'base_web_control'
 					GROUP BY TABLE_NAME;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	OPEN cur_tabelas;
-		REPEAT	
-			FETCH cur_tabelas INTO nome_tabela; 
+		REPEAT
+			FETCH cur_tabelas INTO nome_tabela;
 			IF NOT pronto THEN
-			
+
 				SET tem_id_off = (SELECT
 						IF(COUNT(*) > 0,1,0)
 					 FROM information_schema.COLUMNS
 					 WHERE TABLE_SCHEMA = 'base_web_control'
 					 AND TABLE_NAME = nome_tabela
 					 AND COLUMN_NAME = 'id_off');
-						
+
 				IF tem_id_off = 1 then
-				
+
 					SET @sql = CONCAT(' ALTER TABLE `base_web_control`.`',nome_tabela,'` ADD INDEX `idx_id_off` (`id_off`); ');
 					PREPARE stmt_sql FROM @sql;
 					EXECUTE stmt_sql;
 					DEALLOCATE PREPARE stmt_sql;
-					
+
 				end if;
-				
-			
+
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_tabelas;
@@ -11379,30 +11380,30 @@ begin
 	declare v_lista int;
 	declare v_lista_email int;
     declare v_lista_whatsapp int;
-	set v_lista = (select 
-				if(count(*) > 0,1,0) 
-		      from base_web_control.torpedo_lista 
-		      where id_cadastro = p_id_cadastro 
+	set v_lista = (select
+				if(count(*) > 0,1,0)
+		      from base_web_control.torpedo_lista
+		      where id_cadastro = p_id_cadastro
 		      and fixa = 'S');
-		      
+
 	set v_lista_email = (select
 				if(count(*) > 0,1,0)
 			    from base_web_control.mailmkt_lista
 			    where id_cadastro = p_id_cadastro
 			    and fixa = 'S');
-                
+
 	set v_lista_whatsapp = (select
 				if(count(*) > 0,1,0)
 			    from base_web_control.whatsapp_lista
 			    where id_cadastro = p_id_cadastro
 			    and fixa = 'S');
-		      
-		      
+
+
 	if v_lista = 0 then
-	
+
 		insert into base_web_control.torpedo_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11416,10 +11417,10 @@ begin
 			now(),
 			'S',
 			'A');
-			
+
 		INSERT INTO base_web_control.torpedo_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11433,11 +11434,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.torpedo_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11451,11 +11452,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.torpedo_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11469,15 +11470,15 @@ begin
 			NOW(),
 			'S',
 			'A');
-	
+
 	end if;
-	
+
 	if v_lista_email = 0 then
-	
-	
+
+
 		INSERT INTO base_web_control.mailmkt_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11491,10 +11492,10 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
+
 		INSERT INTO base_web_control.mailmkt_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11508,11 +11509,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.mailmkt_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11526,11 +11527,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.mailmkt_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11544,16 +11545,16 @@ begin
 			NOW(),
 			'S',
 			'A');
-	
-	
+
+
 	end if;
-    
+
     	if v_lista_whatsapp = 0 then
-	
-	
+
+
 		INSERT INTO base_web_control.whatsapp_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11567,10 +11568,10 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
+
 		INSERT INTO base_web_control.whatsapp_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11584,11 +11585,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.whatsapp_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11602,11 +11603,11 @@ begin
 			NOW(),
 			'S',
 			'A');
-			
-		
+
+
 		INSERT INTO base_web_control.whatsapp_lista(
 			id_cadastro,
-			nome_lista,			
+			nome_lista,
 			tipo_lista,
 			dt_creation,
 			dt_last_update,
@@ -11620,10 +11621,10 @@ begin
 			NOW(),
 			'S',
 			'A');
-	
-	
+
+
 	end if;
-	
+
 end;
 
 #
@@ -11631,7 +11632,7 @@ end;
 #
 
 CREATE PROCEDURE `base_web_control`.`sp_dashboard_franquias`(
-	p_id_franquia INT, 
+	p_id_franquia INT,
 	p_id_agendador INT)
 begin
 	declare v_visitas_realizadas int;
@@ -11642,7 +11643,7 @@ begin
 	declare v_agendamento_manha int;
 	declare v_agendamento_tarde int;
 	declare v_porcentagem_meus_agendamentos decimal(5,2);
-	
+
 
 SELECT
 	COUNT(*)
@@ -11734,7 +11735,7 @@ ON `base_web_control`.chis.id_cartao_agendamento = `base_web_control`.ca.id
 WHERE `base_web_control`.c.id_franquia = p_id_franquia
 AND (DATE(`base_web_control`.ca.data_agendamento) = DATE(NOW()) AND `base_web_control`.ca.data_agendamento > CONCAT(DATE(NOW()), ' 12:00:00') OR DATE(`base_web_control`.chis.data_reagendamento) = DATE(NOW()) AND `base_web_control`.chis.data_reagendamento > CONCAT(DATE(NOW()), ' 12:00:00'))
 AND (`base_web_control`.ca.id_consultor = p_id_agendador OR 0 = p_id_agendador);
-	SELECT  
+	SELECT
 		v_visitas_realizadas AS visitas_realizadas,
 	v_visitas_nao_realizadas AS visitas_nao_realizadas,
 	v_total_agendamento AS total_agendamento,
@@ -11755,23 +11756,23 @@ CREATE PROCEDURE `base_web_control`.`sp_del_produtos_cliente`(
 BEGIN
 	DECLARE pronto INT DEFAULT 0;
 	DECLARE id_prod_del INT;
-	
+
 	DECLARE cur_produtos CURSOR FOR SELECT
 						id
 					FROM `base_web_control`.produto
 					WHERE id_cadastro = id_cadastro_dest
 					;
-					
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
-	
+
+
 	OPEN cur_produtos;
 		REPEAT
 			FETCH cur_produtos INTO id_prod_del;
 			IF NOT pronto THEN
-			
+
 				DELETE FROM `base_web_control`.produto WHERE id = id_prod_del;
-			
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_produtos;
@@ -11808,20 +11809,20 @@ BEGIN
 					   FROM `base_web_control`.venda_itens i
                        inner join `base_web_control`.venda v on `base_web_control`.v.id = `base_web_control`.i.id_venda
 					   WHERE `base_web_control`.i.id_venda = v_id_venda;
-					   
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	SET cont_total = (SELECT
 				COUNT(id)
 			 FROM `base_web_control`.venda_itens
 			 WHERE id_venda = v_id_venda);
-	
+
 	OPEN cur_venda_itens;
 		REPEAT
-		
+
 			IF NOT pronto THEN
 			FETCH cur_venda_itens INTO v_id_venda_item, v_id_grade, v_tipo_venda;
-				
+
                 IF v_tipo_venda = 4 THEN
 					SET tipo_venda = 0;
                 ELSE
@@ -11829,8 +11830,8 @@ BEGIN
 					INNER JOIN `base_web_control`.venda_itens vi ON `base_web_control`.g.id_grade = `base_web_control`.vi.id_grade
 					SET `base_web_control`.g.qtd_atual = qtd_atual - `base_web_control`.vi.qtd
 					WHERE `base_web_control`.vi.id = v_id_venda_item;
-                END IF;			
-			
+                END IF;
+
 				IF cont = cont_total THEN
 					SET pronto = 1;
 				END IF;
@@ -11884,10 +11885,10 @@ END;
 #
 
 CREATE PROCEDURE `base_web_control`.`sp_distribuir_quantidade`(
-	p_id_venda INT, 
+	p_id_venda INT,
 	p_id_cadastro INT)
 BEGIN
-	
+
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_qtd_promo_aplicada INT;
 	DECLARE v_valor_desconto DECIMAL(15,3);
@@ -11898,9 +11899,9 @@ BEGIN
 	DECLARE v_cont_insert_aux INT DEFAULT 0;
 	DECLARE v_cont_insert_alterado INT DEFAULT 0;
 	DECLARE v_cont_insert_alterado_aux INT DEFAULT 0;
-	
-	
-	
+
+
+
 	DECLARE v_qtd_venda INT;
 	DECLARE v_nome_produto VARCHAR(255);
 	DECLARE v_preco_tabela DECIMAL(25,15);
@@ -11912,9 +11913,9 @@ BEGIN
 	DECLARE v_preco_inserir DECIMAL(25,15);
 	DECLARE v_preco_custo DECIMAL(25,15);
 	DECLARE v_id_produto INT;
-	declare v_id_cadastro int;	
+	declare v_id_cadastro int;
 	DECLARE cur_valores CURSOR FOR
-	
+
 	SELECT
 		TRUNCATE(SUM(`base_web_control`.vi.qtd) /`base_web_control`.pq.qtd_promocao,0) qtd_promo_aplicada,
 		valor_desconto AS valor_desconto,
@@ -11925,27 +11926,27 @@ BEGIN
 	INNER JOIN `base_web_control`.venda_itens vi
 	ON `base_web_control`.pq.id_grade = `base_web_control`.vi.id_grade
 	WHERE `base_web_control`.pq.id_cadastro = v_id_cadastro
-	
+
 	AND `base_web_control`.vi.id_venda = p_id_venda
 	AND `base_web_control`.vi.estornado <> 'S'
 	AND NOW() BETWEEN data_inicio AND data_fim
 	and `base_web_control`.pq.ativo = 'A'
 	GROUP BY `base_web_control`.pq.id_grade;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	set v_id_cadastro = (select id_cadastro from `base_web_control`.venda where id = p_id_venda);
 	OPEN cur_valores;
 		REPEAT
 			FETCH cur_valores INTO v_qtd_promo_aplicada, v_valor_desconto, v_quantidade_item, v_id_grade, v_qtd_promo;
 			IF NOT v_pronto THEN
-				
+
 				SET v_preco_desconto = (v_qtd_promo_aplicada * v_valor_desconto) / (v_qtd_promo * v_qtd_promo_aplicada);
-			
+
 				SET v_cont_insert_alterado = v_qtd_promo_aplicada * v_qtd_promo;
 				SET v_cont_insert = v_quantidade_item - (v_qtd_promo_aplicada * v_qtd_promo);
-				
-				
+
+
 				SELECT
 					v_cont_insert,
 					`base_web_control`.vi.nome_produto,
@@ -11955,7 +11956,7 @@ BEGIN
 					`base_web_control`.vi.id_unidade,
 					`base_web_control`.vi.valor_preco_custo,
 					`base_web_control`.vi.id_produto
-				INTO 
+				INTO
 					v_qtd_venda,
 					v_nome_produto,
 					v_preco_tabela,
@@ -11968,30 +11969,30 @@ BEGIN
 				WHERE `base_web_control`.vi.id_venda = p_id_venda
 				AND `base_web_control`.vi.id_grade = v_id_grade
 				LIMIT 1;
-				
-				
+
+
 				DELETE FROM `base_web_control`.venda_itens WHERE id_venda = p_id_venda AND id_grade = v_id_grade;
-					
+
 				SET v_diferenca = (v_valor_desconto * v_qtd_promo_aplicada) - (TRUNCATE(v_preco_desconto,2) * v_cont_insert_alterado);
-				select 	v_diferenca;			 										
+				select 	v_diferenca;
 				WHILE v_cont_insert_alterado > v_cont_insert_alterado_aux DO
-				
+
 					SET v_preco_inserir = v_preco_tabela - truncate(v_preco_desconto,2);
-					
+
 					if v_cont_insert_alterado = v_cont_insert_alterado_aux + 1 then
-					
+
 						set v_preco_inserir = (v_preco_tabela - TRUNCATE(v_preco_desconto,2)) - v_diferenca;
-						
+
 					end if;
-									
+
 					INSERT INTO `base_web_control`.venda_itens(
-						id_venda, 
-						qtd, 
-						nome_produto, 
-						preco_tabela, 
-						preco_venda, 
-						codigo_barra, 
-						id_unidade, 
+						id_venda,
+						qtd,
+						nome_produto,
+						preco_tabela,
+						preco_venda,
+						codigo_barra,
+						id_unidade,
 						id_grade,
 						valor_preco_custo,
 						id_produto
@@ -12008,21 +12009,21 @@ BEGIN
 						v_preco_custo,
 						v_id_produto
 						);
-				
+
 					SET v_cont_insert_alterado_aux = v_cont_insert_alterado_aux + 1;
-					
+
 				END WHILE;
-				
+
 				IF v_cont_insert > 0 THEN
-				
+
 					INSERT INTO `base_web_control`.venda_itens(
-							id_venda, 
-							qtd, 
-							nome_produto, 
-							preco_tabela, 
-							preco_venda, 
-							codigo_barra, 
-							id_unidade, 
+							id_venda,
+							qtd,
+							nome_produto,
+							preco_tabela,
+							preco_venda,
+							codigo_barra,
+							id_unidade,
 							id_grade,
 							valor_preco_custo,
 							id_produto
@@ -12040,13 +12041,13 @@ BEGIN
 							v_id_produto
 							);
 				END IF;
-							
-				
+
+
 				SET v_cont_insert_aux = 0;
 				SET v_cont_insert_alterado_aux = 0;
-				
-				
-				
+
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_valores;
@@ -12063,26 +12064,26 @@ begin
 	declare cur_cadastro cursor for select
 						codLoja
 					from cs2.cadastro
-					where sitcli = 0 ;					
-	
+					where sitcli = 0 ;
+
 	declare continue handler for not found set v_pronto = 1;
-	
+
 	open cur_cadastro;
 		repeat
 			fetch cur_cadastro into v_id_cadastro;
 			if not v_pronto then
-			
-				
+
+
 				set @sql = replace(p_script,':parametro', v_id_cadastro);
 				prepare stmt_exc from @sql;
 				execute stmt_exc;
 				deallocate prepare stmt_exc;
-				
-			
+
+
 			end if;
 		until v_pronto end repeat;
 	close cur_cadastro;
-			
+
 end;
 
 #
@@ -12099,7 +12100,7 @@ BEGIN
 	DECLARE v_extra VARCHAR(255);
 	DECLARE v_comment VARCHAR(255);
 	DECLARE v_pronto INT DEFAULT 0;
-	
+
 	DECLARE cur_tabelas CURSOR FOR SELECT
 						information_schema.COLUMNS.TABLE_NAME,
 						information_schema.COLUMNS.COLUMN_NAME,
@@ -12116,23 +12117,23 @@ BEGIN
 					AND information_schema.TABLES.TABLE_NAME = 'produto'
 					GROUP BY information_schema.COLUMNS.COLUMN_NAME
 					ORDER BY information_schema.COLUMNS.ORDINAL_POSITION ASC;
-					
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto =  1;
-	
+
 	OPEN cur_tabelas;
-	
+
 		REPEAT
 			IF NOT pronto THEN
 				FETCH cur_tabelas INTO v_nome_tabela, v_nome_campo, v_default, v_nullable,
 						       v_tipo_campo, v_extra, v_comment;
-						       
-			
+
+
 							SELECT v_nome_tabela;
-						       
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_tabelas;
-	
+
 END;
 
 #
@@ -12145,40 +12146,40 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_atendimento`
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
  	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cliente IS NULL || id_cliente = "" || DATE(id_cliente) = "0000-00-00",0,id_cliente) USING utf8)) AS id_cliente 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento 
+
+	SET @sql = CONCAT(' SELECT
+				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cliente IS NULL || id_cliente = "" || DATE(id_cliente) = "0000-00-00",0,id_cliente) USING utf8)) AS id_cliente
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_atendimento IS NULL || id_tipo_atendimento = "" || DATE(id_tipo_atendimento) = "0000-00-00",0,id_tipo_atendimento) USING utf8)) AS id_tipo_atendimento
-				,"" AS alterar  
-				,"" AS excluir  
-				,id AS id_web 
-				,"1899-12-30" AS data_alteracao  
-				,"',NOW(), '" AS data_sincronismo 
+				,"" AS alterar
+				,"" AS excluir
+				,id AS id_web
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(), '" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/atendimento_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.atendimento
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO atendimento' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12190,36 +12191,36 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_atendimento_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor IS NULL || id_fornecedor = "" || DATE(id_fornecedor) = "0000-00-00",0,id_fornecedor) USING utf8)) AS id_fornecedor 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento 
+	SET @sql = CONCAT(' SELECT
+				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor IS NULL || id_fornecedor = "" || DATE(id_fornecedor) = "0000-00-00",0,id_fornecedor) USING utf8)) AS id_fornecedor
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_atendimento IS NULL || id_tipo_atendimento = "" || DATE(id_tipo_atendimento) = "0000-00-00",0,id_tipo_atendimento) USING utf8)) AS id_tipo_atendimento
-				,"" AS alterar   
-				,"" AS excluir 
+				,"" AS alterar
+				,"" AS excluir
 				, id AS id_web
-				,"1899-12-30" AS data_alteracao 
-				,"',NOW(),'" AS data_sincronismo 
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/atendimento_fornecedor_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
-			FROM base_web_control.atendimento_fornecedor 
+			FROM base_web_control.atendimento_fornecedor
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO atendimento_fornecedor' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12231,36 +12232,36 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_atendimento_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT 
-				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_funcionario IS NULL || id_funcionario = "" || DATE(id_funcionario) = "0000-00-00",0,id_funcionario) USING utf8)) AS id_funcionario 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_atendimento IS NULL || id_tipo_atendimento = "" || DATE(id_tipo_atendimento) = "0000-00-00",0,id_tipo_atendimento) USING utf8)) AS id_tipo_atendimento 
-				,"" AS alterar   
-				,"" AS excluir 
+	SET @sql = CONCAT(' SELECT
+				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_funcionario IS NULL || id_funcionario = "" || DATE(id_funcionario) = "0000-00-00",0,id_funcionario) USING utf8)) AS id_funcionario
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_atendimento IS NULL || id_tipo_atendimento = "" || DATE(id_tipo_atendimento) = "0000-00-00",0,id_tipo_atendimento) USING utf8)) AS id_tipo_atendimento
+				,"" AS alterar
+				,"" AS excluir
 				, id AS id_web
-				,"1899-12-30" AS data_alteracao 
-				,"',NOW(),'" AS data_sincronismo 
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/atendimento_funcionario_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 			FROM base_web_control.atendimento_funcionario
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO atendimento_funcionario' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12272,36 +12273,36 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_atendimento_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_transportadora IS NULL || id_transportadora = "" || DATE(id_transportadora) = "0000-00-00",0,id_transportadora) USING utf8)) AS id_transportadora 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento 
-				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento 
+	SET @sql = CONCAT(' SELECT
+				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_transportadora IS NULL || id_transportadora = "" || DATE(id_transportadora) = "0000-00-00",0,id_transportadora) USING utf8)) AS id_transportadora
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_atendimento IS NULL || data_atendimento = "" || DATE(data_atendimento) = "0000-00-00","1899-12-30",data_atendimento) USING utf8)) AS data_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(hora_atendimento IS NULL || hora_atendimento = "" || DATE(hora_atendimento) = "0000-00-00","00:00:00",hora_atendimento) USING utf8)) AS hora_atendimento
+				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao_atendimento IS NULL || descricao_atendimento = "" || DATE(descricao_atendimento) = "0000-00-00","",descricao_atendimento) USING utf8)) AS descricao_atendimento
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_atendimento IS NULL || id_tipo_atendimento = "" || DATE(id_tipo_atendimento) = "0000-00-00",0,id_tipo_atendimento) USING utf8)) AS id_tipo_atendimento
-								,"" AS alterar   
-								,"" AS excluir 
+								,"" AS alterar
+								,"" AS excluir
 								, id AS id_web
-								,"1899-12-30" AS data_alteracao 
-								,"',NOW(),'" AS data_sincronismo 
+								,"1899-12-30" AS data_alteracao
+								,"',NOW(),'" AS data_sincronismo
 							INTO OUTFILE "/var/lib/mysql-files/atendimento_transportadora_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 				FROM base_web_control.atendimento_transportadora
 				WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO atendimento_transportadora' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12313,10 +12314,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_cadastro_imp
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(origem_nfe IS NULL || origem_nfe = "" || DATE(origem_nfe) = "0000-00-00",0,origem_nfe) USING utf8)) AS origem_nfe
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cfop_dentro_estado IS NULL || cfop_dentro_estado = "" || DATE(cfop_dentro_estado) = "0000-00-00","",cfop_dentro_estado) USING utf8)) AS cfop_dentro_estado
@@ -12408,23 +12409,23 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(tributacao_lucro IS NULL || tributacao_lucro = "" || DATE(tributacao_lucro) = "0000-00-00","S",tributacao_lucro) USING utf8)) AS tributacao_lucro
 				, id AS id_web
-				,"1899-12-30" AS data_alteracao 
-				,"',NOW(),'" AS data_sincronismo 
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/cadastro_imposto_padrao_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 				FROM base_web_control.cadastro_imposto_padrao
 				WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO cadastro_imposto_padrao' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12436,10 +12437,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_classificaca
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8)) AS descricao
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00","A",ativo) USING utf8)) AS ativo
@@ -12453,27 +12454,27 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(show_comanda IS NULL || show_comanda = "" || DATE(show_comanda) = "0000-00-00",0,show_comanda) USING utf8)) AS show_comanda
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_importacao IS NULL || id_importacao = "" || DATE(id_importacao) = "0000-00-00",0,id_importacao) USING utf8)) AS id_importacao
 				 , "" AS visualizar
-				 , "" AS excluir			
+				 , "" AS excluir
 				 ,id AS id_web
-				 ,"1899-12-30" AS data_alteracao 
-				 ,"',NOW(),'" AS data_sincronismo 	 
+				 ,"1899-12-30" AS data_alteracao
+				 ,"',NOW(),'" AS data_sincronismo
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_pai IS NULL || id_pai = "" || DATE(id_pai) = "0000-00-00",0,id_pai) USING utf8)) AS id_pai
- 							
+
 				INTO OUTFILE "/var/lib/mysql-files/classificacao_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.classificacao
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO classificacao' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12485,10 +12486,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_classificaca
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_classificacao IS NULL || id_classificacao = "" || DATE(id_classificacao) = "0000-00-00",0,id_classificacao) USING utf8)) AS id_classificacao
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(tipo_alteracao IS NULL || tipo_alteracao = "" || DATE(tipo_alteracao) = "0000-00-00","D",tipo_alteracao) USING utf8)) AS tipo_alteracao
@@ -12499,22 +12500,22 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(desfeito IS NULL || desfeito = "" || DATE(desfeito) = "0000-00-00",0,desfeito) USING utf8)) AS desfeito
 				, 0 AS imgdesfazer
 				, id AS id_web
-				,"',NOW(),'" AS data_sincronismo 
+				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/classificacao_alteracao_valores_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.classificacao_alteracao_valores
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO classificacao_alteracao_valores' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12527,14 +12528,14 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_cliente`(
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-					
+
+	SET @sql = CONCAT(' SELECT
+
 					 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(tipo_pessoa IS NULL || tipo_pessoa = "" || DATE(tipo_pessoa) = "0000-00-00","F",tipo_pessoa) USING utf8)) AS tipo_pessoa
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cnpj_cpf IS NULL || cnpj_cpf = "" || DATE(cnpj_cpf) = "0000-00-00","",cnpj_cpf) USING utf8)) AS cnpj_cpf
@@ -12600,27 +12601,27 @@ BEGIN
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(limite_credito_cc IS NULL || limite_credito_cc = "" || DATE(limite_credito_cc) = "0000-00-00",0,limite_credito_cc) USING utf8)) AS limite_credito_cc
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(tipo_compra IS NULL || tipo_compra = "" || DATE(tipo_compra) = "0000-00-00","A",tipo_compra) USING utf8)) AS tipo_compra
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(origem_cadastro IS NULL || origem_cadastro = "" || DATE(origem_cadastro) = "0000-00-00",0,origem_cadastro) USING utf8)) AS origem_cadastro
-					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_cadastro_user IS NULL || data_cadastro_user = "" || DATE(data_cadastro_user) = "0000-00-00","1899-12-30",data_cadastro_user) USING utf8)) AS data_cadastro_user	
+					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_cadastro_user IS NULL || data_cadastro_user = "" || DATE(data_cadastro_user) = "0000-00-00","1899-12-30",data_cadastro_user) USING utf8)) AS data_cadastro_user
 					, "" AS visualizar
 					, "" AS excluir
 					, id AS id_web
 					, "1899-12-30" AS data_alteracao
 					, "',NOW(),'" AS data_sincronismo
 					INTO OUTFILE "/var/lib/mysql-files/cliente_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 				FROM base_web_control.cliente
 				WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO cliente' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12632,10 +12633,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_cliente_form
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
  	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT('SELECT  
-				
+	SET @sql = CONCAT('SELECT
+
 				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_forma_pagamento IS NULL || id_forma_pagamento = "" || DATE(id_forma_pagamento) = "0000-00-00",0,id_forma_pagamento) USING utf8)) AS id_forma_pagamento
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(num_parcelas IS NULL || num_parcelas = "" || DATE(num_parcelas) = "0000-00-00",0,num_parcelas) USING utf8)) AS num_parcelas
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(juro_mes IS NULL || juro_mes = "" || DATE(juro_mes) = "0000-00-00",0,juro_mes) USING utf8)) AS juro_mes
@@ -12644,7 +12645,7 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(chave_e_commerce IS NULL || chave_e_commerce = "" || DATE(chave_e_commerce) = "0000-00-00","",chave_e_commerce) USING utf8)) AS chave_e_commerce
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(entrada IS NULL || entrada = "" || DATE(entrada) = "0000-00-00",0,entrada) USING utf8)) AS entrada
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ordem_visual IS NULL || ordem_visual = "" || DATE(ordem_visual) = "0000-00-00",0,ordem_visual) USING utf8)) AS ordem_visual
-				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro				 
+				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(loja_virtual IS NULL || loja_virtual = "" || DATE(loja_virtual) = "0000-00-00",0,loja_virtual) USING utf8)) AS loja_virtual
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00",0,ativo) USING utf8)) AS ativo
 				  ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(baixa_automatica IS NULL || baixa_automatica = "" || DATE(baixa_automatica) = "0000-00-00","S",baixa_automatica) USING utf8)) AS baixa_automatica
@@ -12652,20 +12653,20 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/cliente_forma_pagamento_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.cliente_forma_pagamento
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO cliente_forma_pagamento' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12677,18 +12678,18 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_cliente_veic
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cliente IS NULL || id_cliente = "" || DATE(id_cliente) = "0000-00-00",0,id_cliente) USING utf8)) AS id_cliente
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cv.placa IS NULL || cv.placa = "" || DATE(cv.placa) = "0000-00-00","",cv.placa) USING utf8)) AS placa
 				, "" AS modelo
 				, cv.id AS id_web
-				,"1899-12-30" AS data_alteracao 
-				,"',NOW(),'" AS data_sincronismo 
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/cliente_veiculo_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.cliente_veiculo cv
 			INNER JOIN base_web_control.cliente c
@@ -12697,13 +12698,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO cliente_veiculo' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12716,13 +12717,13 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_contas_empre
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
+
+	SET @sql = CONCAT(' SELECT
 				  base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(agencia IS NULL || agencia = "" || DATE(agencia) = "0000-00-00",0,agencia) USING utf8)) AS agencia
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(conta IS NULL || conta = "" || DATE(conta) = "0000-00-00",0,conta) USING utf8)) AS conta
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(saldo_inicial IS NULL || saldo_inicial = "" || DATE(saldo_inicial) = "0000-00-00",0,saldo_inicial) USING utf8)) AS saldo_inicial
@@ -12732,24 +12733,24 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_banco IS NULL || id_banco = "" || DATE(id_banco) = "0000-00-00","",id_banco) USING utf8)) AS id_banco
-				,id AS id_web 
-				,"1899-12-30" AS data_alteracao  
-				,"',NOW(), '" AS data_sincronismo 
+				,id AS id_web
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(), '" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/contas_empresa_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.contas_empresa
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO contas_empresas' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12761,31 +12762,31 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_credenciador
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				 
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(nome IS NULL || nome = "" || DATE(nome) = "0000-00-00","",nome) USING utf8)) AS nome
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cnpj IS NULL || cnpj = "" || DATE(cnpj) = "0000-00-00","",cnpj) USING utf8)) AS cnpj
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				, id AS id_web
-				,"1899-12-30" AS data_alteracao 
-				,"',NOW(),'" AS data_sincronismo 
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/credenciadora_cartao_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 				FROM base_web_control.credenciadora_cartao
 				WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO credenciadora_cartao' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12798,33 +12799,33 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_credenciador
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
+
+	SET @sql = CONCAT(' SELECT
 			base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 			 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_credenciadora_fixa IS NULL || id_credenciadora_fixa = "" || DATE(id_credenciadora_fixa) = "0000-00-00",0,id_credenciadora_fixa) USING utf8)) AS id_credenciadora_fixa
 			, id AS id_web
 			, "1899-12-30" AS data_alteracao
 			, "',NOW(),'" AS data_sincronismo
 		INTO OUTFILE "/var/lib/mysql-files/credenciadoras_fixas_ignorar_',p_id_cadastro,'.csv"
-		FIELDS TERMINATED BY ";" 
+		FIELDS TERMINATED BY ";"
 		LINES TERMINATED BY "\n"
 		FROM base_web_control.credenciadoras_fixas_ignorar
 		WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO credenciadoras_fixas_ignorar' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12837,13 +12838,13 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_fornecedor`(
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
+
+	SET @sql = CONCAT(' SELECT
 				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(razao_social IS NULL || razao_social = "" || DATE(razao_social) = "0000-00-00","",razao_social) USING utf8)) AS razao_social
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(fantasia IS NULL || fantasia = "" || DATE(fantasia) = "0000-00-00","",fantasia) USING utf8)) AS fantasia
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(contato IS NULL || contato = "" || DATE(contato) = "0000-00-00","",contato) USING utf8)) AS contato
@@ -12858,7 +12859,7 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(bairro IS NULL || bairro = "" || DATE(bairro) = "0000-00-00","",bairro) USING utf8)) AS bairro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cidade IS NULL || cidade = "" || DATE(cidade) = "0000-00-00","",cidade) USING utf8)) AS cidade
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(uf IS NULL || uf = "" || DATE(uf) = "0000-00-00","",uf) USING utf8)) AS uf
-				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(informacoes_adicionais IS NULL || informacoes_adicionais = "" || DATE(informacoes_adicionais) = "0000-00-00","",informacoes_adicionais) USING utf8)) AS informacoes_adicionais				 
+				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(informacoes_adicionais IS NULL || informacoes_adicionais = "" || DATE(informacoes_adicionais) = "0000-00-00","",informacoes_adicionais) USING utf8)) AS informacoes_adicionais
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_cadastro IS NULL || data_cadastro = "" || DATE(data_cadastro) = "0000-00-00","1899-12-30",data_cadastro) USING utf8)) AS data_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_log IS NULL || id_tipo_log = "" || DATE(id_tipo_log) = "0000-00-00",0,id_tipo_log) USING utf8)) AS id_tipo_log
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(tipo_cadastro IS NULL || tipo_cadastro = "" || DATE(tipo_cadastro) = "0000-00-00","F",tipo_cadastro) USING utf8)) AS tipo_cadastro
@@ -12871,7 +12872,7 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(prazo_entrega_produtos IS NULL || prazo_entrega_produtos = "" || DATE(prazo_entrega_produtos) = "0000-00-00",0,prazo_entrega_produtos) USING utf8)) AS prazo_entrega_produtos
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(telefone IS NULL || telefone = "" || DATE(telefone) = "0000-00-00","",telefone) USING utf8)) AS telefone
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(fax IS NULL || fax = "" || DATE(fax) = "0000-00-00","",fax) USING utf8)) AS fax
-				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(celular IS NULL || celular = "" || DATE(celular) = "0000-00-00","",celular) USING utf8)) AS celular				 
+				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(celular IS NULL || celular = "" || DATE(celular) = "0000-00-00","",celular) USING utf8)) AS celular
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor_servico IS NULL || id_fornecedor_servico = "" || DATE(id_fornecedor_servico) = "0000-00-00",0,id_fornecedor_servico) USING utf8)) AS id_fornecedor_servico
@@ -12886,20 +12887,20 @@ BEGIN
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_alteracao IS NULL || data_alteracao = "" || DATE(data_alteracao) = "0000-00-00","1899-12-30",data_alteracao) USING utf8)) AS data_alteracao
 				 ,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/fornecedor_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 		FROM base_web_control.fornecedor
 		WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO fornecedor' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12911,12 +12912,12 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_fornecedor_b
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-		
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	
-			
-	SET @sql = CONCAT(' SELECT  
-					
+
+
+	SET @sql = CONCAT(' SELECT
+
 					 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor IS NULL || id_fornecedor = "" || DATE(id_fornecedor) = "0000-00-00",0,id_fornecedor) USING utf8)) AS id_fornecedor
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_banco IS NULL || id_banco = "" || DATE(id_banco) = "0000-00-00",0,id_banco) USING utf8)) AS id_banco
 					 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(agencia IS NULL || agencia = "" || DATE(agencia) = "0000-00-00","",agencia) USING utf8)) AS agencia
@@ -12931,7 +12932,7 @@ BEGIN
 					, "1899-12-30" AS data_alteracao
 					, "',NOW(),'" AS data_sincronismo
 					INTO OUTFILE "/var/lib/mysql-files/fornecedor_banco_',p_id_cadastro,'.csv"
-								FIELDS TERMINATED BY ";" 
+								FIELDS TERMINATED BY ";"
 								LINES TERMINATED BY "\n"
 				FROM base_web_control.fornecedor_banco fb
 				INNER JOIN base_web_control.fornecedor f
@@ -12940,13 +12941,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO fornecedor_banco' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12958,9 +12959,9 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_fornecedor_p
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
+	SET @sql = CONCAT(' SELECT
 			base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor IS NULL || id_fornecedor = "" || DATE(id_fornecedor) = "0000-00-00",0,id_fornecedor) USING utf8)) AS id_fornecedor
 			,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8)) AS descricao
 			,"" AS insere
@@ -12970,22 +12971,22 @@ BEGIN
 			,"1899-12-30" AS data_alteracao
 			,"',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/fornecedor_produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 		FROM base_web_control.fornecedor_produto fp
-		INNER JOIN base_web_control.fornecedor f	
+		INNER JOIN base_web_control.fornecedor f
 		ON f.id = fp.id_fornecedor
 		WHERE f.id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO fornecedor_produto' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -12997,9 +12998,9 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_fornecedor_t
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
+	SET @sql = CONCAT(' SELECT
 			base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_fornecedor IS NULL || id_fornecedor = "" || DATE(id_fornecedor) = "0000-00-00",0,id_fornecedor) USING utf8)) AS id_fornecedor
 			 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8)) AS descricao
 			, "" AS insere
@@ -13009,22 +13010,22 @@ BEGIN
 			, "1899-12-30" AS data_alteracao
 			, "',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/fornecedor_transportadora_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 		FROM base_web_control.fornecedor_transportadora ft
-		INNER JOIN fornecedor f 
+		INNER JOIN fornecedor f
 		ON f.id = ft.id_fornecedor
 		WHERE f.id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO fornecedor_transportadora' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13036,10 +13037,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_funcionario`
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(nome IS NULL || nome = "" || DATE(nome) = "0000-00-00","",nome) USING utf8)) AS nome
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(funcao IS NULL || funcao = "" || DATE(funcao) = "0000-00-00","",funcao) USING utf8)) AS funcao
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(email IS NULL || email = "" || DATE(email) = "0000-00-00","",email) USING utf8)) AS email
@@ -13074,7 +13075,7 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_demissao IS NULL || data_demissao = "" || DATE(data_demissao) = "0000-00-00","1899-12-30",data_demissao) USING utf8)) AS data_demissao
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(foto IS NULL || foto = "" || DATE(foto) = "0000-00-00","",foto) USING utf8)) AS foto
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(orgao_expedidor IS NULL || orgao_expedidor = "" || DATE(orgao_expedidor) = "0000-00-00","",orgao_expedidor) USING utf8)) AS orgao_expedidor
-				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(agenda IS NULL || agenda = "" || DATE(agenda) = "0000-00-00",0,agenda) USING utf8)) AS agenda				 
+				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(agenda IS NULL || agenda = "" || DATE(agenda) = "0000-00-00",0,agenda) USING utf8)) AS agenda
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(endereco IS NULL || endereco = "" || DATE(endereco) = "0000-00-00","",endereco) USING utf8)) AS endereco
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(numero IS NULL || numero = "" || DATE(numero) = "0000-00-00","",numero) USING utf8)) AS numero
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(complemento IS NULL || complemento = "" || DATE(complemento) = "0000-00-00","",complemento) USING utf8)) AS complemento
@@ -13102,20 +13103,20 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(uf_naturalidade IS NULL || uf_naturalidade = "" || DATE(uf_naturalidade) = "0000-00-00","",uf_naturalidade) USING utf8)) AS uf_naturalidade
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_sincronismo IS NULL || data_sincronismo = "" || DATE(data_sincronismo) = "0000-00-00","1899-12-30",data_sincronismo) USING utf8)) AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/funcionario_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.funcionario
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO funcionario' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13127,10 +13128,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_funcionario_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-			
+	SET @sql = CONCAT(' SELECT
+
 			 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_funcionario IS NULL || id_funcionario = "" || DATE(id_funcionario) = "0000-00-00",0,id_funcionario) USING utf8)) AS id_funcionario
 			 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 			 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_semana IS NULL || id_semana = "" || DATE(id_semana) = "0000-00-00","0",id_semana) USING utf8)) AS id_semana
@@ -13142,20 +13143,20 @@ BEGIN
 			, "1899-12-30" AS data_alteracao
 			, "',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/funcionario_horario_trabalho_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 			FROM base_web_control.funcionario_horario_trabalho
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO funcionario_horario_trabalho' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13167,12 +13168,12 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_grade`(
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
-	
+
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-				
-	SET @sql = CONCAT(' SELECT  
-				
+
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8)) AS id_produto
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_grade_atributo_valor IS NULL || id_grade_atributo_valor = "" || DATE(id_grade_atributo_valor) = "0000-00-00","",id_grade_atributo_valor) USING utf8)) AS id_grade_atributo_valor
@@ -13195,13 +13196,13 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(porc_atacado_aprazo IS NULL || porc_atacado_aprazo = "" || DATE(porc_atacado_aprazo) = "0000-00-00",0,porc_atacado_aprazo) USING utf8)) AS porc_atacado_aprazo
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00",0,ativo) USING utf8)) AS ativo
 				, "" AS alt_estoque
-				, "" AS editar 
+				, "" AS editar
 				, "" AS excluir
 				, id_grade AS id_web
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/grade_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 				FROM base_web_control.grade
 				WHERE id_cadastro = ',p_id_cadastro,' ;
@@ -13209,13 +13210,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO grade' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13227,10 +13228,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_grade_atribu
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(atributo IS NULL || atributo = "" || DATE(atributo) = "0000-00-00","",atributo) USING utf8)) AS atributo
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00",0,ativo) USING utf8)) AS ativo
@@ -13238,20 +13239,20 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/grade_atributo_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.grade_atributo
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO grade_atributo' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13263,9 +13264,9 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_grade_atribu
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
+	SET @sql = CONCAT(' SELECT
 				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_atributo IS NULL || id_atributo = "" || DATE(id_atributo) = "0000-00-00",0,id_atributo) USING utf8)) AS id_atributo
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(valor IS NULL || valor = "" || DATE(valor) = "0000-00-00","",valor) USING utf8)) AS valor
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(gav.ativo IS NULL || gav.ativo = "" || DATE(gav.ativo) = "0000-00-00",0,gav.ativo) USING utf8)) AS ativo
@@ -13273,7 +13274,7 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/grade_atributo_valor_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.grade_atributo_valor gav
 			INNER JOIN base_web_control.grade_atributo ga
@@ -13282,13 +13283,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO grade_atributo_valor' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13300,10 +13301,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_grade_promoc
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(gp.id_grade IS NULL || gp.id_grade = "" || DATE(gp.id_grade) = "0000-00-00",0,gp.id_grade) USING utf8)) AS id_grade
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(nome IS NULL || nome = "" || DATE(nome) = "0000-00-00","",nome) USING utf8)) AS nome
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(disponivel_inicio IS NULL || disponivel_inicio = "" || DATE(disponivel_inicio) = "0000-00-00","1899-12-30",disponivel_inicio) USING utf8)) AS disponivel_inicio
@@ -13326,7 +13327,7 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/grade_promocao_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 		FROM base_web_control.grade_promocao gp
 		INNER JOIN base_web_control.grade g
@@ -13335,13 +13336,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO grade_promocao' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13353,10 +13354,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_lancamentos_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_lan IS NULL || id_tipo_lan = "" || DATE(id_tipo_lan) = "0000-00-00",0,id_tipo_lan) USING utf8)) AS id_tipo_lan
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_conta IS NULL || id_conta = "" || DATE(id_conta) = "0000-00-00",0,id_conta) USING utf8)) AS id_conta
@@ -13364,24 +13365,24 @@ BEGIN
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(valor IS NULL || valor = "" || DATE(valor) = "0000-00-00",0,valor) USING utf8)) AS valor
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(operacao IS NULL || operacao = "" || DATE(operacao) = "0000-00-00","I",operacao) USING utf8)) AS operacao
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_lan IS NULL || data_lan = "" || DATE(data_lan) = "0000-00-00","1899-12-30",data_lan) USING utf8)) AS data_lan
-				,id AS id_web 
-				,"1899-12-30" AS data_alteracao  
-				,"',NOW(), '" AS data_sincronismo 
+				,id AS id_web
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(), '" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/lancamentos_empresas_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 			FROM base_web_control.lancamentos_empresas
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO lancamentos_empresas' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13393,10 +13394,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_limite_funci
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-					
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_funcionario IS NULL || id_funcionario = "" || DATE(id_funcionario) = "0000-00-00",0,id_funcionario) USING utf8)) AS id_funcionario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_inicio IS NULL || data_inicio = "" || DATE(data_inicio) = "0000-00-00","1899-12-30",data_inicio) USING utf8)) AS data_inicio
@@ -13408,20 +13409,20 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/limite_funcionario_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.limite_funcionario
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO limite_funcionario' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13433,10 +13434,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_cupom_fi
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ncf.id_produto IS NULL || ncf.id_produto = "" || DATE(ncf.id_produto) = "0000-00-00",0,ncf.id_produto) USING utf8)) AS id_produto
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ncf.id_cfop IS NULL || ncf.id_cfop = "" || DATE(ncf.id_cfop) = "0000-00-00",0,ncf.id_cfop) USING utf8)) AS id_cfop
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(ncf.ncm IS NULL || ncf.ncm = "" || DATE(ncf.ncm) = "0000-00-00","",ncf.ncm) USING utf8)) AS ncm
@@ -13458,22 +13459,22 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_cupom_fiscal_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_cupom_fiscal ncf
-			INNER JOIN base_web_control.produto p 
+			INNER JOIN base_web_control.produto p
 			ON p.id = ncf.id_produto
 			WHERE p.id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_cupom_fiscal' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13486,13 +13487,13 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
+
+	SET @sql = CONCAT(' SELECT
 				id_produto
 				, base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(CST IS NULL || CST = "" || DATE(CST) = "0000-00-00",0,CST) USING utf8)) AS CST
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(pCOFINS IS NULL || pCOFINS = "" || DATE(pCOFINS) = "0000-00-00",0,pCOFINS) USING utf8)) AS pCOFINS
@@ -13503,7 +13504,7 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_cofins_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_COFINS nfp
 			INNER JOIN base_web_control.produto p
@@ -13512,13 +13513,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_COFINS' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13531,14 +13532,14 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				0 AS imposto_id	
+
+	SET @sql = CONCAT(' SELECT
+				0 AS imposto_id
 		  		 , base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(pCOFINS IS NULL || pCOFINS = "" || DATE(pCOFINS) = "0000-00-00",0,pCOFINS) USING utf8)) AS pCOFINS
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(qBCProd IS NULL || qBCProd = "" || DATE(qBCProd) = "0000-00-00",0,qBCProd) USING utf8)) AS qBCProd
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(v_aliq IS NULL || v_aliq = "" || DATE(v_aliq) = "0000-00-00",0,v_aliq) USING utf8)) AS v_aliq
@@ -13548,7 +13549,7 @@ BEGIN
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_cofinsst_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_COFINSST nfp
 			INNER JOIN base_web_control.produto p
@@ -13557,13 +13558,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_COFINSST' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13576,13 +13577,13 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
+
+	SET @sql = CONCAT(' SELECT
 				id_produto
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(orig IS NULL || orig = "" || DATE(orig) = "0000-00-00","",orig) USING utf8)) AS orig
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(CST IS NULL || CST = "" || DATE(CST) = "0000-00-00","",CST) USING utf8)) AS CST
@@ -13607,7 +13608,7 @@ BEGIN
 								,"1899-12-30" AS data_alteracao
 				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_icms_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_ICMS nfp
 			INNER JOIN base_web_control.produto p
@@ -13616,13 +13617,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_ICMS' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13635,14 +13636,14 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto 
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(vBC IS NULL || vBC = "" || DATE(vBC) = "0000-00-00",0,vBC) USING utf8)) AS vBC
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(vDespAdu IS NULL || vDespAdu = "" || DATE(vDespAdu) = "0000-00-00",0,vDespAdu) USING utf8)) AS vDespAdu
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(vII IS NULL || vII = "" || DATE(vII) = "0000-00-00",0,vII) USING utf8)) AS vII
@@ -13650,7 +13651,7 @@ BEGIN
 				,"1899-12-30" AS data_alteracao
 				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_ii_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_II nfp
 			INNER JOIN base_web_control.produto p
@@ -13659,13 +13660,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_II' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13678,15 +13679,15 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto 
-				
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto
+
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cIEnq IS NULL || cIEnq = "" || DATE(cIEnq) = "0000-00-00","",cIEnq) USING utf8)) AS cIEnq
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(CNPJProd IS NULL || CNPJProd = "" || DATE(CNPJProd) = "0000-00-00","",CNPJProd) USING utf8)) AS CNPJProd
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cSelo IS NULL || cSelo = "" || DATE(cSelo) = "0000-00-00","",cSelo) USING utf8)) AS cSelo
@@ -13700,7 +13701,7 @@ BEGIN
 				,"1899-12-30" AS data_alteracao
 				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_ipi_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_IPI nfp
 			INNER JOIN base_web_control.produto p
@@ -13712,10 +13713,10 @@ BEGIN
 	SELECT @sql;
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_IPI' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13727,32 +13728,32 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT('SELECT  
+	SET @sql = CONCAT('SELECT
 				0 AS imposto_id
-				, REPLACE(REPLACE(CONVERT(IF(pAliq IS NULL || pAliq = "" || DATE(pAliq) = "0000-00-00",0,pAliq) USING utf8),"\r",""),"\n","") AS pAliq 
-				,REPLACE(REPLACE(CONVERT(IF(uf IS NULL || uf = "" || DATE(uf) = "0000-00-00","",uf) USING utf8),"\r",""),"\n","") AS uf 
-				,REPLACE(REPLACE(CONVERT(IF(cMunFG IS NULL || cMunFG = "" || DATE(cMunFG) = "0000-00-00","",cMunFG) USING utf8),"\r",""),"\n","") AS cMunFG 
-				,REPLACE(REPLACE(CONVERT(IF(cListServ IS NULL || cListServ = "" || DATE(cListServ) = "0000-00-00","",cListServ) USING utf8),"\r",""),"\n","") AS cListServ 
-				,REPLACE(REPLACE(CONVERT(IF(tributacao IS NULL || tributacao = "" || DATE(tributacao) = "0000-00-00","N",tributacao) USING utf8),"\r",""),"\n","") AS tributacao 
-				,REPLACE(REPLACE(CONVERT(IF(produto_id IS NULL || produto_id = "" || DATE(produto_id) = "0000-00-00",0,produto_id) USING utf8),"\r",""),"\n","") AS produto_id 
-				,REPLACE(REPLACE(CONVERT(IF(id_exigibilidade IS NULL || id_exigibilidade = "" || DATE(id_exigibilidade) = "0000-00-00",0,id_exigibilidade) USING utf8),"\r",""),"\n","") AS id_exigibilidade 
-				,REPLACE(REPLACE(CONVERT(IF(incentivo_fiscal IS NULL || incentivo_fiscal = "" || DATE(incentivo_fiscal) = "0000-00-00","S",incentivo_fiscal) USING utf8),"\r",""),"\n","") AS incentivo_fiscal 
-				,REPLACE(REPLACE(CONVERT(IF(valor_deducoes IS NULL || valor_deducoes = "" || DATE(valor_deducoes) = "0000-00-00",0,valor_deducoes) USING utf8),"\r",""),"\n","") AS valor_deducoes 
-				,REPLACE(REPLACE(CONVERT(IF(valor_outras_retencoes IS NULL || valor_outras_retencoes = "" || DATE(valor_outras_retencoes) = "0000-00-00",0,valor_outras_retencoes) USING utf8),"\r",""),"\n","") AS valor_outras_retencoes 
-				,REPLACE(REPLACE(CONVERT(IF(valor_desconto_condicionado IS NULL || valor_desconto_condicionado = "" || DATE(valor_desconto_condicionado) = "0000-00-00",0,valor_desconto_condicionado) USING utf8),"\r",""),"\n","") AS valor_desconto_condicionado 
-				,REPLACE(REPLACE(CONVERT(IF(valor_retencao IS NULL || valor_retencao = "" || DATE(valor_retencao) = "0000-00-00",0,valor_retencao) USING utf8),"\r",""),"\n","") AS valor_retencao 
-				,REPLACE(REPLACE(CONVERT(IF(codigo_servico IS NULL || codigo_servico = "" || DATE(codigo_servico) = "0000-00-00","",codigo_servico) USING utf8),"\r",""),"\n","") AS codigo_servico 
-				,REPLACE(REPLACE(CONVERT(IF(uf_incidencia IS NULL || uf_incidencia = "" || DATE(uf_incidencia) = "0000-00-00","",uf_incidencia) USING utf8),"\r",""),"\n","") AS uf_incidencia 
-				,REPLACE(REPLACE(CONVERT(IF(id_municipio_incidencia IS NULL || id_municipio_incidencia = "" || DATE(id_municipio_incidencia) = "0000-00-00",0,id_municipio_incidencia) USING utf8),"\r",""),"\n","") AS id_municipio_incidencia 
-				,REPLACE(REPLACE(CONVERT(IF(processo IS NULL || processo = "" || DATE(processo) = "0000-00-00","",processo) USING utf8),"\r",""),"\n","") AS processo 
+				, REPLACE(REPLACE(CONVERT(IF(pAliq IS NULL || pAliq = "" || DATE(pAliq) = "0000-00-00",0,pAliq) USING utf8),"\r",""),"\n","") AS pAliq
+				,REPLACE(REPLACE(CONVERT(IF(uf IS NULL || uf = "" || DATE(uf) = "0000-00-00","",uf) USING utf8),"\r",""),"\n","") AS uf
+				,REPLACE(REPLACE(CONVERT(IF(cMunFG IS NULL || cMunFG = "" || DATE(cMunFG) = "0000-00-00","",cMunFG) USING utf8),"\r",""),"\n","") AS cMunFG
+				,REPLACE(REPLACE(CONVERT(IF(cListServ IS NULL || cListServ = "" || DATE(cListServ) = "0000-00-00","",cListServ) USING utf8),"\r",""),"\n","") AS cListServ
+				,REPLACE(REPLACE(CONVERT(IF(tributacao IS NULL || tributacao = "" || DATE(tributacao) = "0000-00-00","N",tributacao) USING utf8),"\r",""),"\n","") AS tributacao
+				,REPLACE(REPLACE(CONVERT(IF(produto_id IS NULL || produto_id = "" || DATE(produto_id) = "0000-00-00",0,produto_id) USING utf8),"\r",""),"\n","") AS produto_id
+				,REPLACE(REPLACE(CONVERT(IF(id_exigibilidade IS NULL || id_exigibilidade = "" || DATE(id_exigibilidade) = "0000-00-00",0,id_exigibilidade) USING utf8),"\r",""),"\n","") AS id_exigibilidade
+				,REPLACE(REPLACE(CONVERT(IF(incentivo_fiscal IS NULL || incentivo_fiscal = "" || DATE(incentivo_fiscal) = "0000-00-00","S",incentivo_fiscal) USING utf8),"\r",""),"\n","") AS incentivo_fiscal
+				,REPLACE(REPLACE(CONVERT(IF(valor_deducoes IS NULL || valor_deducoes = "" || DATE(valor_deducoes) = "0000-00-00",0,valor_deducoes) USING utf8),"\r",""),"\n","") AS valor_deducoes
+				,REPLACE(REPLACE(CONVERT(IF(valor_outras_retencoes IS NULL || valor_outras_retencoes = "" || DATE(valor_outras_retencoes) = "0000-00-00",0,valor_outras_retencoes) USING utf8),"\r",""),"\n","") AS valor_outras_retencoes
+				,REPLACE(REPLACE(CONVERT(IF(valor_desconto_condicionado IS NULL || valor_desconto_condicionado = "" || DATE(valor_desconto_condicionado) = "0000-00-00",0,valor_desconto_condicionado) USING utf8),"\r",""),"\n","") AS valor_desconto_condicionado
+				,REPLACE(REPLACE(CONVERT(IF(valor_retencao IS NULL || valor_retencao = "" || DATE(valor_retencao) = "0000-00-00",0,valor_retencao) USING utf8),"\r",""),"\n","") AS valor_retencao
+				,REPLACE(REPLACE(CONVERT(IF(codigo_servico IS NULL || codigo_servico = "" || DATE(codigo_servico) = "0000-00-00","",codigo_servico) USING utf8),"\r",""),"\n","") AS codigo_servico
+				,REPLACE(REPLACE(CONVERT(IF(uf_incidencia IS NULL || uf_incidencia = "" || DATE(uf_incidencia) = "0000-00-00","",uf_incidencia) USING utf8),"\r",""),"\n","") AS uf_incidencia
+				,REPLACE(REPLACE(CONVERT(IF(id_municipio_incidencia IS NULL || id_municipio_incidencia = "" || DATE(id_municipio_incidencia) = "0000-00-00",0,id_municipio_incidencia) USING utf8),"\r",""),"\n","") AS id_municipio_incidencia
+				,REPLACE(REPLACE(CONVERT(IF(processo IS NULL || processo = "" || DATE(processo) = "0000-00-00","",processo) USING utf8),"\r",""),"\n","") AS processo
 				, issqn_id AS id_web
 				,"1899-12-30" AS  data_alteracao
 				,"',NOW(),'" AS data_sincronismo
-								
+
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_issqn_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_ISSQN nfp
 			INNER JOIN base_web_control.produto p
@@ -13761,13 +13762,13 @@ BEGIN
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_ISSQN' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13779,34 +13780,34 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT('SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto 
-				,REPLACE(REPLACE(CONVERT(IF(tp_calculo IS NULL || tp_calculo = "" || DATE(tp_calculo) = "0000-00-00","",tp_calculo) USING utf8),"\r",""),"\n","") AS tp_calculo 
-				,REPLACE(REPLACE(CONVERT(IF(CST IS NULL || CST = "" || DATE(CST) = "0000-00-00",0,CST) USING utf8),"\r",""),"\n","") AS CST 
-				,REPLACE(REPLACE(CONVERT(IF(pPIS IS NULL || pPIS = "" || DATE(pPIS) = "0000-00-00",0,pPIS) USING utf8),"\r",""),"\n","") AS pPIS 
-				,REPLACE(REPLACE(CONVERT(IF(v_aliq IS NULL || v_aliq = "" || DATE(v_aliq) = "0000-00-00",0,v_aliq) USING utf8),"\r",""),"\n","") AS v_aliq 
-				,REPLACE(REPLACE(CONVERT(IF(tp_imposto IS NULL || tp_imposto = "" || DATE(tp_imposto) = "0000-00-00","A",tp_imposto) USING utf8),"\r",""),"\n","") AS tp_imposto 
+	SET @sql = CONCAT('SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto
+				,REPLACE(REPLACE(CONVERT(IF(tp_calculo IS NULL || tp_calculo = "" || DATE(tp_calculo) = "0000-00-00","",tp_calculo) USING utf8),"\r",""),"\n","") AS tp_calculo
+				,REPLACE(REPLACE(CONVERT(IF(CST IS NULL || CST = "" || DATE(CST) = "0000-00-00",0,CST) USING utf8),"\r",""),"\n","") AS CST
+				,REPLACE(REPLACE(CONVERT(IF(pPIS IS NULL || pPIS = "" || DATE(pPIS) = "0000-00-00",0,pPIS) USING utf8),"\r",""),"\n","") AS pPIS
+				,REPLACE(REPLACE(CONVERT(IF(v_aliq IS NULL || v_aliq = "" || DATE(v_aliq) = "0000-00-00",0,v_aliq) USING utf8),"\r",""),"\n","") AS v_aliq
+				,REPLACE(REPLACE(CONVERT(IF(tp_imposto IS NULL || tp_imposto = "" || DATE(tp_imposto) = "0000-00-00","A",tp_imposto) USING utf8),"\r",""),"\n","") AS tp_imposto
 				,"1899-12-30" AS data_alteracao
 				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_pis_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
-			FROM base_web_control.nfe_Produto_PIS nf 
+			FROM base_web_control.nfe_Produto_PIS nf
 			INNER JOIN base_web_control.produto p
 			ON p.id = nf.id_produto
 			WHERE p.id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_PIS' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13819,24 +13820,24 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_nfe_produto_
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto 
-				,REPLACE(REPLACE(CONVERT(IF(tp_calculo IS NULL || tp_calculo = "" || DATE(tp_calculo) = "0000-00-00","",tp_calculo) USING utf8),"\r",""),"\n","") AS tp_calculo 
-				,REPLACE(REPLACE(CONVERT(IF(pPIS IS NULL || pPIS = "" || DATE(pPIS) = "0000-00-00",0,pPIS) USING utf8),"\r",""),"\n","") AS pPIS 
-				,REPLACE(REPLACE(CONVERT(IF(qBCProd IS NULL || qBCProd = "" || DATE(qBCProd) = "0000-00-00",0,qBCProd) USING utf8),"\r",""),"\n","") AS qBCProd 
-				,REPLACE(REPLACE(CONVERT(IF(vAliqProd IS NULL || vAliqProd = "" || DATE(vAliqProd) = "0000-00-00",0,vAliqProd) USING utf8),"\r",""),"\n","") AS vAliqProd 
-				,REPLACE(REPLACE(CONVERT(IF(v_aliq IS NULL || v_aliq = "" || DATE(v_aliq) = "0000-00-00",0,v_aliq) USING utf8),"\r",""),"\n","") AS v_aliq 
-				,REPLACE(REPLACE(CONVERT(IF(tp_imposto IS NULL || tp_imposto = "" || DATE(tp_imposto) = "0000-00-00","A",tp_imposto) USING utf8),"\r",""),"\n","") AS tp_imposto 
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto
+				,REPLACE(REPLACE(CONVERT(IF(tp_calculo IS NULL || tp_calculo = "" || DATE(tp_calculo) = "0000-00-00","",tp_calculo) USING utf8),"\r",""),"\n","") AS tp_calculo
+				,REPLACE(REPLACE(CONVERT(IF(pPIS IS NULL || pPIS = "" || DATE(pPIS) = "0000-00-00",0,pPIS) USING utf8),"\r",""),"\n","") AS pPIS
+				,REPLACE(REPLACE(CONVERT(IF(qBCProd IS NULL || qBCProd = "" || DATE(qBCProd) = "0000-00-00",0,qBCProd) USING utf8),"\r",""),"\n","") AS qBCProd
+				,REPLACE(REPLACE(CONVERT(IF(vAliqProd IS NULL || vAliqProd = "" || DATE(vAliqProd) = "0000-00-00",0,vAliqProd) USING utf8),"\r",""),"\n","") AS vAliqProd
+				,REPLACE(REPLACE(CONVERT(IF(v_aliq IS NULL || v_aliq = "" || DATE(v_aliq) = "0000-00-00",0,v_aliq) USING utf8),"\r",""),"\n","") AS v_aliq
+				,REPLACE(REPLACE(CONVERT(IF(tp_imposto IS NULL || tp_imposto = "" || DATE(tp_imposto) = "0000-00-00","A",tp_imposto) USING utf8),"\r",""),"\n","") AS tp_imposto
 				,"1899-12-30" AS data_alteracao
 				,"',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/nfe_produto_pisst_',p_id_cadastro,'.csv"
-							FIELDS TERMINATED BY ";" 
+							FIELDS TERMINATED BY ";"
 							LINES TERMINATED BY "\n"
 			FROM base_web_control.nfe_Produto_PISST nfp
 			INNER JOIN base_web_control.produto p
@@ -13848,10 +13849,10 @@ BEGIN
 	SELECT @sql;
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO nfe_Produto_PISST' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13863,10 +13864,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_produto`(
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8)) AS descricao
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
@@ -13964,26 +13965,26 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(peso_liquido IS NULL || peso_liquido = "" || DATE(peso_liquido) = "0000-00-00","",peso_liquido) USING utf8)) AS peso_liquido
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(estoque_lojavirtual IS NULL || estoque_lojavirtual = "" || DATE(estoque_lojavirtual) = "0000-00-00",0,estoque_lojavirtual) USING utf8)) AS estoque_lojavirtual
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(deletar IS NULL || deletar = "" || DATE(deletar) = "0000-00-00","S",deletar) USING utf8)) AS deletar
- 				,"" AS visualizar 
-				,"" AS excluir  
+ 				,"" AS visualizar
+				,"" AS excluir
 				,FALSE AS possui_trib_especial
-				,id AS id_web 
-				,"',NOW(),'" AS data_sincronismo 
+				,id AS id_web
+				,"',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
-			FROM base_web_control.produto 
+			FROM base_web_control.produto
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO produto' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -13995,42 +13996,42 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_produto_info
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-		
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-				
-	SET @sql = CONCAT(' SELECT  REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto 
-				,REPLACE(REPLACE(CONVERT(IF(dias IS NULL || dias = "" || DATE(dias) = "0000-00-00",0,dias) USING utf8),"\r",""),"\n","") AS dias 
-				,REPLACE(REPLACE(CONVERT(IF(porcao IS NULL || porcao = "" || DATE(porcao) = "0000-00-00","",porcao) USING utf8),"\r",""),"\n","") AS porcao 
-				,REPLACE(REPLACE(CONVERT(IF(calorias IS NULL || calorias = "" || DATE(calorias) = "0000-00-00",0,calorias) USING utf8),"\r",""),"\n","") AS calorias 
-				,REPLACE(REPLACE(CONVERT(IF(caboidrato IS NULL || caboidrato = "" || DATE(caboidrato) = "0000-00-00",0,caboidrato) USING utf8),"\r",""),"\n","") AS caboidrato 
-				,REPLACE(REPLACE(CONVERT(IF(proteinas IS NULL || proteinas = "" || DATE(proteinas) = "0000-00-00",0,proteinas) USING utf8),"\r",""),"\n","") AS proteinas 
-				,REPLACE(REPLACE(CONVERT(IF(gord_tot IS NULL || gord_tot = "" || DATE(gord_tot) = "0000-00-00",0,gord_tot) USING utf8),"\r",""),"\n","") AS gord_tot 
-				,REPLACE(REPLACE(CONVERT(IF(gord_sat IS NULL || gord_sat = "" || DATE(gord_sat) = "0000-00-00",0,gord_sat) USING utf8),"\r",""),"\n","") AS gord_sat 
-				,REPLACE(REPLACE(CONVERT(IF(colesterol IS NULL || colesterol = "" || DATE(colesterol) = "0000-00-00",0,colesterol) USING utf8),"\r",""),"\n","") AS colesterol 
-				,REPLACE(REPLACE(CONVERT(IF(gord_trans IS NULL || gord_trans = "" || DATE(gord_trans) = "0000-00-00",0,gord_trans) USING utf8),"\r",""),"\n","") AS gord_trans 
-				,REPLACE(REPLACE(CONVERT(IF(fibra IS NULL || fibra = "" || DATE(fibra) = "0000-00-00",0,fibra) USING utf8),"\r",""),"\n","") AS fibra 
-				,REPLACE(REPLACE(CONVERT(IF(calcio IS NULL || calcio = "" || DATE(calcio) = "0000-00-00",0,calcio) USING utf8),"\r",""),"\n","") AS calcio 
-				,REPLACE(REPLACE(CONVERT(IF(ferro IS NULL || ferro = "" || DATE(ferro) = "0000-00-00",0,ferro) USING utf8),"\r",""),"\n","") AS ferro 
-				,REPLACE(REPLACE(CONVERT(IF(sodio IS NULL || sodio = "" || DATE(sodio) = "0000-00-00",0,sodio) USING utf8),"\r",""),"\n","") AS sodio 
+
+	SET @sql = CONCAT(' SELECT  REPLACE(REPLACE(CONVERT(IF(id_produto IS NULL || id_produto = "" || DATE(id_produto) = "0000-00-00",0,id_produto) USING utf8),"\r",""),"\n","") AS id_produto
+				,REPLACE(REPLACE(CONVERT(IF(dias IS NULL || dias = "" || DATE(dias) = "0000-00-00",0,dias) USING utf8),"\r",""),"\n","") AS dias
+				,REPLACE(REPLACE(CONVERT(IF(porcao IS NULL || porcao = "" || DATE(porcao) = "0000-00-00","",porcao) USING utf8),"\r",""),"\n","") AS porcao
+				,REPLACE(REPLACE(CONVERT(IF(calorias IS NULL || calorias = "" || DATE(calorias) = "0000-00-00",0,calorias) USING utf8),"\r",""),"\n","") AS calorias
+				,REPLACE(REPLACE(CONVERT(IF(caboidrato IS NULL || caboidrato = "" || DATE(caboidrato) = "0000-00-00",0,caboidrato) USING utf8),"\r",""),"\n","") AS caboidrato
+				,REPLACE(REPLACE(CONVERT(IF(proteinas IS NULL || proteinas = "" || DATE(proteinas) = "0000-00-00",0,proteinas) USING utf8),"\r",""),"\n","") AS proteinas
+				,REPLACE(REPLACE(CONVERT(IF(gord_tot IS NULL || gord_tot = "" || DATE(gord_tot) = "0000-00-00",0,gord_tot) USING utf8),"\r",""),"\n","") AS gord_tot
+				,REPLACE(REPLACE(CONVERT(IF(gord_sat IS NULL || gord_sat = "" || DATE(gord_sat) = "0000-00-00",0,gord_sat) USING utf8),"\r",""),"\n","") AS gord_sat
+				,REPLACE(REPLACE(CONVERT(IF(colesterol IS NULL || colesterol = "" || DATE(colesterol) = "0000-00-00",0,colesterol) USING utf8),"\r",""),"\n","") AS colesterol
+				,REPLACE(REPLACE(CONVERT(IF(gord_trans IS NULL || gord_trans = "" || DATE(gord_trans) = "0000-00-00",0,gord_trans) USING utf8),"\r",""),"\n","") AS gord_trans
+				,REPLACE(REPLACE(CONVERT(IF(fibra IS NULL || fibra = "" || DATE(fibra) = "0000-00-00",0,fibra) USING utf8),"\r",""),"\n","") AS fibra
+				,REPLACE(REPLACE(CONVERT(IF(calcio IS NULL || calcio = "" || DATE(calcio) = "0000-00-00",0,calcio) USING utf8),"\r",""),"\n","") AS calcio
+				,REPLACE(REPLACE(CONVERT(IF(ferro IS NULL || ferro = "" || DATE(ferro) = "0000-00-00",0,ferro) USING utf8),"\r",""),"\n","") AS ferro
+				,REPLACE(REPLACE(CONVERT(IF(sodio IS NULL || sodio = "" || DATE(sodio) = "0000-00-00",0,sodio) USING utf8),"\r",""),"\n","") AS sodio
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/produto_info_nutricionais_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 				FROM base_web_control.produto_info_nutricionais pn
-				INNER JOIN base_web_control.produto p 
+				INNER JOIN base_web_control.produto p
 				ON p.id = pn.id_produto
 				WHERE p.id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO produto_info_nutricionais' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14042,33 +14043,33 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_promocao_kit
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro 
-				,REPLACE(REPLACE(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8),"\r",""),"\n","") AS descricao 
-				,REPLACE(REPLACE(CONVERT(IF(codigo_barra IS NULL || codigo_barra = "" || DATE(codigo_barra) = "0000-00-00","",codigo_barra) USING utf8),"\r",""),"\n","") AS codigo_barra 
-				,REPLACE(REPLACE(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00","A",ativo) USING utf8),"\r",""),"\n","") AS ativo 
-				,REPLACE(REPLACE(CONVERT(IF(id_usuario_alteracao IS NULL || id_usuario_alteracao = "" || DATE(id_usuario_alteracao) = "0000-00-00",0,id_usuario_alteracao) USING utf8),"\r",""),"\n","") AS id_usuario_alteracao 
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro
+				,REPLACE(REPLACE(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8),"\r",""),"\n","") AS descricao
+				,REPLACE(REPLACE(CONVERT(IF(codigo_barra IS NULL || codigo_barra = "" || DATE(codigo_barra) = "0000-00-00","",codigo_barra) USING utf8),"\r",""),"\n","") AS codigo_barra
+				,REPLACE(REPLACE(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00","A",ativo) USING utf8),"\r",""),"\n","") AS ativo
+				,REPLACE(REPLACE(CONVERT(IF(id_usuario_alteracao IS NULL || id_usuario_alteracao = "" || DATE(id_usuario_alteracao) = "0000-00-00",0,id_usuario_alteracao) USING utf8),"\r",""),"\n","") AS id_usuario_alteracao
 				, id AS id_web
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/promocao_kit_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.promocao_kit
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO promocao_kit' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14081,38 +14082,38 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_promocao_kit
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro 
-				,REPLACE(REPLACE(CONVERT(IF(id_promocao_kit IS NULL || id_promocao_kit = "" || DATE(id_promocao_kit) = "0000-00-00",0,id_promocao_kit) USING utf8),"\r",""),"\n","") AS id_promocao_kit 
-				,REPLACE(REPLACE(CONVERT(IF(id_grade IS NULL || id_grade = "" || DATE(id_grade) = "0000-00-00",0,id_grade) USING utf8),"\r",""),"\n","") AS id_grade 
-				,REPLACE(REPLACE(CONVERT(IF(vlr_custo_original IS NULL || vlr_custo_original = "" || DATE(vlr_custo_original) = "0000-00-00",0,vlr_custo_original) USING utf8),"\r",""),"\n","") AS vlr_custo_original 
-				,REPLACE(REPLACE(CONVERT(IF(vlr_custo_promocao IS NULL || vlr_custo_promocao = "" || DATE(vlr_custo_promocao) = "0000-00-00",0,vlr_custo_promocao) USING utf8),"\r",""),"\n","") AS vlr_custo_promocao 
-				,REPLACE(REPLACE(CONVERT(IF(preco_fixo IS NULL || preco_fixo = "" || DATE(preco_fixo) = "0000-00-00","S",preco_fixo) USING utf8),"\r",""),"\n","") AS preco_fixo 
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro
+				,REPLACE(REPLACE(CONVERT(IF(id_promocao_kit IS NULL || id_promocao_kit = "" || DATE(id_promocao_kit) = "0000-00-00",0,id_promocao_kit) USING utf8),"\r",""),"\n","") AS id_promocao_kit
+				,REPLACE(REPLACE(CONVERT(IF(id_grade IS NULL || id_grade = "" || DATE(id_grade) = "0000-00-00",0,id_grade) USING utf8),"\r",""),"\n","") AS id_grade
+				,REPLACE(REPLACE(CONVERT(IF(vlr_custo_original IS NULL || vlr_custo_original = "" || DATE(vlr_custo_original) = "0000-00-00",0,vlr_custo_original) USING utf8),"\r",""),"\n","") AS vlr_custo_original
+				,REPLACE(REPLACE(CONVERT(IF(vlr_custo_promocao IS NULL || vlr_custo_promocao = "" || DATE(vlr_custo_promocao) = "0000-00-00",0,vlr_custo_promocao) USING utf8),"\r",""),"\n","") AS vlr_custo_promocao
+				,REPLACE(REPLACE(CONVERT(IF(preco_fixo IS NULL || preco_fixo = "" || DATE(preco_fixo) = "0000-00-00","S",preco_fixo) USING utf8),"\r",""),"\n","") AS preco_fixo
 				, id AS id_web
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
-				,REPLACE(REPLACE(CONVERT(IF(valor_desconto_perc IS NULL || valor_desconto_perc = "" || DATE(valor_desconto_perc) = "0000-00-00",0,valor_desconto_perc) USING utf8),"\r",""),"\n","") AS valor_desconto_perc 
+				,REPLACE(REPLACE(CONVERT(IF(valor_desconto_perc IS NULL || valor_desconto_perc = "" || DATE(valor_desconto_perc) = "0000-00-00",0,valor_desconto_perc) USING utf8),"\r",""),"\n","") AS valor_desconto_perc
 				INTO OUTFILE "/var/lib/mysql-files/promocao_kit_grade_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.promocao_kit_grade
 			WHERE id_cadastro  = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO promocao_kit_grade' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14124,39 +14125,39 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_promocao_qua
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
-	
+
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro 
-				,REPLACE(REPLACE(CONVERT(IF(id_grade IS NULL || id_grade = "" || DATE(id_grade) = "0000-00-00",0,id_grade) USING utf8),"\r",""),"\n","") AS id_grade 
-				,REPLACE(REPLACE(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8),"\r",""),"\n","") AS id_usuario 
-				,REPLACE(REPLACE(CONVERT(IF(data_inicio IS NULL || data_inicio = "" || DATE(data_inicio) = "0000-00-00","1899-12-30",data_inicio) USING utf8),"\r",""),"\n","") AS data_inicio 
-				,REPLACE(REPLACE(CONVERT(IF(data_fim IS NULL || data_fim = "" || DATE(data_fim) = "0000-00-00","1899-12-30",data_fim) USING utf8),"\r",""),"\n","") AS data_fim 
-				,REPLACE(REPLACE(CONVERT(IF(qtd_promocao IS NULL || qtd_promocao = "" || DATE(qtd_promocao) = "0000-00-00",0,qtd_promocao) USING utf8),"\r",""),"\n","") AS qtd_promocao 
-				,REPLACE(REPLACE(CONVERT(IF(valor_desconto IS NULL || valor_desconto = "" || DATE(valor_desconto) = "0000-00-00",0,valor_desconto) USING utf8),"\r",""),"\n","") AS valor_desconto 
-				,REPLACE(REPLACE(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00","A",ativo) USING utf8),"\r",""),"\n","") AS ativo 
-				,REPLACE(REPLACE(CONVERT(IF(id_usuario_alterou IS NULL || id_usuario_alterou = "" || DATE(id_usuario_alterou) = "0000-00-00",0,id_usuario_alterou) USING utf8),"\r",""),"\n","") AS id_usuario_alterou 
+
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro
+				,REPLACE(REPLACE(CONVERT(IF(id_grade IS NULL || id_grade = "" || DATE(id_grade) = "0000-00-00",0,id_grade) USING utf8),"\r",""),"\n","") AS id_grade
+				,REPLACE(REPLACE(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8),"\r",""),"\n","") AS id_usuario
+				,REPLACE(REPLACE(CONVERT(IF(data_inicio IS NULL || data_inicio = "" || DATE(data_inicio) = "0000-00-00","1899-12-30",data_inicio) USING utf8),"\r",""),"\n","") AS data_inicio
+				,REPLACE(REPLACE(CONVERT(IF(data_fim IS NULL || data_fim = "" || DATE(data_fim) = "0000-00-00","1899-12-30",data_fim) USING utf8),"\r",""),"\n","") AS data_fim
+				,REPLACE(REPLACE(CONVERT(IF(qtd_promocao IS NULL || qtd_promocao = "" || DATE(qtd_promocao) = "0000-00-00",0,qtd_promocao) USING utf8),"\r",""),"\n","") AS qtd_promocao
+				,REPLACE(REPLACE(CONVERT(IF(valor_desconto IS NULL || valor_desconto = "" || DATE(valor_desconto) = "0000-00-00",0,valor_desconto) USING utf8),"\r",""),"\n","") AS valor_desconto
+				,REPLACE(REPLACE(CONVERT(IF(ativo IS NULL || ativo = "" || DATE(ativo) = "0000-00-00","A",ativo) USING utf8),"\r",""),"\n","") AS ativo
+				,REPLACE(REPLACE(CONVERT(IF(id_usuario_alterou IS NULL || id_usuario_alterou = "" || DATE(id_usuario_alterou) = "0000-00-00",0,id_usuario_alterou) USING utf8),"\r",""),"\n","") AS id_usuario_alterou
 				, id AS id_web
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/promocao_quantidade_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.promocao_quantidade
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO promocao_quantidade' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14168,30 +14169,30 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_tipos_lancam
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET @sql = CONCAT(' SELECT
-				 
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(descricao IS NULL || descricao = "" || DATE(descricao) = "0000-00-00","",descricao) USING utf8)) AS descricao
-				 ,id AS id_web 
-				,"1899-12-30" AS data_alteracao  
-				,"',NOW(), '" AS data_sincronismo 
+				 ,id AS id_web
+				,"1899-12-30" AS data_alteracao
+				,"',NOW(), '" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/tipos_lancamentos_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"
 			FROM base_web_control.tipos_lancamentos
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO tipos_lancamentos' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14203,9 +14204,9 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_transportado
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT('SELECT  
+	SET @sql = CONCAT('SELECT
 				  base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_cadastro IS NULL || data_cadastro = "" || DATE(data_cadastro) = "0000-00-00","1899-12-30",data_cadastro) USING utf8)) AS data_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(nome_razao_social IS NULL || nome_razao_social = "" || DATE(nome_razao_social) = "0000-00-00","",nome_razao_social) USING utf8)) AS nome_razao_social
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(cnpj_cpf IS NULL || cnpj_cpf = "" || DATE(cnpj_cpf) = "0000-00-00","",cnpj_cpf) USING utf8)) AS cnpj_cpf
@@ -14225,7 +14226,7 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8)) AS id_usuario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_tipo_log IS NULL || id_tipo_log = "" || DATE(id_tipo_log) = "0000-00-00",0,id_tipo_log) USING utf8)) AS id_tipo_log
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(telefone IS NULL || telefone = "" || DATE(telefone) = "0000-00-00","",telefone) USING utf8)) AS telefone
-				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(celular IS NULL || celular = "" || DATE(celular) = "0000-00-00","",celular) USING utf8)) AS celular 
+				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(celular IS NULL || celular = "" || DATE(celular) = "0000-00-00","",celular) USING utf8)) AS celular
 				 , "" AS visualizar
 				 , "" AS excluir
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(situacao IS NULL || situacao = "" || DATE(situacao) = "0000-00-00","A",situacao) USING utf8)) AS situacao
@@ -14237,20 +14238,20 @@ BEGIN
 				 , "1899-12-30" AS data_alteracao
 				 , "',NOW(),'" AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/transportadora_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.transportadora
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO transportadora' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14263,41 +14264,41 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_transportado
 BEGIN
 	DECLARE erro INT DEFAULT 0;
 	DECLARE into_out VARCHAR(255);
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
 	SET into_out = CONCAT('INTO OUTFILE "/var/lib/mysql-files/produto_',p_id_cadastro,'.csv"
-			FIELDS TERMINATED BY ";" 
+			FIELDS TERMINATED BY ";"
 			LINES TERMINATED BY "\n"');
-			
-	SET @sql = CONCAT(' SELECT  
-				REPLACE(REPLACE(CONVERT(IF(id_transportadora IS NULL || id_transportadora = "" || DATE(id_transportadora) = "0000-00-00",0,id_transportadora) USING utf8),"\r",""),"\n","") AS id_transportadora 
-				,REPLACE(REPLACE(CONVERT(IF(placa IS NULL || placa = "" || DATE(placa) = "0000-00-00","",placa) USING utf8),"\r",""),"\n","") AS placa 
-				,REPLACE(REPLACE(CONVERT(IF(data_hora_cadastro IS NULL || data_hora_cadastro = "" || DATE(data_hora_cadastro) = "0000-00-00","1899-12-30",data_hora_cadastro) USING utf8),"\r",""),"\n","") AS data_hora_cadastro 
-				,REPLACE(REPLACE(CONVERT(IF(situacao IS NULL || situacao = "" || DATE(situacao) = "0000-00-00","A",situacao) USING utf8),"\r",""),"\n","") AS situacao 
-				,REPLACE(REPLACE(CONVERT(IF(uf IS NULL || uf = "" || DATE(uf) = "0000-00-00","",uf) USING utf8),"\r",""),"\n","") AS uf 
-				,REPLACE(REPLACE(CONVERT(IF(rntc IS NULL || rntc = "" || DATE(rntc) = "0000-00-00","",rntc) USING utf8),"\r",""),"\n","") AS rntc 
-				,REPLACE(REPLACE(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8),"\r",""),"\n","") AS id_usuario 
-				,REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro 
+
+	SET @sql = CONCAT(' SELECT
+				REPLACE(REPLACE(CONVERT(IF(id_transportadora IS NULL || id_transportadora = "" || DATE(id_transportadora) = "0000-00-00",0,id_transportadora) USING utf8),"\r",""),"\n","") AS id_transportadora
+				,REPLACE(REPLACE(CONVERT(IF(placa IS NULL || placa = "" || DATE(placa) = "0000-00-00","",placa) USING utf8),"\r",""),"\n","") AS placa
+				,REPLACE(REPLACE(CONVERT(IF(data_hora_cadastro IS NULL || data_hora_cadastro = "" || DATE(data_hora_cadastro) = "0000-00-00","1899-12-30",data_hora_cadastro) USING utf8),"\r",""),"\n","") AS data_hora_cadastro
+				,REPLACE(REPLACE(CONVERT(IF(situacao IS NULL || situacao = "" || DATE(situacao) = "0000-00-00","A",situacao) USING utf8),"\r",""),"\n","") AS situacao
+				,REPLACE(REPLACE(CONVERT(IF(uf IS NULL || uf = "" || DATE(uf) = "0000-00-00","",uf) USING utf8),"\r",""),"\n","") AS uf
+				,REPLACE(REPLACE(CONVERT(IF(rntc IS NULL || rntc = "" || DATE(rntc) = "0000-00-00","",rntc) USING utf8),"\r",""),"\n","") AS rntc
+				,REPLACE(REPLACE(CONVERT(IF(id_usuario IS NULL || id_usuario = "" || DATE(id_usuario) = "0000-00-00",0,id_usuario) USING utf8),"\r",""),"\n","") AS id_usuario
+				,REPLACE(REPLACE(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8),"\r",""),"\n","") AS id_cadastro
 				, "" AS insere
 				, "" AS excluir
 				, id AS id_web
 				, "1899-12-30" AS data_alteracao
 				, "',NOW(),'" AS data_sincronismo
 			INTO OUTFILE "/var/lib/mysql-files/transportadora_placa_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.transportadora_placa
 			WHERE id_cadastro = ',p_id_cadastro,';');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO transportadora_placa' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14359,10 +14360,10 @@ CREATE PROCEDURE `base_web_control`.`sp_gerar_carga_inicial_offline_webc_usuario
 )
 BEGIN
 	DECLARE erro INT DEFAULT 0;
-	
+
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	SET @sql = CONCAT(' SELECT  
-				
+	SET @sql = CONCAT(' SELECT
+
 				 base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(id_cadastro IS NULL || id_cadastro = "" || DATE(id_cadastro) = "0000-00-00",0,id_cadastro) USING utf8)) AS id_cadastro
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(nome_usuario IS NULL || nome_usuario = "" || DATE(nome_usuario) = "0000-00-00","",nome_usuario) USING utf8)) AS nome_usuario
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(login IS NULL || login = "" || DATE(login) = "0000-00-00","",login) USING utf8)) AS login
@@ -14387,20 +14388,20 @@ BEGIN
 				 ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_alteracao IS NULL || data_alteracao = "" || DATE(data_alteracao) = "0000-00-00","1899-12-30",data_alteracao) USING utf8)) AS data_alteracao
 				,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(data_sincronismo IS NULL || data_sincronismo = "" || DATE(data_sincronismo) = "0000-00-00","1899-12-30",data_sincronismo) USING utf8)) AS data_sincronismo
 				INTO OUTFILE "/var/lib/mysql-files/webc_usuario_',p_id_cadastro,'.csv"
-				FIELDS TERMINATED BY ";" 
+				FIELDS TERMINATED BY ";"
 				LINES TERMINATED BY "\n"
 			FROM base_web_control.webc_usuario
 			WHERE id_cadastro = ',p_id_cadastro,' ;');
 		PREPARE stmt_sql FROM @sql;
 		EXECUTE stmt_sql;
 		DEALLOCATE PREPARE stmt_sql;
-	
+
 	IF erro = 0 THEN
 		SELECT 'OK' AS erro;
-	ELSE 
+	ELSE
 		SELECT 'ERRO' AS erro;
 	END IF;
-	
+
 END;
 
 #
@@ -14714,93 +14715,93 @@ BEGIN
 	DECLARE v_qtd_contratos INT;
 	DECLARE v_pronto INT DEFAULT 0;
 	declare v_ano int;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas_cancelamentos
 				     ORDER BY data_inicio ASC;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-		
+
 	SET v_mes_atual = MONTH(NOW());
 	set v_ano = year(now());
-	
-	
 
 
-	
+
+
+
 	WHILE v_while -1 <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) -1,'-12-01 00:00:00');
 				SET v_data_fim = CONCAT(YEAR(NOW())-1 ,'-12-', DAY(LAST_DAY(v_data_inicio)) ,' 23:59:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-01 00:00:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-',DAY(LAST_DAY(v_data_inicio)) ,' 23:59:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas_cancelamentos(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_while = v_while + 1;
-			
-			
-			
+
+
+
 	END WHILE;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_cancelamentos);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +1 <= 12 DO
-	
-		
+
+
 		SET v_data_inicio = CONCAT(YEAR(NOW()) -1,'-', LPAD(v_falta,2,0),'-01 00:00:00');
 		SET v_data_fim = CONCAT(YEAR(NOW()) -1,'-',LPAD(v_falta,2,0),'-',DAY(LAST_DAY(v_data_inicio)) ,' 23:59:00');
-	
+
 		INSERT INTO `base_web_control`.tmp_datas_cancelamentos(data_inicio, data_fim)
 		VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
 	END WHILE;
-	
-	
-	
-	
-	
 
 
-	
+
+
+
+
+
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_grafico_cancelados(valor, data_inicio, data_fim)
-				SELECT 
+				SELECT
 					COUNT(*),
 					v_data_inicio,
 					v_data_fim
 				FROM cs2.cadastro a
 				INNER JOIN cs2.pedidos_cancelamento d ON `base_web_control`.a.codloja = `base_web_control`.d.codloja
-				WHERE MONTH(`base_web_control`.d.data_documento) = MONTH(v_data_fim) 
+				WHERE MONTH(`base_web_control`.d.data_documento) = MONTH(v_data_fim)
 				and year(`base_web_control`.d.data_documento) = year(v_data_fim)
-				AND `base_web_control`.a.sitcli = 2  
+				AND `base_web_control`.a.sitcli = 2
 				AND `base_web_control`.a.id_franquia= p_id_franquia;
-                
-				
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
 
-	
+
+
 	SELECT
 		valor AS VALUE,
 		data_inicio,
@@ -14831,7 +14832,7 @@ BEGIN
 		ELSE
 		'DEZ'
 		END AS label
-		
+
 	FROM `base_web_control`.tmp_grafico_cancelados;
 
 
@@ -14856,19 +14857,19 @@ BEGIN
   DECLARE v_falta INT;
   DECLARE v_qtd_contratos INT;
   DECLARE v_pronto INT DEFAULT 0;
-	
+
   DECLARE cur_datas CURSOR FOR SELECT
                                      data_inicio,
                                      data_fim
                                FROM `base_web_control`.tmp_datas_equipamentos
                                ORDER BY data_inicio ASC;
-	
+
    DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-		
+
    SET v_mes_atual = MONTH(NOW());
-	
+
    WHILE v_while  <= v_mes_atual DO
-	
+
       IF v_while = 1 THEN
          SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-26 00:00:01');
          SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 23:59:59');
@@ -14876,17 +14877,17 @@ BEGIN
          SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-26');
          SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25');
       END IF;
-			
+
       INSERT INTO `base_web_control`.tmp_datas_equipamentos(data_inicio, data_fim)
       VALUES(v_data_inicio, v_data_fim);
-		
+
       SET v_while = v_while + 1;
    END WHILE;
-	
+
    SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_equipamentos);
-	
+
    SET v_while = 1;
-	
+
    WHILE v_falta +1 <= 12 DO
       SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-26');
       SET v_data_fim = CONCAT(YEAR(NOW()) -1,'-',LPAD(v_falta+1,2,0),'-25');
@@ -14894,7 +14895,7 @@ BEGIN
       VALUES(v_data_inicio, v_data_fim);
       SET v_falta = v_falta + 1;
    END WHILE;
-	 
+
    OPEN cur_datas;
    REPEAT
    FETCH cur_datas INTO v_data_inicio, v_data_fim;
@@ -14922,12 +14923,12 @@ BEGIN
                  OR `base_web_control`.c.funcao='ATENDIMENTO ADMINISTRATIVO EXTERNO' OR `base_web_control`.c.funcao='ASSISTENTE COMERCIAL' OR `base_web_control`.c.funcao=17 OR `base_web_control`.c.funcao=13 OR `base_web_control`.c.funcao=18 OR `base_web_control`.c.funcao=19)
 
 				ORDER BY qtd DESC;
-				
-                
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
+
 	SELECT
 		valor AS VALUE,
 		data_inicio,
@@ -14958,7 +14959,7 @@ BEGIN
 		ELSE
 		'DEZ'
 		END AS label
-		
+
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor;
 	DELETE FROM base_web_control.tmp_datas_equipamentos;
 	DELETE FROM base_web_control.tmp_grafico_afiliacoes_consultor;
@@ -14973,26 +14974,26 @@ CREATE PROCEDURE `base_web_control`.`sp_importacao_dados_de_para`(
 	id_cadastro_para INT
 )
 BEGIN
-	
+
 	DECLARE id_usuario_para INT;
 	DECLARE error INT DEFAULT 0;
-	
-	
-	
-	
-	
 
-	
-	
+
+
+
+
+
+
+
 	SET id_usuario_para = (SELECT
 				id
 			 FROM base_web_control.webc_usuario
 			 WHERE id_cadastro = id_cadastro_para
 			 AND nome_usuario  = 'USUARIO MASTER');
-	
+
 	INSERT INTO `base_web_control`.fornecedor
        (
-	       id_usuario, 
+	       id_usuario,
 	       razao_social,
 	       fantasia,
 	       contato,
@@ -15018,17 +15019,17 @@ BEGIN
 	       id_fornecedor_servico,
 	       id_forn_master
        )
-	SELECT 
-		id_usuario_para, 
-		`base_web_control`.f.razao_social, 
-		`base_web_control`.f.fantasia, 
-		`base_web_control`.f.contato, 
-		`base_web_control`.f.cnpj_cpf, 
-		`base_web_control`.f.telefone, 
-		`base_web_control`.f.fax, 
-		`base_web_control`.f.celular, 
-		`base_web_control`.f.email, 
-		`base_web_control`.f.site, 
+	SELECT
+		id_usuario_para,
+		`base_web_control`.f.razao_social,
+		`base_web_control`.f.fantasia,
+		`base_web_control`.f.contato,
+		`base_web_control`.f.cnpj_cpf,
+		`base_web_control`.f.telefone,
+		`base_web_control`.f.fax,
+		`base_web_control`.f.celular,
+		`base_web_control`.f.email,
+		`base_web_control`.f.site,
 		`base_web_control`.f.skype,
 		`base_web_control`.f.endereco,
 		`base_web_control`.f.numero,
@@ -15038,100 +15039,100 @@ BEGIN
 		`base_web_control`.f.cidade,
 		`base_web_control`.f.uf,
 		`base_web_control`.f.informacoes_adicionais,
-		id_cadastro_para, 
+		id_cadastro_para,
 		`base_web_control`.f.tipo_pessoa,
-		NOW(), 
-		`base_web_control`.f.id_tipo_log, 
+		NOW(),
+		`base_web_control`.f.id_tipo_log,
 		`base_web_control`.f.id_fornecedor_servico,
 		`base_web_control`.f.id
 	FROM `base_web_control`.fornecedor f
-  
+
 	WHERE `base_web_control`.f.id_cadastro = id_cadastro_de
 	AND (razao_social NOT IN(SELECT razao_social FROM `base_web_control`.fornecedor WHERE razao_social = `base_web_control`.f.razao_social AND id_cadastro = id_cadastro_para)
 	AND fantasia NOT IN(SELECT fantasia FROM `base_web_control`.fornecedor WHERE fantasia = `base_web_control`.f.fantasia AND id_cadastro = id_cadastro_para)
 	);
-	
+
 	INSERT INTO `base_web_control`.classificacao(
 		descricao,
 		id_cadastro,
 		ativo,
 		data_cadastro,
 		ecommerce,
-		id_class_master, 
+		id_class_master,
 		id_usuario
 	       )
-	SELECT 
-		descricao, 
-		id_cadastro_para, 
-		ativo, 
-		NOW(), 
-		ecommerce, 
-		id, 
+	SELECT
+		descricao,
+		id_cadastro_para,
+		ativo,
+		NOW(),
+		ecommerce,
+		id,
 		id_usuario_para
-	FROM `base_web_control`.classificacao 
+	FROM `base_web_control`.classificacao
 	WHERE id_cadastro = id_cadastro_de and descricao not in (select descricao from `base_web_control`.classificacao where id_cadastro = id_cadastro_para);
-  update `base_web_control`.classificacao c 
+  update `base_web_control`.classificacao c
   inner join `base_web_control`.classificacao c2 on `base_web_control`.c2.id_cadastro = id_cadastro_de and `base_web_control`.c2.descricao = `base_web_control`.c.descricao
   set `base_web_control`.c.id_class_master = `base_web_control`.c2.id
   where `base_web_control`.c.id_cadastro = id_cadastro_para;
-  
-	
+
+
 	INSERT INTO `base_web_control`.produto(
-		descricao, 
-		id_cadastro, 
-		data_cadastro, 
-		id_classificacao, 
-		tamanho, 
-		custo, 
-		custo_medio_venda, 
-		porcentagem_custo_venda, 
+		descricao,
+		id_cadastro,
+		data_cadastro,
+		id_classificacao,
+		tamanho,
+		custo,
+		custo_medio_venda,
+		porcentagem_custo_venda,
 		peso,
-		codigo_barra, 
-		icms, 
-		id_unidade, 
-		id_cfop, 
-		peso_bruto, 
+		codigo_barra,
+		icms,
+		id_unidade,
+		id_cfop,
+		peso_bruto,
 		id_fornecedor,
-		id_usuario, 
+		id_usuario,
 		ncm,
 		prod_serv
 	       )
 	SELECT
-	      `base_web_control`.a.descricao, 
-	      id_cadastro_para, 
-	      NOW(), 
-	      `base_web_control`.b.id, 
+	      `base_web_control`.a.descricao,
+	      id_cadastro_para,
+	      NOW(),
+	      `base_web_control`.b.id,
 	      `base_web_control`.a.tamanho,
-	      `base_web_control`.a.custo, 
-	      `base_web_control`.a.custo_medio_venda, 
-	      `base_web_control`.a.porcentagem_custo_venda, 
-	      `base_web_control`.a.peso,`base_web_control`.a.codigo_barra, 
-	      `base_web_control`.a.icms, 
-	      `base_web_control`.a.id_unidade, 
-	      `base_web_control`.a.id_cfop, 
-	      `base_web_control`.a.peso_bruto, 
+	      `base_web_control`.a.custo,
+	      `base_web_control`.a.custo_medio_venda,
+	      `base_web_control`.a.porcentagem_custo_venda,
+	      `base_web_control`.a.peso,`base_web_control`.a.codigo_barra,
+	      `base_web_control`.a.icms,
+	      `base_web_control`.a.id_unidade,
+	      `base_web_control`.a.id_cfop,
+	      `base_web_control`.a.peso_bruto,
 	      `base_web_control`.c.id,
-	      id_usuario_para, 
+	      id_usuario_para,
 	      ncm,
 		  `base_web_control`.a.prod_serv
 	FROM `base_web_control`.produto a
-	LEFT JOIN `base_web_control`.classificacao b ON `base_web_control`.a.id_classificacao = `base_web_control`.b.id_class_master 
+	LEFT JOIN `base_web_control`.classificacao b ON `base_web_control`.a.id_classificacao = `base_web_control`.b.id_class_master
 	AND `base_web_control`.b.id_cadastro = id_cadastro_para
 	LEFT JOIN `base_web_control`.fornecedor c ON `base_web_control`.a.id_fornecedor = `base_web_control`.c.id_forn_master
 	AND `base_web_control`.c.id_cadastro = id_cadastro_para
 	WHERE `base_web_control`.a.id_cadastro = id_cadastro_de
 	and `base_web_control`.a.codigo_barra not in( select codigo_barra from `base_web_control`.produto where id_cadastro = id_cadastro_para);
-	
-	UPDATE 
-		`base_web_control`.classificacao 
-	SET id_class_master = NULL 
+
+	UPDATE
+		`base_web_control`.classificacao
+	SET id_class_master = NULL
 	WHERE id_cadastro = id_cadastro_para;
-	
-	UPDATE 
-		`base_web_control`.fornecedor 
-	SET id_forn_master = NULL 
+
+	UPDATE
+		`base_web_control`.fornecedor
+	SET id_forn_master = NULL
 	WHERE id_cadastro = id_cadastro_para;
-	
+
 
 
 
@@ -15158,8 +15159,8 @@ begin
 		on `base_web_control`.cv.id_assistente = `base_web_control`.ca.id
 	inner join cs2.consultores_assistentes ca2
 		on `base_web_control`.cv.id_consultor = `base_web_control`.ca2.id
-	where `base_web_control`.cv.id = v_id_agendamento or 0 = v_id_agendamento;	
-		
+	where `base_web_control`.cv.id = v_id_agendamento or 0 = v_id_agendamento;
+
 end;
 
 #
@@ -15171,7 +15172,7 @@ BEGIN
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_id_nota INT;
 	DECLARE v_id_nota_new INT;
-	
+
 	DECLARE cur_notas CURSOR FOR SELECT
 					   id
 				      FROM `base_web_control`.nf_devolucao
@@ -15179,14 +15180,14 @@ BEGIN
 				      AND finalidade = 'D'
 				      AND finalizada = 'S';
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	OPEN cur_notas;
 		REPEAT
 			IF NOT v_pronto THEN
 			FETCH cur_notas INTO v_id_nota;
-			
-				
-				
+
+
+
 				INSERT INTO base_web_control.nf_devolucao(
 					id_cadastro,
 					`data`,
@@ -15252,10 +15253,10 @@ BEGIN
 					valor_frete
 				FROM base_web_control.nf_devolucao nf
 				WHERE id = v_id_nota;
-				
+
 				SET v_id_nota_new = (SELECT MAX(id) FROM `base_web_control`.nf_devolucao WHERE id_cadastro = 764);
-				
-				
+
+
 				INSERT INTO `base_web_control`.nf_devolucao_itens(
 					id_nota_devolucao,
 					numero_nota,
@@ -15291,12 +15292,12 @@ BEGIN
 					vlr_icms_st
 				FROM `base_web_control`.nf_devolucao_itens nfi
 				WHERE id_nota_devolucao = v_id_nota;
-					
-			
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_notas;
-					
+
 END;
 
 #
@@ -15308,7 +15309,7 @@ BEGIN
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_id_nota INT;
 	DECLARE v_id_nota_new INT;
-	
+
 	DECLARE cur_notas CURSOR FOR SELECT
 					   id
 				      FROM `base_web_control`.nf_entrada
@@ -15316,14 +15317,14 @@ BEGIN
 				      AND finalizado = 'S'
 				      AND `status` = 'S';
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	OPEN cur_notas;
 		REPEAT
 			IF NOT v_pronto THEN
 			FETCH cur_notas INTO v_id_nota;
-			
-				
-				
+
+
+
 				INSERT INTO base_web_control.nf_entrada(
 					id_cadastro,
 					id_cliente,
@@ -15372,13 +15373,13 @@ BEGIN
 					natureza_operacao,
 					finalidade_nota,
 					vlr_total_nota,
-					danfe			
+					danfe
 				FROM base_web_control.nf_entrada nf
 				WHERE id = v_id_nota;
-				
+
 				SET v_id_nota_new = (SELECT MAX(id) FROM `base_web_control`.nf_entrada WHERE id_cadastro = 764);
-				
-				
+
+
 				INSERT INTO `base_web_control`.nf_entrada_itens(
 					id_cadastro,
 					id_nota_entrada,
@@ -15406,12 +15407,12 @@ BEGIN
 					ipi
 				FROM `base_web_control`.nf_entrada_itens nfi
 				WHERE id_nota_entrada = v_id_nota;
-					
-			
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_notas;
-					
+
 END;
 
 #
@@ -15423,7 +15424,7 @@ BEGIN
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_id_nota INT;
 	DECLARE v_id_nota_new INT;
-	
+
 	DECLARE cur_notas CURSOR FOR SELECT
 					   id
 				      FROM `base_web_control`.nf_devolucao
@@ -15431,14 +15432,14 @@ BEGIN
 				      AND finalidade = 'S'
 				      AND finalizada = 'S';
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	OPEN cur_notas;
 		REPEAT
 			IF NOT v_pronto THEN
 			FETCH cur_notas INTO v_id_nota;
-			
-				
-				
+
+
+
 				INSERT INTO base_web_control.nf_devolucao(
 					id_cadastro,
 					`data`,
@@ -15504,10 +15505,10 @@ BEGIN
 					valor_frete
 				FROM base_web_control.nf_devolucao nf
 				WHERE id = v_id_nota;
-				
+
 				SET v_id_nota_new = (SELECT MAX(id) FROM `base_web_control`.nf_devolucao WHERE id_cadastro = 764);
-				
-				
+
+
 				INSERT INTO `base_web_control`.nf_devolucao_itens(
 					id_nota_devolucao,
 					numero_nota,
@@ -15543,12 +15544,12 @@ BEGIN
 					vlr_icms_st
 				FROM `base_web_control`.nf_devolucao_itens nfi
 				WHERE id_nota_devolucao = v_id_nota;
-					
-			
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_notas;
-					
+
 END;
 
 #
@@ -15565,19 +15566,19 @@ BEGIN
 					 FROM cs2.cadastro
 					 WHERE sitcli = 0
 					 AND IF(v_id_cadastro = 0,0=0,codLoja = v_id_cadastro);
-					 
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET erro = 1;
-	
+
 	OPEN cur_cadastros;
 		REPEAT
 			IF NOT pronto THEN
 			FETCH cur_cadastros INTO id_cadastro_imp;
-			
-				
+
+
 				DELETE FROM `base_web_control`.grade WHERE id_cadastro = id_cadastro_imp;
-				
-				
+
+
 				INSERT INTO `base_web_control`.grade(id_cadastro, id_produto, codigo_barra_pai, codigo_barra, codigo_interno,qtd_atual, qtd_minima,ativo,valor_custo, valor_varejo_aprazo,porc_varejo_aprazo)
 				SELECT
 					`base_web_control`.aux.id_cadastro,
@@ -15591,9 +15592,9 @@ BEGIN
 					`base_web_control`.aux.custo,
 					`base_web_control`.aux.custo_medio_venda,
 					IF(
-						`base_web_control`.aux.custo_medio_venda <> '0.00' 
-						AND `base_web_control`.aux.custo_medio_venda IS NOT NULL 
-						AND `base_web_control`.aux.porcentagem_custo_venda <> '0.00' 
+						`base_web_control`.aux.custo_medio_venda <> '0.00'
+						AND `base_web_control`.aux.custo_medio_venda IS NOT NULL
+						AND `base_web_control`.aux.porcentagem_custo_venda <> '0.00'
 						AND `base_web_control`.aux.porcentagem_custo_venda IS NOT NULL,
 					((custo_medio_venda / custo) * 100) - 100,
 					IF(`base_web_control`.aux.porcentagem_custo_venda = '0.00' OR `base_web_control`.aux.porcentagem_custo_venda IS NULL,((custo_medio_venda / custo) * 100) - 100,`base_web_control`.aux.porcentagem_custo_venda)
@@ -15653,12 +15654,12 @@ BEGIN
 						    LEFT JOIN base_web_control.classificacao c ON `base_web_control`.a.id_classificacao = `base_web_control`.c.id
 						    LEFT JOIN base_web_control.grade g ON `base_web_control`.g.id_produto = `base_web_control`.a.id
 						    WHERE `base_web_control`.a.id_cadastro = id_cadastro_imp
-						   
+
 						     ) AS aux;
-						     
-						     
-				
-						     
+
+
+
+
 				INSERT INTO `base_web_control`.grade(id_cadastro, id_produto, ativo, codigo_barra_pai, codigo_barra, codigo_interno,qtd_atual, qtd_minima,ativo,valor_custo, valor_varejo_aprazo,porc_varejo_aprazo)
 				SELECT
 					`base_web_control`.aux.id_cadastro,
@@ -15673,9 +15674,9 @@ BEGIN
 					`base_web_control`.aux.custo,
 					`base_web_control`.aux.custo_medio_venda,
 					IF(
-						`base_web_control`.aux.custo_medio_venda <> '0.00' 
-						AND `base_web_control`.aux.custo_medio_venda IS NOT NULL 
-						AND `base_web_control`.aux.porcentagem_custo_venda <> '0.00' 
+						`base_web_control`.aux.custo_medio_venda <> '0.00'
+						AND `base_web_control`.aux.custo_medio_venda IS NOT NULL
+						AND `base_web_control`.aux.porcentagem_custo_venda <> '0.00'
 						AND `base_web_control`.aux.porcentagem_custo_venda IS NOT NULL,
 					((custo_medio_venda / custo) * 100) - 100,
 					IF(`base_web_control`.aux.porcentagem_custo_venda = '0.00' OR `base_web_control`.aux.porcentagem_custo_venda IS NULL,((custo_medio_venda / custo) * 100) - 100,`base_web_control`.aux.porcentagem_custo_venda)
@@ -15735,20 +15736,20 @@ BEGIN
 						    LEFT JOIN base_web_control.classificacao c ON `base_web_control`.a.id_classificacao = `base_web_control`.c.id
 						    LEFT JOIN base_web_control.grade g ON `base_web_control`.g.id_produto = `base_web_control`.a.id
 						    WHERE `base_web_control`.a.id_cadastro = id_cadastro_imp
-						   
+
 						     ) AS aux;
-					
-					
-		
+
+
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_cadastros;
-	
-	
-	
+
+
+
 	SELECT v_excecao AS erro;
-					 
-	
+
+
 END;
 
 #
@@ -15760,7 +15761,7 @@ BEGIN
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_id_venda INT;
 	DECLARE v_id_venda_new INT;
-	
+
 	DECLARE cur_vendas CURSOR FOR SELECT
 					    id_venda
 			              FROM base_web_control.venda v
@@ -15772,14 +15773,14 @@ BEGIN
 			              AND `base_web_control`.v.data_venda > '2016-07-01 00:00:00'
 			              order by `base_web_control`.v.id desc;
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	OPEN cur_vendas;
 		REPEAT
 			IF NOT v_pronto THEN
 			FETCH cur_vendas INTO v_id_venda;
-			
-				
-				
+
+
+
 				INSERT INTO base_web_control.venda(
 					id_tipo_venda,
 					id_cadastro,
@@ -15833,7 +15834,7 @@ BEGIN
 					valor_entrada,
 					id_cupom_venda,
 					id_objeto_cliente
-					
+
 				)
 				SELECT
 					id_tipo_venda,
@@ -15890,10 +15891,10 @@ BEGIN
 					id_objeto_cliente
 				FROM base_web_control.venda v
 				WHERE id = v_id_venda;
-				
+
 				SET v_id_venda_new = (SELECT MAX(id) FROM base_web_control.venda WHERE id_cadastro = 764)				;
-				
-				
+
+
 				INSERT INTO `base_web_control`.venda_itens(
 					qtd,
 					id_venda,
@@ -15947,8 +15948,8 @@ BEGIN
 					atacado_varejo
 				FROM base_web_control.venda_itens vi
 				WHERE id_venda = v_id_venda;
-				
-				
+
+
 				INSERT INTO base_web_control.venda_pagamento(
 					id_venda,
 					id_forma_pgto,
@@ -15980,7 +15981,7 @@ BEGIN
 					vlr_troco
 				FROM base_web_control.venda_pagamento
 				WHERE id_venda = v_id_venda;
-				
+
 				INSERT INTO base_web_control.venda_notas_eletronicas(
 					id_venda,
 					data_hora,
@@ -15998,7 +15999,7 @@ BEGIN
 					data_cancelamento,
 					xml_cancelamento,
 					retorno_cancelamento_prefeitura,
-					protocolo									
+					protocolo
 				)
 				SELECT
 					v_id_venda_new,
@@ -16020,11 +16021,11 @@ BEGIN
 					protocolo
 				FROM base_web_control.venda_notas_eletronicas
 				WHERE id_venda = v_id_venda;
-			
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_vendas;
-					
+
 END;
 
 #
@@ -16036,19 +16037,19 @@ CREATE PROCEDURE `base_web_control`.`sp_in_email_aniversariantes`(
 )
 BEGIN
 	DECLARE v_id_lista INT;
-	
-	
-	SET v_id_lista = (SELECT 
+
+
+	SET v_id_lista = (SELECT
 				id
 			 FROM base_web_control.mailmkt_lista
-			 WHERE id_cadastro = p_id_cadastro 
+			 WHERE id_cadastro = p_id_cadastro
 			 AND nome_lista = 'Lista de Aniversariantes do Dia');
-             
+
 	DELETE FROM base_web_control.mailmkt_lista_emails
     WHERE id_lista = v_id_lista
 	AND id_cadastro = p_id_cadastro;
-			 
-			 
+
+
 	INSERT INTO base_web_control.mailmkt_lista_emails(
 		id_cadastro,
 		id_lista,
@@ -16066,7 +16067,7 @@ BEGIN
 	AND email IS NOT NULL
 	AND DATE_FORMAT(data_nascimento,'%m%d') = DATE_FORMAT(now(),'%m%d')
 	AND email NOT IN(SELECT email FROM `base_web_control`.mailmkt_lista_emails WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista);
-		
+
 END;
 
 #
@@ -16078,15 +16079,15 @@ CREATE PROCEDURE `base_web_control`.`sp_in_email_clientes`(
 )
 BEGIN
 	DECLARE v_id_lista INT;
-	
-	
-	SET v_id_lista = (SELECT 
+
+
+	SET v_id_lista = (SELECT
 				id
 			 FROM base_web_control.mailmkt_lista
-			 WHERE id_cadastro = p_id_cadastro 
+			 WHERE id_cadastro = p_id_cadastro
 			 AND nome_lista = 'Lista dos meus clientes');
-			 
-			 
+
+
 	INSERT INTO base_web_control.mailmkt_lista_emails(
 		id_cadastro,
 		id_lista,
@@ -16103,7 +16104,7 @@ BEGIN
 	AND email != ''
 	AND email IS NOT NULL
 	AND email NOT IN(SELECT email FROM `base_web_control`.mailmkt_lista_emails WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista);
-		
+
 END;
 
 #
@@ -16115,15 +16116,15 @@ CREATE PROCEDURE `base_web_control`.`sp_in_email_inadimplentes`(
 )
 begin
 	DECLARE v_id_lista_mail INT;
-	
+
 	SET v_id_lista_mail = (SELECT
 				     id
 				FROM base_web_control.mailmkt_lista
 				WHERE id_cadastro = p_id_cadastro
 				AND nome_lista = 'Lista de Inadimplentes');
-				
+
 	delete from base_web_control.mailmkt_lista_emails WHERE id_lista = v_id_lista_mail;
-				
+
 	INSERT INTO base_web_control.mailmkt_lista_emails(
 		id_cadastro,
 		id_lista,
@@ -16146,8 +16147,8 @@ begin
 	AND `base_web_control`.c.email IS NOT NULL
 	AND `base_web_control`.c.email NOT IN(SELECT email FROM `base_web_control`.mailmkt_lista_emails WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista_mail)
 	GROUP BY email, nome;
-	
-	
+
+
 	INSERT INTO base_web_control.mailmkt_lista_emails(
 		id_cadastro,
 		id_lista,
@@ -16192,7 +16193,7 @@ BEGIN
 	DECLARE v_qtd_atual DECIMAL(10,3);
 	DECLARE v_qtd_retirou_inseriu DECIMAL(10,3);
 	DECLARE v_fico DECIMAL(10,3);
-	
+
 	DECLARE cur_estoque CURSOR FOR SELECT
 						id_cadastro,
 						id_usuario,
@@ -16202,9 +16203,9 @@ BEGIN
 						fico
 					FROM `base_web_control`.tmp_imp_estoque
 					WHERE id_cadastro = p_id_cadastro;
-					
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	OPEN cur_estoque;
 		REPEAT
 			FETCH cur_estoque INTO v_id_cadastro,
@@ -16214,16 +16215,16 @@ BEGIN
 						       v_qtd_retirou_inseriu,
 						       v_fico;
 			IF NOT pronto THEN
-			
-					       
+
+
 			INSERT INTO `base_web_control`.produto_arrumar_estoque(id_cadastro,id_usuario,id_produto,qtd_atual,qtd_retiro_inseriu,fico)
 			VALUES(v_id_cadastro,v_id_usuario,v_id_produto,v_qtd_atual,v_qtd_retirou_inseriu,v_fico);
-					       
-			
+
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_estoque;
-	
+
 	DELETE FROM `base_web_control`.tmp_imp_estoque WHERE id_cadastro = p_id_cadastro;
 END;
 
@@ -16237,26 +16238,26 @@ CREATE PROCEDURE `base_web_control`.`sp_in_numeros_aniversariantes`(
 begin
 	declare v_id_lista int;
 	declare a_id_lista int;
-	
-	set v_id_lista = (select 
+
+	set v_id_lista = (select
 				id
 			 from base_web_control.torpedo_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista de Aniversariantes do Dia'),
-		a_id_lista = (select 
+		a_id_lista = (select
 				id
 			 from base_web_control.whatsapp_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista de Aniversariantes do Dia');
-             
+
 	DELETE FROM base_web_control.torpedo_lista_telefones
     WHERE id_lista = v_id_lista
 	AND id_cadastro = p_id_cadastro;
-			
+
 	DELETE FROM base_web_control.whatsapp_lista_telefones
     WHERE id_lista = a_id_lista
 	AND id_cadastro = p_id_cadastro;
-			 
+
 	insert into base_web_control.torpedo_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16276,7 +16277,7 @@ begin
 	AND ativo = 'A'
     AND DATE_FORMAT(data_nascimento,'%m%d') = DATE_FORMAT(now(),'%m%d')
 	group by celular;
-    
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16296,7 +16297,7 @@ begin
 	AND ativo = 'A'
     AND DATE_FORMAT(data_nascimento,'%m%d') = DATE_FORMAT(now(),'%m%d')
 	group by celular;
-		
+
 end;
 
 #
@@ -16309,20 +16310,20 @@ CREATE PROCEDURE `base_web_control`.`sp_in_numeros_clientes`(
 begin
 	declare v_id_lista int;
     declare a_id_lista int;
-	
-	
-	set v_id_lista = (select 
+
+
+	set v_id_lista = (select
 				id
 			 from base_web_control.torpedo_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista dos meus clientes'),
-		a_id_lista = (select 
+		a_id_lista = (select
 				id
 			 from base_web_control.whatsapp_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista dos meus clientes');
-			 
-			 
+
+
 	insert into base_web_control.torpedo_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16333,8 +16334,8 @@ begin
 		p_id_cadastro,
 		v_id_lista,
 		IF(nome = '' OR nome IS NULL,razao_social,nome) AS nome,
-		IF((LENGTH(celular)=10 AND ( SUBSTRING(celular,3,1)=9 OR SUBSTRING(celular,3,1)=8 )), 
-                            CONCAT(SUBSTRING(celular,1,2),'9',SUBSTRING(celular,3,8)) , 
+		IF((LENGTH(celular)=10 AND ( SUBSTRING(celular,3,1)=9 OR SUBSTRING(celular,3,1)=8 )),
+                            CONCAT(SUBSTRING(celular,1,2),'9',SUBSTRING(celular,3,8)) ,
                             celular) as celular
 	FROM base_web_control.cliente
 	WHERE id_cadastro = p_id_cadastro
@@ -16343,7 +16344,7 @@ begin
 	and celular not in(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	aND ativo = 'A'
 	group by celular;
-    
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16362,7 +16363,7 @@ begin
 	AND celular not in(SELECT telefone FROM `base_web_control`.whatsapp_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = a_id_lista)
 	AND ativo = 'A'
 	group by celular;
-		
+
 end;
 
 #
@@ -16375,21 +16376,21 @@ CREATE PROCEDURE `base_web_control`.`sp_in_numeros_inadimplentes`(
 BEGIN
 	DECLARE v_id_lista INT;
 	DECLARE a_id_lista INT;
-	
-	SET v_id_lista = (SELECT 
+
+	SET v_id_lista = (SELECT
 				id
 			 FROM base_web_control.torpedo_lista
-			 WHERE id_cadastro = p_id_cadastro 
+			 WHERE id_cadastro = p_id_cadastro
 			 AND nome_lista = 'Lista de Inadimplentes'),
-		a_id_lista = (SELECT 
+		a_id_lista = (SELECT
 				id
 			 FROM base_web_control.whatsapp_lista
-			 WHERE id_cadastro = p_id_cadastro 
+			 WHERE id_cadastro = p_id_cadastro
 			 AND nome_lista = 'Lista de Inadimplentes');
-			 
+
 	delete from base_web_control.torpedo_lista_telefones WHERE id_lista = v_id_lista;
     delete from base_web_control.whatsapp_lista_telefones WHERE id_lista = a_id_lista;
-			 
+
 	INSERT INTO base_web_control.torpedo_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16412,8 +16413,8 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	GROUP BY celular, nome;
-	
-	
+
+
 	insert into base_web_control.torpedo_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16439,7 +16440,7 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	GROUP BY celular, nome;
-    
+
     INSERT INTO base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16462,8 +16463,8 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = a_id_lista)
 	GROUP BY celular, nome;
-	
-	
+
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16489,7 +16490,7 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = a_id_lista)
 	GROUP BY celular, nome;
-		
+
 END;
 
 #
@@ -16540,7 +16541,7 @@ BEGIN
 						fabricante,
 						id_cfop,
 					  `base_web_control`.fn_remover_acentos(identificacao_interna),
-						margem_valor_lucro,						
+						margem_valor_lucro,
 						localizacao,
 						prod_serv,
 						replace(qtd_minima,',','.'),
@@ -16551,9 +16552,9 @@ BEGIN
 						ean
 					FROM `base_web_control`.tmp_imp_produto
 					WHERE id_cadastro = p_id_cadastro;
-	
-	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;			
-					
+
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
+
 	OPEN cur_produtos;
 		REPEAT
 				FETCH cur_produtos INTO v_id_cadastro,
@@ -16578,26 +16579,26 @@ BEGIN
 						v_cor,
 						v_barra,
 						v_cest,
-						v_ean;			
+						v_ean;
 			IF NOT pronto THEN
-			
-			
+
+
 			INSERT INTO `base_web_control`.produto(id_cadastro,id_usuario,codigo_barra,descricao,descricao_detalhada,
 					    id_unidade,id_classificacao,id_fornecedor, custo, custo_medio_venda, ncm, fabricante,
 					    id_cfop,identificacao_interna,localizacao,prod_serv,qtd_minima,tamanho,cor,barra,id_importacao,cest,ean)
 			VALUES(v_id_cadastro,v_id_usuario,v_codigo_barra,v_descricao,v_descricao_detalhada,
 					    v_id_unidade,v_id_classificacao,v_id_fornecedor, v_custo, v_custo_medio_venda, v_ncm, v_fabricante,
-					    v_id_cfop,v_identificacao_interna,v_localizacao,v_prod_serv,v_qtd_minima,v_tamanho,v_cor,v_barra,p_id_importacao,v_cest,v_ean);			
-						
-						
+					    v_id_cfop,v_identificacao_interna,v_localizacao,v_prod_serv,v_qtd_minima,v_tamanho,v_cor,v_barra,p_id_importacao,v_cest,v_ean);
+
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_produtos;
-	
+
 	DELETE FROM base_web_control.tmp_imp_produto WHERE (id_cadastro = p_id_cadastro) AND STATUS = 'AP';
-						
-						
-						
+
+
+
 END;
 
 #
@@ -16609,19 +16610,19 @@ CREATE PROCEDURE `base_web_control`.`sp_in_whatsapp_aniversariantes`(
 )
 begin
 	declare v_id_lista int;
-	
-	
-	set v_id_lista = (select 
+
+
+	set v_id_lista = (select
 				id
 			 from base_web_control.whatsapp_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista de Aniversariantes do Dia');
-             
+
 	DELETE FROM base_web_control.whatsapp_lista_telefones
     WHERE id_lista = v_id_lista
 	AND id_cadastro = p_id_cadastro;
-			 
-			 
+
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16641,7 +16642,7 @@ begin
 	AND ativo = 'A'
     AND DATE_FORMAT(data_nascimento,'%m%d') = DATE_FORMAT(now(),'%m%d')
 	group by celular;
-		
+
 end;
 
 #
@@ -16653,15 +16654,15 @@ CREATE PROCEDURE `base_web_control`.`sp_in_whatsapp_clientes`(
 )
 begin
 	declare v_id_lista int;
-	
-	
-	set v_id_lista = (select 
+
+
+	set v_id_lista = (select
 				id
 			 from base_web_control.whatsapp_lista
-			 where id_cadastro = p_id_cadastro 
+			 where id_cadastro = p_id_cadastro
 			 and nome_lista = 'Lista dos meus clientes');
-			 
-			 
+
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16680,7 +16681,7 @@ begin
 	AND celular not in(SELECT telefone FROM `base_web_control`.whatsapp_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	AND ativo = 'A'
 	group by celular;
-		
+
 end;
 
 #
@@ -16692,16 +16693,16 @@ CREATE PROCEDURE `base_web_control`.`sp_in_whatsapp_inadimplentes`(
 )
 BEGIN
 	DECLARE v_id_lista INT;
-	
-	
-	SET v_id_lista = (SELECT 
+
+
+	SET v_id_lista = (SELECT
 				id
 			 FROM base_web_control.whatsapp_lista
-			 WHERE id_cadastro = p_id_cadastro 
+			 WHERE id_cadastro = p_id_cadastro
 			 AND nome_lista = 'Lista de Inadimplentes');
-			 
+
 	delete from base_web_control.whatsapp_lista_telefones WHERE id_lista = v_id_lista;
-			 
+
 	INSERT INTO base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16724,8 +16725,8 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	GROUP BY celular, nome;
-	
-	
+
+
 	insert into base_web_control.whatsapp_lista_telefones(
 		id_cadastro,
 		id_lista,
@@ -16751,7 +16752,7 @@ BEGIN
 	AND `base_web_control`.c.celular IS NOT NULL
 	AND `base_web_control`.c.celular NOT IN(SELECT telefone FROM `base_web_control`.torpedo_lista_telefones WHERE id_cadastro = p_id_cadastro AND id_lista = v_id_lista)
 	GROUP BY celular, nome;
-		
+
 END;
 
 #
@@ -16767,7 +16768,7 @@ BEGIN
 	DECLARE v_renovar ENUM('S','N');
 	DECLARE v_id_cadastro INT;
 	DECLARE v_id_limite INT;
-	
+
 	DECLARE cur_limites_inativos CURSOR FOR SELECT
 							id,
 							id_funcionario,
@@ -16777,23 +16778,23 @@ BEGIN
 							renovar
 						FROM `base_web_control`.limite_funcionario
 						WHERE data_inicio + INTERVAL qtd_dias DAY <= NOW();
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	OPEN cur_limites_inativos;
 		REPEAT
 			FETCH cur_limites_inativos INTO v_id_limite, v_id_funcionario,v_qtd_dias,v_valor,v_id_cadastro,v_renovar;
 			IF NOT v_pronto THEN
-			
-				UPDATE 
+
+				UPDATE
 					base_web_control.limite_funcionario
 				SET ativo = 'I'
 				WHERE id = v_id_limite;
-				
+
 				IF v_renovar = 'S' THEN
-				
+
 					INSERT INTO base_web_control.limite_funcionario(
-						
+
 						id_funcionario,
 						id_cadastro,
 						data_inicio,
@@ -16808,14 +16809,14 @@ BEGIN
 						v_qtd_dias,
 						v_valor,
 						v_renovar);
-				
+
 				END IF;
-			
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_limites_inativos;
-			
-	
+
+
 END;
 
 #
@@ -16829,17 +16830,17 @@ BEGIN
 	DECLARE cur_cadastros CURSOR FOR SELECT
 						codLoja
 					FROM cs2.cadastro
-					WHERE sitcli = 0;			
-					
+					WHERE sitcli = 0;
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
-	
+
+
 	OPEN cur_cadastros;
 		REPEAT
 			IF NOT pronto THEN
-			
+
 			FETCH cur_cadastros INTO v_id_cadastro;
-			
+
 				INSERT INTO `base_web_control`.cliente_forma_pagamento(
 					id_cadastro,
 					id_forma_pagamento,
@@ -16864,7 +16865,7 @@ BEGIN
 				FROM `base_web_control`.forma_pagamento
 				WHERE id NOT IN (SELECT IFNULL(tp_pgto,0) FROM `base_web_control`.forma_pagamento_ecommerce WHERE id_cadastro = v_id_cadastro)
 				;
-			
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_cadastros;
@@ -16886,20 +16887,20 @@ BEGIN
 					FROM `base_web_control`.grade
 					WHERE ativo = '1'
 					ORDER BY id_grade ASC;
-					
-					
-					
-						
+
+
+
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	OPEN cur_produtos;
 		REPEAT
 			IF NOT pronto THEN
 			FETCH cur_produtos INTO v_id_cadastro, v_id_produto;
-			
+
 			SET v_qtd_atual = (SELECT
 						`base_web_control`.aux.qtd_atual
-					
+
 					FROM(
 					SELECT
 						    `base_web_control`.a.id_cadastro,
@@ -16955,14 +16956,14 @@ BEGIN
 						    WHERE `base_web_control`.a.id_cadastro = v_id_cadastro
 						    AND `base_web_control`.a.id = v_id_produto
 						    ) AS aux);
-						    
-				UPDATE 
-					`base_web_control`.grade 
-				SET qtd_atual = v_qtd_atual 
-				WHERE id_cadastro = v_id_cadastro 
+
+				UPDATE
+					`base_web_control`.grade
+				SET qtd_atual = v_qtd_atual
+				WHERE id_cadastro = v_id_cadastro
 				AND id_produto = v_id_produto;
-			
-			
+
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_produtos;
@@ -16974,14 +16975,14 @@ END;
 
 CREATE PROCEDURE `base_web_control`.`sp_inserir_id_cadastro`()
 begin
-	
-	
-	
+
+
+
 	ALTER TABLE `base_web_control`.nfe_Produto_ISSQN ADD COLUMN id_cadastro INT AFTER data_sincronismo;
 	ALTER TABLE `base_web_control`.venda_itens ADD COLUMN id_cadastro INT AFTER id_off;
 	ALTER TABLE `base_web_control`.venda_pagamento ADD COLUMN id_cadastro INT AFTER id_off;
-	
-	
+
+
 end;
 
 #
@@ -16994,9 +16995,9 @@ CREATE PROCEDURE `base_web_control`.`sp_inutilizacao_sequencia`(
 	p_fim INT
 )
 begin
-	
+
 	while p_inicio <= p_fim do
-	
+
 	insert into base_web_control.nf_inutilizadas(
 		id_cadastro,
 		num_nota,
@@ -17012,13 +17013,13 @@ begin
 		'0000000000000000',
 		'Emitida por outro sistema'
 		);
-		
+
 		SET p_inicio = p_inicio + 1;
-	
+
 	end while;
-	
-	
-	
+
+
+
 end;
 
 #
@@ -17036,13 +17037,13 @@ BEGIN
 	DECLARE v_cont_cli_aux INT DEFAULT 0;
 	DECLARE v_cont_tabelas INT DEFAULT 0;
 	DECLARE v_cont_tabelas_aux INT DEFAULT 0;
-	
+
 	DECLARE cur_clientes_inativos CURSOR FOR SELECT
 							codLoja
 						 FROM cs2.cadastro
 						 WHERE sitcli = 2
 						 AND codLoja NOT IN(SELECT id_cadastro FROM base_web_control_inativos.log_migracao);
-	
+
 	DECLARE cur_tabelas CURSOR FOR SELECT
 						`base_web_control`.t.TABLE_NAME,
 						`base_web_control`.c.COLUMN_NAME
@@ -17053,14 +17054,14 @@ BEGIN
 					AND `base_web_control`.t.TABLE_SCHEMA = 'base_web_control'
 					WHERE `base_web_control`.t.TABLE_SCHEMA = 'base_web_control'
 					AND `base_web_control`.c.TABLE_SCHEMA = 'base_web_control';
-					
+
 	SET v_cont_cli = (SELECT
 				count(codLoja)
 			 FROM cs2.cadastro
 			 WHERE sitcli = 2
 			 AND codLoja NOT IN(SELECT id_cadastro FROM base_web_control_inativos.log_migracao)
 			 );
-			 
+
 	SET v_cont_tabelas = (SELECT
 					COUNT(`base_web_control`.t.TABLE_NAME)
 				FROM information_schema.TABLES t
@@ -17070,9 +17071,9 @@ BEGIN
 				AND `base_web_control`.t.TABLE_SCHEMA = 'base_web_control'
 				WHERE `base_web_control`.t.TABLE_SCHEMA = 'base_web_control'
 				AND `base_web_control`.c.TABLE_SCHEMA = 'base_web_control');
-				
-	
-	
+
+
+
 
 
 
@@ -17082,52 +17083,52 @@ BEGIN
 		REPEAT
 			FETCH cur_clientes_inativos INTO v_id_cadastro;
 			IF NOT v_pronto THEN
-			
+
 				set v_cont_cli_aux = v_cont_cli_aux + 1;
-			
+
 				OPEN cur_tabelas;
 					REPEAT
 						FETCH cur_tabelas INTO v_nome_tabela, v_coluna;
 						IF NOT v_pronto_aux THEN
-						
+
 							set v_cont_tabelas_aux = v_cont_tabelas_aux + 1;
-							
+
 							SET @sql = CONCAT('INSERT INTO base_web_control_inativos.',v_nome_tabela, '
 									   SELECT
 										*
-									   FROM base_web_control.', v_nome_tabela, 
+									   FROM base_web_control.', v_nome_tabela,
 									   ' WHERE ', v_coluna, ' = ', v_id_cadastro);
 							prepare stmt_insert from @sql;
 							execute stmt_insert;
 							deallocate prepare stmt_insert;
-							
+
 							INSERT INTO base_web_control_inativos.log_migracao(id_cadastro,nome_tabela)
 							VALUES(v_id_cadastro,v_nome_tabela );
-											   
+
 							if v_cont_tabelas_aux = v_cont_tabelas then
-							
+
 								set v_pronto_aux = 1;
-							
+
 							end if;
-							
-						
+
+
 						END IF;
 					UNTIL v_pronto_aux END REPEAT;
 				CLOSE cur_tabelas;
-				
+
 				SET v_pronto_aux = 0;
 				set v_cont_tabelas_aux = 0;
-				
-				
-				
+
+
+
 				if v_cont_cli_aux = v_cont_cli then
-				
+
 					set v_pronto = 1;
-									
+
 				end if;
 				select v_cont_cli_aux, v_cont_cli;
-				
-									
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_clientes_inativos;
@@ -17150,88 +17151,88 @@ begin
 	DECLARE v_falta INT;
 	DECLARE v_qtd_contratos INT;
 	DECLARE v_pronto INT DEFAULT 0;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas_afiliacoes1
 				     ORDER BY data_inicio ASC;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-		
+
 	SET v_mes_atual = MONTH(NOW());
-		
-	
- 	
 
 
-	
+
+
+
+
 	WHILE v_while <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-01 18:01:59');
 				SET v_data_fim = CONCAT(YEAR(NOW()) -1,'-12-',DAY(LAST_DAY(v_data_inicio)), ' 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-01 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-', DAY(LAST_DAY(v_data_inicio)),' 18:00:00');
-			
+
 			END IF;
-			
-			
-		
+
+
+
 			SET v_while = v_while + 1;
 	END WHILE;
-	
+
 	DELETE FROM base_web_control.tmp_grafico_afiliacoes;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_afiliacoes1);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +2 <= 12 DO
-	
+
 		if v_falta = 0 then
-			
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 2,'-12-25 18:01:59');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:59');
-		
+
 		else
-		
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-25 18:01:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:59:00');
-		
+
 		end if;
-	
+
   INSERT INTO `base_web_control`.tmp_datas_afiliacoes1(data_inicio, data_fim)
  VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
-	END WHILE;	
-	
+	END WHILE;
 
 
-	
+
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-				
+
 				INSERT INTO `base_web_control`.tmp_datas_afiliacoes1(valor, data_inicio, data_fim)
 				SELECT
 				    COUNT(*) AS VALUE,
 				    v_data_inicio,
 				    v_data_fim
-				    
+
 				FROM cs2.cadastro
 				WHERE id_franquia = p_id_franquia
 				AND dt_cad BETWEEN v_data_inicio AND v_data_fim ;
-				
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
+
 	SELECT
 		valor AS VALUE,
 		data_inicio,
@@ -17262,10 +17263,10 @@ begin
 		ELSE
 		'DEZ'
 		END AS label
-		
+
 	FROM `base_web_control`.tmp_datas_afiliacoes1;
 	DELETE FROM base_web_control.tmp_datas_afiliacoes1;
-		
+
 end;
 
 #
@@ -17292,13 +17293,13 @@ BEGIN
   DECLARE CONTINUE HANDLER FOR NOT FOUND
     SET v_pronto = 1;
   SET v_mes_atual = MONTH(NOW());
-  
-  
+
+
   WHILE v_while -1  <= v_mes_atual DO
     IF v_while = 1 THEN
 				SET v_data_inicio = CONCAT(YEAR(NOW()) -1,'-12-01 00:00:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()) -1,'-12-',DAY(LAST_DAY(v_data_inicio)),' 23:59:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-01 00:00:00');
 				SET v_data_fim = CONCAT(YEAR(v_data_inicio),'-',LPAD(v_while -1,2,0),'-',DAY(LAST_DAY(v_data_inicio)),' 23:59:00');
@@ -17322,8 +17323,8 @@ BEGIN
       (v_data_inicio, v_data_fim);
     SET v_falta = v_falta + 1;
   END WHILE;
-  
-  
+
+
   OPEN cur_datas;
   REPEAT
     FETCH cur_datas INTO v_data_inicio, v_data_fim;
@@ -17377,78 +17378,78 @@ BEGIN
 	DECLARE v_aux_mes INT DEFAULT 1;
 	DECLARE v_while INT DEFAULT 1;
 	DECLARE v_falta INT;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas_equi_cons;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_datas_equi_cons;
-	
+
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_datas_equi_cons(data_inicio VARCHAR(25), data_fim VARCHAR(25));
-	
-	
+
+
 	SET v_mes_atual = MONTH(NOW());
-	
+
 	SET v_mes_atual = (v_mes_atual -1);
-	
-		
+
+
 	WHILE v_while <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas_equi_cons(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_while = v_while + 1;
 	END WHILE;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_equi_cons);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +1 <= 12 DO
-	
-		
+
+
 		IF v_falta = 0 THEN
-			
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 2,'-12-25 18:01:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:00');
-		
+
 		ELSE
-		
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-25 18:01:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:00');
-		
+
 		END IF;
-	
+
 		INSERT INTO `base_web_control`.tmp_datas_equi_cons(data_inicio, data_fim)
 		VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
 	END WHILE;
-	
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_grafico_afiliacoes_consultor;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_grafico_afiliacoes_consultor(valor INT, data_inicio VARCHAR(25), data_fim VARCHAR(25), mes INT, id_consultor INT);
-	
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_grafico_afiliacoes_consultor(valor, data_inicio, data_fim, mes, id_consultor)
 				SELECT
 					COUNT(`base_web_control`.c.codLoja) AS VALUE,
@@ -17465,49 +17466,49 @@ BEGIN
 				and `base_web_control`.c.contadorsn != 'S'
 				WHERE `base_web_control`.ca.id_franquia = p_id_franquia
 				GROUP BY `base_web_control`.c.id_consultor;
-					  
-				    
-				    
-				
-				
-				
+
+
+
+
+
+
 				SET v_aux_mes = v_aux_mes + 1;
-				
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
-	
+
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_ranking_geral;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_ranking_geral(
-		id_consultor INT, 
+		id_consultor INT,
 		total INT DEFAULT 0,
 		mes1 INT DEFAULT 0,
-		mes1_label VARCHAR(11), 
-		mes2 INT DEFAULT 0, 
-		mes2_label VARCHAR(11), 
-		mes3 INT DEFAULT 0, 
-		mes3_label VARCHAR(11), 
-		mes4 INT DEFAULT 0, 
-		mes4_label VARCHAR(11), 
-		mes5 INT DEFAULT 0, 
-		mes5_label VARCHAR(11), 
-		mes6 INT DEFAULT 0, 
-		mes6_label VARCHAR(11), 
-		mes7 INT DEFAULT 0, 
-		mes7_label VARCHAR(11), 
-		mes8 INT DEFAULT 0, 
-		mes8_label VARCHAR(11), 
-		mes9 INT DEFAULT 0, 
-		mes9_label VARCHAR(11), 
-		mes10 INT DEFAULT 0, 
-		mes10_label VARCHAR(11), 
-		mes11 INT DEFAULT 0, 
-		mes11_label VARCHAR(11), 
+		mes1_label VARCHAR(11),
+		mes2 INT DEFAULT 0,
+		mes2_label VARCHAR(11),
+		mes3 INT DEFAULT 0,
+		mes3_label VARCHAR(11),
+		mes4 INT DEFAULT 0,
+		mes4_label VARCHAR(11),
+		mes5 INT DEFAULT 0,
+		mes5_label VARCHAR(11),
+		mes6 INT DEFAULT 0,
+		mes6_label VARCHAR(11),
+		mes7 INT DEFAULT 0,
+		mes7_label VARCHAR(11),
+		mes8 INT DEFAULT 0,
+		mes8_label VARCHAR(11),
+		mes9 INT DEFAULT 0,
+		mes9_label VARCHAR(11),
+		mes10 INT DEFAULT 0,
+		mes10_label VARCHAR(11),
+		mes11 INT DEFAULT 0,
+		mes11_label VARCHAR(11),
 		mes12 INT DEFAULT 0,
-		mes12_label VARCHAR(11), 
+		mes12_label VARCHAR(11),
 		nome VARCHAR(50));
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, total, nome)
 	SELECT
 		id_consultor,
@@ -17521,10 +17522,10 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	GROUP BY `base_web_control`.a.id_consultor
 	ORDER BY total DESC;
-	
-	
-	
-	
+
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes1, nome)
 	SELECT
 		id_consultor,
@@ -17538,9 +17539,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 1
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes2, nome)
 	SELECT
 		id_consultor,
@@ -17554,9 +17555,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 2
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes3, nome)
 	SELECT
 		id_consultor,
@@ -17570,9 +17571,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 3
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes4, nome)
 	SELECT
 		id_consultor,
@@ -17586,8 +17587,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 4
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes5, nome)
 	SELECT
 		id_consultor,
@@ -17601,9 +17602,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 5
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes6, nome)
 	SELECT
 		id_consultor,
@@ -17617,8 +17618,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 6
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes7, nome)
 	SELECT
 		id_consultor,
@@ -17632,8 +17633,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 7
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes8, nome)
 	SELECT
 		id_consultor,
@@ -17647,8 +17648,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 8
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes9, nome)
 	SELECT
 		id_consultor,
@@ -17662,8 +17663,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 9
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes10, nome)
 	SELECT
 		id_consultor,
@@ -17677,8 +17678,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 10
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes11, nome)
 	SELECT
 		id_consultor,
@@ -17692,8 +17693,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 11
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes12, nome)
 	SELECT
 		id_consultor,
@@ -17707,7 +17708,7 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 12
 	GROUP BY `base_web_control`.a.id_consultor;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes1_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -17737,9 +17738,9 @@ BEGIN
 	END, '/', YEAR(data_fim)) AS label
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor
 	WHERE mes = 1
-	
+
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes2_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18070,13 +18071,13 @@ BEGIN
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor
 	WHERE mes = 12
 	LIMIT 1) ;
-	
-	
+
+
 	SELECT
 		id_consultor,
 		SUM(total) AS total,
 		SUM(mes1) AS mes1,
-		MAX(mes1_label) AS mes1_label,		
+		MAX(mes1_label) AS mes1_label,
 		SUM(mes2) AS mes2,
 		MAX(mes2_label) AS mes2_label,
 		SUM(mes3) AS mes3,
@@ -18100,13 +18101,13 @@ BEGIN
 		SUM(mes12) AS mes12,
 		MAX(mes12_label) AS mes12_label,
 		nome
-	
+
 	FROM `base_web_control`.tmp_ranking_geral
 	WHERE nome != ''
 	GROUP BY id_consultor
 	ORDER BY total DESC;
 
-		
+
 END;
 
 #
@@ -18124,59 +18125,59 @@ BEGIN
 	DECLARE v_pronto INT DEFAULT 0;
 	DECLARE v_aux_while INT DEFAULT 1;
 	DECLARE v_aux_mes INT DEFAULT 1;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_datas;
-	
+
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_datas(data_inicio VARCHAR(25), data_fim VARCHAR(25));
-	
+
 	SET v_mes_atual = MONTH(NOW()) +1;
-	
+
 	WHILE v_aux_while <= v_mes_atual DO
-	
+
 		IF v_aux_while = v_mes_atual AND DAY(NOW()) < 25 THEN
-		
+
 			SET v_aux_while = v_aux_while + 1;
-		
+
 		ELSE
-	
+
 			IF v_aux_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_aux_while,2,0),'-25 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_aux_while -1,2,0),'-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_aux_while,2,0),'-25 18:00:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_aux_while = v_aux_while + 1;
 		END IF;
-		
-		
-	
-	END WHILE ; 
-	
+
+
+
+	END WHILE ;
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_grafico_afiliacoes_consultor;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_grafico_afiliacoes_consultor(valor INT, data_inicio VARCHAR(25), data_fim VARCHAR(25), mes INT, id_consultor INT);
-	
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_grafico_afiliacoes_consultor(valor, data_inicio, data_fim, mes, id_consultor)
 				SELECT
 				    COUNT(*) AS VALUE,
@@ -18190,32 +18191,32 @@ BEGIN
 				AND `base_web_control`.ca.situacao = 0
 				WHERE `base_web_control`.c.id_franquia = p_id_franquia
 				and `base_web_control`.ca.id_franquia = p_id_franquia
-				AND `base_web_control`.c.dt_cad BETWEEN v_data_inicio AND v_data_fim 
+				AND `base_web_control`.c.dt_cad BETWEEN v_data_inicio AND v_data_fim
 				GROUP BY `base_web_control`.c.id_consultor;
-				
+
 				SET v_aux_mes = v_aux_mes + 1;
-				
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_ranking_geral;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_ranking_geral(
-		id_consultor INT, 
+		id_consultor INT,
 		total INT DEFAULT 0,
-		jan INT DEFAULT 0, 
-		fev INT DEFAULT 0, 
-		mar INT DEFAULT 0, 
-		abr INT DEFAULT 0, 
-		mai INT DEFAULT 0, 
-		jun INT DEFAULT 0, 
-		jul INT DEFAULT 0, 
-		ago INT DEFAULT 0, 
-		sete INT DEFAULT 0, 
-		outu INT DEFAULT 0, 
-		nov INT DEFAULT 0, 
+		jan INT DEFAULT 0,
+		fev INT DEFAULT 0,
+		mar INT DEFAULT 0,
+		abr INT DEFAULT 0,
+		mai INT DEFAULT 0,
+		jun INT DEFAULT 0,
+		jul INT DEFAULT 0,
+		ago INT DEFAULT 0,
+		sete INT DEFAULT 0,
+		outu INT DEFAULT 0,
+		nov INT DEFAULT 0,
 		dez INT DEFAULT 0,
 		nome VARCHAR(50));
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, total, nome)
 	SELECT
 		id_consultor,
@@ -18229,10 +18230,10 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	GROUP BY `base_web_control`.a.id_consultor
 	ORDER BY total DESC;
-	
-	
-	
-	
+
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, jan, nome)
 	SELECT
 		id_consultor,
@@ -18247,9 +18248,9 @@ BEGIN
 	AND `base_web_control`.a.mes = 1
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, fev, nome)
 	SELECT
 		id_consultor,
@@ -18264,9 +18265,9 @@ BEGIN
 	AND `base_web_control`.a.mes = 2
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mar, nome)
 	SELECT
 		id_consultor,
@@ -18281,9 +18282,9 @@ BEGIN
 	AND `base_web_control`.a.mes = 3
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, abr, nome)
 	SELECT
 		id_consultor,
@@ -18298,8 +18299,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 4
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mai, nome)
 	SELECT
 		id_consultor,
@@ -18314,9 +18315,9 @@ BEGIN
 	AND `base_web_control`.a.mes = 5
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, jun, nome)
 	SELECT
 		id_consultor,
@@ -18331,8 +18332,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 6
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, jul, nome)
 	SELECT
 		id_consultor,
@@ -18347,8 +18348,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 7
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, ago, nome)
 	SELECT
 		id_consultor,
@@ -18363,8 +18364,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 8
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, sete, nome)
 	SELECT
 		id_consultor,
@@ -18379,8 +18380,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 9
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, outu, nome)
 	SELECT
 		id_consultor,
@@ -18395,8 +18396,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 10
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, nov, nome)
 	SELECT
 		id_consultor,
@@ -18411,8 +18412,8 @@ BEGIN
 	AND `base_web_control`.a.mes = 11
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, dez, nome)
 	SELECT
 		id_consultor,
@@ -18427,12 +18428,12 @@ BEGIN
 	AND `base_web_control`.a.mes = 12
 	AND `base_web_control`.ca.id_franquia = p_id_franquia
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	SELECT
 		id_consultor,
 		SUM(total) AS total,
-		SUM(jan) AS jan,		
+		SUM(jan) AS jan,
 		SUM(fev) AS fev,
 		SUM(mar) AS mar,
 		SUM(abr) AS abr,
@@ -18445,13 +18446,13 @@ BEGIN
 		SUM(nov) AS nov,
 		SUM(dez) AS dez,
 		nome
-	
+
 	FROM `base_web_control`.tmp_ranking_geral
 	WHERE nome != ''
 	GROUP BY id_consultor
 	ORDER BY total DESC;
 
-		
+
 END;
 
 #
@@ -18469,80 +18470,80 @@ BEGIN
 	DECLARE v_aux_mes INT DEFAULT 1;
 	DECLARE v_while INT DEFAULT 1;
 	DECLARE v_falta INT;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas_atendimento;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 		DELETE FROM base_web_control.tmp_datas_atendimento;
 
 
-	
+
 	SET v_mes_atual = MONTH(NOW());
-	
-		
-	
-	
+
+
+
+
 	WHILE v_while <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas_atendimento(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_while = v_while + 1;
 	END WHILE;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_atendimento);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +1 <= 12 DO
-	
-		
+
+
 		IF v_falta = 0 THEN
-			
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 2,'-12-26 00:00:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 23:59:00');
-		
+
 		ELSE
-		
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-26 00:00:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 :00:00');
-		
+
 		END IF;
-	
+
 		INSERT INTO `base_web_control`.tmp_datas_atendimento(data_inicio, data_fim)
 		VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
 	END WHILE;
-	
-	
-	
+
+
+
   DELETE FROM base_web_control.tmp_ranking_atendimento;
 
 
-	
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_ranking_atendimento(valor, data_inicio, data_fim, mes, nome)
 				SELECT
 				    (select COUNT(*) from base_inform.cadastro_imagem where data_consultoria between v_data_inicio AND v_data_fim and consultora = SUBSTRING_INDEX(`base_web_control`.f.nome, ' ', 1) and consultoria_realizada = 1)AS VALUE,
@@ -18550,23 +18551,23 @@ BEGIN
 				    v_data_fim,
 				    v_aux_mes,
 				    `base_web_control`.ci.consultora
-				    
+
 				FROM cs2.funcionario f
 				LEFT JOIN base_inform.cadastro_imagem ci
 				ON substring_index(`base_web_control`.f.nome, ' ', 1) = `base_web_control`.ci.consultora
 				and `base_web_control`.ci.data_consultoria BETWEEN v_data_inicio AND v_data_fim
 				wHERE `base_web_control`.f.ativo = 'S' and `base_web_control`.f.funcao = 19 #(f.id = 212 or f.id = 250 or f.id = 230 or f.id = 297)
 				gROUP BY `base_web_control`.ci.consultora;
-				
+
 				SET v_aux_mes = v_aux_mes + 1;
-				
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
-	
-	
-  DELETE FROM base_web_control.tmp_ranking_geral;	
+
+
+
+  DELETE FROM base_web_control.tmp_ranking_geral;
 
 
 
@@ -18595,7 +18596,7 @@ BEGIN
 
 
 
-		
+
 
 	INSERT INTO `base_web_control`.tmp_ranking_geral(total, nome)
 	SELECT
@@ -18604,8 +18605,8 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	GROUP BY `base_web_control`.a.nome
 	ORDER BY total DESC;
-	
- 	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes1, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18613,7 +18614,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	where `base_web_control`.a.mes = 1
 	gROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes2, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18621,7 +18622,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 2
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes3, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18629,7 +18630,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 3
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes4, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18637,7 +18638,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 4
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes5, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18645,7 +18646,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 5
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes6, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18653,7 +18654,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 6
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes7, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18661,7 +18662,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 7
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes8, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18669,7 +18670,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 8
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes9, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18677,7 +18678,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 9
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes10, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18685,7 +18686,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 10
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes11, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18693,7 +18694,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 11
 	GROUP BY `base_web_control`.a.nome;
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(mes12, nome)
 	SELECT
 		`base_web_control`.a.valor,
@@ -18701,8 +18702,8 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento a
 	WHERE `base_web_control`.a.mes = 12
 	GROUP BY `base_web_control`.a.nome;
-	
-	
+
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes1_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18732,9 +18733,9 @@ BEGIN
 	END, '/', YEAR(data_fim)) AS label
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 1
-	
+
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes2_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18765,7 +18766,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 2
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes3_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18796,7 +18797,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 3
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes4_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18827,7 +18828,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 4
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes5_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18858,7 +18859,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 5
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes6_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18889,7 +18890,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 6
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes7_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18920,7 +18921,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 7
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes8_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18951,7 +18952,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 8
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes9_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -18982,7 +18983,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 9
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes10_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -19013,7 +19014,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes =10
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes11_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -19044,7 +19045,7 @@ BEGIN
 	FROM `base_web_control`.tmp_ranking_atendimento
 	WHERE mes = 11
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes12_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -19079,10 +19080,10 @@ BEGIN
 
 
 	SELECT
-		
+
 		SUM(total) AS total,
 		SUM(mes1) AS mes1,
-		MAX(mes1_label) AS mes1_label,		
+		MAX(mes1_label) AS mes1_label,
 		SUM(mes2) AS mes2,
 		MAX(mes2_label) AS mes2_label,
 		SUM(mes3) AS mes3,
@@ -19106,13 +19107,13 @@ BEGIN
 		SUM(mes12) AS mes12,
 		MAX(mes12_label) AS mes12_label,
 		nome
-	
+
 	FROM `base_web_control`.tmp_ranking_geral
 	WHERE nome != ''
 	and nome is not null
 	GROUP BY nome
-	ORDER BY total DESC;		
-	
+	ORDER BY total DESC;
+
 END;
 
 #
@@ -19131,82 +19132,82 @@ BEGIN
 	DECLARE v_aux_mes INT DEFAULT 1;
 	DECLARE v_while INT DEFAULT 1;
 	DECLARE v_falta INT;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas_equi_cons;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-	
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_datas_equi_cons;
-	
+
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_datas_equi_cons(data_inicio VARCHAR(25), data_fim VARCHAR(25));
-	
-	
+
+
 	SET v_mes_atual = MONTH(NOW());
-	
+
 	SET v_mes_atual = (v_mes_atual -1);
-	
-		
+
+
 	WHILE v_while <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas_equi_cons(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_while = v_while + 1;
 	END WHILE;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas_equi_cons);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +1 <= 12 DO
-	
-		
+
+
 		IF v_falta = 0 THEN
-			
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 2,'-12-25 18:01:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:00');
-		
+
 		ELSE
-		
+
 			SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-25 18:01:00');
 			SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:00');
-		
+
 		END IF;
-	
+
 		INSERT INTO `base_web_control`.tmp_datas_equi_cons(data_inicio, data_fim)
 		VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
 	END WHILE;
-	
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_grafico_afiliacoes_consultor;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_grafico_afiliacoes_consultor(valor INT, data_inicio VARCHAR(25), data_fim VARCHAR(25), mes INT, id_consultor INT);
-	
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_grafico_afiliacoes_consultor(valor, data_inicio, data_fim, mes, id_consultor)
 				SELECT
-				
-				
+
+
 				(SELECT
              COUNT(`base_web_control`.ced.id) AS qtd
      	 FROM cs2.cadastro_equipamento ce
@@ -19214,18 +19215,18 @@ BEGIN
        LEFT JOIN base_web_control.produto p ON `base_web_control`.p.id_cadastro=62735 and (`base_web_control`.ced.codigo_barra = `base_web_control`.p.codigo_barra OR `base_web_control`.ced.codigo_barra = `base_web_control`.p.identificacao_interna)
        WHERE ( `base_web_control`.ce.id_consultor = `base_web_control`.c.id or `base_web_control`.ce.id_consultor = `base_web_control`.c.id_consultor_assistente )
                AND `base_web_control`.ce.data_venda BETWEEN v_data_inicio AND v_data_fim
-               AND (`base_web_control`.p.codigo_barra = '7897013555428'   
-                OR `base_web_control`.p.codigo_barra = '7892237023227'   
-                OR `base_web_control`.p.codigo_barra = '7898378253325'   
-                OR `base_web_control`.p.codigo_barra = 'OS214PLUS'       
-                OR `base_web_control`.p.codigo_barra = '7898378250515'   
-                OR `base_web_control`.p.codigo_barra = '7898378250676'   
-                OR `base_web_control`.p.codigo_barra = '7898378252168'   
-                OR `base_web_control`.p.codigo_barra = '7898378252519'   
-                OR `base_web_control`.p.codigo_barra = '7898378250508'   
-                OR `base_web_control`.p.codigo_barra = '8806087771695'   
-                OR `base_web_control`.p.codigo_barra = '6935364050542'   
-                OR `base_web_control`.p.codigo_barra = '7898378253950'   
+               AND (`base_web_control`.p.codigo_barra = '7897013555428'
+                OR `base_web_control`.p.codigo_barra = '7892237023227'
+                OR `base_web_control`.p.codigo_barra = '7898378253325'
+                OR `base_web_control`.p.codigo_barra = 'OS214PLUS'
+                OR `base_web_control`.p.codigo_barra = '7898378250515'
+                OR `base_web_control`.p.codigo_barra = '7898378250676'
+                OR `base_web_control`.p.codigo_barra = '7898378252168'
+                OR `base_web_control`.p.codigo_barra = '7898378252519'
+                OR `base_web_control`.p.codigo_barra = '7898378250508'
+                OR `base_web_control`.p.codigo_barra = '8806087771695'
+                OR `base_web_control`.p.codigo_barra = '6935364050542'
+                OR `base_web_control`.p.codigo_barra = '7898378253950'
               )
        ) AS qtd,
 					     v_data_inicio,
@@ -19237,45 +19238,45 @@ BEGIN
 				AND `base_web_control`.c.consultor_assistente = 'C'
 				AND `base_web_control`.c.id_franqueado = p_id_franquia
 				ORDER BY qtd DESC;
-				
-				
+
+
 				SET v_aux_mes = v_aux_mes + 1;
-				
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
-	
+
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_ranking_geral;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_ranking_geral(
-		id_consultor INT, 
+		id_consultor INT,
 		total INT DEFAULT 0,
 		mes1 INT DEFAULT 0,
-		mes1_label VARCHAR(11), 
-		mes2 INT DEFAULT 0, 
-		mes2_label VARCHAR(11), 
-		mes3 INT DEFAULT 0, 
-		mes3_label VARCHAR(11), 
-		mes4 INT DEFAULT 0, 
-		mes4_label VARCHAR(11), 
-		mes5 INT DEFAULT 0, 
-		mes5_label VARCHAR(11), 
-		mes6 INT DEFAULT 0, 
-		mes6_label VARCHAR(11), 
-		mes7 INT DEFAULT 0, 
-		mes7_label VARCHAR(11), 
-		mes8 INT DEFAULT 0, 
-		mes8_label VARCHAR(11), 
-		mes9 INT DEFAULT 0, 
-		mes9_label VARCHAR(11), 
-		mes10 INT DEFAULT 0, 
-		mes10_label VARCHAR(11), 
-		mes11 INT DEFAULT 0, 
-		mes11_label VARCHAR(11), 
+		mes1_label VARCHAR(11),
+		mes2 INT DEFAULT 0,
+		mes2_label VARCHAR(11),
+		mes3 INT DEFAULT 0,
+		mes3_label VARCHAR(11),
+		mes4 INT DEFAULT 0,
+		mes4_label VARCHAR(11),
+		mes5 INT DEFAULT 0,
+		mes5_label VARCHAR(11),
+		mes6 INT DEFAULT 0,
+		mes6_label VARCHAR(11),
+		mes7 INT DEFAULT 0,
+		mes7_label VARCHAR(11),
+		mes8 INT DEFAULT 0,
+		mes8_label VARCHAR(11),
+		mes9 INT DEFAULT 0,
+		mes9_label VARCHAR(11),
+		mes10 INT DEFAULT 0,
+		mes10_label VARCHAR(11),
+		mes11 INT DEFAULT 0,
+		mes11_label VARCHAR(11),
 		mes12 INT DEFAULT 0,
-		mes12_label VARCHAR(11), 
+		mes12_label VARCHAR(11),
 		nome VARCHAR(50));
-	
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, total, nome)
 	SELECT
 		id_consultor,
@@ -19289,10 +19290,10 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	GROUP BY `base_web_control`.a.id_consultor
 	ORDER BY total DESC;
-	
-	
-	
-	
+
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes1, nome)
 	SELECT
 		id_consultor,
@@ -19306,9 +19307,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 1
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes2, nome)
 	SELECT
 		id_consultor,
@@ -19322,9 +19323,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 2
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes3, nome)
 	SELECT
 		id_consultor,
@@ -19338,9 +19339,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 3
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes4, nome)
 	SELECT
 		id_consultor,
@@ -19354,8 +19355,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 4
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes5, nome)
 	SELECT
 		id_consultor,
@@ -19369,9 +19370,9 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 5
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes6, nome)
 	SELECT
 		id_consultor,
@@ -19385,8 +19386,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 6
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes7, nome)
 	SELECT
 		id_consultor,
@@ -19400,8 +19401,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 7
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes8, nome)
 	SELECT
 		id_consultor,
@@ -19415,8 +19416,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 8
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes9, nome)
 	SELECT
 		id_consultor,
@@ -19430,8 +19431,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 9
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes10, nome)
 	SELECT
 		id_consultor,
@@ -19445,8 +19446,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 10
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes11, nome)
 	SELECT
 		id_consultor,
@@ -19460,8 +19461,8 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 11
 	GROUP BY `base_web_control`.a.id_consultor;
-	
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_geral(id_consultor, mes12, nome)
 	SELECT
 		id_consultor,
@@ -19475,7 +19476,7 @@ BEGIN
 	AND `base_web_control`.ca.tipo_funcionario = 'I'
 	AND `base_web_control`.a.mes = 12
 	GROUP BY `base_web_control`.a.id_consultor;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes1_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -19505,9 +19506,9 @@ BEGIN
 	END, '/', YEAR(data_fim)) AS label
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor
 	WHERE mes = 1
-	
+
 	LIMIT 1) ;
-	
+
 	UPDATE `base_web_control`.tmp_ranking_geral SET mes2_label = (SELECT
 	CONCAT(CASE MONTH(data_fim)
 	WHEN 1 THEN
@@ -19838,13 +19839,13 @@ BEGIN
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor
 	WHERE mes = 12
 	LIMIT 1) ;
-	
-	
+
+
 	SELECT
 		id_consultor,
 		SUM(total) AS total,
 		SUM(mes1) AS mes1,
-		MAX(mes1_label) AS mes1_label,		
+		MAX(mes1_label) AS mes1_label,
 		SUM(mes2) AS mes2,
 		MAX(mes2_label) AS mes2_label,
 		SUM(mes3) AS mes3,
@@ -19868,13 +19869,13 @@ BEGIN
 		SUM(mes12) AS mes12,
 		MAX(mes12_label) AS mes12_label,
 		nome
-	
+
 	FROM `base_web_control`.tmp_ranking_geral
 	WHERE nome != ''
 	GROUP BY id_consultor
 	ORDER BY total DESC;
 
-		
+
 END;
 
 #
@@ -19888,7 +19889,7 @@ BEGIN
 
 DECLARE error INT DEFAULT 0;
 
-DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET error = 1;	
+DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET error = 1;
 
 delete from `base_web_control`.nfe_Produto_COFINS where id_produto in (select * from (
 select `base_web_control`.p.id from `base_web_control`.produto p inner join `base_web_control`.nfe_Produto_COFINS c on `base_web_control`.p.id = `base_web_control`.c.id_produto where `base_web_control`.p.id_cadastro = v_id_cadastro
@@ -19922,12 +19923,12 @@ delete from `base_web_control`.nfe_Produto_PISST where id_produto in (select * f
 select `base_web_control`.p.id from `base_web_control`.produto p inner join `base_web_control`.nfe_Produto_PISST c on `base_web_control`.p.id = `base_web_control`.c.id_produto where `base_web_control`.p.id_cadastro = v_id_cadastro
 ) as t);
 
-IF error = 0 THEN	
+IF error = 0 THEN
 	SELECT error AS erro;
 ELSE
 	SELECT error AS erro;
 ENd if;
-		
+
 END;
 
 #
@@ -19945,7 +19946,7 @@ BEGIN
 
 
 
- 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET error = 1;	
+ 	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET error = 1;
 
 	SELECT
 		id
@@ -19953,9 +19954,9 @@ BEGIN
 	FROM `base_web_control`.produto
 	WHERE id_cadastro = v_id_cadastro
 	AND codigo_barra = v_codigo_barra;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_COFINS(
 		id_produto,
 		CST,
@@ -19977,10 +19978,10 @@ BEGIN
 	ON `base_web_control`.pim.id_produto = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
-	
-	
-	
+
+
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_COFINSST(
 		imposto_id,
 		pCOFINS,
@@ -20003,8 +20004,8 @@ BEGIN
 	ON `base_web_control`.pim.produto_id = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.produto_id IS NULL;
-	
-	
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_ICMS(
 		id_produto,
 		orig,
@@ -20055,9 +20056,9 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.pim.id_produto
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_II(
 		id_produto,
 		vBC,
@@ -20076,10 +20077,10 @@ BEGIN
 	ON `base_web_control`.pim.id_produto = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
-	
-	
-	
+
+
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_IPI(
 		id_produto,
 		cIEnq,
@@ -20109,9 +20110,9 @@ BEGIN
 	ON `base_web_control`.pim.id_produto = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
-	
-	
+
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_ISSQN(
 		ISSQN_Id,
 		imposto_id,
@@ -20155,8 +20156,8 @@ BEGIN
 	ON `base_web_control`.pim.produto_id = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.produto_id IS NULL;
-	
-	
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_PIS(
 		id_produto,
 		tp_calculo,
@@ -20177,8 +20178,8 @@ BEGIN
 	ON `base_web_control`.pim.id_produto = `base_web_control`.p.id
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
-	
+
+
 	INSERT INTO `base_web_control`.nfe_Produto_PISST(
 		id_produto,
 		tp_calculo,
@@ -20201,17 +20202,17 @@ BEGIN
 	ON `base_web_control`.p.id = `base_web_control`.pim.id_produto
 	WHERE `base_web_control`.p.id_cadastro = v_id_cadastro
 	AND `base_web_control`.pim.id_produto IS NULL;
-	
+
 	IF error = 0 THEN
-			
+
 
 		SELECT error AS erro;
 	ELSE
-		
+
 
 		SELECT error AS erro;
 	ENd if;
-		
+
 END;
 
 #
@@ -20231,78 +20232,78 @@ BEGIN
 	DECLARE v_falta INT;
 	DECLARE v_qtd_contratos INT;
 	DECLARE v_pronto INT DEFAULT 0;
-	
+
 	DECLARE cur_datas CURSOR FOR SELECT
 					data_inicio,
 					data_fim
 				     FROM `base_web_control`.tmp_datas
 				     ORDER BY data_inicio ASC;
-	
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET v_pronto = 1;
-		
+
 	SET v_mes_atual = MONTH(NOW());
-	
+
 	IF (v_mes_atual - 1 ) = 0 THEN
-	
+
 		SET v_mes_atual = 12;
-	
-	ELSE 
-	
+
+	ELSE
+
 		SET v_mes_atual = (v_mes_atual -1);
-		
+
 	END IF;
 	DROP TABLE IF EXISTS `base_web_control`.tmp_datas;
 	CREATE TABLE `base_web_control`.tmp_datas(data_inicio DATETIME, data_fim DATETIME);
-	
+
 	WHILE v_while <= v_mes_atual DO
-	
+
 		IF v_while = 1 THEN
-			
+
 				SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-12-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			ELSE
 				SET v_data_inicio = CONCAT(YEAR(NOW()),'-',LPAD(v_while -1,2,0),'-25 18:01:00');
 				SET v_data_fim = CONCAT(YEAR(NOW()),'-',LPAD(v_while,2,0),'-25 18:00:00');
-			
+
 			END IF;
-			
+
 			INSERT INTO `base_web_control`.tmp_datas(data_inicio, data_fim)
 			VALUES(v_data_inicio, v_data_fim);
-		
+
 			SET v_while = v_while + 1;
 	END WHILE;
-	
+
 	SET v_falta = (SELECT COUNT(*) FROM `base_web_control`.tmp_datas);
-	
+
 	SET v_while = 1;
-	
+
 	WHILE v_falta +1 <= 12 DO
-	
-		
+
+
 		SET v_data_inicio = CONCAT(YEAR(NOW()) - 1,'-', LPAD(v_falta,2,0),'-25 18:01:00');
 		SET v_data_fim = CONCAT(YEAR(NOW()) -1 ,'-',LPAD(v_falta+1,2,0),'-25 18:00:00');
-	
+
 		INSERT INTO `base_web_control`.tmp_datas(data_inicio, data_fim)
 		VALUES(v_data_inicio, v_data_fim);
-		
+
 		SET v_falta = v_falta + 1;
 	END WHILE;
-	
-	
-	
-	
-	
+
+
+
+
+
 	DROP TEMPORARY TABLE IF EXISTS `base_web_control`.tmp_grafico_afiliacoes_consultor;
 	CREATE TEMPORARY TABLE `base_web_control`.tmp_grafico_afiliacoes_consultor(valor INT, data_inicio VARCHAR(25), data_fim VARCHAR(25));
-	
+
 	OPEN cur_datas;
 		REPEAT
 			FETCH cur_datas INTO v_data_inicio, v_data_fim;
 			IF NOT v_pronto THEN
-			
-			
-				
+
+
+
 				INSERT INTO `base_web_control`.tmp_grafico_afiliacoes_consultor(valor, data_inicio, data_fim)
 				SELECT
 				sum((SELECT
@@ -20334,15 +20335,15 @@ BEGIN
 				AND `base_web_control`.c.tipo_funcionario = 'I'
 				AND `base_web_control`.c.id_franquia = p_id_franquia
 				ORDER BY qtd DESC;
-				
-				
-				
-				
-				
+
+
+
+
+
 			END IF;
 		UNTIL v_pronto END REPEAT;
 	CLOSE cur_datas;
-	
+
 	SELECT
 		valor AS VALUE,
 		data_inicio,
@@ -20373,7 +20374,7 @@ BEGIN
 		ELSE
 		'DEZ'
 		END AS label
-		
+
 	FROM `base_web_control`.tmp_grafico_afiliacoes_consultor;
 END;
 
@@ -20398,35 +20399,35 @@ BEGIN
 					FROM information_schema.COLUMNS
 					WHERE TABLE_SCHEMA = p_schema
 					AND TABLE_NAME = p_table;
-					
-	
-	
+
+
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	OPEN cur_columns;
 		REPEAT
 			FETCH cur_columns INTO columnDataBase;
 			IF NOT pronto THEN
-			
+
 				SET columnDoctrine = columnDataBase;
 				SET contUnderline = LOCATE('_', columnDoctrine);
 				SET lengthColumn = LENGTH(columnDoctrine);
-				
+
 				WHILE contUnderline > 0 DO
-				
+
 					SET columnDoctrine = CONCAT(SUBSTR(columnDoctrine,1,(contUnderline - 1)),UPPER(SUBSTR(columnDoctrine,(contUnderline + 1),1)), SUBSTR(columnDoctrine,(contUnderline + 2),lengthColumn));
 					SET contUnderline = LOCATE('_', columnDoctrine);
-				
+
 				END WHILE;
-				
+
 				SET strCampos = CONCAT(strCampos, p_alias,'.',columnDoctrine, ' AS ', columnDataBase, ',\r\n');
-				
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_columns;
-	
+
 	SELECT strCampos;
-	
+
 END;
 
 #
@@ -20450,35 +20451,35 @@ BEGIN
 					FROM information_schema.COLUMNS
 					WHERE TABLE_SCHEMA = p_schema
 					AND TABLE_NAME = p_table;
-					
-	
-	
+
+
+
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET pronto = 1;
-	
+
 	OPEN cur_columns;
 		REPEAT
 			FETCH cur_columns INTO columnDataBase;
 			IF NOT pronto THEN
-			
+
 				SET columnDoctrine = columnDataBase;
 				SET contUnderline = LOCATE('_', columnDoctrine);
 				SET lengthColumn = LENGTH(columnDoctrine);
-				
+
 				WHILE contUnderline > 0 DO
-				
+
 					SET columnDoctrine = CONCAT(SUBSTR(columnDoctrine,1,(contUnderline - 1)),UPPER(SUBSTR(columnDoctrine,(contUnderline + 1),1)), SUBSTR(columnDoctrine,(contUnderline + 2),lengthColumn));
 					SET contUnderline = LOCATE('_', columnDoctrine);
-				
+
 				END WHILE;
-				
+
 				SET strCampos = CONCAT(strCampos,p_alias, '->set', UCASE(SUBSTR(columnDoctrine,1,1)) , SUBSTR(columnDoctrine,2), '($values->', columnDataBase, ');\r\n');
-				
+
 			END IF;
 		UNTIL pronto END REPEAT;
 	CLOSE cur_columns;
-	
+
 	SELECT strCampos;
-	
+
 END;
 
 #
@@ -20510,36 +20511,36 @@ begin
 					AND `base_web_control`.c.COLUMN_KEY != 'PRI'
 					GROUP BY `base_web_control`.c.COLUMN_NAME
 					order by `base_web_control`.c.ORDINAL_POSITION ASC;
-	
+
 	declare continue handler for not found set pronto = 1;
 	set qry = '';
 	OPEN cur_colunas;
 		repeat
 			FETCH cur_colunas INTO nome_coluna, tipo_coluna;
 			if not pronto then
-			
-			
-			
+
+
+
 			CASE tipo_coluna
-			
-				WHEN 'bigint' THEN 
+
+				WHEN 'bigint' THEN
 					set padrao = 0;
-				WHEN 'char' THEN 
+				WHEN 'char' THEN
 					SET padrao = '""';
-				WHEN 'date' THEN 
+				WHEN 'date' THEN
 					SET padrao = '"1899-12-30"';
-				
-				WHEN 'datetime' THEN 
+
+				WHEN 'datetime' THEN
 					SET padrao = '"1899-12-30"';
-					
-				WHEN 'decimal' THEN 
+
+				WHEN 'decimal' THEN
 					SET padrao = 0;
-					
-				WHEN 'double' THEN 
+
+				WHEN 'double' THEN
 					SET padrao = 0;
-					
-				WHEN 'enum' THEN 
-				
+
+				WHEN 'enum' THEN
+
 					SET padrao = CONCAT('"',(SELECT
 								SUBSTR(REPLACE(`base_web_control`.c.COLUMN_TYPE,"enum('", ""),1,1)
 							FROM information_schema.TABLES AS t
@@ -20550,72 +20551,72 @@ begin
 							AND `base_web_control`.c.COLUMN_NAME = 'operacao'
 							GROUP BY `base_web_control`.c.COLUMN_NAME
 							),'"');
-							
-					
-				WHEN 'float' THEN 
+
+
+				WHEN 'float' THEN
 					SET padrao = 0;
-					
-				WHEN 'int' THEN 
+
+				WHEN 'int' THEN
 					SET padrao = 0;
-					
-				WHEN 'json' THEN 
+
+				WHEN 'json' THEN
 					SET padrao = '""';
-					
-				WHEN 'longtext' THEN 
+
+				WHEN 'longtext' THEN
 					SET padrao = '0';
-					
-				WHEN 'mediumtext' THEN 
+
+				WHEN 'mediumtext' THEN
 					SET padrao = '""';
-					
-				WHEN 'smallint' THEN 
+
+				WHEN 'smallint' THEN
 					SET padrao = 0;
-					
-				WHEN 'text' THEN 
+
+				WHEN 'text' THEN
 					SET padrao = '""';
-				
-				WHEN 'time' THEN 
+
+				WHEN 'time' THEN
 					SET padrao = '"00:00:00"';
-				
-				WHEN 'timestamp' THEN 
+
+				WHEN 'timestamp' THEN
 					SET padrao = concat('"','1899-12-30"');
-				 
-				WHEN 'tinyint' THEN 
-					SET padrao = 0;					
-				
-				WHEN 'tinytext' THEN 
-					SET padrao = '""';					
-				
-				WHEN 'varchar' THEN 
-					SET padrao = '""';					
-				
-					
+
+				WHEN 'tinyint' THEN
+					SET padrao = 0;
+
+				WHEN 'tinytext' THEN
+					SET padrao = '""';
+
+				WHEN 'varchar' THEN
+					SET padrao = '""';
+
+
 				else
 					set padrao = '';
-			    
+
 			END CASE;
-			
+
 			IF cont = 0 then
-				
+
 				set qry = concat(qry, '\r\n base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(', nome_coluna , ' IS NULL || ', nome_coluna, ' = "" || DATE(', nome_coluna , ') = "0000-00-00",',padrao,',',nome_coluna,') USING utf8)) AS ', nome_coluna);
-			
-			ELSE 
+
+			ELSE
 				SET qry = CONCAT(qry, '\r\n ,base_web_control.fn_retira_caracteres_sincronismo(CONVERT(IF(', nome_coluna , ' IS NULL || ', nome_coluna, ' = "" || DATE(', nome_coluna , ') = "0000-00-00",',padrao,',',nome_coluna,') USING utf8)) AS ', nome_coluna);
 			end if;
-			
-					
+
+
 			set cont  = cont + 1;
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
 			end if;
 		until pronto end repeat;
 	close cur_colunas;
-	
-	
-	
+
+
+
 	select qry;
 end;
 
@@ -20634,8 +20635,8 @@ begin
 	declare v5 datetime;
 	declare v6 datetime;
 	declare v7 datetime;
-	
-	
+
+
 	set v1 = now() - interval 3 day;
 	SET v2 = NOW() - INTERVAL 2 DAY;
 	SET v3 = NOW() - INTERVAL 1 DAY;
@@ -20643,7 +20644,6 @@ begin
 	SET v5 = NOW() + INTERVAL 1 DAY;
 	SET v6 = NOW() + INTERVAL 2 DAY;
 	SET v7 = NOW() + INTERVAL 3 DAY;
-	
 
 
 
@@ -20662,7 +20662,8 @@ begin
 
 
 
-	
+
+
 	INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d1, d1_label)
 	select
 		`base_web_control`.ca.id,
@@ -20676,8 +20677,8 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
-        
+
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d2, d2_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20691,7 +20692,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d3, d3_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20705,7 +20706,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d4, d4_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20719,7 +20720,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d5, d5_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20733,7 +20734,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d6, d6_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20747,7 +20748,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         GROUP BY `base_web_control`.ca.id;
-        
+
         INSERT INTO `base_web_control`.tmp_ranking_agendamento_diario(id_assistente, d7, d7_label)
 	SELECT
 		`base_web_control`.ca.id,
@@ -20761,7 +20762,7 @@ begin
 	AND `base_web_control`.ca.situacao = 0
         AND `base_web_control`.ca.tipo_cliente = 1
         group by `base_web_control`.ca.id;
-	
+
 	select
 		id_assistente,
 		nome,
@@ -20795,17 +20796,17 @@ begin
 		SUM(d7) AS d7,
 		max(d1_label) as d1_label,
 		max(d2_label) AS d2_label,
-		MAX(d3_label) AS d3_label, 
+		MAX(d3_label) AS d3_label,
 		MAX(d4_label) AS d4_label,
 		MAX(d5_label) AS d5_label,
 		MAX(d6_label) AS d6_label,
-		MAX(d7_label) AS d7_label		
+		MAX(d7_label) AS d7_label
 	from `base_web_control`.tmp_ranking_agendamento_diario tmp
 	INNER JOIN cs2.consultores_assistente ca
 		on `base_web_control`.ca.id = `base_web_control`.tmp.id_assistente
 	group by id_assistente	) as aux
 	order by d4 desc;
-	
+
 	delete from `base_web_control`.tmp_ranking_agendamento_diario;
 end;
 
@@ -20815,69 +20816,69 @@ end;
 
 CREATE PROCEDURE `base_web_control`.`sp_set_credito_gasto_CF`(IN `id_cadastro_empresa` VARCHAR(20), IN `numero_cartao` VARCHAR(30), IN `valor_a_pagar` DECIMAL(10,2), IN `prazo_vencimento` INT)
     COMMENT 'Percorre os creditos do CartaoFidelidade e atualizando com o val'
-BEGIN	
+BEGIN
 	DECLARE valorTotalCredito DECIMAL(10,2);
 	DECLARE somaCredito DECIMAL(10,2);
-	DECLARE valorCredito DECIMAL(10,2);	
-	DECLARE valorPontos DECIMAL(10,4);	
-	
+	DECLARE valorCredito DECIMAL(10,2);
+	DECLARE valorPontos DECIMAL(10,4);
+
 	SET somaCredito = 0;
-	
-	SET valorTotalCredito = (SELECT 		
-		SUM((IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) - 
-		IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda))*`base_web_control`.ch.valor_conversao_pr) AS creditos      
-    FROM base_web_control.cartaofid_historico AS ch    
-    WHERE	    
-        `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND 
-		-- ch.dt_creation BETWEEN DATE_SUB(NOW(), INTERVAL prazo_vencimento DAY) AND DATE_FORMAT(NOW(),'%Y-%m-%d 23:59:59') AND		 
+
+	SET valorTotalCredito = (SELECT
+		SUM((IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) -
+		IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda))*`base_web_control`.ch.valor_conversao_pr) AS creditos
+    FROM base_web_control.cartaofid_historico AS ch
+    WHERE
+        `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND
+		-- ch.dt_creation BETWEEN DATE_SUB(NOW(), INTERVAL prazo_vencimento DAY) AND DATE_FORMAT(NOW(),'%Y-%m-%d 23:59:59') AND
 		`base_web_control`.ch.num_cartao = numero_cartao);
-	
+
 	WHILE valor_a_pagar > 0 AND somaCredito < valorTotalCredito DO
-	
-		
-		SET valorCredito = (SELECT 
-				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) - 
-				IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda))*`base_web_control`.ch.valor_conversao_pr AS valordisponivel				
-			FROM base_web_control.cartaofid_historico AS ch    
-			WHERE	    
-				`base_web_control`.ch.id_cadastro = id_cadastro_empresa AND 
+
+
+		SET valorCredito = (SELECT
+				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) -
+				IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda))*`base_web_control`.ch.valor_conversao_pr AS valordisponivel
+			FROM base_web_control.cartaofid_historico AS ch
+			WHERE
+				`base_web_control`.ch.id_cadastro = id_cadastro_empresa AND
 				-- ch.dt_creation BETWEEN DATE_SUB(NOW(), INTERVAL prazo_vencimento DAY) AND DATE_FORMAT(NOW(),'%Y-%m-%d 23:59:59') AND
-				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) > 
+				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) >
 				IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda)) AND
-				`base_web_control`.ch.num_cartao = numero_cartao ORDER BY `base_web_control`.ch.dt_creation ASC LIMIT 1);	
-			
-		 
+				`base_web_control`.ch.num_cartao = numero_cartao ORDER BY `base_web_control`.ch.dt_creation ASC LIMIT 1);
+
+
 		SET somaCredito = somaCredito + valorCredito;
-		
-				
+
+
 		IF valor_a_pagar >= valorCredito THEN
-		
-			UPDATE base_web_control.cartaofid_historico AS ch 
+
+			UPDATE base_web_control.cartaofid_historico AS ch
 			SET `base_web_control`.ch.pontos_gastos_venda = `base_web_control`.ch.pontos_ganhos_venda
-			WHERE `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND 
+			WHERE `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND
 				-- ch.dt_creation BETWEEN DATE_SUB(NOW(), INTERVAL prazo_vencimento DAY) AND DATE_FORMAT(NOW(),'%Y-%m-%d 23:59:59') AND
-				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) > 
+				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) >
 				IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda)) AND
 				`base_web_control`.ch.num_cartao = numero_cartao ORDER BY `base_web_control`.ch.dt_creation ASC LIMIT 1;
-				
-				COMMIT;		
+
+				COMMIT;
 		ELSE
-			
+
 			SET valorPontos = (((valorCredito - valor_a_pagar))/valorCredito);
-			
-			UPDATE base_web_control.cartaofid_historico AS ch 
+
+			UPDATE base_web_control.cartaofid_historico AS ch
 			SET `base_web_control`.ch.pontos_gastos_venda = `base_web_control`.ch.pontos_ganhos_venda - (`base_web_control`.ch.pontos_ganhos_venda * valorPontos)
-			WHERE `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND 
+			WHERE `base_web_control`.ch.id_cadastro = id_cadastro_empresa AND
 				-- ch.dt_creation BETWEEN DATE_SUB(NOW(), INTERVAL prazo_vencimento DAY) AND DATE_FORMAT(NOW(),'%Y-%m-%d 23:59:59') AND
-				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) > 
+				(IF(`base_web_control`.ch.pontos_ganhos_venda IS NULL, 0, `base_web_control`.ch.pontos_ganhos_venda) >
 				IF(`base_web_control`.ch.pontos_gastos_venda IS NULL, 0, `base_web_control`.ch.pontos_gastos_venda)) AND
 				`base_web_control`.ch.num_cartao = numero_cartao ORDER BY `base_web_control`.ch.dt_creation ASC LIMIT 1;
-				
-			COMMIT;			
+
+			COMMIT;
 		END IF;
-		
-		SET valor_a_pagar = valor_a_pagar - valorCredito;	
-	END WHILE;	   
+
+		SET valor_a_pagar = valor_a_pagar - valorCredito;
+	END WHILE;
 END;
 
 #
@@ -20891,41 +20892,41 @@ begin
 	declare v_id_classificacao int;
 	declare v_id_usuario int;
 	DECLARE v_servico_existe int;
-	
+
 	select
 		id
 	into v_id_classificacao
-	from `base_web_control`.classificacao 
+	from `base_web_control`.classificacao
 	where id_cadastro = p_id_cadastro
 	and descricao = 'TAXA DE SERVIÇO'
 	limit 1;
-	
-	
-	select 
+
+
+	select
 		id
 	into v_id_usuario
 	from `base_web_control`.webc_usuario
 	where id_cadastro = p_id_cadastro
 	and login_master = 'S'
 	limit 1;
-	
-	
+
+
 	if v_id_classificacao is null then
-		
+
 		insert into `base_web_control`.classificacao(descricao, id_cadastro, id_usuario)
 		values('TAXA DE SERVIÇO', p_id_cadastro, v_id_usuario);
-		
+
 		SELECT
 			id
 		INTO v_id_classificacao
-		FROM `base_web_control`.classificacao 
+		FROM `base_web_control`.classificacao
 		WHERE id_cadastro = p_id_cadastro
 		AND descricao = 'TAXA DE SERVIÇO'
 		LIMIT 1;
-	
+
 	end if;
-				
-				
+
+
 	select
 		if(count(*) > 0,1,0)
 	INTO v_servico_existe
@@ -20933,21 +20934,21 @@ begin
 	where id_cadastro = p_id_cadastro
 	and prod_serv = 'S'
 	and deletar = 'N';
-	
-	
+
+
 	if v_servico_existe = 0 then
-	
+
 		INSERT INTO `base_web_control`.produto(
 			descricao,
-			id_cadastro, 
-			id_usuario, 
-			data_cadastro, 
-			id_classificacao, 
-			custo, 
-			custo_medio_venda, 
-			id_unidade, 
-			vender_estoque_zerado, 
-			prod_serv, 
+			id_cadastro,
+			id_usuario,
+			data_cadastro,
+			id_classificacao,
+			custo,
+			custo_medio_venda,
+			id_unidade,
+			vender_estoque_zerado,
+			prod_serv,
 			data_alteracao,
 			deletar
 		)
@@ -20966,11 +20967,11 @@ begin
 			NOW(),
 			'N'
 		);
-					
-	
+
+
 	end if;
-				
-	
+
+
 end;
 
 #
@@ -20979,7 +20980,7 @@ end;
 
 CREATE PROCEDURE `zera_estoque_inteiros`(IN idcadastro BIGINT)
 BEGIN
-	DECLARE done INT DEFAULT FALSE;  
+	DECLARE done INT DEFAULT FALSE;
   	DECLARE valorContrarioAtual DECIMAL(10,2);
 	DECLARE tot_e_1 DECIMAL(10,3);
 	DECLARE tot_e_2 DECIMAL(10,3);
@@ -20987,9 +20988,9 @@ BEGIN
 	DECLARE tot_s_2 DECIMAL(10,3);
   	DECLARE idAtual BIGINT;
   	DECLARE ResultadoEstoque CURSOR FOR
-  
+
     SELECT
-		a.id      
+		a.id
 		,@teste1:=(SELECT SUM(qtd_produto) AS total_adquirido FROM base_web_control.nota_fiscal
 		WHERE id_cadastro = a.id_cadastro AND id_produto = a.id ) AS tot_nt_entrada
 		,@teste2:=(SELECT SUM(qtd_retiro_inseriu) AS inseriu FROM base_web_control.produto_arrumar_estoque
@@ -21001,27 +21002,27 @@ BEGIN
 		= a.codigo_barra) AS tot_venda
 		,@teste4:=(SELECT SUM(qtd_retiro_inseriu) AS inseriu FROM base_web_control.produto_arrumar_estoque
 		WHERE id_cadastro = a.id_cadastro AND id_produto  = a.id AND inserir_retirar = 'R') AS
-		ajuste_saida      
-		  
-		,((IF(ISNULL(@teste1),0,CAST(@teste1 AS DECIMAL(10.3))) + 
-		IF(ISNULL(@teste2),0,CAST(@teste2 AS DECIMAL(10.3)))) - 
-		(IF(ISNULL(@teste3),0,CAST(@teste3 AS DECIMAL(10.3))) + 
-		IF(ISNULL(@teste4),0,CAST(@teste4 AS DECIMAL(10.3)))))*-1 AS valorContrario 	     
+		ajuste_saida
+
+		,((IF(ISNULL(@teste1),0,CAST(@teste1 AS DECIMAL(10.3))) +
+		IF(ISNULL(@teste2),0,CAST(@teste2 AS DECIMAL(10.3)))) -
+		(IF(ISNULL(@teste3),0,CAST(@teste3 AS DECIMAL(10.3))) +
+		IF(ISNULL(@teste4),0,CAST(@teste4 AS DECIMAL(10.3)))))*-1 AS valorContrario
 	FROM
 		base_web_control.produto a
 	WHERE
-		a.id_cadastro = idcadastro;	  
+		a.id_cadastro = idcadastro;
   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
   OPEN ResultadoEstoque;
-  REPEAT 
+  REPEAT
     FETCH ResultadoEstoque INTO idAtual, tot_e_1, tot_e_2, tot_s_1, tot_s_2,valorContrarioAtual;
-    IF NOT done THEN      
-		INSERT INTO base_web_control.produto_arrumar_estoque 
+    IF NOT done THEN
+		INSERT INTO base_web_control.produto_arrumar_estoque
 		(id_cadastro, id_produto, qtd_retiro_inseriu, inserir_retirar)
-		VALUES(idcadastro,idAtual,CAST(ABS(valorContrarioAtual) AS DECIMAL(10.2)), IF(valorContrarioAtual < 0, 'R', 'I'));				
+		VALUES(idcadastro,idAtual,CAST(ABS(valorContrarioAtual) AS DECIMAL(10.2)), IF(valorContrarioAtual < 0, 'R', 'I'));
     END IF;
    UNTIL done END REPEAT;
-   CLOSE ResultadoEstoque;  
+   CLOSE ResultadoEstoque;
 END;
 
 #
@@ -21262,5 +21263,5 @@ base_web_control
 # Event "e_unid_trib"
 #
 
-CREATE EVENT `base_web_control`.`e_unid_trib` ON SCHEDULE AT '2020-07-10 02:00:00' ON COMPLETION NOT PRESERVE DISABLE DO update base_web_control.produto set id_unidade_trib = id_unidade 
+CREATE EVENT `base_web_control`.`e_unid_trib` ON SCHEDULE AT '2020-07-10 02:00:00' ON COMPLETION NOT PRESERVE DISABLE DO update base_web_control.produto set id_unidade_trib = id_unidade
 where id_unidade_trib is null;

@@ -12275,7 +12275,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini)
 }
 
 .content-wrapper {
-  background: #f4f6f9;
+  background: #DBEEFC;
 }
 
 .content-wrapper > .content {
@@ -36712,7 +36712,7 @@ a#adicionaVeiculo {
 h2.card-title {
   color: #101012;
   font-size: 25px;
-  font-weight: 700;   
+  font-weight: 600;   
   margin-bottom: 0.5rem;
 }
 .title{
@@ -37747,8 +37747,8 @@ div#btn-cliente:hover, div#btn-vendedor:hover, label#btn-buscar-produto:hover {
 /* estilo modais */
 .form-modal h3 {
   color: #0075c5;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
 }
  .form-modal .lista_users {
   width: 100%;
@@ -37891,18 +37891,18 @@ div#btn-cliente:hover, div#btn-vendedor:hover, label#btn-buscar-produto:hover {
   margin-right: 6px;
   font-size: 16px;
 }
-.opc_tabs {
+.opc_tabs,.opc_subtabs {
   width: 100%;
   display: none;
 }
-.opc_tabs.active {
+.opc_tabs.active,.opc_subtabs.active {
   display: block;
 }
 .content-wrapper {
   padding: inherit !important;
 }
 .form-modal form p {
-  color: #000000;
+  color: #3f3f3f;
   font-size: 15px;
   margin-bottom: 5px;
   font-weight: 600;
@@ -38166,6 +38166,7 @@ span.alert {
 }
 .form-modal .info-modal p strong {
   color: #000 !important;
+  font-weight: 700;
   margin-right: 7px !important;
 }
 .form-modal .info-modal {
@@ -38680,6 +38681,119 @@ form.form-modal.Filtros button {
   margin-right: -1px;
   color: #484848;
 }
+.box_forms {
+  padding: 0 30px;
+}
+form.form-modal label, form.form-modal label p {
+  color: #3f3f3f;
+  font-weight: 600;
+}
+.card-body .tabs{
+  margin-bottom: 40px;
+}
+form.form-modal textarea {
+  width: 100%;
+  border-radius: 2px;
+  resize: none;
+  min-height: 100px;
+  border-color: #717171;
+}
+div#opc_lucro input,.list-inputs-block input{
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+}
+.list-inputs-block {
+  padding-left: 15px;
+}
+.small-input input {
+  width: auto;
+  height: auto;
+  margin-right: 7px;
+}
+div#dvPreview img {
+  object-fit: cover;
+  margin-right: 5px;
+}
+div#opc_lucro  label{
+  font-weight: 500;
+}
+.card-body .tabs button.btn_tabs,.sub-tabs span.btn_tabs {
+  border: 0;
+  background: transparent;
+  padding-left: 0;
+  margin-right: 11px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3f3f3f;
+  outline: none;
+}
+.sub-tabs span {
+  display: block;
+}
+.title.small {
+  font-size: 16px;
+}
+.opcoes-tributarias,.opcoes-tributarias label{
+  display: none;
+}
+.ipm-off,
+.bx.ipi label.tipo-calculo,
+.bx.pis label.tipo-calculo-pis {
+  display: none;
+}
+.opc-confins .confins {
+  display: none;
+  margin-top: 25px;
+}
+h3.title.bg {
+  background: #2e546d;
+  color: #fff;
+  padding: 10px;
+}
+.sub-tabs {
+  background: #e9e9e9;
+  padding: 21px 18px;        
+  border-bottom: 1px solid #cecece;
+  display: flex;
+}
+div#situacaoTributaria {
+  margin-top: 25px;
+}
+.opc_subtabs {
+  padding: 20px;
+  background: #f7f7f7ee;
+  margin-bottom: 20px;
+}
+.card-body .tabs button.btn_tabs.active,
+.sub-tabs span.btn_tabs.active {
+  color: #0174c4;
+  position: relative;
+}
+.card-body .tabs button.btn_tabs.active::after,
+.sub-tabs span.btn_tabs.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #0174c4;
+  display: block;
+  top: -21px;
+  position: absolute;
+  left: 0;
+}
+h4.title.bg {
+  color: #fff;
+  background: #0073c7;
+  padding: 10px 20px;
+  width: 100%;
+}
+label.tributacao {
+  margin-bottom: 25px;
+}
+div#ProdutoGlp,#tributacao_especial{
+  display: none;
+}
 @media screen and (max-width: 1600px){
   .header-frente-de-caixa p{
     font-size: 14px;
@@ -38722,8 +38836,274 @@ form.form-modal.Filtros button {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1023px){
+  div#mobile-frete-caixa .header-mob p {
+    margin-bottom: 0;
+  }
+  .header-mob .item {
+    width: 100%;
+  }
+  .header-mob .item-menu i {
+    font-size: 28px;
+    color: #000;
+  } 
+  div#mobile-frete-caixa .header-mob {
+    padding: 10px;        
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .swiper-slide.menu-item {
+    width: auto !important;
+  }
+  .swiper-container.listaMenu-opc {
+    margin: 10px 15px;
+  }
+  .cod-barra-mobile {
+    position: relative;
+    width: 100%;
+  }
+  div#mobile-frete-caixa input,
+  div#mobile-frete-caixa input:focus{
+    outline: none;
+  }
+  .card {
+    max-width: 100%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.16);
+    margin: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  div#mobile-frete-caixa .cod-barra-mobile input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #1c80cd;
+    padding-bottom: 8px;
+    padding-left: 39px;
+    font-size: 14px;
+  }
+  div#mobile-frete-caixa .cod-barra-mobile button.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #545454;
+  }
+  div#mobile-frete-caixa .acao-item .btns {
+    border: none;
+    position: relative;
+    font-size: 14px;
+    padding: 5px 0;
+    background: transparent;
+    font-weight: 600;
+  }
+  button.btns.item-alterar {
+    color: #177dcc;
+  }
+  .acao-item button.btns.item-cancelar {
+    margin-right: auto;
+    color: #bd0d0d;
+  } 
+  div#mobile-frete-caixa .acao-item {
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+  }
+  div#mobile-frete-caixa .cod-barra-mobile i.fas.fa-barcode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 29px;
+  }
+  div#mobile-frete-caixa .item-info {
+    margin-top: 20px;
+  }
+  div#mobile-frete-caixa .item-info input {
+    margin-left: 10px;
+    border: none;
+    width: 51%;
+    text-align: center;
+    border-bottom: 2px solid #2484cf;
+  }
+  div#mobile-frete-caixa h2.nome-produto {
+    font-size: 18px;
+    color: #177dcc;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  div#mobile-frete-caixa p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    line-height: 1;
+  }
+  .opc-venda .opcVenda.flex {
+    align-items: center;
+  }
+  .listaMenu-opc .menu-item i {
+    font-size: 25px;
+  }
+  .listaMenu-opc .menu-item p {
+    font-size: 17px !important;
+    margin-bottom: 0;
+  }
+  div#mobile-frete-caixa span.opc.data-emissao,
+  div#mobile-frete-caixa span.opc.num_pedido {
+    font-size: 12px;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+  div#mobile-frete-caixa span.opc.num_pedido{
+    margin-left: auto;
+  }
+  .lista-itens-tabela {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .p-none {
+    padding: 0;
+  }
+  .header-lista-itens span.descricao,
+  .header-lista-itens span.cod,
+  .header-lista-itens span.unidade,
+  .header-lista-itens span.desc,
+  .header-lista-itens span.item,
+  div#scrollEvent .item span.itm, 
+  div#scrollEvent .item span.cod, 
+  div#scrollEvent .item span.descricao,
+  div#scrollEvent .item span.unidade,
+  div#scrollEvent .item span.desc{
+    display: none;
+  }
+  div#scrollEvent .item span {
+    width: 100%;
+    font-size: 14px;
+  }
+  .body-lista-itens .item {
+    padding: 5px;
+  }
+  .header-lista-itens span {
+    width: 100% !important;
+    padding: 7px;
+  }
+  div#mobile-frete-caixa .item-info span.nomeclatura {
+    margin-left: auto;
+  }
+  .listaMenu-opc .swiper-slide-thumb-active p,.listaMenu-opc .swiper-slide-thumb-active i {
+    color: #177dcc !important;
+    font-weight: 700 !important;
+  }
+  .listaMenu-opc .menu-item {
+    padding: 10px;
+  }
+  div#mobile-frete-caixa p strong {
+    color: #177DCC;
+    margin-right: 4px;
+  }
+  .opc-venda .opcVenda div {
+    width: 100%;
+  } 
+  div#pag-home {
+    margin-bottom: 130px;
+  }
+  .acao-caixa .btn-finalizar p {
+    color: #04ac04 !important;
+  }
+  .opc-venda .opcVenda .box-valor h3 {
+    font-size: 16px;
+    text-align: right;
+    font-weight: 700;
+    margin: 0;
+    color: #0075c5;
+  }
+  .opc-venda .opcVenda .box-valor span.valorTotal {
+    text-align: right;
+    font-size: 23px;
+    display: block;
+    font-weight: 700;
+    color: #29b829;
+    line-height: 1;
+  }
+  .desconto p strong {
+    color: orange !important;
+    font-size: 16px;
+    margin-left: 3px;
+    vertical-align: middle;
+  }
+  .opc-venda .btn-finalizar span.btn-info-action.big {
+    display: none;
+  }
+  .opc-venda .total p {
+    margin-bottom: 4px;
+  }
+  .btn-finalizar::after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f00c";
+    color: #29b829;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 13px;
+  }
+  .acao-caixa .btn-finalizar {
+    background: #fff !important;
+    position: relative;        
+    padding-left: 20px;
+  }
+  .card form h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #23282c;
+  }
+  div#mobile-frete-caixa form input {
+    width: 100%;
+    font-size: 14px;
+    padding: 7px;
+    color: #484848;
+    margin-top: 7px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid #0174c7;
+  }
+  .card form .select {
+    border-bottom: 1px solid #0776c8;
+  }
+  .select::after{
+    color: #0776c8;
+  }
+  .opc-venda {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: #fff;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 10px 15px;
+    padding-bottom: 22px;
+    box-shadow: 0px -4px 13px -1px rgb(0 0 0 / 51%);
+    width: 100%;
+  }
+}
 @media screen and (max-width: 980px){
   .grid{
     grid-template-columns: repeat(1,100%);
   }
+  
 }
