@@ -2,8 +2,8 @@
   <div class="box-login">
     <h3>Frente de caixa</h3>
 
-    <form name="login-frente-de-caixa" id="login-frente-de-caixa">
-      <label style="display: none;">
+    <form name="login-frente-de-caixa" id="login-frente-de-caixa" onsubmit="return false">
+      <!-- <label style="display: none;">
         <p>Selecione uma opção:</p>
         <div class="select">
           <select id="opc_caixa">
@@ -17,16 +17,16 @@
             <option value="8">Comanda</option>
           </select>
         </div>
-      </label>
+      </label> -->
 
-      <label style="display: none;">
+      <!-- <label style="display: none;">
         <p>Selecione o usuário:</p>
         <div class="select">
           <select name="funcionario" id="selectFuncionarios">
             <option selected disabled>Selecione:</option>
           </select>
         </div>
-      </label>
+      </label> -->
 
       <div class="addcaixa">
         <div class="flex">
@@ -34,11 +34,11 @@
             <p>Selecione o caixa:</p>
             <div class="select">
               <select class="form-required" name="numeroCaixa" id="selectCaixa">
-                <option selected disabled>Selecione:</option>
+                <option disabled selected>Selecione:</option>
               </select>
             </div>
           </label>
-          <button class="add_caixa">Adicionar caixa</button>
+          <button type="button" class="add_caixa">Adicionar caixa</button>
         </div>
         <label id="saldoInicialCaixa" style="display: none;">
           <p>Saldo inicial do caixa:</p>
@@ -49,7 +49,8 @@
           <input name="senhaCaixa" type="password" class="senha form-required">
         </label>
       </div>
-      <a id="logarCaixaAberto" class="submit">Iniciar</a>
+      <input type="hidden" name="op" value="loginFrenteCaixa">
+      <button type="button" id="logarCaixaAberto" class="submit">Iniciar</button>
     </form>
   </div>
 </div>

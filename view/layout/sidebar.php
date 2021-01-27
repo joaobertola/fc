@@ -225,8 +225,30 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
+<<<<<<< HEAD
           <a href="#" class="nav-link active">
             <i class="fas fa-tools"></i>
+=======
+          <a href="#" class="nav-link">
+            <i class="fas fa-box-open"></i>
+            <p>
+              Produto
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?= ENDERECO; ?>/produto/cadastrar" class="nav-link <?= $_SESSION['modulo'] == 'produto' ? 'active' : ''; ?>">
+                <i class="fas fa-cash-register"></i>
+                <p>Cadastrar Produto</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-list-ul"></i>
+>>>>>>> dcbcb2145d3e9f58c93ca037f3745d3bd99d2eab
             <p>
               Configurações
               <i class="right fas fa-angle-left"></i>
