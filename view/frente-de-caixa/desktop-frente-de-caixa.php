@@ -1,4 +1,4 @@
-
+<?php $url = '../view/frente-de-caixa/includes/'; ?>
 <div class="header-frente-de-caixa d-flex">
   <div id="btn-vendedor" class="bx btn-vendedor" data-url="<?=$url;?>">
     <p><span class="btn-info-action">F1</span> <strong>Vendedor:</strong>Júlio Cezar</p>
@@ -15,7 +15,6 @@
 </div>
 
 <div class="body-frente-de-caixa wrap">
-
   <div class="bx controles">
     <!-- pesquisa com o código de barras -->
     <div class="pesquisa-cod-barras">
@@ -50,7 +49,7 @@
       <div id="Cancelar-venda" class="btn-cancelar">
         <p><span class="btn-info-action big">Ctrl + F11</span>Cancelar Venda</p>
       </div>
-      <div id="fechar-caixa">
+      <div id="btn-fechar-caixa" data-url="<?=$url;?>">
         <p><span class="btn-info-action big">Ctrl + X</span>Fechar Caixa</p>
       </div>
       <div class="btn-actions logout">
@@ -64,7 +63,6 @@
      <?php include "./includes/nome-do-produto.php";?>
       <!-- tabela -->
       <?php include "./includes/tabela-lista-de-produtos.php";?>
-
       <?php include "./includes/valor-total-compra.php"; ?>
     </div>
   </div>
@@ -89,14 +87,12 @@
         <p><span class="btn-info-action big">Ctrl + D</span>Devoluções</p>
       </div>
   </div>
-
 </div>
-
 
 <div id="ModalActions" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Modais" aria-hidden="true">
   <div class="modal-dialog modal-lg position-relative">
     <div class="modal-content padding-30">
-      <div id="btn-sair" class="text-right"><p><span class="btn-info-action">FSC</span>Cancelar</p></div>
+      <div id="btn-sair" onclick="closeModal();" class="text-right"><p><span class="btn-info-action" >ESC</span>Cancelar</p></div>
         <div id="body-modal"></div>
       </div>
     </div>

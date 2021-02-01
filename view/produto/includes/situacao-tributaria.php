@@ -4,7 +4,7 @@
         <label class="modalidade_detem">
             <p>Modalidade de determ da BC ICMS:</p>
             <div class="select">
-                <select name="" id="">
+                <select name="" id="" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="0"> Margem Valor Agregado </option>
                     <option value="1"> Pauta (valor) </option>
@@ -36,7 +36,7 @@
         <label class="motivo-desoneracao">
             <p>Motivo da Desoneração do ICMS:</p>
             <div class="select">
-                <select name="" id="">
+                <select name="" id="" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="0"> Margem Valor Agregado </option>
                     <option value="1"> Pauta (valor) </option>
@@ -54,7 +54,7 @@
         <label class="modalidade_detem-st">
             <p>Modalidade de determ. da BC ICMS ST:</p>
             <div class="select">
-                <select name="" id="">
+                <select name="" id="" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="0"> Margem Valor Agregado </option>
                     <option value="1"> Pauta (valor) </option>
@@ -90,7 +90,7 @@
         <label class="retidoAnteriormente-st">
             <p>ICMS ST retido na UF remetente</p>
             <div class="select">
-                <select name="" id="">
+                <select name="" id="" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="0"> Margem Valor Agregado </option>
                     <option value="1"> Pauta (valor) </option>
@@ -102,7 +102,7 @@
         <label class="uf_operacao-st">
             <p>UF do ICMS ST devido na operação:</p>
             <div class="select">
-                <select name="" id="">
+                <select name="" id="" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="0"> Margem Valor Agregado </option>
                     <option value="1"> Pauta (valor) </option>
@@ -114,7 +114,7 @@
         <label class="icmst_retido_uf-st">
             <p>ICMS ST da UF Destino:</p>
             <div class="select">
-            <select class="" name="" id="">
+            <select class="" name="" id="" class="form-control select2">
                 <option value="">Selecione</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>

@@ -1,9 +1,9 @@
 
 <div class="form-modal">
   <h3>Recebimentos</h3>
-    <div class="class_busca_produto wrap">
-        <div  class="select">
-            <select name="localiza_pedido" id="localiza_pedido">
+    <div class="class_busca_produto formstyle flex">
+        <div class="w-30 select">
+            <select name="localiza_pedido" id="localiza_pedido" class="form-control select2">
                 <option value="boletos">Boletos</option>
                 <option value="drediario">Crediário</option>
                 <option value="parcelar_debitos">Parcelar débitos</option>
@@ -14,34 +14,32 @@
                 <option value="">Vínculada à</option>
             </select>
         </div>
-        <input id="input-localizar-pedido" type="text" placeholder="" class="input-search">
-        <button id="btn-loc-pedido-produto" class="btn-search"><i class="fas fa-search"></i></button>
+            <input id="input-localizar-pedido" type="text" placeholder="" class="input-search">
+            <button id="btn-loc-pedido-produto" class="btn-search"><i class="fas fa-search"></i></button>
         </div>
 
         <div class="lista_users">
-        <div class="header-lista vendedor flex">
-            <span class="no_pedido">N°. Doc</span>
-            <span class="nome"> Nome</span>
-            <span class="data">Vencimento</span>
-            <span class="text-center">Valor</span>
-            <span class="text-center">Parcela</span>
-            <span class="text-center">V. Pago</span>
-            <span class="text-center">data. Pagamento</span>
-            <span class="">Baixar</span>
+            <div class="header-lista vendedor flex">
+                <span class="w-100 no_pedido">N°. Doc</span>
+                <span class="w-100 nome"> Nome</span>
+                <span class="w-100 data mobi-none">Vencimento</span>
+                <span class="w-100 text-center valor mobi-none">Valor</span>
+                <span class="w-100 text-center forma_pag mobi-none">Parcela</span>
+                <span class="w-100 text-center v_pago">V. Pago</span>
+                <span class="w-100 text-center data_pagamento mobi-none">data. Pagamento</span>
+            </div>
+            <div class="scroll-lista" data-clone-name="recebimentos">
+                <?php for($v=0;$v<=615;$v++){ ?>
+                    <div id="recebimentos<?=$v;?>" data-id="<?=$v;?>" class="item item-clone three flex">
+                        <span class="w-100 no_pedido">245136</span>
+                        <span class="w-100 nome"> Nome do pedido</span>
+                        <span class="w-100 clone  mobi-none data">12/12/21</span>
+                        <span class="w-100 clone  mobi-none text-center valor">102,12</span>
+                        <span class="w-100 clone  mobi-none text-center forma_pag">Á vista</span>
+                        <span class="w-100 text-center v_pago">102,12</span>
+                        <span class="w-100 clone  mobi-none text-center data_pagamento">12/12/12</span>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
-        <div class="scroll-lista">
-            <?php for($v=0;$v<=6;$v++){ ?>
-                <div class="item flex">
-                  <span class="no_pedido">245136</span>
-                  <span class="nome"> Nome do pedido</span>
-                  <span class="data">Vencimento</span>
-                  <span class="text-center">102,12</span>
-                  <span class="text-center">Á vista</span>
-                  <span class="text-center">102,12</span>
-                  <span class="text-center">12/12/12</span>
-                  <span class=""></span>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
 </div>

@@ -1,5 +1,4 @@
 <div class="form-modal">
-  <h3>Desconto</h3>
 
     <div class="tabs">
       <button class="btn_tabs active" data-id="1"><i class="fas fa-percent"></i> Desconto geral</button>
@@ -8,7 +7,8 @@
 
     <div class="tabs-info">
       <div id="opc-tab_1" class="opc_tabs active">
-        <form id="descontoGeral" action="#" method="post" class="grid grid-2 gap-10">
+        <h3>Desconto geral</h3><br>
+        <form id="descontoGeral" action="#" method="post" class="formstyle grid grid-2 gap-10">
             <label>
               <p>Preço de Custo Geral:</p>
               <input type="text" class="money">
@@ -29,7 +29,8 @@
           </form>
       </div>
       <div id="opc-tab_2" class="opc_tabs">
-          <form id="descontoItem" action="#" method="post" class="grid grid-2 gap-10">
+        <h3>Desconto por item</h3><br>
+          <form id="descontoItem" action="#" method="post" class="formstyle grid grid-2 gap-10">
             <label>
               <p>Número do Ítem:</p>
               <input type="text">

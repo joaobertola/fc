@@ -3,7 +3,7 @@
         <label>
             <p>Situação tributária</p>
             <div class="select">
-                <select id="iptIdSituacaoTributariaIPI" name="iptIdSituacaoTributariaIPI">
+                <select id="iptIdSituacaoTributariaIPI" name="iptIdSituacaoTributariaIPI" class="form-control select2">
                     <option value="" selected="selected" disabled> Selecione </option>
                     <option value="1"> 01 - Entrada com recuperação de crédito </option>
                     <option value="2"> 02 - Entrada tributada com alíquota zero </option>
@@ -38,7 +38,7 @@
             <p>Côdigo do Selo de Controle:</p>
             <input type="text">
         </label>
-        <label class="tipo-calculo">
+        <label class="tipo-calculo focus-none">
             <p>Tipo de Cálculo:</p>
             <div class="flex ">
                 <div id="opc_lucro" class="opc-inputs ">

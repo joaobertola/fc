@@ -3,7 +3,7 @@
         <label>
             <p>Situação tributária</p>
             <div class="select">
-                <select name="iptIdSituacaoTributariaPIS" id="iptIdSituacaoTributariaPIS">
+                <select name="iptIdSituacaoTributariaPIS" id="iptIdSituacaoTributariaPIS" class="form-control select2">
                     <option value="" selected="selected"> Selecione </option>
                     <option value="01" data-opc="pis"> 01 - Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo / Não Cumulativo) </option>
                     <option value="02" data-opc="pis"> 02 - Operação Tributável - Base de Cálculo = Valor da Operação (Alíquota Diferenciada) </option>
@@ -41,7 +41,7 @@
                 </select>
             </div>
         </label>
-        <label class="tipo-calculo-pis">
+        <label class="tipo-calculo-pis focus-none">
             <p>Tipo de Cálculo:</p>
             <div class="flex ">
                 <div id="opc_lucro" class="opc-inputs ">

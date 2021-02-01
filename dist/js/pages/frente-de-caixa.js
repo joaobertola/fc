@@ -264,14 +264,24 @@ function devolucoes(e) {
 
 function modal(url) {
   $("#body-modal").html(" ");
-  $("#body-modal").load(url);
-  $("#ModalActions").modal({
-    show: true,
+  $("#body-modal").load(url,function(){
+    $(".select2").select2();
+    $(".formstyle label").click(function () {
+      var focus = $(this).hasClass("focus");
+      $(".formstyle label").removeClass("focus");
+      if (!focus) {
+        $(this).toggleClass("focus");
+      }
+    });
+    $("#ModalActions").modal({
+      show: true,
+    });
   });
 }
 
 function closeModal() {
-  $("#ModalActions").modal("hide");
+  $("#body-modal").html(" ");
+  $("#ModalActions").modal('hide');
 }
 
 $(document).ready(function(){
@@ -282,57 +292,110 @@ $(document).ready(function(){
   $(".content-wrapper").css({ "margin-top": "0", "padding-bottom": "0" });
   tabs();
   // detectar a resulução - mobile ou desktop
-  var resolucao = $(window).width();
+  var resolucao = screen.width;
   if(resolucao > 1023){
-    //Evento de controle das teclas pressionadas
-    //Verifique a funçãoi shortCut para maiores informações
-    var modais = new shortKey();
-    window.onkeydown = function (e) {
-      modais.run(e);
-    };
 
-    modais.add({ key: 112 }, SelecionarVendedor, true, "#btn-vendedor"); // Tecla F1,
-    modais.add({ key: 113 }, SelecionarCliente, true, "#btn-cliente"); // Tecla F2,
-    modais.add({ key: 115 }, buscarProduto, true, "#btn-buscar-produto"); // Tecla F4,
-    modais.add({ key: 116 }, localizarPedido, true, "#btn-localizar_pedido"); // Tecla F5,
-    modais.add({ key: 117 }, desconto, true, "#btn-desconto"); // Tecla F6,
-    modais.add({ key: 118 }, alterarItem, true, "#btn-alterar-item"); // Tecla F7,
-    modais.add({ key: 119 }, cancelarItem, true, "#btn-cancelar-item"); // Tecla F8,
-    modais.add({ key: 120 }, consutarPreco, true, "#btn-consultar-preco"); // Tecla F9,
-    modais.add({ key: 83, ctrl: true }, sangria, true, "#btn-sangria"); // Tecla CTRL + ?,
-    modais.add(
-      { key: 69, ctrl: true },
-      entradaValores,
-      true,
-      "#btn-entrada-valores"
-    ); // Tecla CTRL + ?,
-    modais.add({ key: 88, ctrl: true }, fecharCaixa, true, "#btn-fechar-caixa"); // Tecla CTRL + ?,
-    modais.add(
-      { key: 71, ctrl: true },
-      agruparComanda,
-      true,
-      "#btn-agrupar-comanda"
-    ); // Tecla CTRL + ?,
-    modais.add({ key: 82, ctrl: true }, recebimentos, true, "#btn-recebimentos"); // Tecla CTRL + ?,
-    modais.add(
-      { key: 70, ctrl: true },
-      contaCorrente,
-      true,
-      "#btn-conta-corrente"
-    ); // Tecla CTRL + ?,
-    modais.add({ key: 68, ctrl: true }, devolucoes, true, "#btn-devolucoes"); // Tecla CTRL + ?,
     var arquivo = $("#desktop-frete-caixa").data("desktop");  
-    $("#desktop-frete-caixa").load(arquivo);
+    $("#desktop-frete-caixa").load(arquivo,function(){
+        //Evento de controle das teclas pressionadas
+        //Verifique a funçãoi shortCut para maiores informações
+        var modais = new shortKey();
+        window.onkeydown = function (e) {
+          modais.run(e);
+        };
+
+        modais.add({ key: 112 }, SelecionarVendedor, true, "#btn-vendedor"); // Tecla F1,
+        modais.add({ key: 113 }, SelecionarCliente, true, "#btn-cliente"); // Tecla F2,
+        modais.add({ key: 115 }, buscarProduto, true, "#btn-buscar-produto"); // Tecla F4,
+        modais.add({ key: 116 }, localizarPedido, true, "#btn-localizar_pedido"); // Tecla F5,
+        modais.add({ key: 117 }, desconto, true, "#btn-desconto"); // Tecla F6,
+        modais.add({ key: 118 }, alterarItem, true, "#btn-alterar-item"); // Tecla F7,
+        modais.add({ key: 119 }, cancelarItem, true, "#btn-cancelar-item"); // Tecla F8,
+        modais.add({ key: 120 }, consutarPreco, true, "#btn-consultar-preco"); // Tecla F9,
+        modais.add({ key: 83, ctrl: true }, sangria, true, "#btn-sangria"); // Tecla CTRL + ?,
+        modais.add(
+          { key: 69, ctrl: true },
+          entradaValores,
+          true,
+          "#btn-entrada-valores"
+        ); // Tecla CTRL + ?,
+        modais.add({ key: 88, ctrl: true }, fecharCaixa, true, "#btn-fechar-caixa"); // Tecla CTRL + ?,
+        modais.add(
+          { key: 71, ctrl: true },
+          agruparComanda,
+          true,
+          "#btn-agrupar-comanda"
+        ); // Tecla CTRL + ?,
+        modais.add({ key: 82, ctrl: true }, recebimentos, true, "#btn-recebimentos"); // Tecla CTRL + ?,
+        modais.add(
+          { key: 70, ctrl: true },
+          contaCorrente,
+          true,
+          "#btn-conta-corrente"
+        ); // Tecla CTRL + ?,
+        modais.add({ key: 68, ctrl: true }, devolucoes, true, "#btn-devolucoes"); // Tecla CTRL + ?,
+        $(".formstyle label").click(function () {
+          var focus = $(this).hasClass("focus");
+          $(".formstyle label").removeClass("focus");
+          if (!focus) {
+            $(this).toggleClass("focus");
+          }
+        });
+    });
   }
   // mobile
   else{
     var arquivo = $("#mobile-frete-caixa").data("mobile");  
     $("#mobile-frete-caixa").load(arquivo, function(){
-      carrosselMobile();
+      Menu();
+      cloneEvent();
+      $(".select2").select2();
     });
+    
   }
-
 });
+
+function Menu(){
+  $("ul#fc-menu li.menu-item").click(function(){
+    $("#page-mobile").html("");
+    $("ul#fc-menu li.menu-item").removeClass("active");
+    $(this).addClass("active loading");
+    var nomeArqv = $(this).data("link");
+    $("#page-mobile").append("<div id="+nomeArqv+" class='card'></div>");
+    $("#page-mobile .card").load("../view/frente-de-caixa/includes/"+nomeArqv+".php",function(){
+      $("div#mobile-frete-caixa .menu-hover .menu-item").removeClass("loading");
+      $(this).removeClass("active loading");
+      cloneEvent();
+      closeMenu();
+    });
+  });
+}
+
+function openMenu(index){
+  $("div#mobile-frete-caixa .menu-hover").show();
+}
+function closeMenu(){
+  $("div#mobile-frete-caixa .menu-hover").hide();
+}
+
+function cloneEvent(){
+  $(".item-clone").each(function(){
+    var elementClone = $(this).parent().data("clone-name");
+    var idIndex = $(this).data("id");
+    $("#"+elementClone+idIndex).addClass("wrap");
+    var itemclone = $("#"+elementClone+idIndex).find(".clone").clone();
+    $("#"+elementClone+idIndex).append("<div class='item-mobi-table mobi-none'></div>");
+    $("#"+elementClone+idIndex).append("<i class='fas fa-plus openTable'></i>");
+    $("#"+elementClone+idIndex).find(".item-mobi-table").html(itemclone);
+
+    $("#"+elementClone+idIndex+" .openTable").click(function(){
+      $("#"+elementClone+idIndex).find(".item-mobi-table").toggleClass("mobi-none"); 
+      $("#"+elementClone+idIndex).find(".item-mobi-table").toggleClass("wrap"); 
+      $("#"+elementClone+idIndex).toggleClass("active"); 
+      $("#"+elementClone+idIndex).find(".item-mobi-table").find("span").toggleClass("mobi-none");
+    });
+  });
+}
 
 function carrosselMobile(){
   var conteudoLista = new Swiper('.listaMenu-opc', {

@@ -1,7 +1,6 @@
 <div class="login-frente-de-caixa" id="login-frente-de-caixa" data-api="<?= ENDERECO . '/api/frente-de-caixa_api.php'; ?>">
   <div class="box-login">
-    <h3>Frente de caixa</h3>
-
+  <img src="<?= ENDERECO;?>/dist/img/logomarcas/47985.png" alt="WebControl Empresas" class="brand-image">
     <form name="login-frente-de-caixa" id="login-frente-de-caixa" onsubmit="return false">
       <!-- <label style="display: none;">
         <p>Selecione uma opção:</p>
@@ -29,7 +28,7 @@
       </label> -->
 
       <div class="addcaixa">
-        <div class="flex">
+        <div class="flex align-items-center">
           <label>
             <p>Selecione o caixa:</p>
             <div class="select">
@@ -38,13 +37,13 @@
               </select>
             </div>
           </label>
-          <button type="button" class="add_caixa">Adicionar caixa</button>
+          <i class="fas fa-plus-circle" title="Adicionar mais caixa"></i>
         </div>
         <label id="saldoInicialCaixa" style="display: none;">
           <p>Saldo inicial do caixa:</p>
           <input name="saldoInicialCaixa" type="text" class="saldo money form-required">
         </label>
-        <label>
+        <label class="senha-ico">
           <p>Senha:</p>
           <input name="senhaCaixa" type="password" class="senha form-required">
         </label>

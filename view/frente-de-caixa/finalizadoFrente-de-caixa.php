@@ -34,36 +34,38 @@
     <h2 class="titulo-tabela">Produto e serviço</h2>
     <div class="lista-items">
         <div class="item-header flex">
-            <span class="w-5">N°</span>
+            <span class="mobi-none w-5">N°</span>
             <span class="w-35">descrição</span>
             <span class="w-10 text-center">Qtde</span>
-            <span class="w-10 ">V. Unit</span>
-            <span class="w-10 text-center">Desconto</span>
+            <span class="w-10 mobi-none">V. Unit</span>
+            <span class="mobi-none w-10 text-center">Desconto</span>
             <span class="w-20 text-center">Total</span>
             <span class="w-10">CFOP</span>
         </div>
-        <?php for($prod=0;$prod<=3;$prod++){?>
-            <div class="lista-produto item flex">
-                <span class="w-5"><?=$prod;?></span>
-                <span class="w-35">Nome do produto</span>
-                <span class="w-10 text-center">1</span>
-                <span class="w-10">1.200,00</span>
-                <span class="w-10 text-center">00,00</span>
-                <span class="w-20 text-center">12.200,00</span>
-                <span class="w-10">
-                    <div class="select">
-                        <select name="" id="">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                        </select>
-                    </div>
-                </span>
-            </div>
-        <?php } ?>
+        <div class="item-clone">
+          <?php for($prod=0;$prod<=3;$prod++){?>
+              <div class="lista-produto item flex">
+                  <span class="clone mobi-none w-5"><?=$prod;?></span>
+                  <span class="w-35">Nome do produto</span>
+                  <span class="w-10 text-center">1</span>
+                  <span class="clone mobi-none w-10">1.200,00</span>
+                  <span class="w-10 text-center">00,00</span>
+                  <span class="mobi-none w-20 text-center">12.200,00</span>
+                  <span class="w-10">
+                      <div class="select">
+                          <select name="" id="">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                          </select>
+                      </div>
+                  </span>
+              </div>
+          <?php } ?>
+        </div>
         <div class="sub-total text-right">
             <p><strong>Subtotal:</strong> R$ 78,50</p>
             <p><strong>Valor total a pagar:</strong> R$ 2.078,50</p>
@@ -73,21 +75,21 @@
     <h2 class="titulo-tabela">Forma de Pagamento</h2>
     <div class="lista-items">
         <div class="item-header flex">
-            <span class="w-5">N°</span>
+            <span class="mobi-none w-5">N°</span>
             <span class="w-25">Forma Pagamento</span>
-            <span class="w-20 text-center">Credenciadora</span>
+            <span class="mobi-none w-20 text-center">Credenciadora</span>
             <span class="w-10 ">Cod. Autorização</span>
-            <span class="w-10 text-center">Número</span>
+            <span class="mobi-none w-10 text-center">Número</span>
             <span class="w-20 text-center">Vencimento</span>
             <span class="w-10">Valor</span>
         </div>
         <?php for($prod=0;$prod<=3;$prod++){?>
             <div class="lista-produto item flex">
-            <span class="w-5"><?=$prod;?></span>
+            <span class="mobi-none w-5"><?=$prod;?></span>
             <span class="w-25">Dinheiro</span>
-            <span class="w-20 text-center">418323</span>
+            <span class="mobi-none w-20 text-center">418323</span>
             <span class="w-10 ">666999666</span>
-            <span class="w-10 text-center">152362555</span>
+            <span class="mobi-none w-10 text-center">152362555</span>
             <span class="w-20 text-center">12/12/21</span>
             <span class="w-10">18.52,22</span>
             </div>

@@ -12,7 +12,7 @@
             <p>Preço de atacado:</p>
             <input type="text" placeholder="" class="money">
         </label>
-        <label>
+        <label class="focus-none">
             <p>Margem Lucro:</p>
             <div class="flex ">
             <div id="opc_lucro" class="opc-inputs ">
@@ -26,16 +26,10 @@
             <input type="text" class="percent">
             </div>
         </label>
-        <label>
+        <label class="focus-none">
             <p>Arredondar valor:</p>
-            <div class="list-inputs-block">
-                <label>
-                    <input type="radio" name="arredondar" value="1">Sim
-                </label>
-                <label>
-                <input type="radio" name="arredondar" value="2">Não
-                </label>
-            </div>
+            <p class="small-input"><input type="radio" name="arredondar" value="">Sim</p>
+            <p class="small-input"><input type="radio" name="arredondar" value="">Não</p>
         </label>
     </div>
     <h4 class="title">Exclusivo para estoque</h4>

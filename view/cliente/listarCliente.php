@@ -5,7 +5,7 @@
 
 <!-- Conteudo do Arquivo  -->
 <div class="card-body">
-  <table id="clientesDataTable" data-url="<?= ENDERECO . '/api/cliente_api.php?op=' . md5('buscaClientes'); ?>" class="table table-bordered table-striped">
+  <table id="clientesDataTable" data-url="<?= ENDERECO . '/api/cliente_api.php?op=' . md5('buscaClientes'); ?>" class="ListaGrade table table-bordered table-striped">
     <thead>
       <tr>
         <th>Código Cliente</th>
@@ -16,19 +16,7 @@
         <th>Ações</th>
       </tr>
     </thead>
-    <tbody id="bodyClientes">
-
-    </tbody>
-    <tfoot>
-      <tr>
-        <th>Código Cliente</th>
-        <th>Nome</th>
-        <th>Razão Social</th>
-        <th>CPF/CNPJ</th>
-        <th>Telefone</th>
-        <th>Ações</th>
-      </tr>
-    </tfoot>
+    <tbody id="bodyClientes"></tbody>
   </table>
 </div>
 <!-- /.card-body -->

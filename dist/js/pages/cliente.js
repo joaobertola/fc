@@ -51,13 +51,7 @@ $(function () {
         $(".loading-bg").css("display", "none");
       });
   } else if (action == "cadastrar") {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-
-    //Initialize Select2 Elements
-    $(".select2bs4").select2({
-      theme: "bootstrap4",
-    });
+    
 
     // Files Inputs
     bsCustomFileInput.init();

@@ -1,10 +1,10 @@
 <div class="grid grid-2 gap-10">
-    <label>
+    <label class="focus-none">
         <p>Mostrar Produto na Loja Virtual e no Catálogo?</p>
         <p class="small-input"><input type="radio" name="opc_" value="">Sim</p>
         <p class="small-input"><input type="radio" name="opc_" value="">Não</p>
     </label>
-    <label>
+    <label class="focus-none">
         <p>Gerenciar Estoque na Loja Virtual?</p>
         <p class="small-input"><input type="radio" name="opc_" value="">Sim</p>
         <p class="small-input"><input type="radio" name="opc_" value="">Não</p>

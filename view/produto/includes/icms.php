@@ -2,7 +2,7 @@
     <label>
         <p>Regime Fiscal:</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Regime nacional </option>
                 <option value="">Outra opção</option>
                 <option value="">Aqui mais uma opção</option>
@@ -14,7 +14,7 @@
     <label>
         <p>Origem do Produto:</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Carga roubada </option>
                 <option value="">Saquamento de mercado</option>
                 <option value="">Carreta tombada</option>
@@ -27,7 +27,7 @@
     <label>
         <p>Situação Tributária:</p>
         <div class="select">
-            <select class="form-control" name="iptIdSituacaoTibutariaProduto" id="iptIdSituacaoTibutariaProduto">
+            <select class="form-control select2" name="iptIdSituacaoTibutariaProduto" id="iptIdSituacaoTibutariaProduto">
                 <option value="" selected="selected"> Selecione o Situação Tributária </option>
                 <option value="0">0 - Tributada integralmente</option>
                 <option value="10">10 - Tributada com cobrança do ICMS por ST</option>

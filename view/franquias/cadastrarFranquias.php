@@ -1,74 +1,75 @@
 <!-- Topo do arquivo com os breadCrumbs -->
-<?php include 'layout/content-header.php'; ?>
 <!-- Inicio do card com o menu de ações -->
 <?php include 'layout/card-header.php'; ?>
 
 <!-- Conteudo do Arquivo  -->
 <div class="col-12 wrap">
   <div class="card form_cad">
-      <form class="form_0">
+      <form id="" action="" class="formstyle">
         <h3 class="title">Dados da Empresa</h3>
-        <div class="box_forms">
-        <label class="line_2">
+        <div class="grid grid-2 gap-10 w-100">
+          <label>
               <p>Cnpj</p>
               <input type="text" name="cnpj" class="required cnpj">
           </label>
-          <label class="line_2">
+          <label>
               <p>Funcionário responsável</p>
               <input type="text" name="funcionario_franquia" class="required funcionario_franquia">
           </label>
-          <label class="line_2">
+          <label>
               <p>Razão Social</p>
               <input type="text" name="razao_social" class="required razao_social">
           </label>
-          <label class="line_2">
+          <label>
               <p>Nome Fantasia</p>
               <input type="text" name="nome_fantasia" class="required nome_fantasia">
           </label>
-          <label class="line_2">
+          <label>
               <p>Inscrição Estadual</p>
               <input type="text" name="inscricao_estadual" class="required inscricao_estadual">
           </label>
-          <label class="line_2">
+          <label>
               <p>Inscrição Estadual (Subst. Tributária)	</p>
               <input type="text" name="i_e_tributaria" class="required i_e_tributaria">
           </label>
-          <label class="line_2">
+          <label>
               <p>Inscrição Municipal</p>
               <input type="text" name="inscricao_municipal" class="required inscricao_municipal">
           </label>
-          <label class="line_2">
+          <label>
               <p>CNAE Fiscal</p>
               <input type="text" name="cnae" class="required cnae">
           </label>
         </div>
 
         <h3 class="title">Endereço</h3>
-        <div class="box_forms">
-          <label class="line_1">
+        <div class="grid grid-1 w-100">
+          <label>
               <p>Cep</p>
               <input type="text" name="cep" class="required cep">
           </label>
-          <label class="line_1-3">
+        </div>
+        <div class="grid grid-2 gap-10 w-100">
+          <label>
               <p>Endereço</p>
               <input type="text" name="endereco" class="required endereco">
           </label>
-          <label class="line_0">
+          <label>
               <p>Número</p>
               <input type="text" name="numero" class="required numero">
           </label>
-          <label class="line_2">
+          <label>
               <p>Complemento</p>
               <input type="text" name="complemento" class="required complemento">
           </label>
-          <label class="line_3">
+          <label>
               <p>Bairro</p>
               <input type="text" name="bairro" class="required bairro">
           </label>
-          <label class="line_0">
+          <label>
               <p>Uf</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option>SC</option>
                   <option>RJ</option>
                   <option>RS</option>
@@ -76,88 +77,88 @@
                 </select>
               </div>
           </label>
-          <label class="line_2">
+          <label>
               <p>Cidade</p>
               <input type="text" name="cidade" class="required cidade">
           </label>
 
-          <label class="line_2">
+          <label>
               <p>Telefone</p>
               <input type="text" name="telefone" class="required telefone">
           </label>
-          <label class="line_2">
+          <label>
               <p>Celular</p>
               <input type="text" name="celular" class="required celular">
           </label>
-          <label class="line_2">
+          <label>
               <p>Telefone Residencial</p>
               <input type="text" name="telefone" class="required telefone">
           </label>
-          <label class="line_2">
+          <label>
               <p>E-mail</p>
               <input type="text" name="email" class="required email">
           </label>
-          <label class="line_2">
+          <label>
               <p>Fax</p>
               <input type="text" name="faz" class="required faz">
           </label>
         </div>
 
         <h3 class="title">Dados do Proprietário(s)</h3>
-        <div class="box_forms">
-          <div class="lista_inputs">
-            <div class="box_inputs">
-              <label class="line_2">
-                <p>Proprietário 1</p>
-                <input type="text" name="proprietario_1" class="required proprietarios">
-              </label>
-              <label class="line_2">
-                <p>Cpf</p>
-                <input type="text" name="cpf_proprietario" class="required cpf_proprietarios">
-              </label>
-            </div>
-            <span class="add_input"><p>+</p><span class="btn-toltip">Adicionar um Proprietário</span></span>
+        
+        <div class="lista_inputs w-100">
+          <div class="box_inputs grid grid-2 gap-10">
+            <label>
+              <p>Proprietário 1</p>
+              <input type="text" name="proprietario_1" class="required proprietarios">
+            </label>
+            <label>
+              <p>Cpf</p>
+              <input type="text" name="cpf_proprietario" class="required cpf_proprietarios">
+            </label>
           </div>
-
-          <label class="line_2">
+          <span class="add_input"><i class="fas fa-plus"></i><span class="btn-toltip">Adicionar um Proprietário</span></span>
+        </div>
+        <div class="grid grid-2 gap-10 w-100">
+          <label>
             <p>Nome do Contador</p>
             <input type="text" name="nome_contador" class="required nome_contador">
           </label>
-          <label class="line_2">
+          <label>
             <p>Telefone do Contador</p>
             <input type="text" name="tel_contador" class="required telefone">
           </label>
-          <label class="line_2">
+          <label>
             <p>Celular do Contador</p>
             <input type="text" name="cel_contador" class="required celular">
           </label>
-          <label class="line_2">
+          <label>
             <p>Celular do Contador</p>
             <input type="text" name="cel_contador" class="required celular">
           </label>
 
           <div class="lista_inputs">
-            <div class="box_inputs">
-              <label class="line_1">
+            <div class="box_inputs grid grid-1 w-100">
+              <label>
                 <p>E-mail do Contador</p>
                 <input type="text" name="email_contador" class="required email">
               </label>
             </div>
-            <span class="add_input"><p>+</p><span class="btn-toltip">Adicionar mais um e-mail</span></span>
+            <span class="add_input"><i class="fas fa-plus"></i><span class="btn-toltip">Adicionar mais um e-mail</span></span>
           </div>
 
-          <label class="line_2">
+          <label>
             <p>Segmento Empresarial</p>
             <input type="text" name="segmento" class="required segmento">
           </label>
-          <label class="line_2">
+          <label>
             <p>Segmento Empresarial</p>
             <input type="text" name="segmento" class="required segmento">
           </label>
-          <label class="line_2">
+          <label>
               <p>Franqueado</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione a Franquia</option>
                   <option value="2">Franquia A</option>
                   <option value="2">Franquia B</option>
@@ -165,10 +166,10 @@
                 </select>
               </div>
           </label>
-          <label class="line_2">
+          <label>
               <p>Agendador</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione alguma coisa</option>
                   <option value=""></option>
                   <option value=""></option>
@@ -176,10 +177,10 @@
                 </select>
               </div>
           </label>
-          <label class="line_2">
+          <label>
               <p>Vendedor</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione alguma coisa</option>
                   <option value=""></option>
                   <option value=""></option>
@@ -187,10 +188,10 @@
                 </select>
               </div>
           </label>
-          <label class="line_2">
+          <label>
               <p>Origem do Cliente	</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione a Origem</option>
                   <option value="1">CHECK CHECK</option>
                   <option value="2">SERASA</option>
@@ -210,11 +211,11 @@
         </div>
 
         <h3 class="title">Tabela de Preços</h3>
-        <div class="box_forms">
+        <div class="grid grid-2 gap-10 w-100">
             <label class="line_2">
               <p>Pacote Sistema Gestão</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione um pacote</option>
                   <option value="1">pacote 1</option>
                   <option value="1">pacote 2</option>
@@ -224,7 +225,7 @@
             <label class="line_2">
               <p>Módulo Loja Virtual E-commerce</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option value="NULL">Nenhum</option>
                   <option value="22,50">R$ 22,50</option>
                 </select>
@@ -233,7 +234,7 @@
             <label class="line_2">
               <p>Módulo Receber de Devedores</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option value="NULL">Nenhum</option>
                   <option value="8,30">R$ 8,30</option>
                 </select>
@@ -242,7 +243,7 @@
             <label class="line_2">
               <p>Módulo Consulta de Crédito	</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option value="NULL">Nenhum</option>
                   <option value="6,50">R$ 6,50</option>
                 </select>
@@ -251,7 +252,7 @@
             <label class="line_2">
               <p>Módulo Aumentar Clientes e Faturamento</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option value="NULL">Nenhum</option>
                   <option value="11,40">R$ 11,40</option>
                 </select>
@@ -260,7 +261,7 @@
             <label class="line_2">
               <p>Faturamento</p>
               <div class="select">
-                <select>
+                <select class="form-control select2">
                   <option selected disabled>Selecione o Faturamento</option>
                   <option value="">Emissão de fatura</option>
                   <option value="">Emissão de Nota Fiscal</option>
@@ -268,7 +269,9 @@
                 </select>
               </div>
             </label>
-            <label class="line_1">
+        </div>
+        <div class="grid grid-1 w-100">
+            <label>
               <p>Observações</p>
               <textarea></textarea>
             </label>
@@ -312,6 +315,3 @@
 
   </div>
 </div>
-
-<!-- Fechamento do card e da section  -->
-<?php // include 'layout/card-footer.php'; ?>

@@ -2242,10 +2242,18 @@ $(document).on("blur", ".mask", function () {
   $(this).unmask();
 });
 
-$(".box_forms label").click(function () {
+$(".formstyle label").click(function () {
   var focus = $(this).hasClass("focus");
-  $(".box_forms label").removeClass("focus");
+  $(".formstyle label").removeClass("focus");
   if (!focus) {
     $(this).toggleClass("focus");
   }
+});
+
+//Initialize Select2 Elements
+$(".select2").select2();
+
+//Initialize Select2 Elements
+$(".select2bs4").select2({
+  theme: "bootstrap4",
 });

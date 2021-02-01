@@ -2,7 +2,7 @@
     <label>
         <p>Situação Tributária</p>
         <div class="select">
-            <select name="iptIdSituacaoTributariaCOFINS" id="iptIdSituacaoTributariaCOFINS">
+            <select class="form-control select2" name="iptIdSituacaoTributariaCOFINS" id="iptIdSituacaoTributariaCOFINS">
                 <option value="" selected="selected"> Selecione </option>
                 <option value="01" data-opc="cofins"> 01 - Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo / Não Cumulativo) </option>
                 <option value="02" data-opc="cofins"> 02 - Operação Tributável - Base de Cálculo = Valor da Operação (Alíquota Diferenciada) </option>
@@ -43,7 +43,7 @@
     <div class="confins conf">
         <h3 class="title small bg">COFINS</h3>
         <div class="grid grid-3 gap-5">
-            <label class="tipo-calculo">
+            <label class="tipo-calculo focus-none">
                 <p>Alíquota:</p>
                 <div class="flex ">
                     <div id="opc_lucro" class="opc-inputs ">
@@ -61,7 +61,7 @@
     </div>
     <div class="confins st">
         <h3 class="title small bg">COFINS ST</h3>
-        <label class="tipo-calculo">
+        <label class="tipo-calculo focus-none">
             <p>Tipo de Cálculo ST:</p>
             <div class="flex ">
                 <div id="opc_lucro" class="opc-inputs ">

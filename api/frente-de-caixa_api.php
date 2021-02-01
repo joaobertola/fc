@@ -11,6 +11,10 @@ include_once '../config/api.php';
 
 $requestData = json_decode(file_get_contents('php://input'), true);
 
+echo '<pre>';
+var_dump($requestData, $_REQUEST);
+exit;
+
 if (!isset($requestData["op"]) || empty($requestData["op"])) exit;
 
 $Op = $requestData["op"];

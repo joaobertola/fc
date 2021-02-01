@@ -3,16 +3,16 @@
 
   <div class="lista_users">
      <div class="header-lista vendedor flex">
-        <span class="nome">Nome Completo</span>
-        <span class="cpf">CPF</span>
-        <span class="acao">Ação</span>
+        <span class="w-60 nome">Nome Completo</span>
+        <span class="w-20 cpf">CPF</span>
+        <span class="w-20 acao">Ação</span>
      </div>
      <div class="scroll-lista">
        <?php for($v=0;$v<=6;$v++){ ?>
           <div class="item flex">
-             <span class="nome">Nome do vendedor</span>
-             <span class="cfp">685.589.885-98</span>
-             <span class="acao">Selecionar</span>
+             <span class="w-60 nome">Nome do vendedor</span>
+             <span class="w-20 cfp">685.589.885-98</span>
+             <span class="w-20 acao">Selecionar</span>
           </div>
        <?php } ?>
     </div>

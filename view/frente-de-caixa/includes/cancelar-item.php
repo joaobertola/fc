@@ -1,9 +1,9 @@
 <div class="form-modal">
   <h3>Cancelar item</h3>
   <div class="tabs-info">
-    <form id="AlterarItem" action="#" method="post" class="">
+    <form id="AlterarItem" action="#" method="post" class="formstyle">
         <span class="alert">Para cancelar mais de 1 produto, use a vírgula(,) como separador.</span>
-        <div class="grid grid-2 gap-10">
+        <div class="w-100 grid grid-2 gap-10">
             <label>
               <p>Código de Barra:</p>
               <input type="text">

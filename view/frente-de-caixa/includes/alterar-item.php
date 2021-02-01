@@ -1,8 +1,8 @@
 <div class="form-modal">
   <h3>Alterar item</h3>
   <div class="tabs-info">
-    <form id="AlterarItem" action="#" method="post" class="">
-        <div class="grid grid-2 gap-10">
+    <form id="AlterarItem" action="#" method="post" class="formstyle">
+        <div class="w-100 grid grid-2 gap-10">
             <label>
               <p>N°. do Item:</p>
               <input type="text">

@@ -1,9 +1,9 @@
 <div class="form-modal">
   <h3>Sangria</h3>
   <div class="tabs-info">
-    <form id="Sangria" action="#" method="post" class="">
+    <form id="Sangria" action="#" method="post" class="formstyle">
     <div class="info-modal"><p><strong>Caixa:</strong>003</p></div>
-        <div class="grid grid-2 gap-10">
+        <div class="w-100 grid grid-2 gap-10">
             <label>
               <p>Operador:</p>
               <input type="text" value="Arnold schwarzenegger" disabled>
@@ -21,8 +21,11 @@
               <input type="password" class="senha">
             </label>
         </div>
-        <div class="grid grid-1">
-          <textarea name=""></textarea>
+        <div class="w-100 grid grid-1 mb-0">
+          <label>
+            <p>Motivos:</p>
+            <textarea name=""></textarea>
+          </label>
           <button class="submit">Confirmar</button>
         </div>
       </form>

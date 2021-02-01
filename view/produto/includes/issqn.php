@@ -2,7 +2,7 @@
     <label>
         <p>Tributação</p>
         <div class="select">
-            <select id="iptIdSituacaoTributacaoISSQN" name="iptIdSituacaoTributacaoISSQN">
+            <select id="iptIdSituacaoTributacaoISSQN" name="iptIdSituacaoTributacaoISSQN" class="form-control select2">
                 <option value=""></option>
                 <option value="N">Normal</option>
                 <option value="R">Retida</option>
@@ -19,7 +19,7 @@
     <label>
         <p>Padrão NFS</p>
         <div class="select">
-            <select id="iptPadraoNFS" name="iptPadraoNFS">
+            <select id="iptPadraoNFS" name="iptPadraoNFS" class="form-control select2">
                 <option value=""> Selecione</option>
                 <option value="ABRASF">ABRASF</option>
                 <option value="IPM">IPM</option>
@@ -35,7 +35,7 @@
     <label>
         <p>Lista de Serviços</p>
         <div class="select">
-            <select id="iptPadraoNFS" name="iptPadraoNFS">
+            <select id="iptPadraoNFS" name="iptPadraoNFS" class="form-control select2">
                 <option value=""> Serviço 1</option>
                 <option value=""> Serviço 2</option>
                 <option value=""> Serviço 3</option>
@@ -53,7 +53,7 @@
     <label>
         <p>UF</p>
         <div class="select">
-            <select id="iptUfISSQN" name="iptUfISSQN">
+            <select id="iptUfISSQN" name="iptUfISSQN" class="form-control select2"> 
                 <option value=""> Selecione</option>
                 <option value="12">AC</option>
                 <option value="27">AL</option>
@@ -89,7 +89,7 @@
     <label>
         <p>Município de Ocorrência</p>
         <div class="select">
-            <select id="iptUfISSQN" name="iptUfISSQN">
+            <select id="iptUfISSQN" name="iptUfISSQN" class="form-control select2">
                 <option value=""> Selecione</option>
                 <option value="12">AC</option>
                 <option value="27">AL</option>
@@ -137,7 +137,7 @@
     <label>
         <p>Exigibilidade do ISS</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Exigibilidade do ISS 1</option>
                 <option value="">Exigibilidade do ISS 2</option>
                 <option value="">Exigibilidade do ISS 3</option>
@@ -147,7 +147,7 @@
     <label>
         <p>Incentivo Fiscal</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Exigibilidade do ISS 1</option>
                 <option value="">Exigibilidade do ISS 2</option>
                 <option value="">Exigibilidade do ISS 3</option>
@@ -157,7 +157,7 @@
     <label>
         <p>Código do Serviço (CNAE)</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Código do ISS 1</option>
                 <option value="">Código do ISS 2</option>
                 <option value="">Código do ISS 3</option>
@@ -167,7 +167,7 @@
     <label>
         <p>UF de Incidência</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Incidência do ISS 1</option>
                 <option value="">Incidência do ISS 2</option>
                 <option value="">Incidência do ISS 3</option>
@@ -177,7 +177,7 @@
     <label>
         <p>Município de Incidência</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Incidência do ISS 1</option>
                 <option value="">Incidência do ISS 2</option>
                 <option value="">Incidência do ISS 3</option>
@@ -192,10 +192,10 @@
         <p>Código da obra</p>
         <input type="text">
     </label>
-    <label class="ipm-off">
+    <label class="ipm-off focus-none">
         <p>Assinar NFS</p>
         <div class="select">
-            <select name="" id="">
+            <select name="" id="" class="form-control select2">
                 <option value="">Sim</option>
                 <option value="">Não</option>
             </select>

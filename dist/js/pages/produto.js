@@ -2,7 +2,35 @@ $(function () {
   $(".loading-bg").css("display", "none");
   tabs();
   subTabs();
+
+  var resolucao = screen.width;
+  if(resolucao < 1024){cloneEvent();}
+
+  // Start DataTable
+  $(".ListaGrade").DataTable({
+    responsive: true,
+    autoWidth: false,
+  });
 });
+
+function cloneEvent(){
+  $(".item-clone").each(function(){
+    var elementClone = $(this).parent().data("clone-name");
+    var idIndex = $(this).data("id");
+    $("#"+elementClone+idIndex).addClass("wrap");
+    var itemclone = $("#"+elementClone+idIndex).find(".clone").clone();
+    $("#"+elementClone+idIndex).append("<div class='item-mobi-table mobi-none'></div>");
+    $("#"+elementClone+idIndex).append("<i class='fas fa-plus openTable'></i>");
+    $("#"+elementClone+idIndex).find(".item-mobi-table").html(itemclone);
+
+    $("#"+elementClone+idIndex+" .openTable").click(function(){
+      $("#"+elementClone+idIndex).find(".item-mobi-table").toggleClass("mobi-none"); 
+      $("#"+elementClone+idIndex).find(".item-mobi-table").toggleClass("wrap"); 
+      $("#"+elementClone+idIndex).toggleClass("active"); 
+      $("#"+elementClone+idIndex).find(".item-mobi-table").find("span").toggleClass("mobi-none");
+    });
+  });
+}
 
 $(document).on("click", ".produto_glp", function () {
   var result = $('input[name="glp"]:checked').val();
@@ -27,6 +55,16 @@ $(document).on("click", ".t_especial", function () {
   else{
     $("#tributacao_especial").html("");
     $("#tributacao_especial").hide();
+  }
+});
+
+$(document).on("click", ".p_locacao", function () {
+  var result = $('input[name="p_locacao"]:checked').val();
+  if(result == "sim"){
+    $("input.gtde_locacao").removeClass("d-none");
+  }
+  else{
+    $("input.gtde_locacao").addClass("d-none");
   }
 });
 

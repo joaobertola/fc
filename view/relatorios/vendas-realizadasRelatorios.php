@@ -30,8 +30,8 @@
     <div class="card">
         <div class="card-body">
         <div class="col-sm-12 m-left">
-            <form action="" class="form-modal Filtros">
-                <div class="grid grid-5 gap-1 self-end">
+            <form action="" class="formstyle Filtros">
+                <div class="grid grid-2 gap-10 self-end w-100">
                     <label>
                         <p>Pedido/Venda:</p>
                         <input type="text" placeholder="Código do Pedido (ID WEb / ID Off)">
@@ -47,7 +47,7 @@
                     <label>
                         <p>Vendedor:</p>
                         <div class="select">
-                            <select>
+                            <select class="form-control select2">
                                 <option>Vendedor 1</option>
                                 <option>Vendedor 2</option>
                                 <option>Vendedor 3</option>
@@ -95,7 +95,7 @@
                     <span class="w-50">	R$ 0,00</span>
                 </div>
             </div>
-            <table class="Tabelas table table-striped table-bordered display" style="width:100%">
+            <table class="Tabelas table table-striped display" style="width:100%">
                 <thead>
                     <tr>
                         <th>Data e Hora</th>
